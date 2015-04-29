@@ -1,0 +1,3 @@
+## The School
+
+Founded in 2008...
