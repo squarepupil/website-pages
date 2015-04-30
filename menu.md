@@ -6,7 +6,8 @@ This is for the basic navigation bar. Each item link will transform into a menu 
 * [SCHOOL](school.md) A basic intro the pages
 	+ [Our Space](space.md) Describing our new building
 	+ [Our Name](name.md) explanation of “arts and ideas”
-	+ [Our Staff](staff.md) bios, pics
+	+ [Our Staff](staff.md) bios, pics    
+    + [Our Values](values.md) Our community values: acceptance, responsibility, truth, 
 	+ [Gallery](gallery.md) Picture gallery
 * [EXPERIENCES](experiences.md) This is a set of quotes, pictures, videos, etc.. Probably lightbox style. So a list of teasers and one can click on what is of interest and it pops up. Doing arrows to go to the next one too. 
 * [MODEL](model.md) A basic overview of our principles
@@ -18,7 +19,6 @@ This is for the basic navigation bar. Each item link will transform into a menu 
 	+ [A Working Democracy](democracy.md) The full layout of what we do. 
 	+ [Safety](safety.md) Safest school in terms of emotional safety, strength in numbers. Students are well-protected from external threats. But they can also challenge themselves and manage risks. Long term, this is the safest path to be on. 
 	+ [Trust](trust.md) This is about tudents trusting other people, about adults trusting kids to find their own ways, about parents trusting us not to tell them what goes on. 
-    + [Community Values](values.md) Our community values: acceptance, responsibility, truth, 
 	+ [Readings, clips, and links](readings.md)
 		- Okay, so you’re sort of like…
 		- Democratic structure
