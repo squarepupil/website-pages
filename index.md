@@ -1,6 +1,9 @@
 ## Arts & Ideas Sudbury School
 
-Arts & Ideas is a 21st-century school in Baltimore where students ages 5 through 18 learn, explore and grow in a stimulating, supportive community.
+Arts & Ideas is a school for ages 5 through 18 that prepares students for a life in the 21st century by providing a supportive and stimulating community to allow them to practice all the life skills that are so critical to a satisfying and productive life. 
+
+
+
 
 Our school is based on a philosophy of education first pioneered by the Sudbury Valley School in 1968 and now operating in more than 30 schools worldwide. Arts & Ideas approaches schooling from the learner's point of view, turning conventional education on its head.
 
