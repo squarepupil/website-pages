@@ -8,7 +8,10 @@ They are free to mix with any of our diverse students whose ages range from 5 to
 
 We are very much rooted in an entreprenuerial spirit in which drive, independence, community, cooperation, and exploration are practiced constantly. 
 
-A large part of this lies in the democratic spirit of the school. Students and staff together make rules and enforce them. These rules are meaningful and strongly embrace 
+A large part of this lies in the democratic spirit of the school. Students and staff together make rules and enforce them. These rules are meaningful and are strongly embraced by all of us.
+
+At its core, our democratic education teaches understanding, compromise, and compassion for others. It is very far from the winner-loser model found in dysfunctional models of democracy. At Arts&Ideas, our democracy brings us all closer together. 
+
 
 for ages 5 through 18 that prepares students for a life in the 21st century by providing a supportive and stimulating community to allow them to practice all the life skills that are so critical to a satisfying and productive life. 
 
