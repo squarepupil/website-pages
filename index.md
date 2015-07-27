@@ -1,6 +1,16 @@
 ## Arts & Ideas Sudbury School
 
-Arts & Ideas is a school for ages 5 through 18 that prepares students for a life in the 21st century by providing a supportive and stimulating community to allow them to practice all the life skills that are so critical to a satisfying and productive life. 
+Arts & Ideas is a non-profit private school that specializes in preparing students for a satisfying and productive life. 
+
+Our students have the freedom to explore anything that interests them. They can delve as deeply into any subject or activity as they wish. 
+
+They are free to mix with any of our diverse students whose ages range from 5 to 18. They form community and learn to balance their desires with the desires of others. They get to witness the power of cooperation to achieve more than what could be achieved alone. 
+
+We are very much rooted in an entreprenuerial spirit in which drive, independence, community, cooperation, and exploration are practiced constantly. 
+
+A large part of this lies in the democratic spirit of the school. Students and staff together make rules and enforce them. These rules are meaningful and strongly embrace 
+
+for ages 5 through 18 that prepares students for a life in the 21st century by providing a supportive and stimulating community to allow them to practice all the life skills that are so critical to a satisfying and productive life. 
 
 
 
