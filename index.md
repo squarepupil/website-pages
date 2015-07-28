@@ -12,6 +12,10 @@ A large part of this lies in the democratic spirit of the school. Students and s
 
 At its core, our democratic education teaches understanding, compromise, and compassion for others. It is very far from the winner-loser model found in dysfunctional models of democracy. At Arts&Ideas, our democracy brings us all closer together. 
 
+A profoundly important aspect of our community is that of support and safety. Our whole community looks after one another. If someone needs help, respectful help appears from all sides. No one worries about fitting in. We are all ourselves and we all look for opportunities to incorporate the diversity we find in others in our activities. 
+
+
+
 
 for ages 5 through 18 that prepares students for a life in the 21st century by providing a supportive and stimulating community to allow them to practice all the life skills that are so critical to a satisfying and productive life. 
 
