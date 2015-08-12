@@ -1,5 +1,7 @@
 ## Arts & Ideas Sudbury School
 
+Arts & Ideas provides a safe and supportive environment for our students to explore life. 
+
 Arts & Ideas is a non-profit private school that specializes in preparing students for a satisfying and productive life. 
 
 Our students have the freedom to explore anything that interests them. They can delve as deeply into any subject or activity as they wish. 
