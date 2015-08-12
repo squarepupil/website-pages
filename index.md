@@ -1,12 +1,10 @@
 ## Arts & Ideas Sudbury School
 
-Arts & Ideas provides a safe and supportive environment for our students to explore life. 
+Arts & Ideas is a school that provides a [safe](safety.html) and [supportive](supportive.html] environment for our students to learn through individualized exploration.
 
-Arts & Ideas is a non-profit private school that specializes in preparing students for a satisfying and productive life. 
+Our students have the freedom to explore anything that interests them. They can delve as deeply into any subject or activity as they wish without interference or judgement.
 
-Our students have the freedom to explore anything that interests them. They can delve as deeply into any subject or activity as they wish. 
-
-They are free to mix with any of our diverse students whose ages range from 5 to 18. They form community and learn to balance their desires with the desires of others. They get to witness the power of cooperation to achieve more than what could be achieved alone. 
+Students are free to mix with any of their diverse fellow students whose ages range from 5 to 18. They form community and learn to balance their desires with the desires of others. They get to witness the power of cooperation to achieve more than what could be achieved alone. 
 
 We are very much rooted in an entreprenuerial spirit in which drive, independence, community, cooperation, and exploration are practiced constantly. 
 
@@ -16,12 +14,9 @@ At its core, our democratic education teaches understanding, compromise, and com
 
 A profoundly important aspect of our community is that of support and safety. Our whole community looks after one another. If someone needs help, respectful help appears from all sides. No one worries about fitting in. We are all ourselves and we all look for opportunities to incorporate the diversity we find in others in our activities. 
 
-The model we follow began in the late 1960s and has produced generations of successful people. We are confident that in this information age, the advantages of this style of education will become ever more apparent. 
+The model we follow was first pioneered in 1968 by [Sudbury Valley School](http://www.sudval.org/) and has been quite successful. The focus is on learning rather than teching and curriculum. We are confident that in this information age, the advantages of this style of education will become ever more apparent. 
 
-If this school sounds appealing for you and your family, check out our Open Houses or schedule an interview. 
-
-
-for ages 5 through 18 that prepares students for a life in the 21st century by providing a supportive and stimulating community to allow them to practice all the life skills that are so critical to a satisfying and productive life. 
+If this school sounds appealing for you and your family, check out our [Open Houses](openhouse.html) or schedule an [interview](admissions.html). 
 
 
 
