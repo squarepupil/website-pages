@@ -4,7 +4,7 @@ module.exports = function (Folder, args) {
     if (args.file.length === 0) {
         args.file = ["project.md"];
     }
-    args.build = "ghpages";
+    args.build = "out";
     args.src = ".";
 
 
@@ -84,22 +84,7 @@ module.exports = function (Folder, args) {
      Folder.plugins.postcss = {
          autoprefixer : require('autoprefixer')
      };
- 
-     var fs = require('fs');
-     var d = Folder.prototype.secretData = {};
-     try {
-         var temp = fs.readFileSync("data.txt", {encoding:'utf8'});
-         temp.split("\n").forEach( function (el) {
-            var bits = el.split(":");
-            d[bits[0].trim()] = (bits[1]||'').trim();
-         });
-     } catch (e) {
-         console.log(e);
-     }
-       
-
-    Folder.prototype.local['tiny-csv'] = require('tiny-csv');
-    Folder.prototype.local.mailhide = require('mailhide');
+  
 
 };
 

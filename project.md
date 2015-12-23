@@ -9,7 +9,7 @@ with some css to make it all look nice.
 ## Files
 
 * [custom.css](#css "save: | postcss autoprefixer ")
-* [our-story.html](# "save: | go pages/our-story.md | about ")
+* [our-story.html](# "save: | go pages/our-story.md  ")
 * [our-space.html](# "save:| go pages/our-space.md")
 * [our-staff.html](# "save:| go pages/our-staff.md")
 * [pictures.html](# "save:| go pages/pictures.md")
@@ -17,12 +17,12 @@ with some css to make it all look nice.
 * [start-at-the-beginning.html](# "save:| go pages/start-at-the-beginning.md")
 * [okay-so-youre-sort-of-like.html](# "save:| go pages/okay-so-youre-sort-of-like.md")
 * [i-get-it-but-what-about.html](# "save:| go pages/i-get-it-but-what-about.md")
-* [index.html](# "save:| go index.md ")
+* [index.html](# "save:| go pages/index.md ")
 * [where-can-i-learn-more.html](# "save:| go pages/where-can-i-learn-more.md")
 * [how-do-we-enroll.html](# "save:| go pages/how-do-we-enroll.md")
 * [how-much-does-it-cost.html](# "save:| go pages/how-much-does-it-cost.md")
 * [contact-us.html](# "save:| go pages/contact-us.md")
-* [supprt-us.html](# "save:| go pages/support-us.md")
+* [support-us.html](# "save:| go pages/support-us.md")
 * [calendar.html](# "save:| go pages/calendar.md")
 * This reduces the images to 450 px. [../img.js](#img-reduce "save:") 
 * This converts first pages of pdfs to pictures for thumbnails. [../news.js](#news-page "save:")
@@ -82,6 +82,8 @@ This is the template html that we will stick rendered HTML into.
       </head>
       <body>
         _":body | jade | compile"
+
+        _":js"
       </body>
     </html>
 
@@ -89,11 +91,11 @@ This is the template html that we will stick rendered HTML into.
 
     header
         .constrainer
-            a(href="/"): img(src="img/logo.png", alt="MWIA Tree Logo")
-            nav \_`:menu|md` 
-            | \_`featured event`
+            a(href="/"): img(src="img/ailogo.png", alt="AI Logo")
+            nav \_`nav:direct menu|md`
+            div  \_`nav:drop menu|md`
 
-     .container
+    .container
          h1 \2_`:title`
          | \2_`:hgal`
          | \2_`:body`
@@ -102,8 +104,7 @@ This is the template html that we will stick rendered HTML into.
 
 [css]()
  
-Basic bootstrap theme and then any custom css. 
-
+Css link file.
 
     <link href="/custom.css" rel="stylesheet">
 
@@ -118,9 +119,16 @@ Basic bootstrap theme and then any custom css.
     <![endif]-->
 
 
-[scripts]()
+[js]()
 
-#Nav
+Here is some js stuff. Very short so not bothering with a separate file. 
+
+    <script>
+        _"nav:drop js"
+    </script>
+
+
+# Nav
 
 This creates the nav section. We have two different types of nav buttons, one
 a drop-down, one direct links. The idea is to have on wide screens: 
@@ -135,27 +143,88 @@ On small screens, it could be
 3. drop-down (hopefully fits)
 
 
-[drop-menu]() 
+[drop menu]() 
 
 These are the items where the visible nav button creates a drop-list of
 options. 
 
-    * [Our school](#os)
+    * <button>Our school</button>
         + [Our story](our-story.html)
         + [Our space](our-space.html)
         + [Our staff](our-staff.html)
         + [Pictures](pictures.html)
         + [Nut and Bolts](nuts-and-bolts.html)
-    * [How it works](#hiw)
+    * <button>How it works</button>
         + [Start at the beginning](start-at-the-beginning.html)
         + [Okay, so you're sort of like ...](okay-so-youre-sort-of.html)
         + [I get it, but what about ...](i-get-it-but-what-about.html)
         + [Where can I learn more?](where-can-i-learn-more.html)
-    * [Prospective Families](#pf)
+    * <button>Prospective Families</button>
         + [How do we enroll?](how-do-we-enroll.html)
         + [How much does it cost?](how-much-does-it-cost.html)
 
-[button menu]()
+
+[simple drop css]() 
+
+Here we create all the css needed for the drop down to work. This is inspired
+from [SO](http://stackoverflow.com/a/25991472)
+
+The idea is that when the button gets a focus, then the list gets displayed.
+Need the hover to allow for clicking on the link not closing the display, as
+far as I can tell. 
+
+Unfortunately, this seems to fail on mobile entirely because, well, focus
+isn't a stable concept on a button. So we can do javascript, which we do for
+all that supports it which seems to be all except old ie. This we use for the
+old ie
+
+    button + ul  {
+        display: none;
+    }
+    button:focus + ul, button +ul:hover {
+        display: block;
+    }
+
+[drop js]()
+
+The idea is that when a button is clicked (scope it to nav when incorporated
+properly), then we add a class to that button and that class is in the css to
+display. We also want to whenever there is a click, clear the class to restore
+it to hidden. The class will be "dropShow". Also assuming there is only one
+such class 
+
+    var removeDrop = function (el) {
+        a = document.querySelector(".dropShow");
+        if (a && (a !== el) ) {
+            a.classList.remove("dropShow");
+        }
+    };
+
+    document.querySelector(".container").addEventListener("click", removeDrop); 
+    
+    var buttons = document.querySelectorAll("button");
+    var addDropShow = function () {
+        removeDrop(this);
+        this.classList.toggle("dropShow");
+    };
+    for (var i = 0; i < buttons.length; i += 1) {
+        buttons[i].addEventListener("click", addDropShow);
+    }
+
+[drop css]()
+
+This implements the css we need to use the buttons.
+
+    button + ul  {
+        display: none;
+    }
+    button.dropShow + ul {
+        display: block;
+    }
+
+
+
+[direct menu]()
 
 This is a set of buttons that go directly to a page. No drop-downs.
 
@@ -333,23 +402,12 @@ put together the figure stuff.
     
 
 
-## Common CSS variables
-
-A pale yellow color for the background
-
-[background color](# "store: rgba(189, 238, 198, 1) ")
-
-rgba(253, 250, 219, 1) 
-rgba(225, 229, 192, 1); 
-rgba(252, 239, 160, 1);
-rgba(250, 194, 111, 0.34);
-
 ## Colors
 
 This is a list of colors. The transform directive will split on lines and
 colons to generate key-values that get stored under color:key.
 
-    headerbg: #E0ECE5
+    headerbg: #407EDE
     nav links: green
 
 [colors|](# ":| .split \n | augment arr | .splitsep : 
@@ -394,6 +452,7 @@ _"css reset"
     
     _":imgf"
 
+    _"nav:drop css"
     
     table {
         max-width: 500px;
@@ -441,18 +500,6 @@ _"css reset"
         color:#00e;
     }
     
-    #memberpay {
-        margin-top:1.2em;
-        margin-left:4em; 
-        margin-bottom:1.2em; 
-        width:250px;
-
-    }
-
-    #memberpay td {
-        border-style: none;
-    }
-
     _":media queries"
 
 [header]()
@@ -480,9 +527,10 @@ make sure the background covers.
     header img {
         float:left;
         max-width: 350px ;
+        max-height:80%;
     }
 
-    header nav {
+    header nav   {
         position:relative;
         bottom:10px;
         right:0;
@@ -901,5 +949,5 @@ by [James Taylor](https://github.com/jostylr "npminfo: jostylr@gmail.com ;
     dev: litpro 0.11.1, cheerio 0.19.0, markdown-it 4.4.0, 
         markdown-it-anchor 2.3.0, 
         jade 1.11.0, postcss 5.0.4, autoprefixer 6.0.0,
-        gm 1.18.1, pdf-image 1.0.1, mailhide 0.1.1, tiny-csv 2.0.0   ")
+        gm 1.18.1, pdf-image 1.0.1 ")
 

@@ -1,4 +1,4 @@
-Arts & Ideas Sudbury School
+
 ---
 
 Children are amazing people. They are little bundles of energy, exploring life and all of its many complexities. 
@@ -30,11 +30,11 @@ Our site is organized as follows:
 * Facebook Page. We post random moments and pictures occasionally here as insights into what a day is like. We also post external links to interesting ideas and experiences. 
 * Blog. These are more in-depth articles by us with reflections of our days and the model.
 
-----
+- - - -
 
 Menu at top: About Us, FAQ, Model, Admissions, Calendar 
 
-----
+- - - -
 
 
 
@@ -55,7 +55,8 @@ family believes in the student thriving.
 
 We have independent 
 
----
+- - - 
+
 Principles
 
 1. Living is learning
