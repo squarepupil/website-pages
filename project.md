@@ -218,10 +218,7 @@ This implements the css we need to use the buttons.
     .drop button + ul  {
         display: none;
     }
-    .drop button.dropShow + ul,  
-    .drop button:focus + ul, 
-    .drop button +ul:hover,
-    .drop button +ul:focus{
+    .drop button.dropShow + ul {
         display: block;
     }
 
@@ -232,29 +229,22 @@ This implements the css we need to use the buttons.
 
     .drop > ul > li {
         list-style-type : none; 
-        display : inline;
+        display : inline-block;
+        position:relative;
     }
 
     .drop {
         position: absolute;
-        bottom: 23px;
-        left: 270px;
+        bottom: 0px;
+        left: 190px;
     }
 
     .drop li ul {
         position: absolute;
         background-color: _"color:headerbg";
-        top:56px;
         padding:5px;
     }
 
-    .drop li:nth-child(2) ul {
-       left:119px; 
-    }
-
-    .drop li:nth-child(3) ul {
-       left:232px; 
-    }
 
     .drop a:link, .drop a:visited {
         color:black;
@@ -286,6 +276,35 @@ rgb(245, 240, 50);  bright
         background-color: rgb(226, 221, 35);
         border-radius: 10px;
     }
+
+    button.dropShow {
+        background-color: rgb(255, 255, 0);
+    }   
+
+
+[drop big size]()
+
+Should move these into a generated part to make changing easier. 
+
+    
+    .drop ul > li:nth-child(1) ul {
+       width: 113px; 
+    }
+
+    .drop ul > li:nth-child(2) ul {
+       width: 220px; 
+    }
+
+    .drop ul > li:nth-child(3) ul {
+       width: 180px; 
+    }
+
+And this part aligns the drop downs. For mobile, the alignment is not desired. 
+
+    .drop > ul > li {
+        position:relative;
+    }
+
 
 [direct menu]()
 
@@ -509,7 +528,7 @@ _"css reset"
     .container {
         margin-left:auto;
         margin-right:auto;
-        max-width:950px;
+        max-width:850px;
     }
     
     h1, h2, h3 {
@@ -592,7 +611,7 @@ make sure the background covers.
         width:100%;
         background-color: _"color:headerbg";
         z-index:10;
-        padding-bottom:10px;
+        padding-bottom:4px;
         padding-left:10px;
         padding-right:10px;
     }
@@ -602,7 +621,7 @@ make sure the background covers.
     header img {
         float:left;
         max-width: 350px ;
-        max-height:80%;
+        max-height:100%;
     }
 
     header nav   {
@@ -619,7 +638,7 @@ make sure the background covers.
     }
     
     .container {
-        margin-top: 125px;
+        margin-top: 100px;
         margin-bottom:50px;
     }
 
@@ -631,11 +650,14 @@ make sure the background covers.
     header nav li {
         float:left;
         width: initial;
-        border: 1px solid #CED8C4;
         text-transform: uppercase;
         padding-left: 2px;
         padding-right: 2px;
         margin-left: 4px;
+    }
+
+    nav a:link, nav a:visited {
+        color:black;
     }
 
     header nav a:hover {
@@ -667,6 +689,7 @@ make sure the background covers.
     
     @media (min-width:751px) {
         _":moderate"
+        _"nav:drop big size"
     }
     
     @media (min-wdith:751px), (max-width:970px) {
@@ -710,8 +733,9 @@ make sure the background covers.
 
     header nav {
         position:absolute;
-        top : -20px;
+        top : -10px;
         right:0px;
+        z-index:2;
     }
 
     header .event {
@@ -736,14 +760,14 @@ make sure the background covers.
    
     header img {
         position: absolute;
-        top:4px;
+        top:2px;
         left:0px;
     }
 
     header .constrainer {
         position:relative;
-        max-width:950px;
-        height:120px;
+        max-width:850px;
+        height:70px;
         display:block;
         margin-left:auto;
         margin-right:auto;
@@ -896,7 +920,7 @@ both centered.
     }
 
     .container {
-        margin-top: 125px;
+        margin-top: 100px;
         margin-bottom: 20px;
         margin-left:2ch;
         margin-right:2ch;
