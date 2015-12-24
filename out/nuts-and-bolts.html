@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MWIA </title>
+    <title>A&amp;I </title>
 
     <link href="/custom.css" rel="stylesheet">
     <style></style>
@@ -25,7 +25,7 @@
         <li><a href="calendar.html">Calendar</a></li>
         </ul>
         </nav>
-        <div> <ul>
+        <div class="drop"> <ul>
         <li><button>Our school</button>
         <ul>
         <li><a href="our-story.html">Our story</a></li>
@@ -68,7 +68,7 @@
         
         document.querySelector(".container").addEventListener("click", removeDrop); 
         
-        var buttons = document.querySelectorAll("button");
+        var buttons = document.querySelectorAll(".drop button");
         var addDropShow = function () {
             removeDrop(this);
             this.classList.toggle("dropShow");

@@ -179,6 +179,15 @@ code, samp {
 
 
 
+button {
+    font: inherit;
+    padding: 2px 6px 3px;
+}
+
+:focus {
+    outline: none;
+}
+
 * {
     box-sizing : border-box;
 }
@@ -210,7 +219,7 @@ header {
     top: 0px;
     max-height: 100px;
     width:100%;
-    background-color:  #407EDE;
+    background-color:  #8CB9FF;
     z-index:10;
     padding-bottom:10px;
     padding-left:10px;
@@ -275,11 +284,66 @@ header nav a:hover {
     list-style:none;
 }
 
-button + ul  {
+.drop button + ul  {
     display: none;
 }
-button.dropShow + ul {
+.drop button.dropShow + ul,  
+.drop button:focus + ul, 
+.drop button +ul:hover,
+.drop button +ul:focus{
     display: block;
+}
+
+.drop > ul {
+    width:500px;
+    text-align:left;
+}
+
+.drop > ul > li {
+    list-style-type : none; 
+    display : inline;
+}
+
+.drop {
+    position: absolute;
+    bottom: 23px;
+    left: 270px;
+}
+
+.drop li ul {
+    position: absolute;
+    background-color:  #8CB9FF;
+    top:56px;
+    padding:5px;
+}
+
+.drop li:nth-child(2) ul {
+   left:119px; 
+}
+
+.drop li:nth-child(3) ul {
+   left:232px; 
+}
+
+.drop a:link, .drop a:visited {
+    color:black;
+}
+
+.drop li li:hover {
+    background-color: grey;
+}
+
+.drop li ul li {
+    text-align:left;
+    list-style-type: none;
+}
+
+
+.drop button {
+    border: none;
+    font-size: 16px;
+    background-color: rgb(226, 221, 35);
+    border-radius: 10px;
 }
 
 table {
@@ -341,7 +405,7 @@ figure.level {
     
     header nav {
         position:absolute;
-        bottom: 36px;
+        top : -20px;
         right:0px;
     }
     
@@ -367,7 +431,7 @@ figure.level {
     
     header img {
         position: absolute;
-        top:9px;
+        top:4px;
         left:0px;
     }
     

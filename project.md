@@ -74,7 +74,7 @@ This is the template html that we will stick rendered HTML into.
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>MWIA \1_`:title`</title>
+        <title>A&amp;I \1_`:title`</title>
 
         _":css"
         \1_`:cgal`
@@ -93,7 +93,7 @@ This is the template html that we will stick rendered HTML into.
         .constrainer
             a(href="/"): img(src="img/ailogo.png", alt="AI Logo")
             nav \_`nav:direct menu|md`
-            div  \_`nav:drop menu|md`
+            .drop  \_`nav:drop menu|md`
 
     .container
          h1 \2_`:title`
@@ -178,10 +178,10 @@ isn't a stable concept on a button. So we can do javascript, which we do for
 all that supports it which seems to be all except old ie. This we use for the
 old ie
 
-    button + ul  {
+    .drop button + ul  {
         display: none;
     }
-    button:focus + ul, button +ul:hover {
+    .drop button:focus + ul, .drop button +ul:hover {
         display: block;
     }
 
@@ -202,7 +202,7 @@ such class
 
     document.querySelector(".container").addEventListener("click", removeDrop); 
     
-    var buttons = document.querySelectorAll("button");
+    var buttons = document.querySelectorAll(".drop button");
     var addDropShow = function () {
         removeDrop(this);
         this.classList.toggle("dropShow");
@@ -215,14 +215,77 @@ such class
 
 This implements the css we need to use the buttons.
 
-    button + ul  {
+    .drop button + ul  {
         display: none;
     }
-    button.dropShow + ul {
+    .drop button.dropShow + ul,  
+    .drop button:focus + ul, 
+    .drop button +ul:hover,
+    .drop button +ul:focus{
         display: block;
     }
 
+    .drop > ul {
+        width:500px;
+        text-align:left;
+    }
 
+    .drop > ul > li {
+        list-style-type : none; 
+        display : inline;
+    }
+
+    .drop {
+        position: absolute;
+        bottom: 23px;
+        left: 270px;
+    }
+
+    .drop li ul {
+        position: absolute;
+        background-color: _"color:headerbg";
+        top:56px;
+        padding:5px;
+    }
+
+    .drop li:nth-child(2) ul {
+       left:119px; 
+    }
+
+    .drop li:nth-child(3) ul {
+       left:232px; 
+    }
+
+    .drop a:link, .drop a:visited {
+        color:black;
+    }
+
+    .drop li li:hover {
+        background-color: lightgoldenrodyellow;
+    }
+
+    .drop li ul li {
+        text-align:left;
+        list-style-type: none;
+    }
+
+
+    _":drop button css"
+
+
+[drop button css]()
+
+Colors: 
+rgb(226, 221, 35); paler yellow
+rgb(245, 240, 50);  bright 
+
+    
+    .drop button {
+        border: none;
+        font-size: 16px;
+        background-color: rgb(226, 221, 35);
+        border-radius: 10px;
+    }
 
 [direct menu]()
 
@@ -407,8 +470,11 @@ put together the figure stuff.
 This is a list of colors. The transform directive will split on lines and
 colons to generate key-values that get stored under color:key.
 
-    headerbg: #407EDE
+    headerbg: #8CB9FF
     nav links: green
+
+
+darker blue: #407EDE
 
 [colors|](# ":| .split \n | augment arr | .splitsep : 
     | minidoc | .store color: ") 
@@ -420,6 +486,15 @@ _"css reset"
  
 
     _"|readfile writ.css"
+
+    button {
+        font: inherit;
+        padding: 2px 6px 3px;
+    }
+
+    :focus {
+        outline: none;
+    }
 
     * {
         box-sizing : border-box;
@@ -635,7 +710,7 @@ make sure the background covers.
 
     header nav {
         position:absolute;
-        bottom: 36px;
+        top : -20px;
         right:0px;
     }
 
@@ -661,7 +736,7 @@ make sure the background covers.
    
     header img {
         position: absolute;
-        top:9px;
+        top:4px;
         left:0px;
     }
 
