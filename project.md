@@ -24,6 +24,7 @@ with some css to make it all look nice.
 * [contact-us.html](# "save:| go pages/contact-us.md")
 * [support-us.html](# "save:| go pages/support-us.md")
 * [calendar.html](# "save:| go pages/calendar.md")
+* [resources.txt](# "save:| readfile resources.txt")
 * This reduces the images to 450 px. [../img.js](#img-reduce "save:") 
 * This converts first pages of pdfs to pictures for thumbnails. [../news.js](#news-page "save:")
 * [../docs.js](#news-page "save: | sub /news, /docs") Just piggybacking
