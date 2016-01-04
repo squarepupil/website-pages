@@ -1,4 +1,5 @@
-OUR SPACE
+Our Space
+---
 
 After years of searching and planning, Arts & Ideas thrilled to finally be in
 our very own building! Our main building is about 12,000 square feet spaced

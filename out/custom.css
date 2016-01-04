@@ -389,13 +389,7 @@ figure.level {
     color:#00e;
 }
 
-@media (min-width:751px) {
-    figure.news {
-        float:left;
-        margin-left:5px;
-        margin-right:5px;
-    }
-    
+@media (min-width:551px) {
     header nav ul li {
         padding-left:0px;
     }
@@ -457,25 +451,24 @@ figure.level {
     }
 }
 
-@media (min-wdith:751px), (max-width:970px) {
+
+@media (min-wdith:551px), (max-width:850px) {
+    nav li {
+       /* font-size:small; */
+    }
+    h1 {font-size: 2.2em;}
+    h2 {font-size: 1.7em;}
+    h3 {font-size: 1.5em;}
+    
     .container  {
         margin-left: 15px;
         margin-right: 15px;
 
     }
+
 }
 
-
-@media (min-wdith:751px), (max-width:850px) {
-    nav li {
-        font-size:small;
-    }
-    h1 {font-size: 2.2em;}
-    h2 {font-size: 1.7em;}
-    h3 {font-size: 1.5em;}
-}
-
-@media (max-width:750px) {
+@media (max-width:550px) {
     nav a {
         font-size: 0.8em;
     }
@@ -503,7 +496,7 @@ figure.level {
     }
 }
 
-@media (max-width: 750px ) {
+@media (max-width: 550px ) {
     .imgfade {
         float:none;
         /*display:inline-block;*/
@@ -536,10 +529,10 @@ figure.level {
         display: block;
     }
     
-    header img {
-        width:300px;
-        float:none;
+    header  img {
+        width: 200px;   
     }
+    
     
     header .constrainer {
         max-width: 550px;
@@ -552,10 +545,12 @@ figure.level {
     }
     
     header nav {
-        position: static;
+        position: absolute;
+        top: 0px;
+        right: 5px; 
         display:block;
         float:none;
-        width: 322px;
+        width: 100px;
         margin-left:auto;
         margin-right:auto;
     }
@@ -581,12 +576,13 @@ figure.level {
     header nav li {
         border-left: 0px;
         border-bottom: 0px;
-        background-color:#C3D2C9;
-        width:initial;
+        /*background-color:#C3D2C9;*/   
+        width:100px;
         margin-left: 1px;
         font-size: small; 
         padding-left:2px;
         padding-right:2px;
+        floating:none;
     }
     
     header nav li a {
@@ -601,7 +597,7 @@ figure.level {
     }
     
     .container {
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 20px;
         margin-left:2ch;
         margin-right:2ch;
@@ -621,5 +617,18 @@ figure.level {
        position:static;
        display:inline-block;
        
+    }
+    
+    .drop {
+        left:-20px;
+        bottom:-29px;
+    }
+    
+    body > header {
+        text-align: left;   
+    }
+    
+    header {
+        position:relative;  
     }
 }

@@ -15,7 +15,7 @@ with some css to make it all look nice.
 * [pictures.html](# "save:| go pages/pictures.md")
 * [nuts-and-bolts.html](# "save:| go pages/nuts-and-bolts.md")
 * [start-at-the-beginning.html](# "save:| go pages/start-at-the-beginning.md")
-* [okay-so-youre-sort-of-like.html](# "save:| go pages/okay-so-youre-sort-of-like.md")
+* [ok-so-youre-sort-of-like.html](# "save:| go pages/ok-so-youre-sort-of-like.md")
 * [i-get-it-but-what-about.html](# "save:| go pages/i-get-it-but-what-about.md")
 * [index.html](# "save:| go pages/index.md ")
 * [where-can-i-learn-more.html](# "save:| go pages/where-can-i-learn-more.md")
@@ -157,7 +157,7 @@ options.
         + [Nut and Bolts](nuts-and-bolts.html)
     * <button>How it works</button>
         + [Start at the beginning](start-at-the-beginning.html)
-        + [Okay, so you're sort of like ...](okay-so-youre-sort-of.html)
+        + [OK, so you're sort of like ...](ok-so-youre-sort-of-like.html)
         + [I get it, but what about ...](i-get-it-but-what-about.html)
         + [Where can I learn more?](where-can-i-learn-more.html)
     * <button>Prospective Families</button>
@@ -688,45 +688,39 @@ make sure the background covers.
 [media queries]()
 
     
-    @media (min-width:751px) {
+    @media (min-width:551px) {
         _":moderate"
         _"nav:drop big size"
     }
     
-    @media (min-wdith:751px), (max-width:970px) {
+
+    @media (min-wdith:551px), (max-width:850px) {
+        nav li {
+           /* font-size:small; */
+        }
+        h1 {font-size: 2.2em;}
+        h2 {font-size: 1.7em;}
+        h3 {font-size: 1.5em;}
+        
         .container  {
             margin-left: 15px;
             margin-right: 15px;
 
         }
+
     }
 
-
-    @media (min-wdith:751px), (max-width:850px) {
-        nav li {
-            font-size:small;
-        }
-        h1 {font-size: 2.2em;}
-        h2 {font-size: 1.7em;}
-        h3 {font-size: 1.5em;}
-    }
-
-    @media (max-width:750px) {
+    @media (max-width:550px) {
         _":moderate small"
     }
 
-    @media (max-width: 750px ) {
+    @media (max-width: 550px ) {
         _":small"
     }
 
     
 [moderate]()
 
-    figure.news {
-        float:left;
-        margin-left:5px;
-        margin-right:5px;
-    }
 
     header nav ul li {
         padding-left:0px;
@@ -855,11 +849,11 @@ both centered.
         margin-right: auto;
         display: block;
     }
-    
-    header img {
-        width:300px;
-        float:none;
+
+    header  img {
+        width: 200px;   
     }
+
     
     header .constrainer {
         max-width: 550px;
@@ -872,10 +866,12 @@ both centered.
     }
 
     header nav {
-        position: static;
+        position: absolute;
+        top: 0px;
+        right: 5px; 
         display:block;
         float:none;
-        width: 322px;
+        width: 100px;
         margin-left:auto;
         margin-right:auto;
     }
@@ -901,12 +897,13 @@ both centered.
     header nav li {
         border-left: 0px;
         border-bottom: 0px;
-        background-color:#C3D2C9;
-        width:initial;
+        /*background-color:#C3D2C9;*/   
+        width:100px;
         margin-left: 1px;
         font-size: small; 
         padding-left:2px;
         padding-right:2px;
+        floating:none;
     }
 
     header nav li a {
@@ -921,7 +918,7 @@ both centered.
     }
 
     .container {
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 20px;
         margin-left:2ch;
         margin-right:2ch;
@@ -943,6 +940,18 @@ both centered.
        
     }
 
+    .drop {
+        left:-20px;
+        bottom:-29px;
+    }
+
+    body > header {
+        text-align: left;   
+    }
+
+    header {
+        position:relative;  
+    }
 
 
 

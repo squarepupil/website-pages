@@ -1,4 +1,4 @@
-OK, so you’re sort of like…
+OK, so you’re sort of like...
 ---
 
 Note: This page is a reprint of a publication produced by Fairhaven School
@@ -15,7 +15,7 @@ laid out and comparisons are not made from every angle. We hope that the
 explanations below serve to clarify what the Sudbury model is really about,
 and what it is not.
 
-. . . A MONTESSORI SCHOOL?  There are some ways in which the Sudbury model is
+... A MONTESSORI SCHOOL?  There are some ways in which the Sudbury model is
 similar to the Montessori approach. Children in both settings are allowed more
 freedom to make decisions about what interests them and how to pace themselves
 than in most other schools. Both models also hold the basic assumption that
@@ -32,7 +32,7 @@ expectation that one learn multiplication before negative numbers or how to
 draw a circle before a square. Interest is the only criterion for engaging in
 any activity, and satisfaction the only evaluation of success.
 
-. . .A WALDORF SCHOOL?  Like Waldorf schools, Sudbury schools care about the
+... A WALDORF SCHOOL?  Like Waldorf schools, Sudbury schools care about the
 whole child. We are not only interested in academic success, but in the
 happiness and full human potential of each individual. Like Waldorf schools,
 we do not push children to read early, as traditional schools do. We both
@@ -61,7 +61,7 @@ change -- society according to their own interests, experience, knowledge, and
 goals.
 
 
-. . . A PROGRESSIVE SCHOOL?  Sudbury schools believe, as progressive school
+... A PROGRESSIVE SCHOOL?  Sudbury schools believe, as progressive school
 reformers do, that traditional schooling is not working. Both identify
 authoritarian teaching and administration as problems, and seek to reduce the
 stresses students experience in being coerced into learning and evaluated by
@@ -103,7 +103,7 @@ nothing), and avoid parental pressure, than it is to schedule one's own life,
 wrestle with one's own questions, learn how to seek the answers, and master
 one's own destiny.
 
-. . . HOMESCHOOLING?  There is a particular philosophy of homeschooling, often
+... HOMESCHOOLING?  There is a particular philosophy of homeschooling, often
 referred to as "unschooling," which shares many similarities with the Sudbury
 model. John Holt was its best known proponent, and his writings have been
 invaluable to us in helping to explain just how learning can happen without
@@ -129,7 +129,7 @@ example. In most homeschooling families, the parent sees him or herself as
 ultimately responsible for the child's education, while at Sudbury schools,
 that responsibility rests squarely with the child.
 
-. . .STUDENT GOVERNMENTS IN TRADITIONAL SCHOOLS?  Sudbury School Meetings are
+... STUDENT GOVERNMENTS IN TRADITIONAL SCHOOLS?  Sudbury School Meetings are
 similar to student governments only in that they are composed of students. But
 the School Meeting is a participatory democracy, where every student and staff
 member has the option of a direct vote in every decision made. Student

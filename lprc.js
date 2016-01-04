@@ -4,6 +4,8 @@ module.exports = function (Folder, args) {
     if (args.file.length === 0) {
         args.file = ["project.md"];
     }
+
+    //out is to be checked in, output is not. put images and such in output. that is to be put on the server. Out is for seeing differences in the actual html files. 
     args.build = ["out","output"];
     args.src = ".";
 
