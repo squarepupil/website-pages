@@ -1,6 +1,9 @@
 How do we enroll?
 ---
 
+![Bouncing to get in](img/jump.jpg)
+
+
 #### Step 0: Open house
 
 Although they are not mandatory steps for enrollment, we do encourage families
@@ -51,6 +54,9 @@ commitment.
 In addition, as discussed in person, tuition and the parent equity share are
 due upon enrollment though we can accommodate a flexible payment plan.
 
+
+![Just waiting for a decision](img/more-trees.jpg)
+
 ##### Step 4: Join our community
 
 Once formally enrolled, it is important to keep the lines of communication
@@ -60,7 +66,8 @@ through the adjustment. Additionally, our current parents have been there and
 are happy to support new parents through the transition. 
 
 In addition to linking parents up directly, we also hold parent talk abouts
-where we gather, eat, and discuss our experiences and trials. 
+where we gather, eat, and discuss our experiences. 
 
-Our [attendance policy](nuts-and-bolts.md), while flexible, is also intended
-to ensure the student becomes a full member of our community. 
+Our [attendance policy](nuts-and-bolts.md#attendance), while flexible, is also
+intended to ensure the student becomes a full member of our community. 
+

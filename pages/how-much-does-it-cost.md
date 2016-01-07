@@ -1,41 +1,50 @@
-How much does it cost?
+How much does it cost? 
 ---
 
-Current tuition is $6,125 for the first student in a family, $4,595 for the
-second, and $3,450 for each additional student.
 
-We do have a Financial Aid program for eligible enrolled families.
+There are two main financial obligations to enrolling at Arts & Ideas: tuition
+and the Parent Equity Program. Besides these costs, there are no other
+mandatory financial obligations to enrolling (no textbook or uniform fees, for
+example).
 
-Additionally, the school requires families to participate in our Parent Equity
-Program. We discuss the details of this program in the interview.
-This is what allowed the community to support and fund the purchase of 
-the school's permanent home. 
+### Tuition 
 
-### Payment policy
+Current tuition is $6,125 per year for the first child in a family, $4,595
+for the second, and $3,450 for any additional children. Tuition is decided
+each year by majority vote of the Arts & Ideas Assembly which consists
+of parents, staff, and students. For students enrolling part way through
+the school year, tuition is prorated to reflect the amount of school time
+they will be using. 
 
-Students may enroll at any time during the school year, subject to
-availability. In order to build a stable environment at the school and a
-successful experience for each student, it is important that each family trust
-the process of self-initiated learning and commit to the long-term process of
-community building. Accordingly, we emphasize the importance that all students
-and parents must be willing to commit to the school for the duration of the
-academic year. Students often need time to adjust to a new environment and
-different expectations.
 
-While we encourage families to remit payment for the full year’s tuition upon
-enrollment, we understand the preference for some families to participate in
-one of our two monthly installment payment plans. Since A&I is a small school,
-continued operations rely heavily upon timely payment of tuition by all
-attending families. Accordingly, a late fee will be charged for all late
-payments. As we truly enjoy seeing our students every day, we request that
-families keep their account current so that the student’s do not need to
-disrupt their attendance.
+### Parent Equity Program
 
-### Assembly
+![Owning a building needs capital](img/building.jpg)
 
-The general financial decisions are decided by majority
-vote of the Arts & Ideas Assembly - composed of students, parents, and staff -
-in its spring meeting.
+The Parent Equity Program is a capital raising program designed to facilitate
+the school’s move from its former rented location to the current owned
+facilities (as of November 2015). The program was formulated by
+the A&I Assembly with the help of a consultant exclusively specializing in
+independent schools.  As approved by the
+Assembly, participation in the Parent Equity Program is mandatory for all
+enrolled families. The program is very similar to ones that many other
+self-funding schools use; the details of the PEP are discussed during the
+family interview. 
 
-This includes setting th tuition, the parent equity requirement, and the
-budgeted amount of financial aid.  
+### Payment Plans
+
+While the enrollment contract holds each family accountable for full tuition
+payments, we do have the flexibility to offer payment plans for those that
+need or prefer them. Typically, we offer two plans: a 9 month plan where
+families pay a chunk of tuition monthly during the school year only, or a 12
+month plan where families can pay less per month by spreading payments out
+over the summer. We work with each family individually to figure out the best
+solution for everyone. 
+
+### Financial Aid
+
+Arts & Ideas is committed to making our school available and accessible to all
+families who are ready to enroll and thus have a financial aid program
+available to enrolled and eligible families. Financial aid is handled on a
+private, case by case basis by our Financial Aid Committee. 
+    

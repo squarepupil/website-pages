@@ -591,11 +591,35 @@ _"css reset"
 
 
 
+
     .event:visited {
         color:#00e;
     }
     
     _":media queries"
+    
+    /*TEMPORARY*/
+
+    @font-face {
+       font-family : "bebas";
+       src : url("bebas.ttf");
+    }
+
+    h1, h2, h3, h4 {
+        font-family: bebas, serif
+    }
+
+    .container img {
+        width:360px;
+        float:right;
+        padding-left: 10px;
+        clear:right;
+    }
+
+    .drop ul ul li {
+        padding-top:5px;
+        border-bottom: solid 1px;
+    }
 
 [header]()
 

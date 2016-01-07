@@ -1,6 +1,8 @@
 2015-16 Calendar
 ---
 
+![When do we pack up?](img/trashing.jpg)
+
 September 9: First day of school!
 
 

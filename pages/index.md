@@ -1,6 +1,8 @@
 
 ---
 
+![Rain](img/rain.jpg)
+
 Children are amazing people. They are growing bundles of energy, exploring
 life and all of its many complexities. 
 
@@ -9,6 +11,8 @@ reality. Just as scientists work with models to study aspects of a situation,
 children take aspects of life and play with them in order to understand them.
 Along the way, they practice communication, problem-solving, leadership, and
 creativity, as well as reading, writing, and math.
+
+![Tree climbing is fun](img/high.jpg)
 
 As they play and learn, children also practice how to express and cope with
 the range of human emotions. They learn from their own experiences and help
@@ -19,6 +23,8 @@ How do we know all this? Because we see this every day at our school. Our
 children are given the freedom to be children and thus, they learn to be
 adults.  They make their own decisions about what to do and how to fit into
 their own authentic community.
+
+![Ladies](img/ladies.jpg)
 
 What do children do at our school?  They are playing, socializing, thinking
 and observing, planning events, and doing projects of their own. They may be
@@ -36,6 +42,8 @@ explore, how to ask questions, how to master something that interests them,
 and how to take failure as well as success in stride as steps towards
 achieving their own goals. 
 
+![Teddy bear](img/teddy.jpg)
+
 The children and staff are all members of the school community and learn from
 one another. The staff ensure that the school environment is safe,
 appropriately supportive, and run in a democratic fashion.  All school members
@@ -51,3 +59,4 @@ Alternative education takes a whole new meaning at our school with our focus
 on learning instead of teaching. 
 
 
+![Our building 4915 Holder Ave](img/front-building.jpg)

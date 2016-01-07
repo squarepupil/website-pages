@@ -1,6 +1,8 @@
 Our Story
 ---
 
+![Rocky story](img/rocking.jpg)
+
 
 Arts & Ideas Sudbury School is a 21st-century school in Baltimore where
 students ages 5 through 18 learn, explore, and grow in a stimulating,
@@ -14,16 +16,16 @@ own children and the Baltimore community. Before starting Arts & Ideas, the
 founders were involved with pre-school groups that were focused on what
 children naturally do best - play! While observing their own young children
 grow and learn, the founders recognized that play - which is how all children
-learn to interpret and manage their world - should not stop when a child turns
-5. They wanted a school where play (which we define as any activity with no
+learn to interpret and manage their world - should not stop when a child turns 5.
+They wanted a school where play (which we define as any activity with no
 known outcome) was not squashed, or limited to a certain amount of time per
 day, or only available to the youngest students. Instead, they wanted a school
 that celebrated and encouraged play for all students of all ages. After years
-of planning and researching, Arts & Ideas opened it’s doors in 2008 in a small
+of planning and researching, Arts & Ideas opened its doors in 2008 in a small
 rented space with just 9 students. 
 
-$The school first opened in the upstairs hall of the Church of the Messiah in
-the Hamilton/Lauraville neighborhood in Northeast Baltimore. While the space
+The school first opened in the upstairs hall of the Church of the Messiah in
+the Hamilton/Lauraville neighborhood of Northeast Baltimore. While the space
 at the church was lovely - bright, welcoming, and warm - the school quickly
 began to outgrow the available square footage there. Another obstacle at the
 church was the sharing of space - other groups used some of our rooms, meaning
@@ -46,15 +48,19 @@ expensive.
 So, we said goodbye to Mt. Washington and came back to our original home at
 the Church of the Messiah to regroup and plan our next step. Throughout year
 7, the A&I community (parents, staff, and students) worked tirelessly to
-secure our true “forever home.” Finally, in the summer before our 8th year,
+secure our true "forever home". Finally, in the fall of our 8th year,
 Arts & Ideas purchased our very own building!
+
+![Victorious arrival](img/victory-gym.jpg)
 
 Now in our eighth year, Arts & Ideas is a thriving community with over 50
 students of all ages working together to create, maintain, and nourish a free
-and democratic school culture in our new building that’s all our own. 
+and democratic school culture in our new building! 
 
-We invite you to explore the resources on this website, read more about the
-details of our school, and consider contacting us.
+We invite you to explore the [model on this
+website](start-at-the-beginning.html), read more about the
+[details of our school](nuts-and-bolts.html), and [contact
+us](contact-us.html).
 
 There's no other school quite like this in Baltimore!
 

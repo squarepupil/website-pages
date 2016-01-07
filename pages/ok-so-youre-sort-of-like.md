@@ -1,6 +1,9 @@
 OK, so you’re sort of like...
 ---
 
+
+![Diagramming it out](img/whiteboard-use.jpg)
+
 Note: This page is a reprint of a publication produced by Fairhaven School
 Incorporated and is reproduced here with their permission.
 

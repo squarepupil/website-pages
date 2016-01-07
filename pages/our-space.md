@@ -1,7 +1,10 @@
 Our Space
 ---
 
-After years of searching and planning, Arts & Ideas thrilled to finally be in
+![Gym room](img/chaya-mid.jpg)
+
+
+After years of searching and planning, Arts & Ideas is thrilled to finally be in
 our very own building! Our main building is about 12,000 square feet spaced
 over 4 floors, including a lovely historic staircase and a modern elevator. In
 the basement, we have a rec room with lockers and sports equipment, as well as
@@ -23,6 +26,9 @@ house, another building on the property that’s about 900 square feet. We love
 having the music room in a separate building so that all the musicians at our
 school can rock out as loud as they want!
 
+
+![Just some lunch](img/some-lunch.jpg)
+
 One tricky part of discovering the perfect home for the school was find a
 location that had both accessibility to urban resources like shops and
 restaurants, but also had it’s own green space for outdoor play at school.
@@ -34,7 +40,8 @@ transformed into a natural playscape right in the heart of Baltimore city. The
 surrounding neighborhood provides safe, residential streets that are perfect
 for casual strolls on warmer days.
 
-We’d love to show you our beautiful new campus - come check it out at our next
-open house! [link to open house schedule]
+We’d love to show you our beautiful new campus - come check it out at our [next
+open house](https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform)!
 
 
+![Lunch Shelves](img/lunch-shelves.jpg)

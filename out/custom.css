@@ -385,6 +385,7 @@ figure.level {
 
 
 
+
 .event:visited {
     color:#00e;
 }
@@ -631,4 +632,27 @@ figure.level {
     header {
         position:relative;  
     }
+}
+
+/*TEMPORARY*/
+
+@font-face {
+   font-family : "bebas";
+   src : url("bebas.ttf");
+}
+
+h1, h2, h3, h4 {
+    font-family: bebas, serif
+}
+
+.container img {
+    width:360px;
+    float:right;
+    padding-left: 10px;
+    clear:right;
+}
+
+.drop ul ul li {
+    padding-top:5px;
+    border-bottom: solid 1px;
 }

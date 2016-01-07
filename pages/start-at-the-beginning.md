@@ -1,6 +1,9 @@
 Start at the beginning
 ---
 
+![Sit back and realx](img/tree-relaxing.jpg)
+
+
 OLD ATTEMPT FOR “MODEL”. Had idea to break it into three parts: individual,
 community, and democratic justice. 
 
@@ -63,7 +66,10 @@ younger ones is that of challenge while the advantage for the older ones is
 that of compassion. The free exchange of skills and interests benefits both
 sides tremendously and is a huge asset for this model.
 
+
 ### Acceptance
+
+![Stripes of every color](img/hair.jpg)
 
 A key component of this model is the acceptance of the individual. There is no
 notion that a student needs to be doing such-and-such a thing in order to be a
@@ -136,6 +142,9 @@ At the heart of our democratic justice is the judicial committee.
 ## School Meeting
 
 School Meeting is the foundation for our justice system. It is the body that
+
+
+![Age mixing and smiles](img/smiles.jpg)
 
 ## Corporations and Clerkships
 
