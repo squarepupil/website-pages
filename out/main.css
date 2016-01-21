@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+   font-family : "bebas";
+   src : url("bebas.ttf");
+}
+
+header {
+    width:100%;
+    position: fixed;
+    top : 0;    
+    font-family: bebas, serif;
+    z-index:20;
+}
+
+header a {
+    color:black;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline; 
+}
+
+header ul {
+    display: inline-block;
+    margin: 0px;
+}
+
+header li {
+    list-style-type: none;
+    display:inline-block;
+}
+nav .info {
+    width: 100%;
+    margin:0px;
+    background-color:rgba(76, 148, 33, 0.78);
+}
+
+nav .info .inner {
+    max-width: 800px;
+    height:25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:9px;
+    background-color:#71A952;
+}
+.info .inner > a {
+    float:left;
+}
+.info .inner > ul {
+    float:right;
+}
+
+.info .inner li {
+    padding-left: 15px;
+}
+
+.info .inner ul a {
+    color:#f9f9f9;
+    font-size:smaller;
+}
+.content {
+    position:relative;
+    width : 790px;
+    margin-left:auto;
+    margin-right:auto;
+    height: 20px;
+    font-size:20px;
+    background-color:white;
+    padding:5px;
+    padding-bottom:8px;
+    box-shadow: 0px 2px 10px grey;
+}
+
+
+.content .inner div {
+    display:inline-block;
+    float:left;
+}
+
+.content li, .content img {
+    margin-left:10px;
+}
+
+.content .inner {
+    margin-left:auto;
+    margin-right:auto;
+}
+@media (max-width:800px) {
+    #details a:hover {  
+        text-decoration: none;    
+    }
+}
+#logo a {
+    position:relative;
+    top:-30px;
+    z-index:20;
+    width:70px;
+    height:70px;
+    border: black 2px solid;
+    border-radius:50%;
+    background-color:white;
+    box-shadow: 0px 2px 5px grey;
+    display:inline-block;
+    margin-left:10px;
+}
+
+#logo img {
+    display:inline-block;
+    width:40px;
+    margin-left:15px;
+    margin-top:3px;
+}
+.drop-downs {
+    background-color:#AEAEAE;
+    z-index:10;
+    width:800px;
+    margin-left: auto;
+    margin-right:auto;
+    position:relative;
+    height:0px;
+    font-size:20px;
+    box-shadow: inset -2px -2px 2px grey, inset 2px 2px 2px grey ;
+    -webkit-transition: height .2s;
+    transition: height .2s;
+}
+
+.hide {
+   display:none;
+}
+
+.open {
+   height:33px; 
+}
+
+.closed {
+    height:0px;
+   overflow-y:hidden;
+}
+
+.drop-downs ul.visible {
+    height:auto;
+    position:absolute;
+    top:5px;
+    margin-left:16px;
+    -webkit-transition: height .2s;
+    transition: height .2s;
+}
+
+.drop-downs li:nth-child(n+2) {
+    margin-left:20px;
+}
+
+.drop-downs ul:nth-child(1) li:nth-child(3) {
+    margin-right:104px;
+}
+
+.drop-downs ul:nth-child(2) li:nth-child(3) {
+    margin-right:85px;
+}
+
+.drop-downs ul:nth-child(3) li:nth-child(3) {
+    margin-right:116px;
+}
+
+#details canvas {
+    width:10px;
+    height:10px;
+    vertical-align:middle;
+    padding-left:2px;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s ;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+#details .active {
+    text-decoration: underline;
+}
+
+canvas.down {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+@media (min-width:800px) {
+    html {
+        background: url("img/background.jpg") no-repeat center top fixed;
+        background-color: #AEAEAE;
+    }
+}
+
+main {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 100px;
+    width: 800px;
+    height:1000px;
+    background-color:white;
+}

@@ -1,28 +1,16 @@
 module.exports = function (Folder, args) {
 
-
     if (args.file.length === 0) {
         args.file = ["project.md"];
     }
-
-    //out is to be checked in, output is not. put images and such in output. that is to be put on the server. Out is for seeing differences in the actual html files. 
     args.build = ["out","output"];
-    args.src = ".";
-
-
-    var jade = require('jade');
-    var md = require('markdown-it')({
-        html:true,
-        linkify:true
-    }).use(require('markdown-it-anchor'));
-    
-    var cheerio = require('cheerio');
-
+    //args.src = ".";
     if (!Folder.prototype.local) {
         Folder.prototype.local = {};
     }
-    Folder.prototype.local.md = md; 
 
+    var jade = require('jade');
+    
     Folder.sync("jade" , function (code, args) {
         options = args.join(",").trim();
         if (options) {
@@ -32,11 +20,21 @@ module.exports = function (Folder, args) {
         }
         return jade.render(code, options); 
     });
-
+    
+    var md = require('markdown-it')({
+        html:true,
+        linkify:true
+    }).use(require('markdown-it-anchor'));
+    
+    
+    Folder.prototype.local.md = md; 
+    
     Folder.sync( "md", function (code, args) {
         return  md.render(code);
     });
-
+    
+    var cheerio = require('cheerio');
+    
     Folder.sync( "cheerio" , function(code, args) {
         var selector = args.shift(); 
         var method = args.shift();
@@ -46,7 +44,6 @@ module.exports = function (Folder, args) {
         el$[method].apply(el$, args);
         return $.html();
     });
-
     Folder.sync( "replace" , function(code, args) {
         var selector, replacement;
         var n = args.length;
@@ -58,8 +55,7 @@ module.exports = function (Folder, args) {
         }
         return $.html();
     });
-   
-
+    
     var postcss      = require('postcss');
     
     Folder.commands.postcss = function (input, args, name) {
@@ -82,11 +78,9 @@ module.exports = function (Folder, args) {
             doc.gcd.emit("text ready:" + name, result.css);
         });
     };
-
-     Folder.plugins.postcss = {
+    
+    Folder.plugins.postcss = {
          autoprefixer : require('autoprefixer')
-     };
-  
+    };
 
-};
-
+};    
