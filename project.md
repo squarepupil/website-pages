@@ -37,6 +37,69 @@ This is a set of markdown+ files that are used to get the content in.
 We will automatically load all the files in the pages directory and process
 them. 
 
+[file reading]()
+    
+This takes in a file and outputs a command that will read in the file, process
+it, and then save it. It assumes the file is of the form `name.ext` and the
+arguments are of the form `final extension, initial extension, cmd1, cmd2,
+...`
+
+A generated string ought to look like `_"|echo name.md | readfile |
+    ... | savefile name.html"`
+
+    function (input, args) {
+        var path = require('path');
+        bits = path.parse(input);
+        if (bits.ext !== args[2]) {
+            return '';
+        }
+        return '\_"|echo ' + args[0] + '/' + input + '|' + args[3] + ' '  +
+            ' | savefile ' + bits.name + args[1] + '"\n';
+    }
+
+[fileCompile](# "define:")
+
+
+[source reading]()
+
+    _"|echo pages |readdir | .mapc fileCompile, pages, .html, .md, 
+        _':src compiler' | .join \n | compile bogu "
+
+
+`[src compiler](# ": | log | jsStringLine |log")`
+
+
+[src compiler]()
+
+    readfile | md | append \_"template", main 
+
+
+[junk]()
+
+    readfile  
+    | .split \n---\n 
+    | defaults :css, :hero, :footer, \_'footer', :nav, \_'nav', :bottom
+    | minidoc :title, :body 
+    | .mapc .trim 
+    | .apply :body, md  
+    | log 
+    | .compile html::template 
+    | syntax 
+
+[stringing]()
+
+    function (input) {
+        return input.
+            split("\n").
+            map(function (el) {
+                return '"' + el + '"';
+            }).
+            join('+\n');
+    }
+
+[jsStringLine](# "define:")
+
+
 
 ## Template
 
@@ -56,7 +119,7 @@ HTML elements for replacing.
         _":shim"
       </head>
       <body>
-        <main><p>Some content</p></main>
+        <main></main>
         <header>_"nav::nav"</header>
         <footer></footer>
         <script>_"nav::js | .join \n"</script>
@@ -82,29 +145,128 @@ We need to load up the [nav](nav.md "load:")
 
 
     _"css reset"
+    _"writ"
+
+    * {
+        box-sizing: border-box; 
+    }
 
     @font-face {
        font-family : "bebas";
        src : url("bebas.ttf");
     }
 
-    _"nav::css | .join \n "
+The background 
+
+    html {
+        background-color:rgb(76, 148, 33);
+    }
 
     @media (min-width:800px) {
         html {
             background: url("img/background.jpg") no-repeat center top fixed;
-            background-color: #AEAEAE;
+            background-size: 100% 100%;
+            background-attachment: fixed;
         }
     }
 
     main {
+        background-color:white;
+        width:60%;
+        margin-top:100px;
         margin-left:auto;
         margin-right:auto;
-        margin-top: 100px;
-        width: 800px;
-        height:1000px;
-        background-color:white;
+        padding-top:0.5rem;
     }
+
+    p {
+        margin: 1rem 1rem 1rem 1rem;  
+    }
+
+    _"nav::css | .join \n  "
+
+    @media (min-wdith:1000px) {
+        _"nav::big | .join \n "
+        _":big"
+    }
+
+    @media (min-width:800px, max-width:999px) {
+        _"nav::large| .join \n "
+        _":large"
+    }
+
+    @media (min-width:600px, max-width:799px) {
+        _"nav::moderate| .join \n "
+        _":moderate"
+    }
+
+    @media ( max-width:599px) {
+        _"nav::small| .join \n "
+        _":small"
+    }
+
+
+
+[big]()
+
+[large]()
+
+[moderate]()
+
+[small]()
+
+[junk]()
+    
+## sass sample
+
+    $color-main:#333;
+    $file: "img/awesome.jpg";
+
+    @mixin widths ($base: 5px) {
+        width: $base;
+        height: 2*$base;
+    }
+
+    header {
+        width: 5px;
+        font : {
+            size:54px;
+            family: Jubilat, Georgia;
+        } 
+        @include widths(50px);
+        
+        &:hover {
+            color:$color-main;
+            @include widths;
+        }
+
+        body.store & {
+            background {
+                color: lighten($color-main, 40%);
+                img: url($file);
+            }
+        }
+
+        .alert {
+            width:5px;
+            color:red;
+        }
+
+        .alert-positive {
+            @extend .alert;
+            color:green;
+        }
+
+        #logo {
+            float:left;
+        }
+    }
+    
+    .alert {
+        height:10px;
+    }
+
+[sass](# "transform: | sass | log")
 
 
 ## Watch
@@ -118,7 +280,7 @@ webpage.
     var cp = require('child_process');
     var processing = false;
     var files = ['project.md'];
-    var dir =['pages', 'src'];
+    var dir =['src/pages', 'src'];
 
     var compile = _":compile";
 
@@ -210,6 +372,8 @@ Probably can remove it.
 
     _":postcss"
 
+    _":sass"
+
 
 [jade]()    
 
@@ -279,7 +443,16 @@ be a selector and the html replacement. This is like the standard sub command.
         }
         return $.html();
     });
-   
+
+This takes the incoming code as a replacement 
+
+    Folder.sync("append", function (input, args) {
+        var $ = cheerio.load(args[0]);
+        $(args[1]).append(input);
+        return $.html();
+    });
+
+ 
 
 [postcss]() 
 
@@ -313,8 +486,41 @@ be loaded here; right now it is just autoprefixer. Then it can be used as
     Folder.plugins.postcss = {
          autoprefixer : require('autoprefixer')
     };
+
+
+[sass]()
+
+This takes in some text and compiles it into css using sass. Probably want to
+figure out how to throw in libraries or something. 
+
+    var sass = require('node-sass');
+
+    Folder.commands.sass = function (input, args, name) {
+        var doc = this;
+        sass.render({data: input,
+            outputStyle: "compact"
+        }, function (err, result) {
+            if (err) {
+                doc.log("Error in SASS: " + err.message);
+            } else {
+                doc.gcd.emit("text ready:" + name, result.css.toString("utf8"));
+            }
+        });
+    }
   
 
+## pbcopy
+
+This works on macs.
+
+    function pbcopy(data) { 
+        var proc = require('child_process').spawn('pbcopy');
+        proc.stdin.write(data);
+        proc.stdin.end();
+        return data;
+    }
+
+[clip](# "define:")
 
 ## package
 
@@ -362,10 +568,15 @@ The requisite npm package file.
 
 by [James Taylor](https://github.com/jostylr "npminfo: jostylr@gmail.com ; 
     deps: ;
-    dev: litpro 0.11.1, cheerio 0.19.0, markdown-it 4.4.0, 
+    dev: litpro 0.12.1, cheerio 0.19.0, markdown-it 4.4.0, 
         markdown-it-anchor 2.3.0, 
         jade 1.11.0, postcss 5.0.4, autoprefixer 6.0.0,
-        gm 1.18.1, pdf-image 1.0.1 ")
+        gm 1.18.1, pdf-image 1.0.1, node-sass 3.4.2 ")
+
+
+Need to add in https://www.npmjs.com/package/css-mqpacker for packing media
+queries, node-sass for doing sass queries,  css-nano for minimfications. 
+
 
 
 ## CSS Reset
@@ -419,3 +630,79 @@ by [James Taylor](https://github.com/jostylr "npminfo: jostylr@gmail.com ;
         border-spacing: 0;
     }
 
+## Writ
+
+This is part of writ.css
+
+    /*!
+     * Writ v1.0.2
+     *
+     * Copyright Â© 2015, Curtis McEnroe <curtis@cmcenroe.me>
+     *
+     * https://cmcenroe.me/writ/LICENSE (ISC)
+     */
+
+    /* Fonts, sizes & vertical rhythm */
+
+    html {
+      font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
+      font-size: 16px;
+      line-height: 1.5rem;
+    }
+
+    code, pre, samp, kbd {
+      font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+      font-size: 0.833rem;
+    }
+
+    kbd { font-weight: bold; }
+    h1, h2, h3, h4, h5, h6, th { font-weight: normal; }
+
+    /* Minor third */
+    h1 { font-size: 2.488em; }
+    h2 { font-size: 2.074em; }
+    h3 { font-size: 1.728em; }
+    h4 { font-size: 1.44em; }
+    h5 { font-size: 1.2em; }
+    h6 { font-size: 1em; }
+    small { font-size: 0.833em; }
+
+    h1, h2, h3 { line-height: 3rem; }
+
+    /*
+    p, ul, ol, dl, table, blockquote, pre, h1, h2, h3, h4, h5, h6 {
+      margin: 1.5rem 0 0;
+    }
+    ul ul, ol ol, ul ol, ol ul { margin: 0; }
+    */
+    
+    hr {
+      margin: 0;
+      border: none;
+      padding: 1.5rem 0 0;
+    }
+
+    /* Accounting for borders */
+    table {
+      line-height: calc(1.5rem - 1px);
+      margin-bottom: -1px;
+    }
+    pre {
+      margin-top: calc(1.5rem - 1px);
+      margin-bottom: -1px;
+    }
+
+    /* Colors */
+
+    body { color: #222; }
+    code, pre, samp, kbd { color: #111; }
+    a, nav a:visited { color: #00e; }
+    a:visited { color: #60b; }
+    mark { color: inherit; }
+
+    code, pre, samp, thead, tfoot { background-color: rgba(0, 0, 0, 0.05); }
+    mark { background-color: #fe0; }
+
+    main aside, blockquote, ins { border: solid rgba(0, 0, 0, 0.05); }
+    pre, code, samp { border: solid rgba(0, 0, 0, 0.1); }
+    th, td { border: solid #dbdbdb; }

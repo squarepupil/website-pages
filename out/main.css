@@ -46,10 +46,110 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+/*!
+ * Writ v1.0.2
+ *
+ * Copyright Â© 2015, Curtis McEnroe <curtis@cmcenroe.me>
+ *
+ * https://cmcenroe.me/writ/LICENSE (ISC)
+ */
+
+/* Fonts, sizes & vertical rhythm */
+
+html {
+  font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+code, pre, samp, kbd {
+  font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-size: 0.833rem;
+}
+
+kbd { font-weight: bold; }
+h1, h2, h3, h4, h5, h6, th { font-weight: normal; }
+
+/* Minor third */
+h1 { font-size: 2.488em; }
+h2 { font-size: 2.074em; }
+h3 { font-size: 1.728em; }
+h4 { font-size: 1.44em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+small { font-size: 0.833em; }
+
+h1, h2, h3 { line-height: 3rem; }
+
+/*
+p, ul, ol, dl, table, blockquote, pre, h1, h2, h3, h4, h5, h6 {
+  margin: 1.5rem 0 0;
+}
+ul ul, ol ol, ul ol, ol ul { margin: 0; }
+*/
+
+hr {
+  margin: 0;
+  border: none;
+  padding: 1.5rem 0 0;
+}
+
+/* Accounting for borders */
+table {
+  line-height: calc(1.5rem - 1px);
+  margin-bottom: -1px;
+}
+pre {
+  margin-top: calc(1.5rem - 1px);
+  margin-bottom: -1px;
+}
+
+/* Colors */
+
+body { color: #222; }
+code, pre, samp, kbd { color: #111; }
+a, nav a:visited { color: #00e; }
+a:visited { color: #60b; }
+mark { color: inherit; }
+
+code, pre, samp, thead, tfoot { background-color: rgba(0, 0, 0, 0.05); }
+mark { background-color: #fe0; }
+
+main aside, blockquote, ins { border: solid rgba(0, 0, 0, 0.05); }
+pre, code, samp { border: solid rgba(0, 0, 0, 0.1); }
+th, td { border: solid #dbdbdb; }
+
+* {
+    box-sizing: border-box; 
+}
 
 @font-face {
    font-family : "bebas";
    src : url("bebas.ttf");
+}
+html {
+    background-color:rgb(76, 148, 33);
+}
+
+@media (min-width:800px) {
+    html {
+        background: url("img/background.jpg") no-repeat center top fixed;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+}
+
+main {
+    background-color:white;
+    width:60%;
+    margin-top:100px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:0.5rem;
+}
+
+p {
+    margin: 1rem 1rem 1rem 1rem;  
 }
 
 header {
@@ -81,16 +181,17 @@ header li {
 nav .info {
     width: 100%;
     margin:0px;
-    background-color:rgba(76, 148, 33, 0.78);
+    background: -webkit-linear-gradient(left, rgba(76, 148, 33, 0.78), rgb(76, 148, 33) 20%, rgb(76, 148, 33) 80%, rgba(76, 148, 33, 0.78));
+    background: linear-gradient(90deg, rgba(76, 148, 33, 0.78), rgb(76, 148, 33) 20%, rgb(76, 148, 33) 80%, rgba(76, 148, 33, 0.78));
 }
 
 nav .info .inner {
-    max-width: 800px;
+    width: 60%;
     height:25px;
     margin-left: auto;
     margin-right: auto;
     padding-top:9px;
-    background-color:#71A952;
+    /*background-color:#71A952;*/
 }
 .info .inner > a {
     float:left;
@@ -109,10 +210,10 @@ nav .info .inner {
 }
 .content {
     position:relative;
-    width : 790px;
+    width : 60%;
     margin-left:auto;
     margin-right:auto;
-    height: 20px;
+    height: 30px;
     font-size:20px;
     background-color:white;
     padding:5px;
@@ -121,18 +222,30 @@ nav .info .inner {
 }
 
 
-.content .inner div {
+#details, #pathway {
     display:inline-block;
+    width: 45%;
+}
+
+#details {
     float:left;
 }
 
-.content li, .content img {
-    margin-left:10px;
+#pathway {
+    float:right;
 }
 
-.content .inner {
-    margin-left:auto;
-    margin-right:auto;
+#details ul {
+    float: right;
+}
+
+#logo {
+    display:inline-block;
+    width:10%;
+}
+
+.content li {
+    margin-left:10px;
 }
 @media (max-width:800px) {
     #details a:hover {  
@@ -162,7 +275,7 @@ nav .info .inner {
 .drop-downs {
     background-color:#AEAEAE;
     z-index:10;
-    width:800px;
+    width:60%;
     margin-left: auto;
     margin-right:auto;
     position:relative;
@@ -231,18 +344,22 @@ canvas.down {
             transform: rotate(90deg);
 }
 
-@media (min-width:800px) {
-    html {
-        background: url("img/background.jpg") no-repeat center top fixed;
-        background-color: #AEAEAE;
-    }
+@media (min-wdith:1000px) {
+    
+    
 }
 
-main {
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 100px;
-    width: 800px;
-    height:1000px;
-    background-color:white;
+@media (min-width:800px, max-width:999px) {
+    
+    
+}
+
+@media (min-width:600px, max-width:799px) {
+    
+    
+}
+
+@media ( max-width:599px) {
+    
+    
 }

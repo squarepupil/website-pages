@@ -55,6 +55,11 @@ module.exports = function (Folder, args) {
         }
         return $.html();
     });
+    Folder.sync("append", function (input, args) {
+        var $ = cheerio.load(args[0]);
+        $(args[1]).append(input);
+        return $.html();
+    });
     
     var postcss      = require('postcss');
     
@@ -82,5 +87,20 @@ module.exports = function (Folder, args) {
     Folder.plugins.postcss = {
          autoprefixer : require('autoprefixer')
     };
+    
+    var sass = require('node-sass');
+    
+    Folder.commands.sass = function (input, args, name) {
+        var doc = this;
+        sass.render({data: input,
+            outputStyle: "compact"
+        }, function (err, result) {
+            if (err) {
+                doc.log("Error in SASS: " + err.message);
+            } else {
+                doc.gcd.emit("text ready:" + name, result.css.toString("utf8"));
+            }
+        });
+    }
 
 };    

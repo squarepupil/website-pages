@@ -7,6 +7,10 @@ The third is the drop down menu for the ones with drop downs. Empty otherwise.
 The drop-downs are in their own layer instead of sub-layer so that we can put
 them together and they will be visible when there is no javascript. 
 
+But we organize them into columns so that we can have the logo overlapping in
+the middle without overlapping any text. Also should make it easier to scale.
+The three columns will float to the left. 
+
     nav
         .info
             .inner
@@ -18,15 +22,23 @@ them together and they will be visible when there is no javascript.
                 #logo \_"logo"
                 #pathway \_"pathway|md"
         .drop-downs
-            | \_"model |md"
-            | \_"our |md"
-            | \_"gallery | md"
+            | \_"dd layout| jade | compile model"
+            | \_"dd layout| jade | compile our"
+            | \_"dd layout| jade | compile gallery"
     
-[|nav](# "transform: | jade |compile pointless ")
 
-[css](#css "h5: ")
+
+* [css](#css "h5:")  Common css
+* [big](#big "h5:") Big CSS 1000+ 
+* [large](#large "h5: ")  Large CSS, so between moderate and big, probably
+  800-1000
+* [moderate](#moderate "h5:")
+* [small](#small "h5: ")
+
 
 [js](#js "h5: ")
+
+[|nav](# "transform: | jade |compile pointless ")
 
 
 ##### js
@@ -62,6 +74,14 @@ them together and they will be visible when there is no javascript.
         display:inline-block;
     }
 
+##### big
+
+##### large
+
+##### moderate
+
+##### small 
+
 
 ## Info
 
@@ -74,16 +94,16 @@ an lightly-transparent background of green.
     nav .info {
         width: 100%;
         margin:0px;
-        background-color:rgba(76, 148, 33, 0.78);
+        background: linear-gradient(90deg, rgba(76, 148, 33, 0.78), rgb(76, 148, 33) 20%, rgb(76, 148, 33) 80%, rgba(76, 148, 33, 0.78));
     }
 
     nav .info .inner {
-        max-width: 800px;
+        width: 60%;
         height:25px;
         margin-left: auto;
         margin-right: auto;
         padding-top:9px;
-        background-color:#71A952;
+        /*background-color:#71A952;*/
     }
 
 ### Home
@@ -133,10 +153,10 @@ The actions are the only ul under inner
 
     .content {
         position:relative;
-        width : 790px;
+        width : 60%;
         margin-left:auto;
         margin-right:auto;
-        height: 20px;
+        height: 30px;
         font-size:20px;
         background-color:white;
         padding:5px;
@@ -145,10 +165,34 @@ The actions are the only ul under inner
     }
 
 
-    .content .inner div {
+    #details, #pathway {
         display:inline-block;
+        width: 45%;
+    }
+
+    #details {
         float:left;
     }
+
+    #pathway {
+        float:right;
+    }
+
+    #details ul {
+        float: right;
+    }
+
+    #logo {
+        display:inline-block;
+        width:10%;
+    }
+    
+    .content li {
+        margin-left:10px;
+    }
+
+
+[junk]()
 
     .content li, .content img {
         margin-left:10px;
@@ -192,6 +236,31 @@ The actions are the only ul under inner
         margin-right:0;
     }
 
+
+[example]()
+
+Example of syntax to make varying properties for different sizes.
+
+    #details {
+        width: 90%;
+
+        @import table {
+
+        }
+            B! 1000px;
+            L! 800px;
+            M! 500px;
+            S! 90%;
+    }
+
+
+        W>L, W<=B  {
+            width:50px;
+        }
+
+    #details,  {
+        width :
+    }
 
 
 
@@ -246,13 +315,13 @@ z-index 20.
 
 ##### CSS
 
-The drop-down 
+The drop-down menus  
 
 
     .drop-downs {
         background-color:#AEAEAE;
         z-index:10;
-        width:800px;
+        width:60%;
         margin-left: auto;
         margin-right:auto;
         position:relative;
@@ -397,27 +466,48 @@ the parent.
         }
     }
 
+### dd layout
+ 
+    ul
+        li \_":left | md"
+        li \_":right | md"    
 
 ### Model
+
+[left]()
 
     * [Intro](model.html)
     * [Detailed](details.html)
     * [Comparisons](comparisons.html)
+
+[right]()
+
     * [Confusions](confusions.html)
     * [Resources](resources.html)
 
 ### Our 
 
+
+[left]()
+
     * [Our Story](our-story.html)
     * [Our Space](our-space.html)
     * [Our Staff](our-staff.html)
+
+[right]()
+
     * [Our Structure](our-structure.html)
 
 
 ### Gallery
 
+[left]()
+
     * [Highlights](highlights.html)
     * [Tour](tour.html)
+
+[right]()
+
     * [Activities](activities.html)
     * [Holidays](holidays.html)
 

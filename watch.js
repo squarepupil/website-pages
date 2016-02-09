@@ -2,7 +2,7 @@ var fs = require('fs');
 var cp = require('child_process');
 var processing = false;
 var files = ['project.md'];
-var dir =['pages', 'src'];
+var dir =['src/pages', 'src'];
 
 var compile = function () {
     if (processing) {
