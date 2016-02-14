@@ -11,29 +11,22 @@ But we organize them into columns so that we can have the logo overlapping in
 the middle without overlapping any text. Also should make it easier to scale.
 The three columns will float to the left. 
 
-    nav
-        .info
-            .inner
-                | \_"home"
-                | \_"actions|md"
-        .content
-            .inner
-                #details \_"details|md"
-                #logo \_"logo"
-                #pathway \_"pathway|md"
-        .drop-downs
-            | \_"dd layout| jade | compile model"
-            | \_"dd layout| jade | compile our"
-            | \_"dd layout| jade | compile gallery"
+    .info
+        .inner
+            #home \_"home"
+            .spacer
+            #actions \_"actions|md"
+    .content
+        .inner
+            #details
+                _"details"
+            .spacer \_"logo"
+            #pathway \_"pathway|md"
+
     
 
 
 * [css](#css "h5:")  Common css
-* [big](#big "h5:") Big CSS 1000+ 
-* [large](#large "h5: ")  Large CSS, so between moderate and big, probably
-  800-1000
-* [moderate](#moderate "h5:")
-* [small](#small "h5: ")
 
 
 [js](#js "h5: ")
@@ -47,12 +40,15 @@ The three columns will float to the left.
 
 ##### css
 
+Header will be flexboxed into the top despite being below in source order.
+That will be done in the main layout. 
+
+Here
+
+
     header {
-        width:100%;
-        position: fixed;
-        top : 0;    
         font-family: bebas, serif;
-        z-index:20;
+        width:100%
     }
 
     header a {
@@ -64,6 +60,22 @@ The three columns will float to the left.
         text-decoration: underline; 
     }
 
+    _":layout"
+
+[layout]()
+
+So we want to layout the basic layout of the three layers. 
+
+
+[junk]()
+
+    header {
+        width:100%;
+        position: fixed;
+        top : 0;    
+        font-family: bebas, serif;
+        z-index:20;
+    }
     header ul {
         display: inline-block;
         margin: 0px;
@@ -74,13 +86,15 @@ The three columns will float to the left.
         display:inline-block;
     }
 
-##### big
 
-##### large
 
-##### moderate
 
-##### small 
+
+    M W>600px {
+        
+    }
+
+    
 
 
 ## Info
@@ -89,12 +103,13 @@ This is the info bar at the top of the page. The bar goes the full width with
 an lightly-transparent background of green. 
 
 
-##### CSS
+##### CSSi
 
     nav .info {
         width: 100%;
         margin:0px;
         background: linear-gradient(90deg, rgba(76, 148, 33, 0.78), rgb(76, 148, 33) 20%, rgb(76, 148, 33) 80%, rgba(76, 148, 33, 0.78));
+        padding-bottom:12px;
     }
 
     nav .info .inner {
@@ -112,7 +127,7 @@ Our home page link
 
     <a href="index.html">Arts &amp; Ideas Sudbury School</a>
 
-##### CSS
+##### CSSi
 
 There is only one link that is directly under inner.
 
@@ -129,7 +144,7 @@ A few quick links.
     * [Contact Us](contact.html)
 
 
-##### css
+##### cssi
 
 The actions are the only ul under inner
 
@@ -149,7 +164,7 @@ The actions are the only ul under inner
 ## Content
 
 
-##### CSS
+##### CSSi
 
     .content {
         position:relative;
@@ -207,12 +222,77 @@ The actions are the only ul under inner
 
 ### Details
 
-    * [The Model](#)
-    * [Our School](#)
-    * [Gallery](#)
+The structure is an unordered list for each of the list items is to have the
+first child of the list item be the toggle item (class arrow) and the second
+div to be the drop-down item (class down)
 
-##### CSS
 
+    ul
+        li 
+            _":school"
+        li
+            _":model"
+        ii
+            _":gallery"
+
+
+[school]()
+
+    .arrow: a(href="#") Our School
+    .dropdown
+        ul
+            li: a(href="our-story.html") Our Story
+            li: a(href="our-space.html") Our Space
+            li: a(href="our-staff.html") Our Staff
+        .spacer
+        ul
+            li: a(href="our-structure.html") Our Structure
+
+[model]()
+
+    .arrow: a(href='#') The Model
+    .dropdown
+        ul
+            li: a(href="model.html") Intro
+            li: a(href="details.html") Detailed
+            li: a(href="comparisons.html") Comparisons
+        .spacer
+        ul
+            li: a(href="confusions.html") Confusions
+            li: a(href="resources.html") Resources
+
+
+[gallery]()
+
+    .arrow: a(href='#') Gallery
+    .dropdown
+        ul
+            li: a(href="highlights.html")
+            li: a(href="tour.html")
+        .spacer
+        ul
+            li: a(href="activities.html")
+            lil: a(href="holidays.html")
+
+
+
+##### CSSi
+
+The JS will draw in the arrows. 
+
+For narrow screens, we want it to be a drop-down that just expands to allow
+vertical expansion.
+
+For larger screens, we want the arrowed menu items to align flush
+to the left and then spread out to the maximum width. When clicked, a
+drop-down should appear below it, grey. The menu'd items should be underlined. 
+
+
+    
+
+
+
+[junk]()
 
     @media (max-width:800px) {
         #details a:hover {  
@@ -268,7 +348,7 @@ Example of syntax to make varying properties for different sizes.
 
     <a href="index.html"><img alt="Light bulb and ampersand logo" src="img/ailogo.png" /></a>
 
-##### CSS
+##### CSSi
 
     #logo a {
         position:relative;
@@ -313,7 +393,7 @@ We have three drop-downs. We want the grey to be below the logo and above the
 scrolling text so we set its zindex to 10 while the logo and header have
 z-index 20.
 
-##### CSS
+##### CSSi
 
 The drop-down menus  
 
@@ -344,7 +424,7 @@ The drop-down menus
        overflow-y:hidden;
     }
     
-    .drop-downs ul.visible {
+    .drop-downs > ul.visible {
         height:auto;
         position:absolute;
         top:5px;
@@ -352,23 +432,23 @@ The drop-down menus
         transition: height .2s;
     }
 
-    .drop-downs li:nth-child(n+2) {
+    .drop-downs > li:nth-child(n+2) {
         margin-left:20px;
     }
 
-    .drop-downs ul:nth-child(1) li:nth-child(3) {
+    .drop-downs > ul:nth-child(1) > li:nth-child(3) {
         margin-right:104px;
     }
     
-    .drop-downs ul:nth-child(2) li:nth-child(3) {
+    .drop-downs > ul:nth-child(2) > li:nth-child(3) {
         margin-right:85px;
     }
 
-    .drop-downs ul:nth-child(3) li:nth-child(3) {
+    .drop-downs > ul:nth-child(3) li:nth-child(3) {
         margin-right:116px;
     }
 
-    #details canvas {
+    .arrow canvas {
         width:10px;
         height:10px;
         vertical-align:middle;
@@ -376,7 +456,7 @@ The drop-down menus
         transition: transform 0.5s ;
     }
 
-    #details .active {
+    .active {
         text-decoration: underline;
     }
     
@@ -390,17 +470,18 @@ The drop-down menus
 We need to append drop-down arrows to the list elements in the details and
 activate them accordingly. 
 
-    var dd = document.querySelector(".drop-downs");
-    var drops = document.querySelectorAll(".drop-downs ul");
-    var details = document.querySelectorAll("#details li");
+We proceed by selecting the arrow and down classes.      
+
+    var togglers = document.querySelectorAll(".arrow");
+    var drops = document.querySelectorAll(".dropdown");
     var arrows = [];
-    var makeTriangle = _"drop downs/js:triangle";
+    var makeTriangle = _":triangle";
     var toggler = _":toggler";
-    var i, n = details.length;
-    console.log(n); 
+    var i, n = togglers.length;
+    console.log("togglers", n); 
     for (i=0; i < n; i += 1) {
-        arrows.push(makeTriangle(details[i]));    
-        details[i].addEventListener("click", toggler(i)); 
+        arrows.push(makeTriangle(togglers[i]));    
+        togglers[i].addEventListener("click", toggler(i)); 
     }
 
 [triangle]()
@@ -430,7 +511,8 @@ that will toggle the menu. If nothing is active, our last bit of code hides
 the parent.
 
     function (ind) {
-        drops[i].classList.add("closed");
+        var dd =  drops[ind]
+        dd.classList.add("closed");
         dd.classList.add("hide");
         return function () {
             i = 0, n = drops.length;
@@ -448,10 +530,10 @@ the parent.
             var flag = false;
             for (i = 0; i < n; i += 1) {
                 if ( drops[i].classList.contains("visible")) {
-                    details[i].classList.add("active");
+                    togglers[i].classList.add("active");
                     flag = true;
                 } else {
-                    details[i].classList.remove("active");
+                    togglers[i].classList.remove("active");
                 }
             }
             if (flag) {
@@ -465,50 +547,5 @@ the parent.
             }
         }
     }
-
-### dd layout
- 
-    ul
-        li \_":left | md"
-        li \_":right | md"    
-
-### Model
-
-[left]()
-
-    * [Intro](model.html)
-    * [Detailed](details.html)
-    * [Comparisons](comparisons.html)
-
-[right]()
-
-    * [Confusions](confusions.html)
-    * [Resources](resources.html)
-
-### Our 
-
-
-[left]()
-
-    * [Our Story](our-story.html)
-    * [Our Space](our-space.html)
-    * [Our Staff](our-staff.html)
-
-[right]()
-
-    * [Our Structure](our-structure.html)
-
-
-### Gallery
-
-[left]()
-
-    * [Highlights](highlights.html)
-    * [Tour](tour.html)
-
-[right]()
-
-    * [Activities](activities.html)
-    * [Holidays](holidays.html)
 
 

@@ -53,8 +53,10 @@ A generated string ought to look like `_"|echo name.md | readfile |
         if (bits.ext !== args[2]) {
             return '';
         }
-        return '\_"|echo ' + args[0] + '/' + input + '|' + args[3] + ' '  +
-            ' | savefile ' + bits.name + args[1] + '"\n';
+        return '\_"|echo ' + args[0] + '/' + input + '|' +
+            'noop gSet(kv(fname, ' + bits.name + args[1] + ')) | ' +
+            args[3] + '|'  +
+            ' savefile gGet(fname) "\n';
     }
 
 [fileCompile](# "define:")
@@ -71,7 +73,11 @@ A generated string ought to look like `_"|echo name.md | readfile |
 
 [src compiler]()
 
-    readfile | md | append \_"template", main 
+    readfile 
+    | md 
+    | append \_"template", article 
+    | title 
+    | current gGet(fname)
 
 
 [junk]()
@@ -100,6 +106,16 @@ A generated string ought to look like `_"|echo name.md | readfile |
 [jsStringLine](# "define:")
 
 
+[noop]()
+
+This passes the incoming text along. It does nothing except it does allow one
+to have subcommands working.
+
+    function (input) {
+        return input;
+    }
+
+[noop](# "define:")
 
 ## Template
 
@@ -112,16 +128,21 @@ HTML elements for replacing.
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>A&amp;I <subtitle/></title>
+        <title>A&amp;I</title>
 
         <link href="main.css" rel="stylesheet">
         <style></style>
         _":shim"
       </head>
       <body>
-        <main></main>
+        <main>
+            <article></article>
+            <aside>
+                _"sidebar | md"
+            </aside>
+        </main>
         <header>_"nav::nav"</header>
-        <footer></footer>
+        <footer>_"footer|md"</footer>
         <script>_"nav::js | .join \n"</script>
       </body>
     </html>
@@ -139,11 +160,8 @@ We need to load up the [nav](nav.md "load:")
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
 ## CSS
  
-
-
     _"css reset"
     _"writ"
 
@@ -156,18 +174,10 @@ We need to load up the [nav](nav.md "load:")
        src : url("bebas.ttf");
     }
 
-The background 
+The background will be gray white 
 
     html {
-        background-color:rgb(76, 148, 33);
-    }
-
-    @media (min-width:800px) {
-        html {
-            background: url("img/background.jpg") no-repeat center top fixed;
-            background-size: 100% 100%;
-            background-attachment: fixed;
-        }
+        background-color: #f0f0f0;
     }
 
     main {
@@ -177,45 +187,144 @@ The background
         margin-left:auto;
         margin-right:auto;
         padding-top:0.5rem;
+        padding-bottom:1rem;
+        display:flex;
+    }
+
+    h1, h2, h3 {
+        margin-left: 1rem;
+    }
+ 
+    article {
+        flex:4;
+        margin-right:20px;
+    }
+
+    main aside {
+        flex: 1;
+        border: none;
+    }
+
+    aside > ul {
+        position: fixed;
+        top: 30vh;
     }
 
     p {
         margin: 1rem 1rem 1rem 1rem;  
     }
 
+    _"layout"
+
     _"nav::css | .join \n  "
 
-    @media (min-wdith:1000px) {
-        _"nav::big | .join \n "
-        _":big"
+    _"footer:css"
+
+
+### Layout
+
+The layout is fairly simple. We flexbox vertically to have the header at the
+top, the main in the middle, and then the footer at the bottom. 
+
+    html, body {
+        margin:0;
+        height:100%;
+        min-height:100%
     }
 
-    @media (min-width:800px, max-width:999px) {
-        _"nav::large| .join \n "
-        _":large"
+    body {
+        margin:0;
+        display:flex;
+        flex-direction:column;
     }
 
-    @media (min-width:600px, max-width:799px) {
-        _"nav::moderate| .join \n "
-        _":moderate"
+    header {
+        order: 1;
+        flex-shrink: 0;
+        flex-basis: 50px;
     }
 
-    @media ( max-width:599px) {
-        _"nav::small| .join \n "
-        _":small"
+    main {
+        order:2; 
+        overflow-y: scroll;
+    }
+
+    footer {
+        order: 3;
+        flex-shrink:0;
+        flex-basis: 50px;
     }
 
 
+(Above taken from [SO](http://stackoverflow.com/questions/19477707/html5-three-rows-flexbox-with-fixed-top-bottom-and-scrollable-middle) , [fiddle](https://jsfiddle.net/njfmt7w0/)  )
 
-[big]()
+So that stacks the stuff in the right order and fixes the header, footer.
 
-[large]()
+Nav.md handles the header internals and the footer is handled below.
 
-[moderate]()
+For the 
 
-[small]()
 
-[junk]()
+
+### Sidebar
+
+This sidebar is flexible. Ideally it should pull from other bits. 
+    
+    * Open House ....
+    * [Gallery](gallery.html)
+    * [Testimonials](testimonials.html)
+    * [Blog](http://blog.aisudbury.com)
+    _"nav::actions" 
+
+
+
+
+### Footer
+
+    * Arts & Ideas Sudbury School 
+    * 4915 Holder Avenue, Baltimore, MD 21214 
+    * 410-426-0001
+    * [![Facebook](img/flogo.png)](https://www.facebook.com/Arts-Ideas-Sudbury-School-372859716072)
+    * [![Blog](img/blog-logo.gif)](http://blog.aisudbury.com)
+
+
+[css]()
+
+We want it to be on a single line, images small
+
+    footer img {
+        width:12px;
+    }
+
+    footer {
+        position:fixed;
+        bottom:0;
+        width:100%;
+        background-color:  #E0DFD6;
+    }
+    
+the above color is kind of a yellow-brown that flows from the grass. 
+previous color of pale blue: #9797FF;
+previous color of yellow burn: #9E9A6C
+
+
+    footer ul {
+        display:flex;
+        width:800px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:3px;
+    }
+
+    footer li:nth-last-child(1n+2) {
+        margin-right:10px;
+    }
+
+    footer li:nth-child(1n+2) {
+        list-style-type:disc;
+        margin-left: 20px;
+    }
+
     
 ## sass sample
 
@@ -310,11 +419,13 @@ Basically, we will compile using litpro, but we need to turn off the other
 processing.
 
     function () {
-        if (processing) {
-            return;
-        }
-        processing = true;
-        cp.exec('node node_modules/.bin/litpro', _":post litpro"); 
+        setTimeout(function () {
+            if (processing) {
+                return;
+            }
+            processing = true;
+            cp.exec('node node_modules/.bin/litpro', _":post litpro"); 
+        }, 100);
     };
 
 [post litpro]()
@@ -347,7 +458,7 @@ This is also a place we could put in something like rsync.
 
 out is to be checked in, output is not. put images and such in output. that is to be put on the server. Out is for seeing differences in the actual html files. 
 
-        args.build = ["out","output"];
+        args.build = ["output"];
         //args.src = ".";
 
 The local property was in the code, but not sure how it is being used.
@@ -452,7 +563,27 @@ This takes the incoming code as a replacement
         return $.html();
     });
 
- 
+This reads off a title from the article h2 and replaces the subtitle in the
+title tag with the heading name. 
+
+    Folder.sync("title", function (input, args) {
+        var $ = cheerio.load(input);
+        var title = $("article h2").text();
+        if (title) {
+           $("title").text("A&I "+ title);
+        }
+        return $.html();
+    });
+
+This looks for links with the current page name and makes them active. It should also make the drop-down stuff be open and active, but need to think on that one.
+
+    Folder.sync("current", function (input, args) {
+        var $ = cheerio.load(input);
+        var links = $("[href='" + args[0] + "']");
+        links.addClass("current");
+        return $.html();
+    });
+
 
 [postcss]() 
 

@@ -1,4 +1,5 @@
 Admissions
+---
 
 We encourage families considering enrollment at Arts & Ideas to attend an open
 house, especially if they are unfamiliar with our model of education. To

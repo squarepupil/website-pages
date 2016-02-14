@@ -5,23 +5,25 @@ var files = ['project.md'];
 var dir =['src/pages', 'src'];
 
 var compile = function () {
-    if (processing) {
-        return;
-    }
-    processing = true;
-    cp.exec('node node_modules/.bin/litpro', function (err, out, stderr) {
-        if (err) {
-            console.log(err, out, stderr);
+    setTimeout(function () {
+        if (processing) {
             return;
         }
-        setTimeout(procfal, 2000);
-        console.log(out);
-        console.log(stderr);
-        if (out.indexOf("NOT SAVED:") !== -1) {
-            cp.exec('say "A file is not saved"'); 
-        }
-    
-    }); 
+        processing = true;
+        cp.exec('node node_modules/.bin/litpro', function (err, out, stderr) {
+            if (err) {
+                console.log(err, out, stderr);
+                return;
+            }
+            setTimeout(procfal, 2000);
+            console.log(out);
+            console.log(stderr);
+            if (out.indexOf("NOT SAVED:") !== -1) {
+                cp.exec('say "A file is not saved"'); 
+            }
+        
+        }); 
+    }, 100);
 };;
 
 var filing = function (event, fname) {

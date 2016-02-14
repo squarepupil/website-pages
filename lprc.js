@@ -3,7 +3,7 @@ module.exports = function (Folder, args) {
     if (args.file.length === 0) {
         args.file = ["project.md"];
     }
-    args.build = ["out","output"];
+    args.build = ["output"];
     //args.src = ".";
     if (!Folder.prototype.local) {
         Folder.prototype.local = {};
@@ -58,6 +58,20 @@ module.exports = function (Folder, args) {
     Folder.sync("append", function (input, args) {
         var $ = cheerio.load(args[0]);
         $(args[1]).append(input);
+        return $.html();
+    });
+    Folder.sync("title", function (input, args) {
+        var $ = cheerio.load(input);
+        var title = $("article h2").text();
+        if (title) {
+           $("title").text("A&I "+ title);
+        }
+        return $.html();
+    });
+    Folder.sync("current", function (input, args) {
+        var $ = cheerio.load(input);
+        var links = $("[href='" + args[0] + "']");
+        links.addClass("current");
         return $.html();
     });
     
