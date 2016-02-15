@@ -92,9 +92,11 @@ module.exports = function (Folder, args) {
         });
         postcss(cmds).process(input).then(function (result) {
             result.warnings().forEach(function (warn) {
-                //doc.log(warn.toString());
+                doc.log(warn.toString());
             });
             doc.gcd.emit("text ready:" + name, result.css);
+        }).catch(function (error) {
+            doc.log(error.toString());
         });
     };
     

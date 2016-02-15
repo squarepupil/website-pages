@@ -10,7 +10,7 @@ with some css to make it all look nice.
 
 ## Files
 
-* [main.css](#css "save: | postcss autoprefixer ") This is the main css
+* [main.css](#css "save: | caps | postcss autoprefixer ") This is the main css
   styling common to all pages. 
 * [template.html](#template "save:") This is a template HTML file that is
   mainly used for secret pages and testing. 
@@ -142,7 +142,7 @@ HTML elements for replacing.
             </aside>
         </main>
         <header>_"nav::nav"</header>
-        <footer>_"footer|md"</footer>
+        <footer class="outer"><div class="inner">_"footer|md"</div></footer>
         <script>_"nav::js | .join \n"</script>
       </body>
     </html>
@@ -216,6 +216,8 @@ The background will be gray white
 
     _"layout"
 
+    _"widths"
+
     _"nav::css | .join \n  "
 
     _"footer:css"
@@ -246,7 +248,10 @@ top, the main in the middle, and then the footer at the bottom.
 
     main {
         order:2; 
-        overflow-y: scroll;
+    }
+
+    article {
+        height:1000px;
     }
 
     footer {
@@ -264,6 +269,23 @@ Nav.md handles the header internals and the footer is handled below.
 
 For the 
 
+### Widths
+
+This sets the outer and inner width to be consistent throughout.
+
+
+    .outer {
+        padding:5px;
+    }
+
+    .inner {
+        width:80%;
+        min-width:600px;
+        max-width:1000px;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:red;
+    }
 
 
 ### Sidebar
@@ -282,6 +304,7 @@ This sidebar is flexible. Ideally it should pull from other bits.
 ### Footer
 
     * Arts & Ideas Sudbury School 
+    * A&I
     * 4915 Holder Avenue, Baltimore, MD 21214 
     * 410-426-0001
     * [![Facebook](img/flogo.png)](https://www.facebook.com/Arts-Ideas-Sudbury-School-372859716072)
@@ -310,8 +333,7 @@ previous color of yellow burn: #9E9A6C
 
     footer ul {
         display:flex;
-        width:800px;
-        margin-left:auto;
+        margin-left:0;
         margin-right:auto;
         padding-top:3px;
     }
@@ -320,10 +342,26 @@ previous color of yellow burn: #9E9A6C
         margin-right:10px;
     }
 
-    footer li:nth-child(1n+2) {
+    footer li:nth-child(1n+3) {
         list-style-type:disc;
         margin-left: 20px;
     }
+
+We also want to hide the first or second item depending on the width. The
+first item is for wide footer, the second is for short. 
+
+    M W>954px {
+        footer li:nth-child(2) {
+            display:none;
+        }
+    }
+
+    M W<953px {
+        footer li:nth-child(1) {
+            display:none;
+        }
+    }
+
 
     
 ## sass sample
@@ -375,7 +413,7 @@ previous color of yellow burn: #9E9A6C
         height:10px;
     }
 
-[sass](# "transform: | sass | log")
+[sass](# "transform: | sass ")
 
 
 ## Watch
@@ -608,9 +646,11 @@ be loaded here; right now it is just autoprefixer. Then it can be used as
         });
         postcss(cmds).process(input).then(function (result) {
             result.warnings().forEach(function (warn) {
-                //doc.log(warn.toString());
+                doc.log(warn.toString());
             });
             doc.gcd.emit("text ready:" + name, result.css);
+        }).catch(function (error) {
+            doc.log(error.toString());
         });
     };
 
@@ -652,6 +692,81 @@ This works on macs.
     }
 
 [clip](# "define:")
+
+## caps
+
+The idea of this is to use capital letters as abbreviations. This is not
+elegant, but it is kind of cool.
+
+    function (input) {
+        var matches = _":matches";
+
+        var i = 0; 
+        while (i < input.length) {
+            if (matches.hasOwnProperty(input[i]) ) {
+                match = matches[input[i]];
+                if (typeof match === "string") {
+                    input = input.slice(0, i) + match + input.slice(i+1);
+                } else if (typeof match === "function") {
+                    input = match(i, input);
+                }
+            }
+            i += 1;
+        }
+
+        return input;
+    }
+
+[caps](# "define:")
+
+
+[test | M W>900px a](# "store: | caps | assert echo('@media (min-width: 900px) a') , caps test ")
+
+[matches]()
+
+These are the matches. Each match is either a simple string or a function that
+takes in the index and string and returns the replaced string.
+    
+    {
+        M : "@media",
+        W : function (ind, input) {
+                _":width"
+            }
+    }
+
+[width]()
+
+The width converts "<" and ">" into max and min widths. It is to be surrounded
+by parentheses. It should be of the form `W<600px `  with no spaces until
+after the unit. 
+
+    var end = input.indexOf(" ", ind);
+    var num = input.slice(ind+2, end);
+    var rep;
+    if (input[ind+1] === "<") {
+        rep = "(max-width: " + num + ")";
+    } else if (input[ind+1] === ">") {
+        rep = "(min-width: " + num + ")"
+    } else {
+        return input;
+    }
+    return input.slice(0, ind) + rep + input.slice(end);
+
+## assert eq
+
+This is a little command that should be more general. It tests for equality of
+the strings. 
+
+    function (input, args) {
+        var doc = this;
+        if (input !== args[0]) {
+            doc.log("FAIL: " + args[1] + "\nACTUAL: " + input + 
+                "\nEXPECTED: " + args[0]); 
+        }
+    }
+
+[assert](# "define:")
+
 
 ## package
 
@@ -837,3 +952,4 @@ This is part of writ.css
     main aside, blockquote, ins { border: solid rgba(0, 0, 0, 0.05); }
     pre, code, samp { border: solid rgba(0, 0, 0, 0.1); }
     th, td { border: solid #dbdbdb; }
+

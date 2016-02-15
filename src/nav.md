@@ -11,17 +11,26 @@ But we organize them into columns so that we can have the logo overlapping in
 the middle without overlapping any text. Also should make it easier to scale.
 The three columns will float to the left. 
 
-    .info
+    .info.outer
         .inner
             #home \_"home"
             .spacer
             #actions \_"actions|md"
-    .content
+    .content.outer
         .inner
             #details
                 _"details"
-            .spacer \_"logo"
+            #logo \_"logo"
             #pathway \_"pathway|md"
+     .dropdown.outer
+        .inner
+            .school
+                _"details:school"
+            .model
+                _"details:model"
+            .gallery
+                _"details:gallery"
+
 
     
 
@@ -43,8 +52,6 @@ The three columns will float to the left.
 Header will be flexboxed into the top despite being below in source order.
 That will be done in the main layout. 
 
-Here
-
 
     header {
         font-family: bebas, serif;
@@ -64,8 +71,30 @@ Here
 
 [layout]()
 
-So we want to layout the basic layout of the three layers. 
+So we want to layout the basic layout of the three layers. All of them will
+have the inner class setting the max-width. We then flex twice, once for the
+immediate layout which is always three items with the center being reserved.
+Then inside each are the left and right bits that should also be flexed. 
+    
 
+    .inner {
+        display:flex;
+        justify-content:space-between;  
+
+    }
+
+    .inner ul {
+        display:flex;
+    }
+
+    header .inner li {
+        margin-left: 15px;
+    }
+
+    .spacer {
+        display: inline-block;
+        width: 50px;
+    }
 
 [junk]()
 
@@ -90,9 +119,6 @@ So we want to layout the basic layout of the three layers.
 
 
 
-    M W>600px {
-        
-    }
 
     
 
@@ -228,51 +254,42 @@ div to be the drop-down item (class down)
 
 
     ul
-        li 
-            _":school"
-        li
-            _":model"
-        ii
-            _":gallery"
+        li.arrow.school: a(href="#") Our School
+        li.arrow.model: a(href='#') The Model
+        ii.arrow.gallery: a(href='#') Gallery
 
 
 [school]()
 
-    .arrow: a(href="#") Our School
-    .dropdown
-        ul
-            li: a(href="our-story.html") Our Story
-            li: a(href="our-space.html") Our Space
-            li: a(href="our-staff.html") Our Staff
-        .spacer
-        ul
-            li: a(href="our-structure.html") Our Structure
+    ul
+        li: a(href="our-story.html") Our Story
+        li: a(href="our-space.html") Our Space
+        li: a(href="our-staff.html") Our Staff
+    .spacer
+    ul
+        li: a(href="our-structure.html") Our Structure
 
 [model]()
 
-    .arrow: a(href='#') The Model
-    .dropdown
-        ul
-            li: a(href="model.html") Intro
-            li: a(href="details.html") Detailed
-            li: a(href="comparisons.html") Comparisons
-        .spacer
-        ul
-            li: a(href="confusions.html") Confusions
-            li: a(href="resources.html") Resources
+    ul
+        li: a(href="model.html") Intro
+        li: a(href="details.html") Detailed
+        li: a(href="comparisons.html") Comparisons
+    .spacer
+    ul
+        li: a(href="confusions.html") Confusions
+        li: a(href="resources.html") Resources
 
 
 [gallery]()
 
-    .arrow: a(href='#') Gallery
-    .dropdown
-        ul
-            li: a(href="highlights.html")
-            li: a(href="tour.html")
-        .spacer
-        ul
-            li: a(href="activities.html")
-            lil: a(href="holidays.html")
+    ul
+        li: a(href="highlights.html") Highlights
+        li: a(href="tour.html") Tour
+    .spacer
+    ul
+        li: a(href="activities.html") Activities
+        lil: a(href="holidays.html") Holidays
 
 
 
@@ -348,7 +365,7 @@ Example of syntax to make varying properties for different sizes.
 
     <a href="index.html"><img alt="Light bulb and ampersand logo" src="img/ailogo.png" /></a>
 
-##### CSSi
+##### CSS
 
     #logo a {
         position:relative;
