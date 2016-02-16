@@ -24,7 +24,7 @@ module.exports = function (Folder, args) {
     var md = require('markdown-it')({
         html:true,
         linkify:true
-    }).use(require('markdown-it-anchor'));
+    });
     
     
     Folder.prototype.local.md = md; 

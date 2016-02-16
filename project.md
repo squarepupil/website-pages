@@ -129,26 +129,30 @@ HTML elements for replacing.
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>A&amp;I</title>
-
         <link href="main.css" rel="stylesheet">
         <style></style>
         _":shim"
       </head>
       <body>
-        <main>
-            <article></article>
-            <aside>
-                _"sidebar | md"
-            </aside>
-        </main>
-        <header>_"nav::nav"</header>
-        <footer class="outer"><div class="inner">_"footer|md"</div></footer>
+        _":body |jade | compile bogus"
         <script>_"nav::js | .join \n"</script>
       </body>
     </html>
 
 
 We need to load up the [nav](nav.md "load:")
+
+[body]()
+
+    main.outer
+        .inner
+            article
+            aside \_"sidebar |md"
+    header \_"nav::nav"
+    footer.outer 
+        .inner \_"footer|md"
+
+
 
 
 [shim]()
@@ -169,10 +173,118 @@ We need to load up the [nav](nav.md "load:")
         box-sizing: border-box; 
     }
 
+    _"colors fonts"
+
+    _"borders padding"
+
+    _"layout"
+
+    _"nav::css | .join \n  "
+
+    _"footer:css"
+
+### Layout
+
+We put header on top with fixed placement, footer on the bottom, and we put a
+healthy margin above and below main. All of our containers have an outer and
+an inner with the outer being the full width handling full width colors and
+borders while the inner provides the constraining width. 
+
+    header {
+        position: fixed;
+        top: 0;
+    }
+
+    main {
+        margin-top:150px;
+    }
+
+    main .inner {
+        display:flex;
+        justify-content:space-between;
+    }   
+
+    footer {
+        position: fixed;
+        bottom:0;
+    }
+
+    .outer {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .inner {
+        min-width: 600px;
+        max-width: 1000px;
+        width: 80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    article {
+        flex:4;
+        margin-right:20px;
+        height:1000px;
+        background-color:red;
+    }
+    
+    aside {
+        flex: 1;
+        border: none;
+    }
+
+
+### Colors fonts
+
     @font-face {
        font-family : "bebas";
        src : url("bebas.ttf");
     }
+    
+    header {
+        font-family: bebas, serif;
+        font-size:15px;
+        background-color:white;
+    }
+    
+    .info {
+        background-color: rgb(76, 148, 33);
+    }
+
+    footer {
+        background-color: #E0DFD6;
+    }
+
+    #actions a {
+        color: white;
+        font-size: 0.8em;
+    }
+
+    .dropdown {
+        background-color: grey;
+    }
+
+    
+        
+
+### Borders padding
+
+Here we deal with some of the border and padding on the large scale. 
+
+    .info {
+      border-bottom: black solid 2px;
+      padding-top: 7px;
+      padding-bottom:7px;
+    }
+
+    .content {
+        border-top: black solid 2px;
+        border-bottom: grey solid 2px; 
+    }
+
+[junk]()
+
 
 The background will be gray white 
 
@@ -195,15 +307,8 @@ The background will be gray white
         margin-left: 1rem;
     }
  
-    article {
-        flex:4;
-        margin-right:20px;
-    }
 
-    main aside {
-        flex: 1;
-        border: none;
-    }
+
 
     aside > ul {
         position: fixed;
@@ -214,16 +319,10 @@ The background will be gray white
         margin: 1rem 1rem 1rem 1rem;  
     }
 
-    _"layout"
-
-    _"widths"
-
-    _"nav::css | .join \n  "
-
-    _"footer:css"
 
 
-### Layout
+
+###  DELETE Layout
 
 The layout is fairly simple. We flexbox vertically to have the header at the
 top, the main in the middle, and then the footer at the bottom. 
@@ -252,6 +351,7 @@ top, the main in the middle, and then the footer at the bottom.
 
     article {
         height:1000px;
+        background-color:red;
     }
 
     footer {
@@ -268,24 +368,6 @@ So that stacks the stuff in the right order and fixes the header, footer.
 Nav.md handles the header internals and the footer is handled below.
 
 For the 
-
-### Widths
-
-This sets the outer and inner width to be consistent throughout.
-
-
-    .outer {
-        padding:5px;
-    }
-
-    .inner {
-        width:80%;
-        min-width:600px;
-        max-width:1000px;
-        margin-left:auto;
-        margin-right:auto;
-        background-color:red;
-    }
 
 
 ### Sidebar
@@ -323,7 +405,6 @@ We want it to be on a single line, images small
         position:fixed;
         bottom:0;
         width:100%;
-        background-color:  #E0DFD6;
     }
     
 the above color is kind of a yellow-brown that flows from the grass. 
@@ -550,7 +631,7 @@ into anchors as on GitHub.  `markdown text...|md`
     var md = require('markdown-it')({
         html:true,
         linkify:true
-    }).use(require('markdown-it-anchor'));
+    });
     
 
     Folder.prototype.local.md = md; 
@@ -938,18 +1019,4 @@ This is part of writ.css
       margin-bottom: -1px;
     }
 
-    /* Colors */
-
-    body { color: #222; }
-    code, pre, samp, kbd { color: #111; }
-    a, nav a:visited { color: #00e; }
-    a:visited { color: #60b; }
-    mark { color: inherit; }
-
-    code, pre, samp, thead, tfoot { background-color: rgba(0, 0, 0, 0.05); }
-    mark { background-color: #fe0; }
-
-    main aside, blockquote, ins { border: solid rgba(0, 0, 0, 0.05); }
-    pre, code, samp { border: solid rgba(0, 0, 0, 0.1); }
-    th, td { border: solid #dbdbdb; }
 
