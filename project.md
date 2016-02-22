@@ -6,6 +6,18 @@ doing whatever else is necessary.
 The idea is to have a set of pages in markdown that compiles into a template
 with some css to make it all look nice.  
 
+## Announcement
+
+The announcement should be updated as need be. 
+
+    _":md | md"
+
+[md]()
+
+    ## Announcement
+
+    * Open House
+    * Awesome news
 
 
 ## Files
@@ -74,10 +86,295 @@ A generated string ought to look like `_"|echo name.md | readfile |
 [src compiler]()
 
     readfile 
-    | md 
+    | process \_"template", \_"announcement", gGet(fname)
+
+[junk]()
+
+    readfile 
     | append \_"template", article 
     | title 
     | current gGet(fname)
+
+
+
+
+[js](#js "h5:") js scattered
+
+#### Process 
+    
+`| process \_"template", \_"announcement", fname `
+
+The input is a file organized into three chunks: 
+
+1) Title
+2) Body for article
+3) The aside material
+
+In addition, the arguments is the html template, the announcement and the
+file name. The file name is used for activating the relevant link. 
+
+    function (input, args) {
+        var doc = this;
+        var md = doc.parent.local.md;
+        var cheerio = doc.parent.local.cheerio;
+
+        var $ = cheerio.load(args[0]);
+        var announcement = args[1] || '';
+        var filename = args[2] || '';
+
+        var bits = input.split("\n---\n");
+        var title = bits[0] || '';
+
+        var article = bits[1] || '';
+        article = md.render(article);
+
+Add in the title both in the head and the article; easier to pop it in here.
+
+        if (title) {
+            article = "<h2>" + title + "</h2>\n" + article;
+            $("title").text("A&I "+ title);
+        }
+
+        var ind; 
+        _":next"
+
+        $("article").append(article);
+
+        var aside = bits[2] || '';
+
+        _":parse aside"
+        
+        $("aside").append( announcement + aside);
+
+        _":active page"
+
+        return $.html();
+
+    }
+
+[process](# "define: | jshint")
+
+[next]()
+
+We have a special syntax for next, namely "NEXT:"  followed by the link and a
+description. We generate the relevant HTML here. 
+
+    var next = {};
+    next.start = article.indexOf("NEXT:");
+    if (ind !== -1) {
+        next.end = article.indexOf("\n", next.start);
+        next.end = (next.end === -1) ? article.length : next.end;
+        next.text = article.slice(next.start + 5, next.end).trim();
+        next.space = next.text.indexOf(" ");
+        next.link = next.text.slice(0, next.space);
+        next.label = next.text.slice(next.space+1);
+        next.str = "<a class='next' href='" + 
+            next.link + "'>" + next.label + "</a>";
+        article = article.slice(0, next.start) + next.str + 
+            article.slice(next.end+1);
+    }   
+
+[active page]()
+
+This is about finding the active page. 
+
+    var here = $("[href='" + filename + "']");
+    here.addClass("current");
+   
+    var drops = here.parents(".dropdown");
+    if (drops.length > 0) {
+        drops.addClass("active");
+        var inner = here.parents(".inner");
+        var cl;
+
+        if (inner.hasClass("school") ) {
+            cl = "school";
+        } else {
+            cl = "model";
+        }
+        var det = $("#details ." + cl);
+        det.addClass("active");
+    }
+   
+
+[parse aside]()
+
+Here we look for caps, colon after a new line. We then make pieces out of
+these. 
+
+Then we try to match with a
+function and produce some html. 
+
+        aside = {
+            text : "\n" + aside.trim(),
+            reg : /\n([A-Z]+)\:/g,
+            matches : [],
+            bits : []
+        };
+        var tags = _":tags";
+        while ( (aside.match = aside.reg.exec(aside.text)) ) {
+            aside.matches.push([
+                aside.match[1], 
+                aside.match.index, 
+                aside.reg.lastIndex]
+            );
+        }
+        
+        console.log(aside.matches);
+
+        aside.matches.forEach(function (el, ind, arr) {
+            var tag = el[0];
+            var start = el[2];
+            var end;
+
+Figure out where to cut the text string.
+
+            if (ind < arr.length-1) {
+                end = arr[ind+1][1];
+            } else {
+                end = aside.text.length;
+            }
+
+            console.log(tag, start, end, aside.text.slice(start, end).trim());
+
+            
+           if (tags.hasOwnProperty(tag)) {
+                aside.bits.push(tags[tag]( 
+                    aside.text.slice(start, end).trim()
+                ));
+           } else {
+                aside.bits.push(aside.text.slice(el[1], end));
+           }
+        });
+
+        aside = aside.bits.join("\n");
+
+[tags]()
+
+Tags include IMG, QUOTE, SIG, SPACE
+
+    {
+        IMG : function (str) {
+            var ind = str.indexOf(" ");
+            return "<img href='" + str.slice(0, ind) +
+                "' alt='" + str.slice(ind + 1) +"'/>";
+        }, 
+        QUOTE : function (str) {
+            return "<blockquote>" + md.render(str) + "</blockquote>";
+        },
+        SIG : function (str) {
+            return "<figcaption>" +  md.render(str) + "</figcaption>";
+        },
+        SPACE : _":space",
+        F : function () {
+            return "<figure>";
+        },
+        E: function () {
+            return "</figure>";
+        }
+    }
+
+
+[space]()
+
+Here the supplied text may be a class name, a `300px` which gives height
+style, or a place in the text to hook into which starts with `#section` where
+section is the id heading that it is linked to. 
+
+    function (str) {
+        console.log(str);
+        if (str[0] === "#") {
+            return "<div data-match='" + str+ "'></div>";
+        } else if (str[0].search(/[0-9]/) === 0) {
+            return "<div style='height:" + str + "'></div>";
+        } else {
+            return "<div class='" + str + "'></div>";
+        }
+    }
+
+##### JS
+
+This is some js to line up the space for those with a data-match attribute.
+
+    var asideHeight = _":per element";
+    var resizing = false;
+    window.addEventListener("load", asideHeight);
+    window.addEventListener("resize", function() {
+        if (!resizing) {
+            resizing = true;
+            setTimeout(function() {
+                resizing = false;
+                asideHeight();
+            }, 100);
+        }
+    });
+
+
+[per element]()
+
+For each element found, we want to line it up to the id. This is creating the
+space required to get from current position to new position. 
+
+    function () {
+        var arr = document.querySelectorAll("[data-match]");
+        leak = arr;
+        console.log("hey");
+        var i, n = arr.length, el, id;
+        for (i = 0; i <n; i += 1) {
+            el = arr[i];
+            id = document.querySelector(el.getAttribute("data-match"));
+            console.log(id, el.getAttribute("data-match"));
+            el.style.positon ="relative";
+            el.style.height = -el.offsetTop+id.offsetTop + "px"
+        }
+    };
+
+    
+
+[junk]()
+There is a special function of replacement where the arguments are paired to
+be a selector and the html replacement. This is like the standard sub command.
+
+    Folder.sync( "replace" , function(code, args) {
+        var selector, replacement;
+        var n = args.length;
+        var $ = cheerio.load(code);
+        for (i = 0; i < n; i += 2) {
+            selector = args[i];
+            replacement = args[i+1];
+            $(selector).html(replacement);
+        }
+        return $.html();
+    });
+
+This takes the incoming code as a replacement 
+
+    Folder.sync("append", function (input, args) {
+        var $ = cheerio.load(args[0]);
+        $(args[1]).append(input);
+        return $.html();
+    });
+
+This reads off a title from the article h2 and replaces the subtitle in the
+title tag with the heading name. 
+
+    Folder.sync("title", function (input, args) {
+        var $ = cheerio.load(input);
+        var title = $("article h2").text();
+        if (title) {
+           $("title").text("A&I "+ title);
+        }
+        return $.html();
+    });
+
+This looks for links with the current page name and makes them active. It should also make the drop-down stuff be open and active, but need to think on that one.
+
+    Folder.sync("current", function (input, args) {
+        var $ = cheerio.load(input);
+        var links = $("[href='" + args[0] + "']");
+        links.addClass("current");
+        return $.html();
+    });
 
 
 [junk]()
@@ -117,6 +414,7 @@ to have subcommands working.
 
 [noop](# "define:")
 
+
 ## Template
 
 This is the main html template. It contains all the boiler plate and harmless
@@ -135,19 +433,25 @@ HTML elements for replacing.
       </head>
       <body>
         _":body |jade | compile bogus"
-        <script>_"nav::js | .join \n"</script>
+        <script>
+            _"js | .join \n | jshint "
+            _"nav::js | .join \n | jshint "
+        </script>
       </body>
     </html>
 
 
 We need to load up the [nav](nav.md "load:")
 
+We also institute the h5 for js
+
+
 [body]()
 
     main.outer
         .inner
             article
-            aside \_"sidebar |md"
+            aside 
     header \_"nav::nav"
     footer.outer 
         .inner \_"footer|md"
@@ -197,6 +501,7 @@ borders while the inner provides the constraining width.
 
     main {
         margin-top:150px;
+        margin-bottom:50px;
     }
 
     main .inner {
@@ -225,8 +530,6 @@ borders while the inner provides the constraining width.
     article {
         flex:4;
         margin-right:20px;
-        height:1000px;
-        background-color:red;
     }
     
     aside {
@@ -282,7 +585,7 @@ Here we deal with some of the border and padding on the large scale.
         border-top: black solid 2px;
         border-bottom: grey solid 2px; 
     }
-
+    
 [junk]()
 
 
@@ -587,6 +890,8 @@ Probably can remove it.
             Folder.prototype.local = {};
         }
 
+        require('litpro-jshint')(Folder, args);
+
         _':modules'
 
     };    
@@ -648,6 +953,7 @@ Cheerio takes in html and can do replacements on it, like jQuery does. The
 syntax is  `html... | cheerio selector, method, args to method...`
 
     var cheerio = require('cheerio');
+    Folder.prototype.local.cheerio = cheerio;
 
     Folder.sync( "cheerio" , function(code, args) {
         var selector = args.shift(); 
@@ -896,7 +1202,7 @@ The requisite npm package file.
 by [James Taylor](https://github.com/jostylr "npminfo: jostylr@gmail.com ; 
     deps: ;
     dev: litpro 0.12.1, cheerio 0.19.0, markdown-it 4.4.0, 
-        markdown-it-anchor 2.3.0, 
+        markdown-it-anchor 2.3.0, litpro-jshint 0.2.1,  
         jade 1.11.0, postcss 5.0.4, autoprefixer 6.0.0,
         gm 1.18.1, pdf-image 1.0.1, node-sass 3.4.2 ")
 

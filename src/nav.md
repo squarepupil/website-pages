@@ -64,6 +64,10 @@ That will be done in the main layout.
         text-decoration: underline; 
     }
 
+    header a.current {
+        text-decoration: underline;
+    }
+
     _":layout"
 
 [layout]()
@@ -121,23 +125,6 @@ This is the info bar at the top of the page. The bar goes the full width with
 an lightly-transparent background of green. 
 
 
-##### CSSi
-
-    nav .info {
-        width: 100%;
-        margin:0px;
-        background: linear-gradient(90deg, rgba(76, 148, 33, 0.78), rgb(76, 148, 33) 20%, rgb(76, 148, 33) 80%, rgba(76, 148, 33, 0.78));
-        padding-bottom:12px;
-    }
-
-    nav .info .inner {
-        width: 60%;
-        height:25px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top:9px;
-        /*background-color:#71A952;*/
-    }
 
 ### Home
 
@@ -145,13 +132,6 @@ Our home page link
 
     <a href="index.html">Arts &amp; Ideas Sudbury School</a>
 
-##### CSSi
-
-There is only one link that is directly under inner.
-
-    .info .inner > a {
-        float:left;
-    }
 
 ### Actions
 
@@ -160,82 +140,6 @@ A few quick links.
     * [Calendar](calendar.html)
     * [Support Us](support.html)
     * [Contact Us](contact.html)
-
-
-##### cssi
-
-The actions are the only ul under inner
-
-    .info .inner > ul {
-        float:right;
-    }
-
-    .info .inner li {
-        padding-left: 15px;
-    }
-
-    .info .inner ul a {
-        color:#f9f9f9;
-        font-size:smaller;
-    }
-
-## Content
-
-
-##### CSSi
-
-    .content {
-        position:relative;
-        width : 60%;
-        margin-left:auto;
-        margin-right:auto;
-        height: 30px;
-        font-size:20px;
-        background-color:white;
-        padding:5px;
-        padding-bottom:8px;
-        box-shadow: 0px 2px 10px grey;
-    }
-
-
-    #details, #pathway {
-        display:inline-block;
-        width: 45%;
-    }
-
-    #details {
-        float:left;
-    }
-
-    #pathway {
-        float:right;
-    }
-
-    #details ul {
-        float: right;
-    }
-
-    #logo {
-        display:inline-block;
-    }
-    
-    .content li {
-        margin-left:10px;
-    }
-
-
-[junk]()
-
-    .content li, .content img {
-        margin-left:10px;
-    }
-
-    .content .inner {
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-
 
 ### Details
 
@@ -264,7 +168,7 @@ div to be the drop-down item (class down)
 
     ul
         li: a(href="model.html") Intro
-        li: a(href="details.html") Detailed
+        li: a(href="indetail.html") Detailed
         li: a(href="comparisons.html") Comparisons
     .spacer
     ul
@@ -274,7 +178,7 @@ div to be the drop-down item (class down)
     
 ### Logo
 
-    <a href="index.html"><img alt="Light bulb and ampersand logo" src="img/ailogo.png" /></a>
+    <a href="index.html"><img alt="Light bulb and ampersand logo" src="img/lantern.png" /></a>
 
 ##### CSS
 
@@ -287,9 +191,6 @@ div to be the drop-down item (class down)
         position:fixed;
         top:10px;
         z-index:20;
-        border: black 2px solid;
-        background-color:white;
-        box-shadow: 0px 2px 5px grey;
         display:inline-block;
     }
 
@@ -349,51 +250,6 @@ These are the classes that handle the display.
     }
 
 
-
-##### CSSi
-
-The drop-down menus  
-
-
-    .drop-downs {
-        background-color:#AEAEAE;
-        z-index:10;
-        width:60%;
-        margin-left: auto;
-        margin-right:auto;
-        position:relative;
-        height:0px;
-        font-size:20px;
-        box-shadow: inset -2px -2px 2px grey, inset 2px 2px 2px grey ;
-        transition: height .2s;
-    }
-
-    .hide {
-       display:none;
-    }
-
-    .open {
-       height:33px; 
-    }
-
-    .closed {
-        height:0px;
-       overflow-y:hidden;
-    }
-    
-    .drop-downs > ul.visible {
-        height:auto;
-        position:absolute;
-        top:5px;
-        margin-left:16px;
-        transition: height .2s;
-    }
-
-
-
-
-
- 
         
 ##### JS
 
@@ -445,7 +301,8 @@ is what we do after the loop.
 
     function (ind) {
         var dd =  drops[ind];
-        return function () {
+        return function (e) {
+            e.preventDefault();
             var i = 0, n = drops.length;
             var cl;
             for (i = 0; i < n; i += 1) {
@@ -466,37 +323,5 @@ is what we do after the loop.
     }
 
     
-
-
-[junk]()
-
-
-                    drops[i].classList.toggle("closed");
-                    drops[i].classList.toggle("visible");
-                    arrows[i].classList.toggle("down");
-                } else {
-                    drops[i].classList.remove("visible");
-                    drops[i].classList.add("closed");
-                    arrows[i].classList.remove("down");
-                }
-            }
-            var flag = false;
-            for (i = 0; i < n; i += 1) {
-                if ( drops[i].classList.contains("visible")) {
-                    flag = true;
-                } else {
-                }
-            }
-            if (flag) {
-                dd.classList.remove("hide");
-                dd.classList.add("open");
-            } else {
-                dd.classList.remove("open");
-                setTimeout(function () {
-                    dd.classList.add("hide");
-                }, 200);
-            }
-        };
-    }
 
 

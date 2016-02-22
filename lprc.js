@@ -9,6 +9,8 @@ module.exports = function (Folder, args) {
         Folder.prototype.local = {};
     }
 
+    require('litpro-jshint')(Folder, args);
+
     var jade = require('jade');
     
     Folder.sync("jade" , function (code, args) {
@@ -34,6 +36,7 @@ module.exports = function (Folder, args) {
     });
     
     var cheerio = require('cheerio');
+    Folder.prototype.local.cheerio = cheerio;
     
     Folder.sync( "cheerio" , function(code, args) {
         var selector = args.shift(); 
