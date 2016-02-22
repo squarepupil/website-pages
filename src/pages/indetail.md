@@ -1,5 +1,6 @@
 In Detail
 ---
+
 ## Sudbury Model
 
 Our model of education rests on three basic components: the individual ,
@@ -244,8 +245,10 @@ E:
 
 SPACE: #hard-work
 
+F:
 IMG: img2435.jpg description as well
 
 QUOTE: Another quote farther down.
 SIG: Student
+E:
 

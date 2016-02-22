@@ -47,3 +47,9 @@ long-term process of community building. Accordingly, we emphasize the
 importance that all students and parents must be willing to commit to the
 school for the duration of the academic year, which our contract reflects. 
 
+    
+
+
+
+    
+
