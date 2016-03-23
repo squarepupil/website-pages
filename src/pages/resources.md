@@ -1,4 +1,4 @@
-WHERE CAN I LEARN MORE?
+Where Can I Learn More?
 ---
 
 Here is a list of a just a few of our favorite readings and links related to
@@ -78,4 +78,20 @@ Dr. Gray's posts, among many, which are related to our type of school are:
 * [Children Educate Themselves 1: Outline of Some
  Evidence](https://www.psychologytoday.com/blog/freedom-learn/200807/children-educate-themselves-i-outline-some-the-evidence)
 
+## Other schools
 
+There are also a variety of other Sudbury schools whose websites can give a
+general flavor of the model. We are all quite independent with unique and
+interesting differences, but these are schools that we feel share a similar
+vision for running a school. 
+
+* [Fairhaven]() Near Washington D.C. They provided the legal model for our
+  school.
+* [Philly Free School]() In Philadelphia, this is another urban school similar
+  to ours.
+* [The Circle School]()  Around since 1984 and in Harrisburg, PA, they are  working to fund a new building. 
+* [Sudbury Valley School]() The school that inspired it all since the late
+  1960s. 
+* [Hudson Valley School]() This has some great videos explaining their school. 
+
+... and many more.

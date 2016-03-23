@@ -65,10 +65,11 @@ A generated string ought to look like `_"|echo name.md | readfile |
         if (bits.ext !== args[2]) {
             return '';
         }
+
         return '\_"|echo ' + args[0] + '/' + input + '|' +
             'noop gSet(kv(fname, ' + bits.name + args[1] + ')) | ' +
             args[3] + '|'  +
-            ' savefile gGet(fname) "\n';
+            ' savefile gGet(fname) "';
     }
 
 [fileCompile](# "define:")
@@ -88,12 +89,6 @@ A generated string ought to look like `_"|echo name.md | readfile |
     readfile 
     | process \_"template", \_"announcement", gGet(fname)
 
-[junk]()
-
-    readfile 
-    | append \_"template", article 
-    | title 
-    | current gGet(fname)
 
 
 
@@ -109,6 +104,7 @@ The input is a file organized into three chunks:
 1) Title
 2) Body for article
 3) The aside material
+4) previous/next
 
 In addition, the arguments is the html template, the announcement and the
 file name. The file name is used for activating the relevant link. 
@@ -121,6 +117,7 @@ file name. The file name is used for activating the relevant link.
         var $ = cheerio.load(args[0]);
         var announcement = args[1] || '';
         var filename = args[2] || '';
+        var fname = filename.split(".")[0];
 
         var bits = input.split("\n---\n");
         var title = bits[0] || '';
@@ -134,9 +131,13 @@ Add in the title both in the head and the article; easier to pop it in here.
             article = "<h2>" + title + "</h2>\n" + article;
             $("title").text("A&I "+ title);
         }
+        
+        _"previous next"
+
+        article += "\n" +  prv + nxt;
 
         var ind; 
-        _":next"
+        
 
         $("article").append(article);
 
@@ -147,6 +148,7 @@ Add in the title both in the head and the article; easier to pop it in here.
         $("aside").append( announcement + aside);
 
         _":active page"
+        
 
         return $.html();
 
@@ -154,7 +156,8 @@ Add in the title both in the head and the article; easier to pop it in here.
 
 [process](# "define: | jshint")
 
-[next]()
+
+[junk next]()
 
 We have a special syntax for next, namely "NEXT:"  followed by the link and a
 description. We generate the relevant HTML here. 
@@ -220,8 +223,6 @@ function and produce some html.
             );
         }
         
-        console.log(aside.matches);
-
         aside.matches.forEach(function (el, ind, arr) {
             var tag = el[0];
             var start = el[2];
@@ -413,6 +414,104 @@ to have subcommands working.
     }
 
 [noop](# "define:")
+
+
+### Previous Next
+
+This section handles creating previous and next directions.
+
+This uses the pre-compiled previous, next format. 
+
+    var np = _":pn-json | eval _":pn-making" ";
+    if (np.hasOwnProperty(fname)) { 
+        var prv = np[fname][0];
+        var nxt = np[fname][1];
+
+        console.log(prv, nxt, fname);
+
+        if (prv) {
+            prv = '<div class="previous">PREVIOUS: ' + prv + '</div>';
+        }
+        if (nxt) {
+            nxt = '<div class="next">NEXT: ' + nxt + '</div>';
+        }
+    } else {
+        console.log("no next or previous for " + fname);
+    }
+
+
+[pn-json]()
+
+This defines the cycle of pages for the previous and next buttons. 
+
+    index : Home
+    model : The basics of our model
+    indetail : Our model in-depth
+    comparisons: How our model compares to alternatives
+    confusions: Some common questions about the model
+    resources: Further reading
+    our-structure: Our governing structure
+    our-staff: Our staff
+    our-space: Our space
+    our-name: What our name means
+    admissions: What our admissions process looks like
+    tuition: The prices we have
+    faq: Common questions
+    gallery:  Incredible photos of our school.
+    stories: Tales from inside and out 
+    contact: How to contact us
+
+    index, model, indetail, comparisons, confusions, resources,
+    our-structure, our-staff, our-story, our-name, admissions, tuition,
+    faq, gallery, stories, contact
+
+[pn-making]()
+
+This converts this into pn-json. This code is being evaled. The
+incoming text is in `text` and that is the variable whose .toString is
+returned by the evaling. 
+
+It expects the top to be of the form `key : description` where key is the name
+part of a filename. The bottom is a comma separated list of those filenames
+that define a cycle for the keys. 
+
+The result is an object with key of being the fname without extension pointing
+to a two element array of `[prv, next]` links, possible empty strings.
+
+    var temp =  text.split("\n\n");
+    var prelinks = temp[0];
+    var cycle = temp[1];
+    var links = {};
+
+
+
+    prelinks.
+        split("\n").
+        forEach(function (el) {
+           var pieces = el.split(":");
+           links[pieces[0].trim()] = '<a href="'+
+            pieces[0].trim() + '.html" >' +
+            pieces[1].trim() + '</a>';
+        });
+
+
+    var ret =  {};
+    
+    cycle = cycle.
+        split(",").
+        map(function (el) {
+            return el.trim();
+        }).
+        forEach(function(key, ind, arr) {
+            ret[key] = [
+                links[arr[ind-1]] || '',
+                links[arr[ind+1]] || ''
+            ];
+        });
+
+    text = JSON.stringify(ret);
+
+
 
 
 ## Template

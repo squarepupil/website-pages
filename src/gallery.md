@@ -19,3 +19,22 @@ A gallery of albums. Each album consists of captions and pictures.
 
     Nothing
 
+
+## Albums
+
+About 10 pictures each.
+
+    People
+
+    Space
+
+    Kitchen
+
+    Outside
+        
+    Party
+
+    Governance
+
+    Anything
+

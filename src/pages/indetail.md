@@ -3,8 +3,8 @@ In Detail
 
 ## Sudbury Model
 
-Our model of education rests on three basic components: the individual ,
-community, and democratic justice.
+Our model of education rests on three basic components: the individual,
+the community, and democratic justice.
 
 It starts with the individual. This is both the input and output, ultimately,
 of all schools. Our model starts with a fundamental respect and acceptance for
@@ -77,10 +77,12 @@ demand of them or exemplify in others a maturity that they may not yet have
 developed. Whether or not they take it on themselves in those moments to rise
 to the challenge of acting older, the cues and catalysts for such behavior
 constantly surround them in the form of older students responding to their own
-challenges. The converse also applies for older students. For them, younger
+challenges. 
+
+The converse also applies for older students. For them, younger
 students serve as a reminder and inducer of the creative spark, but perhaps
 more importantly, of their own humanity. The presence of younger students
-sheds contrast on an older student’s own development towards becoming more
+sheds light on an older student’s own development towards becoming more
 physically, intellectually, and emotionally mature. This opens up the
 opportunity to self-identify with the younger other. This process expresses
 itself in many older students as an incredible sensitivity to the needs of
@@ -101,20 +103,22 @@ a growing individual coupled with the environment of the community will
 naturally lead each student down their own satisfying path. Each path will
 look very different and that is a good thing.
 
-We have no curriculum and we do not praise nor do we criticize students’
-personal choices. We do genuinely show our authentic emotions -- joy at
+We have no curriculum and we neither praise nor criticize students’
+personal choices. We do embrace authentic emotions -- joy at
 something delightful, frustration at annoyances. Notions of what is worthy of
 a student’s time come from students themselves, both as individuals and as
 reflexive members of a community, as well as the world of resources around
-them - not from an imposed syllabus. We concern ourselves with what we are now
-and, to a greater or lesser degree, what we want to become. This allows
+them. 
+
+Students start from a place of accepting who they are now and decide, more or
+less, from that foundation as to what they want to become. This allows our
 students to naturally grow into a future of their own making at a pace that
 works for them.
 
 ### Learning
 
-Because learning is the predicate of teaching, our focus is not on teaching,
-our focus is on learning. Students explore whatever interests them and in a
+Because learning is the goal of teaching, our focus is not on teaching, but 
+on learning. Students explore whatever interests them and in a
 fashion that makes sense to them. Success or failure has no bearing on growth.
 Students learn regardless of outcome.
 
@@ -127,12 +131,14 @@ and how to listen to them as they explain something difficult.
 We often witness students, who are learning a particular subject, seek out not
 the most knowledgeable person on the subject around, but rather someone who is
 just somewhat ahead in knowledge or ability level. Age-mixing also lends
-itself well to this consequence and, in many cases, the mentor has a good
+itself well to this consequence and, in fact, the mentor has a good
 chance of being the younger student. For most pursuits of learning, there is
 mutual enhancement when the ability levels of mentor and mentee are not that
-different. There is much less frustration and much less potential for
-discouragement when teaching is appropriately targeted as when peers teach
-each other.
+different. 
+
+The journey of learning is what we prize here. We know that the skills of
+learning are transferable to whatever endeavor our students ultimately pursue.
+Learning how to learn is what our school is all about. 
 
 ### Constraints
 
@@ -197,12 +203,14 @@ finding an adult.
 What our model does not do is bubble-wrap the students. They are free to
 explore their own comfort boundaries and define them, whether they push those
 boundaries and redefine a larger comfort zone or are more comfortable settling
-in more familiar territory. We find that when left to their own devices,
-students err on the side of caution. Bumped elbows, scraped knees, and other
-such minor incidents give students plenty of incentive to be more careful. In
-the rare instances when a child might truly be approaching areas out of their
-depth, there are plenty of eyes in the community that can recognize the risk
-and voices to urge caution. In the extreme, an adult is consulted.
+in more familiar territory. We find that when children are left freely to
+choose their actions, students err on the side of caution. 
+
+Bumped elbows, scraped knees, and other such minor incidents give students
+plenty of incentive to be more careful. In the rare instances when a child
+might truly be approaching areas out of their depth, there are plenty of eyes
+in the community that can recognize the risk and voices to urge caution. In
+the extreme, an adult is consulted.
 
 Though physical safety, due to its apparent nature, is chief on the minds of
 all parties involved, emotional safety is, arguably, more important on a
@@ -222,14 +230,17 @@ place of safety, despite the unknowns. It is their second home.
 
 ### Hard Work
 
-Our school offers a very demanding education. All that happens within our
+Our school offers a very demanding education. That which happens within our
 walls is authentic. This includes things perceived as kind, agreeable, and
 easy, but it also necessarily includes those things that are difficult,
 disagreeable, and perhaps that conflict with one’s sense of self. Students are
-ultimately responsible for negotiating these challenges. If students’
+ultimately responsible for negotiating these challenges. 
+
+If students’
 interests clash, adults are not expected to establish a regime that is “fair”.
 Those students must work out a solution for themselves or face the
-consequences of inaction. Practicing real life, in this way, prepares students
+consequences of inaction. 
+Practicing real life prepares students
 to further succeed in resolving difficulties as the stakes rise with age, be
 their problems practical, interpersonal, or existential.
 

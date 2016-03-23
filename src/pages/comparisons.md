@@ -1,4 +1,4 @@
-OK, so you’re sort of like… 
+OK, so you’re sort of like ... 
 ---
 
 By Romey Pittman, Fairhaven parent, co-founder and former staff member.
@@ -15,7 +15,7 @@ laid out and comparisons are not made from every angle. We hope that the
 explanations below serve to clarify what the Sudbury model is really about,
 and what it is not.
 
-. . . A MONTESSORI SCHOOL? 
+### ... a Montessori school? 
 
 There are some ways in which the Sudbury model is
 similar to the Montessori approach. Children in both settings are allowed more
@@ -34,7 +34,7 @@ expectation that one learn multiplication before negative numbers or how to
 draw a circle before a square. Interest is the only criterion for engaging in
 any activity, and satisfaction the only evaluation of success.
 
-. . .A WALDORF SCHOOL?
+### ... a Waldorf school?
 
 Like Waldorf schools, Sudbury schools care about the
 whole child. We are not only interested in academic success, but in the
@@ -65,7 +65,7 @@ change -- society according to their own interests, experience, knowledge, and
 goals.
 
 
-. . . A PROGRESSIVE SCHOOL? 
+### ... a progressive school? 
 
 Sudbury schools believe, as progressive school
 reformers do, that traditional schooling is not working. Both identify
@@ -109,7 +109,7 @@ nothing), and avoid parental pressure, than it is to schedule one's own life,
 wrestle with one's own questions, learn how to seek the answers, and master
 one's own destiny.
 
-. . . HOMESCHOOLING? 
+### ... homeschooling? 
 
 There is a particular philosophy of homeschooling, often
 referred to as "unschooling," which shares many similarities with the Sudbury
@@ -137,30 +137,30 @@ example. In most homeschooling families, the parent sees him or herself as
 ultimately responsible for the child's education, while at Sudbury schools,
 that responsibility rests squarely with the child.
 
-. . .STUDENT GOVERNMENTS IN TRADITIONAL SCHOOLS?  Sudbury School Meetings are
-similar to student governments only in that they are composed of students. But
-the School Meeting is a participatory democracy, where every student and staff
-member has the option of a direct vote in every decision made. Student
-governments are representative -- students are chosen to represent the larger
-student body. More importantly, student governments are hardly ever given real
-power over substantive issues. Elected positions serve primarily as symbols of
-status, popularity, and "leadership potential" for college admissions
-purposes. The School Meeting decides who will be staff each year, how tuition
-will be spent, what each and every rule of the school will be, and who will be
-suspended or expelled for violation of those rules. Staff members are involved
-on an equal footing, arguing their positions with gusto. But they are also
-equally bound to the rules of the school. As a free majority, students
-experience real control over their lives at school, and real consequences if
-they fail to meet the responsibilities such control requires of them. That
-kind of government brings a community identity and sense of individual
-empowerment no token school government could hope to achieve.
+### ... student governments in traditional schools?  
 
-OK, So You're Sort of Like... is a publication of Fairhaven School
+Sudbury School Meetings are similar to student governments only in that they
+are composed of students. But the School Meeting is a participatory democracy,
+where every student and staff member has the option of a direct vote in every
+decision made. Student governments are representative -- students are chosen
+to represent the larger student body. More importantly, student governments
+are hardly ever given real power over substantive issues. Elected positions
+serve primarily as symbols of status, popularity, and "leadership potential"
+for college admissions purposes. The School Meeting decides who will be staff
+each year, how tuition will be spent, what each and every rule of the school
+will be, and who will be suspended or expelled for violation of those rules.
+Staff members are involved on an equal footing, arguing their positions with
+gusto. But they are also equally bound to the rules of the school. As a free
+majority, students experience real control over their lives at school, and
+real consequences if they fail to meet the responsibilities such control
+requires of them. That kind of government brings a community identity and
+sense of individual empowerment no token school government could hope to
+achieve.
+
+**OK, So You're Sort of Like...** is a publication of Fairhaven School
 Incorporated, a non-profit organization dedicated to supporting the Sudbury
 model of education in Maryland. For more information on the school call
 301-249-8060, e-mail them at staff@fairhavenschool.com, or check out their
 website at fairhavenschool.com. Fairhaven School welcomes racial, ethnic, and
 religious diversity and families of every composition.
-
-
 

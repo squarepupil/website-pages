@@ -9,8 +9,9 @@ into the site.
 
 We will load up the template and the replace it. 
 
-    _"project.md::template | replace #body, _"index body" 
-        | replace #submenu, _"our external links|md" "
+    _"project.md::template | replace article, _"index body"  
+        | cheerio .info, after, _"banner | jade" 
+        | cheerio style, append, _"css" "
 
 
 ### Index Body
@@ -20,16 +21,36 @@ This is the index body. It contains a brief description.
     Arts&Ideas Sudbury School is a democractic school for ages 5-18. Our
     philosophy of education emphasizes trust, autonomy, justice, and learning.  
 
-    _"word gallery"
 
-#### Word Gallery
+### Banner
 
+    .hero
+        img(src="img/fwordmark.png")
+        
 
-* ![Friends in the rain](rain.jpg)
+### CSS
 
-     Having shared experiences, good or bad, is part of our
-     [model](model.html).
-* ![]()
+This is the css of the styling
+
+    .hero  {
+        background:url("img/hero.jpg") no-repeat center 40% fixed;
+        background-size: cover;
+        height:70vh;
+        width:100%;
+        position:relative;
+
+    }
+
+    .hero img {
+        position: absolute;
+        top: 0;
+        left: 25vw;
+        height: 60vh;
+    }
+
+    #logo img {
+        height:0;
+    }
 
 ### Our External Links
 

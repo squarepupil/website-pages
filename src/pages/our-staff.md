@@ -106,25 +106,4 @@ she has for the world, never knowing what new delight awaits around the next
 corner. He is relieved to have found an educational model that will nurture
 that joy instead of squashing it.
 
-Danny Mydlack (cofounder and former staff) is tenured Associate Professor of
-Electronic Media at Towson University where he teaches American History &
-Media Culture, and Television, Documentary and New Media Production. Danny is
-the Director of the award-winning documentary"Voices from the New American
-Schoolhouse," internationally the most widely-screened documentary on
-democratic education. As well, locally, he cofounded in 2003 the Baltimore
-Freeschool Preschool, the precursor to Arts & Ideas. Danny has held academic
-posts as Studio Instructor at The University of California San Diego,
-Professor of Television Production at George Washington University and
-Departmental Chair at the Maryland Institute College of Art and has presented
-to education workshops, screenings and to symposia throughout the United
-States and in Europe. He began work in school reform 38 years ago, founding
-the Independent Learning Center at Fairhaven High School where he attended. He
-contributed as a research assistant in technology and education in the 1980s
-in Boston under technology and learning expert Seymoure Pappertand in the
-1990s at the University of California, San Diego under American Educational
-Research Association award recipient Dr. Hugh Mehan where he was also employed
-by the nationally-recognized Center for Teacher Development. Danny is a
-lifelong student and mentee of NAEA Viktor Lowenfeld Award recipient Dr. Peter
-London.
-
 
