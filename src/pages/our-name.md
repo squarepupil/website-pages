@@ -1,5 +1,6 @@
 Our Name
-----
+---
+
 
 The founders (and namers of the school), have deep
 backgrounds in the performing arts but choose the “arts” in the school’s name

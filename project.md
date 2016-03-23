@@ -81,14 +81,11 @@ A generated string ought to look like `_"|echo name.md | readfile |
         _':src compiler' | .join \n | compile bogu "
 
 
-`[src compiler](# ": | log | jsStringLine |log")`
-
 
 [src compiler]()
 
     readfile 
     | process \_"template", \_"announcement", gGet(fname)
-
 
 
 
@@ -157,25 +154,6 @@ Add in the title both in the head and the article; easier to pop it in here.
 [process](# "define: | jshint")
 
 
-[junk next]()
-
-We have a special syntax for next, namely "NEXT:"  followed by the link and a
-description. We generate the relevant HTML here. 
-
-    var next = {};
-    next.start = article.indexOf("NEXT:");
-    if (ind !== -1) {
-        next.end = article.indexOf("\n", next.start);
-        next.end = (next.end === -1) ? article.length : next.end;
-        next.text = article.slice(next.start + 5, next.end).trim();
-        next.space = next.text.indexOf(" ");
-        next.link = next.text.slice(0, next.space);
-        next.label = next.text.slice(next.space+1);
-        next.str = "<a class='next' href='" + 
-            next.link + "'>" + next.label + "</a>";
-        article = article.slice(0, next.start) + next.str + 
-            article.slice(next.end+1);
-    }   
 
 [active page]()
 
@@ -331,78 +309,6 @@ space required to get from current position to new position.
     };
 
     
-
-[junk]()
-There is a special function of replacement where the arguments are paired to
-be a selector and the html replacement. This is like the standard sub command.
-
-    Folder.sync( "replace" , function(code, args) {
-        var selector, replacement;
-        var n = args.length;
-        var $ = cheerio.load(code);
-        for (i = 0; i < n; i += 2) {
-            selector = args[i];
-            replacement = args[i+1];
-            $(selector).html(replacement);
-        }
-        return $.html();
-    });
-
-This takes the incoming code as a replacement 
-
-    Folder.sync("append", function (input, args) {
-        var $ = cheerio.load(args[0]);
-        $(args[1]).append(input);
-        return $.html();
-    });
-
-This reads off a title from the article h2 and replaces the subtitle in the
-title tag with the heading name. 
-
-    Folder.sync("title", function (input, args) {
-        var $ = cheerio.load(input);
-        var title = $("article h2").text();
-        if (title) {
-           $("title").text("A&I "+ title);
-        }
-        return $.html();
-    });
-
-This looks for links with the current page name and makes them active. It should also make the drop-down stuff be open and active, but need to think on that one.
-
-    Folder.sync("current", function (input, args) {
-        var $ = cheerio.load(input);
-        var links = $("[href='" + args[0] + "']");
-        links.addClass("current");
-        return $.html();
-    });
-
-
-[junk]()
-
-    readfile  
-    | .split \n---\n 
-    | defaults :css, :hero, :footer, \_'footer', :nav, \_'nav', :bottom
-    | minidoc :title, :body 
-    | .mapc .trim 
-    | .apply :body, md  
-    | log 
-    | .compile html::template 
-    | syntax 
-
-[stringing]()
-
-    function (input) {
-        return input.
-            split("\n").
-            map(function (el) {
-                return '"' + el + '"';
-            }).
-            join('+\n');
-    }
-
-[jsStringLine](# "define:")
-
 
 [noop]()
 
@@ -570,8 +476,10 @@ We also institute the h5 for js
 ## CSS
  
     _"css reset"
+
     _"writ"
 
+    
     * {
         box-sizing: border-box; 
     }
@@ -599,7 +507,7 @@ borders while the inner provides the constraining width.
     }
 
     main {
-        margin-top:150px;
+        margin-top:110px;
         margin-bottom:50px;
     }
 
@@ -635,6 +543,19 @@ borders while the inner provides the constraining width.
         flex: 1;
         border: none;
     }
+
+These are for the previous and next links. It should be at the foot of the
+article. 
+
+    .previous {
+        float:left;
+    }
+
+    .next {
+        float:right;
+    }
+
+
 
 
 ### Colors fonts
@@ -684,92 +605,16 @@ Here we deal with some of the border and padding on the large scale.
         border-top: black solid 2px;
         border-bottom: grey solid 2px; 
     }
+
+    article li {
+        margin-bottom : 1rem;
+        margin-left : 1rem;
+    }
     
-[junk]()
-
-
-The background will be gray white 
-
-    html {
-        background-color: #f0f0f0;
+    article ul {
+        list-style-type : disc;
     }
-
-    main {
-        background-color:white;
-        width:60%;
-        margin-top:100px;
-        margin-left:auto;
-        margin-right:auto;
-        padding-top:0.5rem;
-        padding-bottom:1rem;
-        display:flex;
-    }
-
-    h1, h2, h3 {
-        margin-left: 1rem;
-    }
- 
-
-
-
-    aside > ul {
-        position: fixed;
-        top: 30vh;
-    }
-
-    p {
-        margin: 1rem 1rem 1rem 1rem;  
-    }
-
-
-
-
-###  DELETE Layout
-
-The layout is fairly simple. We flexbox vertically to have the header at the
-top, the main in the middle, and then the footer at the bottom. 
-
-    html, body {
-        margin:0;
-        height:100%;
-        min-height:100%
-    }
-
-    body {
-        margin:0;
-        display:flex;
-        flex-direction:column;
-    }
-
-    header {
-        order: 1;
-        flex-shrink: 0;
-        flex-basis: 50px;
-    }
-
-    main {
-        order:2; 
-    }
-
-    article {
-        height:1000px;
-        background-color:red;
-    }
-
-    footer {
-        order: 3;
-        flex-shrink:0;
-        flex-basis: 50px;
-    }
-
-
-(Above taken from [SO](http://stackoverflow.com/questions/19477707/html5-three-rows-flexbox-with-fixed-top-bottom-and-scrollable-middle) , [fiddle](https://jsfiddle.net/njfmt7w0/)  )
-
-So that stacks the stuff in the right order and fixes the header, footer.
-
-Nav.md handles the header internals and the footer is handled below.
-
-For the 
+    
 
 
 ### Sidebar
@@ -1364,7 +1209,7 @@ queries, node-sass for doing sass queries,  css-nano for minimfications.
 
 ## Writ
 
-This is part of writ.css
+This is part of writ.css, and modified.
 
     /*!
      * Writ v1.0.2
@@ -1379,7 +1224,11 @@ This is part of writ.css
     html {
       font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
       font-size: 16px;
+    }
+    
+    p, h1, h2 {
       line-height: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     code, pre, samp, kbd {
@@ -1424,4 +1273,187 @@ This is part of writ.css
       margin-bottom: -1px;
     }
 
+
+### Full Writ
+
+    /*!
+     * Writ v1.0.2
+     *
+     * Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
+     *
+     * https://cmcenroe.me/writ/LICENSE (ISC)
+     */
+
+    /* Fonts, sizes & vertical rhythm */
+
+    html {
+      font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
+      font-size: 16px;
+      line-height: 1.5rem;
+    }
+
+    code, pre, samp, kbd {
+      font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+      font-size: 0.833rem;
+    }
+
+    kbd { font-weight: bold; }
+    h1, h2, h3, h4, h5, h6, th { font-weight: normal; }
+
+    /* Minor third */
+    h1 { font-size: 2.488em; }
+    h2 { font-size: 2.074em; }
+    h3 { font-size: 1.728em; }
+    h4 { font-size: 1.44em; }
+    h5 { font-size: 1.2em; }
+    h6 { font-size: 1em; }
+    small { font-size: 0.833em; }
+
+    h1, h2, h3 { line-height: 3rem; }
+
+    p, ul, ol, dl, table, blockquote, pre, h1, h2, h3, h4, h5, h6 {
+      margin: 1.5rem 0 0;
+    }
+    ul ul, ol ol, ul ol, ol ul { margin: 0; }
+
+    hr {
+      margin: 0;
+      border: none;
+      padding: 1.5rem 0 0;
+    }
+
+    /* Accounting for borders */
+    table {
+      line-height: calc(1.5rem - 1px);
+      margin-bottom: -1px;
+    }
+    pre {
+      margin-top: calc(1.5rem - 1px);
+      margin-bottom: -1px;
+    }
+
+    /* Colors */
+
+    body { color: #222; }
+    code, pre, samp, kbd { color: #111; }
+    a, nav a:visited { color: #00e; }
+    a:visited { color: #60b; }
+    mark { color: inherit; }
+
+    code, pre, samp, thead, tfoot { background-color: rgba(0, 0, 0, 0.05); }
+    mark { background-color: #fe0; }
+
+    main aside, blockquote, ins { border: solid rgba(0, 0, 0, 0.05); }
+    pre, code, samp { border: solid rgba(0, 0, 0, 0.1); }
+    th, td { border: solid #dbdbdb; }
+
+    /* Layout */
+
+    body { margin: 1.5rem 1ch; }
+
+    body > header { text-align: center; }
+
+    main, body > footer {
+      display: block; /* Just in case */
+      max-width: 78ch;
+      margin: auto;
+    }
+
+    main figure, main aside {
+      float: right;
+      margin: 1.5rem 0 0 1ch;
+    }
+
+    main aside {
+      max-width: 26ch;
+      border-width: 0 0 0 0.5ch;
+      padding: 0 0 0 0.5ch;
+    }
+
+    /* Copy blocks */
+
+    blockquote {
+      margin-right: 3ch;
+      margin-left: 1.5ch;
+      border-width: 0 0 0 0.5ch;
+      padding: 0 0 0 1ch;
+    }
+
+    pre {
+      border-width: 1px;
+      border-radius: 2px;
+      padding: 0 0.5ch;
+      overflow-x: auto;
+    }
+    pre code {
+      border: none;
+      padding: 0;
+      background-color: transparent;
+      white-space: inherit;
+    }
+
+    img { max-width: 100%; }
+
+    /* Lists */
+
+    ul, ol, dd { padding: 0 0 0 3ch; }
+    dd { margin: 0; }
+
+    ul > li { list-style-type: disc; }
+    li ul > li { list-style-type: circle; }
+    li li ul > li { list-style-type: square; }
+
+    ol > li { list-style-type: decimal; }
+    li ol > li { list-style-type: lower-roman; }
+    li li ol > li { list-style-type: lower-alpha; }
+
+    nav ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    nav ul li {
+      display: inline;
+      padding-left: 1ch;
+      white-space: nowrap;
+    }
+    nav ul li:first-child { padding-left: 0; }
+
+    /* Tables */
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow-x: auto;
+    }
+
+    th, td {
+      border-width: 1px;
+      padding: 0 0.5ch;
+    }
+
+    /* Copy inline */
+
+    a { text-decoration: none; }
+
+    sup, sub {
+      font-size: 0.75em;
+      line-height: 1em;
+    }
+
+    ins {
+      border-width: 1px;
+      padding: 1px;
+      text-decoration: none;
+    }
+
+    mark {
+      padding: 1px;
+    }
+
+    code, samp {
+      border-width: 1px;
+      border-radius: 2px;
+      padding: 0.1em 0.2em;
+      white-space: nowrap;
+    }
 

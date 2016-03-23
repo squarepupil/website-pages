@@ -38,3 +38,5 @@ About 10 pictures each.
 
     Anything
 
+photoswipe
+
