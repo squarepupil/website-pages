@@ -133,8 +133,6 @@ Add in the title both in the head and the article; easier to pop it in here.
 
         article += "\n" +  prv + nxt;
 
-        var ind; 
-        
 
         $("article").append(article);
 
@@ -214,7 +212,7 @@ Figure out where to cut the text string.
                 end = aside.text.length;
             }
 
-            console.log(tag, start, end, aside.text.slice(start, end).trim());
+            //console.log(tag, start, end, aside.text.slice(start, end).trim());
 
             
            if (tags.hasOwnProperty(tag)) {
@@ -261,7 +259,6 @@ style, or a place in the text to hook into which starts with `#section` where
 section is the id heading that it is linked to. 
 
     function (str) {
-        console.log(str);
         if (str[0] === "#") {
             return "<div data-match='" + str+ "'></div>";
         } else if (str[0].search(/[0-9]/) === 0) {
@@ -296,17 +293,14 @@ space required to get from current position to new position.
 
     function () {
         var arr = document.querySelectorAll("[data-match]");
-        leak = arr;
-        console.log("hey");
         var i, n = arr.length, el, id;
         for (i = 0; i <n; i += 1) {
             el = arr[i];
             id = document.querySelector(el.getAttribute("data-match"));
-            console.log(id, el.getAttribute("data-match"));
             el.style.positon ="relative";
-            el.style.height = -el.offsetTop+id.offsetTop + "px"
+            el.style.height = -el.offsetTop+id.offsetTop + "px";
         }
-    };
+    }
 
     
 
@@ -322,6 +316,33 @@ to have subcommands working.
 [noop](# "define:")
 
 
+## Commands
+
+Some of the commands defined here. 
+
+* imgsrc. This takes in a file name and outputs an image element with a
+  srcset. 
+
+#### Imgsrc
+      
+This deals with different src sizes. It could also generate the different
+images if not already present if we convert this to be async, but that might
+be best to be a separate script. 
+
+    function (input, args) {
+        input = input || args.shift();
+        var alt = args.shift() || '';
+        var cls = args.shift() || '';
+        return '<img src="' + input + '-s.jpg" ' + 
+            'srcset="' + input + '-m.jpg 500w, ' + 
+                input + '-l.jpg 1000w" ' +
+            (alt ? 'alt="' + alt +'" ' : '') + 
+            (cls ? 'class="' + cls + '" ' : '') +
+            '>';
+    }
+
+[imgsrc](# "define:  ")
+
 ### Previous Next
 
 This section handles creating previous and next directions.
@@ -329,11 +350,10 @@ This section handles creating previous and next directions.
 This uses the pre-compiled previous, next format. 
 
     var np = _":pn-json | eval _":pn-making" ";
+    var prv, nxt;
     if (np.hasOwnProperty(fname)) { 
-        var prv = np[fname][0];
-        var nxt = np[fname][1];
-
-        console.log(prv, nxt, fname);
+        prv = np[fname][0];
+        nxt = np[fname][1];
 
         if (prv) {
             prv = '<div class="previous">PREVIOUS: ' + prv + '</div>';
@@ -342,7 +362,6 @@ This uses the pre-compiled previous, next format.
             nxt = '<div class="next">NEXT: ' + nxt + '</div>';
         }
     } else {
-        console.log("no next or previous for " + fname);
     }
 
 
