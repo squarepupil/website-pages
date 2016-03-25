@@ -2,3 +2,4 @@ node_modules
 output
 *.php
 originals
+old-originals

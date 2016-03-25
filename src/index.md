@@ -10,14 +10,17 @@ into the site.
 We will load up the template and the replace it. 
 
     _"project.md::template | replace article, _"index body"  
-        | cheerio .info, after, _"banner | jade" 
-        | cheerio style, append, _"css" "
+        | cheerio body, prepend, _"banner | jade" 
+        | cheerio style, append, _"css" 
+        | cheerio #logo, addClass, hide  
+        | cheerio body, append, _"scrolling" "
 
 
 ### Index Body
 
 This is the index body. It contains a brief description. 
-
+    
+    
     _":lead | md"
 
     _":age mixing | blurb"
@@ -111,6 +114,8 @@ This is the index body. It contains a brief description.
         
 [feeder]()
 
+    ---
+
     Explore our website to discover what makes our school tick and why
     students and their families wouldn’t have it any other way.   
 
@@ -129,7 +134,7 @@ picture. After that are some paragraphs of text.
         var bits = input.slice(0, ind).split("\n");
 
         var title = "<h3>" + bits[0].trim() + "</h3>";
-        var quote = "<div class='quote'>" + bits[1].trim() + "</div>";
+        var caption = "<figcaption>" + bits[1].trim() + "</figcaption>";
         var img = bits[2].trim();
         
 
@@ -145,7 +150,9 @@ breaks.
             "</p>";
 
         return '<div class="blurb">' +
-            title + quote + img + paragraph +
+            '<figure>' + img + caption + '</figure>' +
+            title + 
+            paragraph +
            '</div>';
 
     }
@@ -155,6 +162,7 @@ breaks.
 ### Banner
 
     .hero
+        img(src="img/hero.jpg")
         img(src="img/fwordmark.png")
         
 
@@ -162,25 +170,114 @@ breaks.
 
 This is the css of the styling
 
-    .hero  {
-        background:url("img/hero.jpg") no-repeat center 40% fixed;
-        background-size: cover;
-        height:70vh;
-        width:100%;
-        position:relative;
+.hero  {
+background:url("img/hero.jpg") no-repeat center 40% fixed;
+background-size: cover;
+height:70vh;
+width:100%;
+position:relative;
 
+}
+
+The banner image is in hero. We just do a little centering. 
+
+    .hero img:nth-child(1) {
+       width:100%; 
     }
 
-    .hero img {
+    .hero img:nth-child(2) {
         position: absolute;
-        top: 0;
-        left: 25vw;
-        height: 60vh;
+        top: 13vh;
+        left: 17vw;
+        width: 70vw;
     }
 
-    #logo img {
-        height:0;
+Need a divider for the feeder.
+
+    hr {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
     }
+
+Here we style the blurbs. The idea is to have the image on the left with a
+quote beneath. At top, is the title  
+
+    .blurb figure {
+        float:left;
+        width:30%;
+        margin-right:10px;
+        margin-bottom:10px;
+    }
+
+    figure img {
+        width:100%;
+    }
+
+    .blurb h3 {
+        text-align : center;
+    }
+
+
+### Scrolling
+
+    <script>
+        _":js | jshint"
+    </script>
+
+[js]()
+
+This handles the scrolling of the main image disappearing. When it disappears,
+the logo bulb should appear. It should start hidden. 
+
+    var getY = _":position";
+    var fmark = document.querySelector(".hero img:nth-child(2)");
+    var logo = document.querySelector("#logo");
+    var fheight = fmark.offsetHeight;
+    var bigVis = true;
+
+    window.addEventListener("scroll", function (e) {
+        var elY = getY(fmark) + fheight;
+
+banner image has scrolled away, but first time noticed. So we unhide bulb
+
+        if ( (elY < 70) && bigVis) {
+            logo.classList.remove("hide");
+            bigVis = false;
+        } else if ( (elY > 70) && !bigVis) {
+            logo.classList.add("hide");
+            bigVis = true;
+        }
+    });
+
+
+[position]()
+
+This is code taken from 
+https://www.kirupa.com/html5/get_element_position_using_javascript.htm
+which yields a function that gives us the position
+of the top corner. 
+
+    function (el) {
+      var yPos = 0;
+     
+      while (el) {
+        if (el.tagName == "BODY") {
+          // deal with browser quirks with body/window/document and page scroll
+          var yScroll = el.scrollTop || document.documentElement.scrollTop;
+     
+          yPos += (el.offsetTop - yScroll + el.clientTop);
+        } else {
+          // for all other non-BODY elements
+          yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+        }
+     
+        el = el.offsetParent;
+      }
+      return yPos;
+    }
+
 
 ### Our External Links
 

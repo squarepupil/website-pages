@@ -39,7 +39,9 @@ And then we have the project oriented files.
 * [../watch.js](#watch "save:") This watches the specified files and directories
   for changes and then implements them. 
 * [../README](#readme "save:") This is the readme file. Not that useful. 
-
+* [../img.js](#img-reduce "save:|jshint") This converts the images in originals and
+  puts them in img in three different sizes.
+  
 
 
 ### Pages
@@ -333,9 +335,10 @@ be best to be a separate script.
         input = input || args.shift();
         var alt = args.shift() || '';
         var cls = args.shift() || '';
-        return '<img src="' + input + '-s.jpg" ' + 
-            'srcset="' + input + '-m.jpg 500w, ' + 
-                input + '-l.jpg 1000w" ' +
+        return '<img src="gen/' + input + '-s.jpg" ' + 
+            'srcset="gen/' + input + '-m.jpg 500w, gen/' + 
+                input + '-l.jpg 1000w", gen/' +
+                input + '.jpg 1500w" ' +
             (alt ? 'alt="' + alt +'" ' : '') + 
             (cls ? 'class="' + cls + '" ' : '') +
             '>';
@@ -501,6 +504,10 @@ We also institute the h5 for js
     
     * {
         box-sizing: border-box; 
+    }
+
+    .hide {
+        display: none;
     }
 
     _"colors fonts"
@@ -1117,6 +1124,62 @@ the strings.
 
 [assert](# "define:")
 
+
+## Img Reduce
+
+This generates a js file that can be run as `node img.js` It takes files in
+the originals directory and puts them in the img direcory with width reduced
+to 450px. 
+
+    var gm = require('gm');
+    var fs = require('fs');
+
+    var indir = "originals/";
+    var outdir = "output/gen/";
+    
+    var arr = fs.readdirSync(indir);
+    var done = fs.readdirSync(outdir);
+
+    var sizes = [["s", 200], ["m", 500], ["l", 800]];
+
+    var create =  _":create";
+
+    arr.forEach(function (file) {
+        if (done.indexOf(file) !== -1) {
+            console.log("SKIPPING (already done) " + file);
+            return;
+        }
+        if (file.indexOf(".jpg") !== -1) {
+            sizes.forEach(function (el)  {
+                create(file, 
+                    file.replace(".jpg", "-" + el[0] + ".jpg"),
+                    el[1] 
+                );
+            });
+            create(file, file, 1200);
+       }
+    });
+
+[create]()
+
+This takes in a filename, loads that image, resizes it to the given size, and
+outputs where out points to. It logs the results in console. 
+
+This relies on the variables indir and outdir for general input and output. I
+may regret this.
+
+    function (orig, out, size) {
+        gm(indir + orig).
+            resize(size).
+            noProfile().
+            write(outdir + out, function (err) {
+                if (!err) {
+                    console.log('DONE with: ' + orig);
+                } else {
+                    console.log(err);
+                }
+            });
+    }
 
 ## package
 
