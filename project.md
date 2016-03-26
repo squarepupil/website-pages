@@ -509,6 +509,10 @@ We also institute the h5 for js
     .hide {
         display: none;
     }
+    
+    strong {
+        font-weight:bold;
+    }
 
     _"colors fonts"
 

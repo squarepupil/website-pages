@@ -7,9 +7,10 @@ into the site.
 
 ## Page
 
-We will load up the template and the replace it. 
+We will load up the template and then replace the article, put in the banner,
+add in some css, hide the lightbulb by default, and throw in some js. 
 
-    _"project.md::template | replace article, _"index body"  
+    _"project.md::template | replace main, _"index body"  
         | cheerio body, prepend, _"banner | jade" 
         | cheerio style, append, _"css" 
         | cheerio #logo, addClass, hide  
@@ -21,7 +22,7 @@ We will load up the template and the replace it.
 This is the index body. It contains a brief description. 
     
     
-    _":lead | md"
+    <div class="inner">_":lead | md"</div>
 
     _":age mixing | blurb"
 
@@ -29,13 +30,14 @@ This is the index body. It contains a brief description.
 
     _":autonomy | blurb"
 
-    _":feeder | md"
+the extra div below is to get rid of the flex. bad hack. 
+
+    <div class="inner"><div>_":feeder | md"</div></div>
+    
 
 [lead]()
 
-    *Arts&Ideas Sudbury School* is a democractic school for ages 5-18. Our
-    philosophy of education emphasizes trust, autonomy, justice, and
-    learning.  
+    #### **Arts&Ideas Sudbury School** is a democractic school for ages 5-18. Our philosophy of education emphasizes trust, autonomy, justice, and learning.  
 
 
 [age mixing]()
@@ -114,7 +116,6 @@ This is the index body. It contains a brief description.
         
 [feeder]()
 
-    ---
 
     Explore our website to discover what makes our school tick and why
     students and their families wouldn’t have it any other way.   
@@ -149,11 +150,15 @@ breaks.
                 join("</p>\n<p>") +
             "</p>";
 
-        return '<div class="blurb">' +
-            '<figure>' + img + caption + '</figure>' +
+        return '<div class="blurb"><div class="inner">' +
+            '<div class="nottext">' +
             title + 
+            '<figure>' + img + caption + '</figure>' +
+            '</div>' +
+            '<div class="text">' +
             paragraph +
-           '</div>';
+            '</div>' +
+           '</div></div>';
 
     }
 
@@ -188,27 +193,26 @@ The banner image is in hero. We just do a little centering.
     .hero img:nth-child(2) {
         position: absolute;
         top: 13vh;
-        left: 17vw;
+        left: 15.3vw;
         width: 70vw;
     }
 
-Need a divider for the feeder.
-
-    hr {
-        border: 0;
-        height: 1px;
-        background: #333;
-        background-image: linear-gradient(to right, #ccc, #333, #ccc);
-    }
 
 Here we style the blurbs. The idea is to have the image on the left with a
 quote beneath. At top, is the title  
 
+    .blurb {
+        width:100%;
+        background-color: #e0dfd6;
+        margin-bottom: 3rem;
+    }
+
+    .blurb .inner {
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+
     .blurb figure {
-        float:left;
-        width:30%;
-        margin-right:10px;
-        margin-bottom:10px;
     }
 
     figure img {
@@ -216,9 +220,41 @@ quote beneath. At top, is the title
     }
 
     .blurb h3 {
-        text-align : center;
+        margin-bottom:2rem;
+        text-align: center;
     }
 
+    .blurb .nottext {
+        flex:1;
+        margin-right : 2rem;
+    }
+
+    .blurb .text {
+        flex:1;
+    }
+
+    .blurb figcaption {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+The aside disappearing allows for full text expansion. Also the top margin on
+the main part is not needed as large. 
+
+    aside {
+        display:none;
+    }
+
+    main {
+        margin-top:3em;
+    }
+
+The one element of h4 is the lead
+
+    h4 {
+        margin-bottom:3em;
+    }
 
 ### Scrolling
 
@@ -231,21 +267,28 @@ quote beneath. At top, is the title
 This handles the scrolling of the main image disappearing. When it disappears,
 the logo bulb should appear. It should start hidden. 
 
+One complication in the positioning is that the image disappears behind the
+nav so its relevant height is a little bit messy. Also the word mark is what
+matters and it extends a bit lower as an image than it appears (about 20%)
+hence the multiply by 80% and the subtraction from the nav height
+
     var getY = _":position";
     var fmark = document.querySelector(".hero img:nth-child(2)");
     var logo = document.querySelector("#logo");
-    var fheight = fmark.offsetHeight;
+    var fheight = fmark.offsetHeight*0.8 - 
+        document.querySelector("header").offsetHeight;
     var bigVis = true;
 
     window.addEventListener("scroll", function (e) {
         var elY = getY(fmark) + fheight;
+        console.log(elY, fheight);
 
 banner image has scrolled away, but first time noticed. So we unhide bulb
 
-        if ( (elY < 70) && bigVis) {
+        if ( (elY < 0) && bigVis) {
             logo.classList.remove("hide");
             bigVis = false;
-        } else if ( (elY > 70) && !bigVis) {
+        } else if ( (elY > 0) && !bigVis) {
             logo.classList.add("hide");
             bigVis = true;
         }
