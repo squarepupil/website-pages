@@ -10,6 +10,8 @@ module.exports = function (Folder, args) {
     }
 
     require('litpro-jshint')(Folder, args);
+    
+    Folder.prototype.local.gm = require('gm');
 
     var jade = require('jade');
     

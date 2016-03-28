@@ -318,34 +318,6 @@ to have subcommands working.
 [noop](# "define:")
 
 
-## Commands
-
-Some of the commands defined here. 
-
-* imgsrc. This takes in a file name and outputs an image element with a
-  srcset. 
-
-#### Imgsrc
-      
-This deals with different src sizes. It could also generate the different
-images if not already present if we convert this to be async, but that might
-be best to be a separate script. 
-
-    function (input, args) {
-        input = input || args.shift();
-        var alt = args.shift() || '';
-        var cls = args.shift() || '';
-        return '<img src="gen/' + input + '-s.jpg" ' + 
-            'srcset="gen/' + input + '-m.jpg 500w, gen/' + 
-                input + '-l.jpg 1000w", gen/' +
-                input + '.jpg 1500w" ' +
-            (alt ? 'alt="' + alt +'" ' : '') + 
-            (cls ? 'class="' + cls + '" ' : '') +
-            '>';
-    }
-
-[imgsrc](# "define:  ")
-
 ### Previous Next
 
 This section handles creating previous and next directions.
@@ -438,6 +410,56 @@ to a two element array of `[prv, next]` links, possible empty strings.
         });
 
     text = JSON.stringify(ret);
+
+
+## Commands
+
+Some of the commands defined here. 
+
+* imgsrc. This takes in a file name and outputs an image element with a
+  srcset. 
+* js-string  This makes a snippet into something that can be saved as a
+  javascript string to be read in (converts newlines to escaped newlines and
+  the surrounding quote type being escaped as well. 
+
+### Imgsrc
+      
+This deals with different src sizes. It could also generate the different
+images if not already present if we convert this to be async, but that might
+be best to be a separate script.
+
+The filename can be either the incoming stream or the first argument. The next
+argument (first or second, depending) is the alt text for the image and the
+following argument is a class list (space separated). 
+
+    function (input, args) {
+        input = input || args.shift();
+        var alt = args.shift() || '';
+        var cls = args.shift() || '';
+        return '<img src="gen/' + input + '-s.jpg" ' + 
+            'srcset="gen/' + input + '-m.jpg 500w, gen/' + 
+                input + '-l.jpg 1000w", gen/' +
+                input + '.jpg 1500w" ' +
+            (alt ? 'alt="' + alt +'" ' : '') + 
+            (cls ? 'class="' + cls + '" ' : '') +
+            '>';
+    }
+
+[imgsrc](# "define:  ")
+
+### js-string
+
+So the input is a string and we escape newlines and quotes, outputting a
+quoted string.
+
+    function (input) {
+        input = input.
+            replace(/\n/g, "\\n").
+            replace(/"/g, '\\"');
+        return '"' + input + '"';
+    }
+
+[js-string](# "define:")
 
 
 
@@ -705,6 +727,8 @@ previous color of yellow burn: #9E9A6C
         margin-left: 20px;
     }
 
+        
+
 We also want to hide the first or second item depending on the width. The
 first item is for wide footer, the second is for short. 
 
@@ -865,6 +889,8 @@ Probably can remove it.
         }
 
         require('litpro-jshint')(Folder, args);
+        
+        Folder.prototype.local.gm = require('gm');
 
         _':modules'
 

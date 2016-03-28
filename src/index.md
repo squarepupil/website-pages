@@ -120,7 +120,7 @@ the extra div below is to get rid of the flex. bad hack.
     Explore our website to discover what makes our school tick and why
     students and their families wouldn’t have it any other way.   
 
-    You can start with a brief [introduction to our model](intro.html)
+    You can start with a brief [introduction to our model](intro.html).
     
 
 ### Blurb
