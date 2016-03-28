@@ -259,7 +259,7 @@ The one element of h4 is the lead
 ### Scrolling
 
     <script>
-        _":js | jshint"
+        _":js "
     </script>
 
 [js]()
@@ -279,7 +279,7 @@ hence the multiply by 80% and the subtraction from the nav height
         document.querySelector("header").offsetHeight;
     var bigVis = true;
 
-    window.addEventListener("scroll", function (e) {
+    window.addEventListener("scroll", function () {
         var elY = getY(fmark) + fheight;
         console.log(elY, fheight);
 

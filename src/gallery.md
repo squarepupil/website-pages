@@ -7,7 +7,7 @@ A gallery of albums. Each album consists of captions and pictures.
 
 ## Page
 
-    _"project.md::template | replace main, _"albums | log"
+    _"project.md::template | replace main, _"albums  "
         | cheerio head, append, _"pswp css"
         | cheerio body, append, _"pswp js" "
 
@@ -32,8 +32,16 @@ photoswipe list will be used.
 
     _"anything | pswp Endless possibilities at A&amp;I"
 
+    ":more pictures|md"
+
     _"pswp html"
-    
+
+[more pictures]()
+
+
+    For even more pictures, you can check our much larger [gallery of
+    growing images](https://lightroom.adobe.com/shares/045797a007124252b1060e651abfc2fe) and our [Facebook page](https://www.facebook.com/Arts-Ideas-Sudbury-School-372859716072)
+
 
 ### Anything
 
@@ -142,10 +150,10 @@ links and js links to include.
 Links to js files
 
     <!-- Core JS file -->
-    <script src="pswp/photoswipe.js"></script> 
+    <script src="pswp/photoswipe.min.js"></script> 
 
     <!-- UI JS file -->
-    <script src="pswp/photoswipe-ui-default.js"></script> 
+    <script src="pswp/photoswipe-ui-default.min.js"></script> 
 
     <script>
         _"pswp embedded js"    
@@ -293,12 +301,11 @@ This takes in a block of file names and should output an html gallery.
         items.forEach(function (el, ind) {
             flags[ind] = false;
             var name = itemstart(el, ind); //also parses item into items
-            console.log(process.cwd() + "/originals/" + name);
             gm(process.cwd() + "/originals/" + name).size(itemdone(ind));
         });
     }
 
-[pswp](# "define:async|jshint")
+[pswp](# "define:async")
         
 
 [done]()

@@ -39,7 +39,7 @@ And then we have the project oriented files.
 * [../watch.js](#watch "save:") This watches the specified files and directories
   for changes and then implements them. 
 * [../README](#readme "save:") This is the readme file. Not that useful. 
-* [../img.js](#img-reduce "save:|jshint") This converts the images in originals and
+* [../img.js](#img-reduce "save:") This converts the images in originals and
   puts them in img in three different sizes.
   
 
@@ -151,7 +151,7 @@ Add in the title both in the head and the article; easier to pop it in here.
 
     }
 
-[process](# "define: | jshint")
+[process](# "define: ")
 
 
 
@@ -1107,7 +1107,7 @@ elegant, but it is kind of cool.
 [caps](# "define:")
 
 
-[test | M W>900px a](# "store: | caps | assert echo('@media (min-width: 900px) a') , caps test ")
+[test | M W>900px a](# "tranform: | caps | assert echo('@media (min-width: 900px) a') , caps test ")
 
 [matches]()
 
