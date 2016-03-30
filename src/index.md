@@ -237,7 +237,7 @@ quote beneath. At top, is the title
     }
 
     main > :nth-child(2n+2) {
-        box-shadow: inset 0px 0px 10px #88;
+        box-shadow: inset 0px 0px 10px #888;
     }
     
     .blurb .inner {
@@ -276,6 +276,10 @@ quote beneath. At top, is the title
         order:1;
         margin-right:0;
         margin-left:2rem;
+    }
+
+    main.outer {
+       padding:0; 
     }
 
     .blurb .text {
