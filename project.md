@@ -135,7 +135,6 @@ Add in the title both in the head and the article; easier to pop it in here.
 
         article += "\n" +  prv + nxt;
 
-
         $("article").append(article);
 
         var aside = bits[2] || '';
@@ -146,6 +145,10 @@ Add in the title both in the head and the article; easier to pop it in here.
 
         _":active page"
         
+        var footNext;
+        _":footer next"
+
+        $("footer").append(footNext);
 
         return $.html();
 
@@ -154,6 +157,9 @@ Add in the title both in the head and the article; easier to pop it in here.
 [process](# "define: ")
 
 
+[footer next]()
+
+    footNext = '';
 
 [active page]()
 
@@ -607,7 +613,32 @@ article.
         float:right;
     }
 
+    form textarea {
+        width:500px;
+        height:100px;
+    }
 
+And then some stuff for small screens
+
+    M W<640px {
+        
+        .inner {
+            min-width:50px;
+            flex-direction:column;
+            width:auto;
+            margin-left:10px;
+            margin-right:10px;
+        }
+
+        form textarea {
+            width:90vw;
+        }
+
+        iframe {
+            width:90vw;
+        }
+
+    }
 
 
 ### Colors fonts
@@ -628,7 +659,7 @@ article.
     }
 
     footer {
-        background-color: #E0DFD6;
+        background-color: #eee; /*#E0DFD6;*/
     }
 
     #actions a {
@@ -637,7 +668,7 @@ article.
     }
 
     .dropdown {
-        background-color: grey;
+        background-color: #e0dfd6;
     }
 
     
@@ -655,7 +686,8 @@ Here we deal with some of the border and padding on the large scale.
 
     .content {
         border-top: black solid 2px;
-        border-bottom: grey solid 2px; 
+        /*border-bottom: grey solid 2px; */
+        box-shadow: 0px 0px 10px #888;
     }
 
     article li {
@@ -686,9 +718,9 @@ This sidebar is flexible. Ideally it should pull from other bits.
 
     * Arts & Ideas Sudbury School 
     * A&I
-    * 4915 Holder Avenue, Baltimore, MD 21214 
+    * <a href="https://goo.gl/maps/wDtVMYYgTwM2" target="_blank">4915 Holder<span class="long"> Avenue, Baltimore, MD 21214</span></a>
     * 410-426-0001
-    * [![Facebook](img/flogo.png)](https://www.facebook.com/Arts-Ideas-Sudbury-School-372859716072)
+    * [![Facebook Logo](img/flogo.png)](https://www.facebook.com/Arts-Ideas-Sudbury-School-372859716072)
     * [![Blog](img/blog-logo.gif)](http://blog.aisudbury.com)
 
 
@@ -741,6 +773,19 @@ first item is for wide footer, the second is for short.
     M W<953px {
         footer li:nth-child(1) {
             display:none;
+        }
+    }
+
+    M W<640px {
+        footer .long {
+            display:none;
+        }
+        footer li:nth-child(2) {
+            display:none;
+        }
+        footer li:nth-child(1n+3) {
+            list-style-type:none;
+            margin-left:9px;
         }
     }
 

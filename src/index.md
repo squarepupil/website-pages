@@ -12,7 +12,7 @@ add in some css, hide the lightbulb by default, and throw in some js.
 
     _"project.md::template | replace main, _"index body"  
         | cheerio body, prepend, _"banner | jade" 
-        | cheerio style, append, _"css" 
+        | cheerio style, append, _"css | caps" 
         | cheerio #logo, addClass, hide  
         | cheerio body, append, _"scrolling" "
 
@@ -32,12 +32,12 @@ This is the index body. It contains a brief description.
 
 the extra div below is to get rid of the flex. bad hack. 
 
-    <div class="inner"><div>_":feeder | md"</div></div>
+    <div class="inner tail"><div>_":feeder | md"</div></div>
     
 
 [lead]()
 
-    #### **Arts&Ideas Sudbury School** is a democractic school for ages 5-18. Our philosophy of education emphasizes trust, autonomy, justice, and learning.  
+    #### **Arts & Ideas Sudbury School** is a democractic school for ages 5-18. Our philosophy of education emphasizes trust, autonomy, justice, and learning.  
 
 
 [age mixing]()
@@ -134,7 +134,7 @@ picture. After that are some paragraphs of text.
         var ind = input.indexOf("\n\n");
         var bits = input.slice(0, ind).split("\n");
 
-        var title = "<h3>" + bits[0].trim() + "</h3>";
+        var title = "<h2>" + bits[0].trim() + "</h2>";
         var caption = "<figcaption>" + bits[1].trim() + "</figcaption>";
         var img = bits[2].trim();
         
@@ -167,8 +167,8 @@ breaks.
 ### Banner
 
     .hero
-        img(src="img/hero.jpg")
-        img(src="img/fwordmark.png")
+        #banner(src="img/hero.jpg")
+        img#wmark(src="img/fwordmark.png")
         
 
 ### CSS
@@ -184,17 +184,42 @@ position:relative;
 
 }
 
-The banner image is in hero. We just do a little centering. 
-
-    .hero img:nth-child(1) {
-       width:100%; 
+    .hero {
+        position:relative;
+        margin-top:56px;
     }
 
-    .hero img:nth-child(2) {
+The banner image is in hero. We just do a little centering. 
+
+     #banner {
+        width: 100%;
+        height: 31vw;
+        background-image: url("img/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0px -135px;
+    }
+
+    #wmark  {
         position: absolute;
-        top: 13vh;
-        left: 15.3vw;
-        width: 70vw;
+        /* top: 13vh; */
+        top: 4vw;
+        left: 25.3vw;
+        width: 49vw;
+    }
+
+Small version (the nav gets twice as large so we need to account for that.
+Also the width gets narrower shifting the image. 
+
+    M W<640px {
+
+        .hero {
+            margin-top:84px;
+        }
+
+        #banner {
+            background-position: 0px -79px;
+        }
     }
 
 
@@ -204,12 +229,28 @@ quote beneath. At top, is the title
     .blurb {
         width:100%;
         background-color: #e0dfd6;
-        margin-bottom: 3rem;
+        /*margin-bottom: 3rem;*/
     }
 
+    main > :nth-child(2n+1) {
+        background-color: white;
+    }
+
+    main > :nth-child(2n+2) {
+        box-shadow: inset 0px 0px 10px #88;
+    }
+    
     .blurb .inner {
-        padding-top:1rem;
-        padding-bottom:1rem;
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+    
+    .blurb .text {
+        text-align: justify 
+    }
+
+    .tail {
+        padding-top:2rem;
     }
 
     .blurb figure {
@@ -219,14 +260,22 @@ quote beneath. At top, is the title
         width:100%;
     }
 
-    .blurb h3 {
+    .blurb h2 {
         margin-bottom:2rem;
         text-align: center;
+        font-family: bebas, serif;
+        word-spacing:8px; 
     }
 
     .blurb .nottext {
         flex:1;
         margin-right : 2rem;
+    }
+    
+    main.outer :nth-child(3) .nottext {
+        order:1;
+        margin-right:0;
+        margin-left:2rem;
     }
 
     .blurb .text {
@@ -247,13 +296,13 @@ the main part is not needed as large.
     }
 
     main {
-        margin-top:3em;
+        margin-top:2em;
     }
 
 The one element of h4 is the lead
 
     h4 {
-        margin-bottom:3em;
+        margin-bottom:2em;
     }
 
 ### Scrolling

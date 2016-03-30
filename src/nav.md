@@ -68,7 +68,8 @@ That will be done in the main layout.
         text-decoration: underline;
     }
 
-    _":layout"
+    _":layout "
+    
 
 [layout]()
 
@@ -116,6 +117,22 @@ level, we want flush.
 
     .dropdown ul {
         justify-content: space-around;
+    }
+
+
+This is for small screens.
+
+    M W<640px {
+
+        header .inner > :nth-child(2n+1) {
+            width: 100%;
+        }
+
+        #actions ul {
+            justify-content:flex-start;
+        }
+
+        
     }
 
 
@@ -189,13 +206,26 @@ div to be the drop-down item (class down)
 
     #logo a {
         position:fixed;
-        top:10px;
+        top:6px;
         z-index:20;
         display:inline-block;
     }
 
     #logo img {
         width: 50px;
+    }
+
+    M W<640px {
+        #logo {
+            position:fixed;
+            right:-5px; 
+        }
+        #logo a {
+            top:-1px;
+        }
+        #logo img {
+            width:31px;
+        }
     }
 
 
@@ -249,6 +279,12 @@ These are the classes that handle the display.
         transform: rotate(90deg);
     }
 
+
+    M W<640px {
+        .dropdown.active {
+            height:40px;
+        }
+    }
 
         
 ##### JS

@@ -32,7 +32,7 @@ photoswipe list will be used.
 
     _"anything | pswp Endless possibilities at A&amp;I"
 
-    ":more pictures|md"
+    _":more pictures|md"
 
     _"pswp html"
 
