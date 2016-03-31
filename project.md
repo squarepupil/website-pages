@@ -655,7 +655,7 @@ And then some stuff for small screens
     }
     
     .info {
-        background-color: rgb(76, 148, 33);
+        background-color: #1AAB84; /* rgb(76, 148, 33);*/
     }
 
     footer {
@@ -663,7 +663,7 @@ And then some stuff for small screens
     }
 
     #actions a {
-        color: white;
+        color: black; /*white;*/
         font-size: 0.8em;
     }
 

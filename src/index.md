@@ -183,14 +183,6 @@ This includes the wordmark and the lead text
 
 This is the css of the styling
 
-.hero  {
-background:url("img/hero.jpg") no-repeat center 40% fixed;
-background-size: cover;
-height:70vh;
-width:100%;
-position:relative;
-
-}
 
     .top {
         height: 129px;
@@ -203,7 +195,7 @@ position:relative;
     }
     
     .bottom {
-        padding-top: 89px;
+        padding-top: 107px;
         padding-bottom: 1px;
         background-color: #00FFBB;
     }
@@ -226,12 +218,34 @@ Also the width gets narrower shifting the image.
 
     M W<640px {
 
-        .hero {
-            margin-top:84px;
+        .top {
+            height: 150px;
+            background-color: #AEF1F1; 
+        }
+        
+        .middle {
+            height: 43.35px;
+            background-color:white;
+        }
+        
+        .bottom {
+            padding-top: 66px;
+            padding-bottom: 1px;
+            background-color: #00FFBB;
+        }
+        
+        .relative {
+            position: relative;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        #banner {
-            background-position: 0px -79px;
+        #wmark  {
+            position: absolute;
+            top: -19px;
+            left: 0;
+            width:100%; 
         }
     }
 
