@@ -253,14 +253,18 @@ These are the classes that handle the display.
         padding:0px;
         overflow-y:hidden;
         transition: height 0.2s;
-        transition: padding 0.2s;
+        /*transition: padding 0.2s;*/
+    }
+    
+    .dropdown .inner {
+        padding-top:6px;
     }
 
     .dropdown.active {
         height:27px;
-        padding:4px;
+        /*padding:4px;
+        transition: padding 0.4s;*/
         transition: height 0.4s;
-        transition: padding 0.4s;
     }
 
     .arrow canvas {

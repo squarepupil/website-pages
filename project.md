@@ -148,7 +148,7 @@ Add in the title both in the head and the article; easier to pop it in here.
         var footNext;
         _":footer next"
 
-        $("footer").append(footNext);
+        $("footer li:last-child").replaceWith(footNext);
 
         return $.html();
 
@@ -159,7 +159,7 @@ Add in the title both in the head and the article; easier to pop it in here.
 
 [footer next]()
 
-    footNext = '';
+    footNext = '<li>NEXT&rarr;</li>';
 
 [active page]()
 
@@ -659,7 +659,7 @@ And then some stuff for small screens
     }
 
     footer {
-        background-color: #eee; /*#E0DFD6;*/
+        background-color: #e0dfd6;
     }
 
     #actions a {
@@ -722,6 +722,7 @@ This sidebar is flexible. Ideally it should pull from other bits.
     * 410-426-0001
     * [![Facebook Logo](img/flogo.png)](https://www.facebook.com/Arts-Ideas-Sudbury-School-372859716072)
     * [![Blog](img/blog-logo.gif)](http://blog.aisudbury.com)
+    * NEXT
 
 
 [css]()
@@ -748,15 +749,22 @@ previous color of yellow burn: #9E9A6C
         margin-left:0;
         margin-right:auto;
         padding-top:3px;
+        justify-content:space-between;
     }
 
     footer li:nth-last-child(1n+2) {
-        margin-right:10px;
+       /* margin-right:10px;*/
     }
 
     footer li:nth-child(1n+3) {
-        list-style-type:disc;
-        margin-left: 20px;
+        /*list-style-type:disc;*/
+        /*margin-left: 20px;*/
+    }
+
+The Next styling
+
+    footer li:last-child {
+        font-family:bebas, serif;
     }
 
         
@@ -785,7 +793,7 @@ first item is for wide footer, the second is for short.
         }
         footer li:nth-child(1n+3) {
             list-style-type:none;
-            margin-left:9px;
+           /* margin-left:9px;*/
         }
     }
 

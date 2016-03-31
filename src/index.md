@@ -11,7 +11,7 @@ We will load up the template and then replace the article, put in the banner,
 add in some css, hide the lightbulb by default, and throw in some js. 
 
     _"project.md::template | replace main, _"index body"  
-        | cheerio body, prepend, _"banner | jade" 
+        | cheerio body, prepend, _"banner | jade | log | compile index body " 
         | cheerio style, append, _"css | caps" 
         | cheerio #logo, addClass, hide  
         | cheerio body, append, _"scrolling" "
@@ -22,7 +22,6 @@ add in some css, hide the lightbulb by default, and throw in some js.
 This is the index body. It contains a brief description. 
     
     
-    <div class="inner">_":lead | md"</div>
 
     _":age mixing | blurb"
 
@@ -166,9 +165,18 @@ breaks.
 
 ### Banner
 
+This includes the wordmark and the lead text
+
+
+
     .hero
-        #banner(src="img/hero.jpg")
-        img#wmark(src="img/fwordmark.png")
+        .top
+        .inner
+            .relative 
+                img#wmark(src="img/wordmark.png")
+        .middle
+        .bottom
+            .inner \_":lead | md" 
         
 
 ### CSS
@@ -184,28 +192,33 @@ position:relative;
 
 }
 
-    .hero {
-        position:relative;
-        margin-top:56px;
+    .top {
+        height: 129px;
+        background-color: #AEF1F1; 
     }
-
-The banner image is in hero. We just do a little centering. 
-
-     #banner {
-        width: 100%;
-        height: 31vw;
-        background-image: url("img/hero.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 0px -135px;
+    
+    .middle {
+        height: 90.35px;
+        background-color:white;
+    }
+    
+    .bottom {
+        padding-top: 89px;
+        padding-bottom: 1px;
+        background-color: #00FFBB;
+    }
+    
+    .relative {
+        position: relative;
+        width: 622px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #wmark  {
         position: absolute;
-        /* top: 13vh; */
-        top: 4vw;
-        left: 25.3vw;
-        width: 49vw;
+        top: -39px;
+        left: 0;
     }
 
 Small version (the nav gets twice as large so we need to account for that.
@@ -228,15 +241,15 @@ quote beneath. At top, is the title
 
     .blurb {
         width:100%;
-        background-color: #e0dfd6;
+        background-color: #eee;
         /*margin-bottom: 3rem;*/
     }
 
-    main > :nth-child(2n+1) {
+    main > :nth-child(2n+0) {
         background-color: white;
     }
 
-    main > :nth-child(2n+2) {
+    main > :nth-child(2n+1) {
         box-shadow: inset 0px 0px 10px #888;
     }
     
@@ -326,9 +339,9 @@ matters and it extends a bit lower as an image than it appears (about 20%)
 hence the multiply by 80% and the subtraction from the nav height
 
     var getY = _":position";
-    var fmark = document.querySelector(".hero img:nth-child(2)");
+    var fmark = document.querySelector("#wmark");
     var logo = document.querySelector("#logo");
-    var fheight = fmark.offsetHeight*0.8 - 
+    var fheight = fmark.offsetHeight - 
         document.querySelector("header").offsetHeight;
     var bigVis = true;
 

@@ -5,6 +5,10 @@ image gallery.
 
 A gallery of albums. Each album consists of captions and pictures. 
 
+THOUGHTS: Just three thumbnail pictures per album with a ... picture or something. Show the ui always, have album header at top, caption below, have down and up arrows flip through different albums. 
+
+
+
 ## Page
 
     _"project.md::template | replace main, _"albums  "
@@ -319,7 +323,7 @@ command is done.
     function () {
         var text = container.replace("ITEMS", items.map(function (el) {
 
-Each item comes in the form `[ filename, size, alt, caption]` though the second two are optional. Trim should be done on all. We need to get 
+Each item comes in the form `[ filename, alt, caption, size]` though the middle two are optional. Trim should be done on all. We need to get 
             
             return item.
                 replace("BIG", "gen/" + el[0]).
