@@ -31,7 +31,7 @@ This is the index body. It contains a brief description.
 
 the extra div below is to get rid of the flex. bad hack. 
 
-    <div class="inner tail"><div>_":feeder | md"</div></div>
+    <div class="outer"><div class="inner tail"><div>_":feeder | md"</div></div></div>
     
 
 [lead]()
@@ -119,7 +119,7 @@ the extra div below is to get rid of the flex. bad hack.
     Explore our website to discover what makes our school tick and why
     students and their families wouldn’t have it any other way.   
 
-    You can start with a brief [introduction to our model](intro.html).
+    You can start with a brief [introduction to our model](model.html).
     
 
 ### Blurb
@@ -190,16 +190,21 @@ This is the css of the styling
     }
     
     .middle {
-        height: 90.35px;
-        background-color:white;
+        height: 91.35px;
+        background-color:red;
     }
     
     .bottom {
-        padding-top: 107px;
-        padding-bottom: 1px;
+        padding-top: 95px;
+        padding-bottom: 24px;
         background-color: #00FFBB;
+        text-align:center;
     }
     
+    h4 {
+        margin-bottom:0;
+    }
+
     .relative {
         position: relative;
         width: 622px;
@@ -209,7 +214,7 @@ This is the css of the styling
 
     #wmark  {
         position: absolute;
-        top: -39px;
+        top: -38px;
         left: 0;
     }
 
@@ -299,7 +304,7 @@ quote beneath. At top, is the title
         margin-right : 2rem;
     }
     
-    main.outer :nth-child(3) .nottext {
+    main.outer :nth-child(2) .nottext {
         order:1;
         margin-right:0;
         margin-left:2rem;
@@ -327,14 +332,12 @@ the main part is not needed as large.
     }
 
     main {
-        margin-top:2em;
+        margin-top:0em;
+        margin-bottom:28px;
     }
 
 The one element of h4 is the lead
 
-    h4 {
-        margin-bottom:2em;
-    }
 
 ### Scrolling
 
@@ -347,59 +350,29 @@ The one element of h4 is the lead
 This handles the scrolling of the main image disappearing. When it disappears,
 the logo bulb should appear. It should start hidden. 
 
-One complication in the positioning is that the image disappears behind the
-nav so its relevant height is a little bit messy. Also the word mark is what
-matters and it extends a bit lower as an image than it appears (about 20%)
-hence the multiply by 80% and the subtraction from the nav height
+We will use boundingClientRect to get the bottom of the two heights we care
+about. 
 
-    var getY = _":position";
+
     var fmark = document.querySelector("#wmark");
     var logo = document.querySelector("#logo");
-    var fheight = fmark.offsetHeight - 
-        document.querySelector("header").offsetHeight;
+    var headBottom = document.querySelector("header").
+            getBoundingClientRect().bottom;
     var bigVis = true;
 
     window.addEventListener("scroll", function () {
-        var elY = getY(fmark) + fheight;
-        console.log(elY, fheight);
+        var imgBottom = fmark.getBoundingClientRect().bottom;
 
 banner image has scrolled away, but first time noticed. So we unhide bulb
 
-        if ( (elY < 0) && bigVis) {
+        if ( ( imgBottom < headBottom ) && bigVis) {
             logo.classList.remove("hide");
             bigVis = false;
-        } else if ( (elY > 0) && !bigVis) {
+        } else if ( ( imgBottom > headBottom ) && !bigVis) {
             logo.classList.add("hide");
             bigVis = true;
         }
     });
-
-
-[position]()
-
-This is code taken from 
-https://www.kirupa.com/html5/get_element_position_using_javascript.htm
-which yields a function that gives us the position
-of the top corner. 
-
-    function (el) {
-      var yPos = 0;
-     
-      while (el) {
-        if (el.tagName == "BODY") {
-          // deal with browser quirks with body/window/document and page scroll
-          var yScroll = el.scrollTop || document.documentElement.scrollTop;
-     
-          yPos += (el.offsetTop - yScroll + el.clientTop);
-        } else {
-          // for all other non-BODY elements
-          yPos += (el.offsetTop - el.scrollTop + el.clientTop);
-        }
-     
-        el = el.offsetParent;
-      }
-      return yPos;
-    }
 
 
 ### Our External Links

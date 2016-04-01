@@ -354,22 +354,25 @@ This defines the cycle of pages for the previous and next buttons.
     model : The basics of our model
     indetail : Our model in-depth
     comparisons: How our model compares to alternatives
-    confusions: Some common questions about the model
+    questions: Some common questions about the model
     resources: Further reading
-    our-structure: Our governing structure
-    our-staff: Our staff
-    our-space: Our space
-    our-name: What our name means
+    organization: How our school runs
+    staff: Our staff
+    space: Our space
+    story: Our history
+    name: What our name means
     admissions: What our admissions process looks like
-    tuition: The prices we have
-    faq: Common questions
+    tuition: Tuition
     gallery:  Incredible photos of our school.
     stories: Tales from inside and out 
+    faq: Common questions
     contact: How to contact us
+    support: How to support us
+    calendar: Calendar
 
-    index, model, indetail, comparisons, confusions, resources,
-    our-structure, our-staff, our-story, our-name, admissions, tuition,
-    faq, gallery, stories, contact
+    index, model, indetail, comparisons, questions, resources,
+    organization, staff, space, story, name, admissions, tuition,
+    gallery, stories, faq, contact, support, calendar
 
 [pn-making]()
 
@@ -1146,7 +1149,10 @@ elegant, but it is kind of cool.
             if (matches.hasOwnProperty(input[i]) ) {
                 match = matches[input[i]];
                 if (typeof match === "string") {
-                    input = input.slice(0, i) + match + input.slice(i+1);
+                    //space after cap
+                    if (input[i+1] === " ") {
+                        input = input.slice(0, i) + match + input.slice(i+1);
+                    }
                 } else if (typeof match === "function") {
                     input = match(i, input);
                 }
@@ -1168,7 +1174,7 @@ These are the matches. Each match is either a simple string or a function that
 takes in the index and string and returns the replaced string.
     
     {
-        M : "@media",
+        M  : "@media",
         W : function (ind, input) {
                 _":width"
             }

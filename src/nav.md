@@ -24,10 +24,10 @@ The three columns will float to the left.
             #pathway \_"pathway|md"
      .dropdown.outer
         .inner.school
-                _"details:school"
+                _"details:model"
      .dropdown.outer          
         .inner.model
-                _"details:model"
+                _"details:school"
 
 
     
@@ -166,20 +166,21 @@ div to be the drop-down item (class down)
 
 
     ul
-        li.arrow.school: a(href="#") Our School
         li.arrow.model: a(href='#') The Model
+        li.arrow.school: a(href="#") Our School
         li: a(href='admissions.html') Admissions
 
 
 [school]()
 
     ul
-        li: a(href="our-story.html") Our Story
-        li: a(href="our-space.html") Our Space
+        li: a(href="organization.html") Organization
+        li: a(href="staff.html") Staff
     .spacer
     ul
-        li: a(href="our-staff.html") Our Staff
-        li: a(href="our-structure.html") Our Structure
+        li: a(href="space.html") Space
+        li: a(href="story.html") Story
+        li: a(href="name.html") Name
 
 [model]()
 
@@ -189,7 +190,7 @@ div to be the drop-down item (class down)
         li: a(href="comparisons.html") Comparisons
     .spacer
     ul
-        li: a(href="confusions.html") Confusions
+        li: a(href="questions.html") Questions
         li: a(href="resources.html") Resources
 
     
@@ -233,7 +234,7 @@ div to be the drop-down item (class down)
 
     * [Tuition](tuition.html)
     * [Gallery](gallery.html)
-    * [Testimonials](testimonials.html)
+    * [Stories](stories.html)
     * [FAQ](faq.html)
 
 
