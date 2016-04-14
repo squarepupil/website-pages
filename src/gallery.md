@@ -189,9 +189,10 @@ links to css files
     }
 
     .my-gallery {
-      width: 200vw;
-      float: left;
+       display:flex; 
+       justify-content:center;
     }
+
     .my-gallery img {
       width: 100%;
       height: 100px;
@@ -204,6 +205,11 @@ links to css files
     }
     .my-gallery figcaption {
       display: none;
+    }
+    
+    
+    .my-gallery :nth-child(1n+5) {
+        display: none;
     }
 
 ### pswp html

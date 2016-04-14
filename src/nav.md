@@ -55,6 +55,11 @@ That will be done in the main layout.
         width:100%
     }
 
+    header > .outer {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
     header a {
         color:black;
         text-decoration: none;
@@ -207,7 +212,7 @@ div to be the drop-down item (class down)
 
     #logo a {
         position:fixed;
-        top:6px;
+        top:10px;
         z-index:20;
         display:inline-block;
     }
@@ -249,7 +254,7 @@ z-index 20.
 
 These are the classes that handle the display.
 
-    .dropdown {
+    .dropdown.outer {
         height:0px;
         padding:0px;
         overflow-y:hidden;
@@ -258,7 +263,8 @@ These are the classes that handle the display.
     }
     
     .dropdown .inner {
-        padding-top:6px;
+        padding-top:7px;
+        padding-bottom:7px;
     }
 
     .dropdown.active {

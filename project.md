@@ -655,10 +655,16 @@ And then some stuff for small screens
         font-family: bebas, serif;
         font-size:15px;
         background-color:white;
+        word-spacing:3px;
     }
     
     .info {
-        background-color: #1AAB84; /* rgb(76, 148, 33);*/
+        background-color: #296087; /* rgb(76, 148, 33);*/
+        color: whitesmoke;
+    }
+
+    .info a {
+        color: whitesmoke;
     }
 
     footer {
@@ -666,12 +672,12 @@ And then some stuff for small screens
     }
 
     #actions a {
-        color: black; /*white;*/
+        color: whitesmoke; /*white;*/
         font-size: 0.8em;
     }
 
     .dropdown {
-        background-color: #e0dfd6;
+        background-color: rgb(78, 133, 173);
     }
 
     
@@ -681,16 +687,10 @@ And then some stuff for small screens
 
 Here we deal with some of the border and padding on the large scale. 
 
-    .info {
-      border-bottom: black solid 2px;
-      padding-top: 7px;
-      padding-bottom:7px;
-    }
 
-    .content {
-        border-top: black solid 2px;
-        /*border-bottom: grey solid 2px; */
-        box-shadow: 0px 0px 10px #888;
+
+    .dropdown, .content {
+        box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.75);
     }
 
     article li {

@@ -23,11 +23,11 @@ This is the index body. It contains a brief description.
     
     
 
-    _":age mixing | blurb"
+    _":age mixing | blurb agemix"
 
-    _":democracy | blurb"
+    _":democracy | blurb dem"
 
-    _":autonomy | blurb"
+    _":autonomy | blurb aut"
 
 the extra div below is to get rid of the flex. bad hack. 
 
@@ -129,7 +129,7 @@ This reads in a blurb for the homepage and outputs the html for it.
 The first line is the topic, the second is a mantra, and the third is a
 picture. After that are some paragraphs of text. 
 
-    function (input) {
+    function (input, args) {
         var ind = input.indexOf("\n\n");
         var bits = input.slice(0, ind).split("\n");
 
@@ -149,7 +149,8 @@ breaks.
                 join("</p>\n<p>") +
             "</p>";
 
-        return '<div class="blurb"><div class="inner">' +
+        return '<div class="blurb" id="' + args[0] + 
+            '"><div class="inner">' +
             '<div class="nottext">' +
             title + 
             '<figure>' + img + caption + '</figure>' +
@@ -191,13 +192,13 @@ This is the css of the styling
     
     .middle {
         height: 91.35px;
-        background-color:red;
+        background-color:white;
     }
     
     .bottom {
         padding-top: 95px;
         padding-bottom: 24px;
-        background-color: #00FFBB;
+        background-color: #09D8A1;
         text-align:center;
     }
     
@@ -216,6 +217,10 @@ This is the css of the styling
         position: absolute;
         top: -38px;
         left: 0;
+    }
+    
+    main img {
+        border : #FFFFFF solid 5px;
     }
 
 Small version (the nav gets twice as large so we need to account for that.
@@ -278,11 +283,16 @@ quote beneath. At top, is the title
     }
     
     .blurb .text {
-        text-align: justify 
+          text-align: justify; 
+    }
+    
+    .tail {
+        paddin-top:2rem;
+        padding-bottom:1rem;
     }
 
-    .tail {
-        padding-top:2rem;
+    .tail p {
+        margin-bottom: 0;
     }
 
     .blurb figure {
@@ -296,7 +306,7 @@ quote beneath. At top, is the title
         margin-bottom:2rem;
         text-align: center;
         font-family: bebas, serif;
-        word-spacing:8px; 
+        word-spacing:7px; 
     }
 
     .blurb .nottext {
@@ -336,7 +346,42 @@ the main part is not needed as large.
         margin-bottom:28px;
     }
 
-The one element of h4 is the lead
+Because of the picture/text split, we want to make them columned a little bit
+later.
+
+    M W<900px {
+        
+        main .inner {
+            min-width:50px;
+            flex-direction:column;
+            width:auto;
+            margin-left:20px;
+            margin-right:20px;
+        }
+        
+        .blurb figcaption {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        main.outer :nth-child(2) .nottext {
+            order:0;
+        }
+    }
+
+We need some padding for the larger ones to get it to be a little more
+centered feeling
+
+    M W>901px {
+        #dem .text {
+            padding-top: 3rem;
+        }
+
+        #aut .text {
+            padding-top: 1.5rem;
+        }
+    }
+
 
 
 ### Scrolling
