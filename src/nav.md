@@ -22,14 +22,12 @@ The three columns will float to the left.
                 _"details"
             #logo \_"logo"
             #pathway \_"pathway|md"
-     .dropdown.outer
-        .inner.school
-                _"details:model"
-     .dropdown.outer          
+    .dropdown.outer          
         .inner.model
+                _"details:model"
+    .dropdown.outer
+        .inner.school
                 _"details:school"
-
-
     
 
 
@@ -106,7 +104,7 @@ Then inside each are the left and right bits that should also be flexed.
 We also need to specify the main widths of each of the blocks inside inner
 
     header .inner > :nth-child(2n+1) {
-        width: 40%;
+        width: 44%;
     }
 
 For different levels, we have different design considerations. In the top
@@ -129,15 +127,10 @@ This is for small screens.
 
     M W<640px {
 
-        header .inner > :nth-child(2n+1) {
-            width: 100%;
+        header { 
+            display: none;
         }
 
-        #actions ul {
-            justify-content:flex-start;
-        }
-
-        
     }
 
 
@@ -242,6 +235,154 @@ div to be the drop-down item (class down)
     * [Stories](stories.html)
     * [FAQ](faq.html)
 
+## Sitemap
+
+This is used for mobile. The idea is that this will be loaded on all pages as
+well as the usual nav, but we will switch the visibility. This is inelegant,
+but probably efficient. 
+
+We use the extract-links function below to extract already fully formed links.
+
+    <ul>
+        <li><a href="/">Arts <span="amp">&amp;</span> Ideas Sudbury School <img alt="Light bulb and ampersand logo" src="img/lantern.png" /> </a></li>
+        <li id="menu">MENU</li>
+    </ul>
+    <ul class="off">
+       <li> <p>The Model</p>
+            <ul> 
+                _"details:model| jade |extract-links"
+            </ul>
+       </li>
+       <li> <p>Our School</p>
+            <ul>
+                _"details:school | jade | extract-links"
+            </ul>
+        </li>
+        _"details | jade | extract-links e(':nth-child(3)')"
+        _"pathway | md | extract-links"
+        _"actions | md | extract-links"
+    </ul>
+
+[extract-links]()
+
+We need the extract-links function for the above. It takes in some html, and
+extracts all "li" elements. If there is a first argument, it denotes the
+range. We could do more, but currently don't need it.
+
+    function (input, args) {
+        var doc = this;
+        var cheerio = doc.parent.local.cheerio;
+        var $ = cheerio.load(input);
+        var links = $("li" + (args[0] ? args[0] : "" ) );
+        return links.toString();
+    }
+
+[extract-links](# "define:")
+
+
+##### CSS
+
+We need to style the site-map. For non-mobile, we hide it with javascript. It
+is a backup for non-js. 
+
+    .sitemap > ul {
+        background-color: #296087; 
+        color: whitesmoke;
+        position: relative;
+        padding:5px;
+    }
+
+    .sitemap a {
+        text-decoration:none;
+        color:whitesmoke;
+    }
+        
+
+    .sitemap img {
+        width: 15px;
+        position: fixed;
+        top: 2px;
+        left: 39px;
+    }
+    .sitemap p {
+        margin: 0px;
+        color: #CEB1B1;
+    }
+
+    .sitemap ul ul {
+        margin-left: 25px;
+    }
+
+    .sitemap li+li {
+        padding-top: 4px;
+    }
+
+    M W>641px {
+        .sitemap.js {
+            display:none;
+        }
+        
+        .sitemap ul:first-child {
+            display:none;
+        }
+
+    }
+    
+    M W<640px {
+
+       #menu {
+            background-color:whitesmoke;
+            color: black;
+            border-radius:5px; 
+            padding: 5px;
+            padding-bottom:2px;
+            padding-top:2px;
+       }
+
+       .sitemap.js {
+            position: fixed;
+            top:0;
+            width:100%
+       }
+
+       .sitemap .off { 
+            right:-180px;
+            transition: right 1s;
+       }
+       
+       .sitemap > ul:first-child {
+            display:flex;
+            justify-content:space-between; 
+        }
+
+        .sitemap > ul:nth-child(2) {
+            width: 150px;
+            position: fixed;
+            height:100%;
+            overflow:auto;
+        }
+
+        .sitemap .on {
+            right:0px;
+            transition: right 1.3s;
+        }
+
+    }
+
+
+##### JS
+
+We need to have the menu be clickable to add the show class. We also want some
+js to hide the sitemap since we want it hidden unless javascript is disabled.
+
+    var sitemap = document.querySelector(".sitemap");
+    sitemap.classList.add("js");
+    var menulist = document.querySelector(".sitemap ul:nth-child(2)");
+    document.querySelector("#menu").addEventListener("click",
+        function () {
+            menulist.classList.toggle("off");
+            menulist.classList.toggle("on");
+        });
 
 ## Drop downs
 

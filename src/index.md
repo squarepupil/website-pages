@@ -23,11 +23,12 @@ This is the index body. It contains a brief description.
     
     
 
-    _":age mixing | blurb agemix"
 
     _":democracy | blurb dem"
 
     _":autonomy | blurb aut"
+    
+    _":age mixing | blurb agemix"
 
 the extra div below is to get rid of the flex. bad hack. 
 
@@ -68,7 +69,7 @@ the extra div below is to get rid of the flex. bad hack.
 
     Authentic Democracy
     The power to be responsible
-    _"| imgsrc governance-06, Several students in a committee meeting "
+    _"| imgsrc SAM_2643, Several students in a committee meeting "
      
 
     Arts & Ideas operates on the assertion that children are equally deserving
@@ -187,7 +188,7 @@ This is the css of the styling
 
     .top {
         height: 129px;
-        background-color: #AEF1F1; 
+        background-color: #FBAA48; 
     }
     
     .middle {
@@ -198,7 +199,7 @@ This is the css of the styling
     .bottom {
         padding-top: 95px;
         padding-bottom: 24px;
-        background-color: #09D8A1;
+        background-color: #FBAA48;
         text-align:center;
     }
     
@@ -229,8 +230,8 @@ Also the width gets narrower shifting the image.
     M W<640px {
 
         .top {
-            height: 150px;
-            background-color: #AEF1F1; 
+            height: 67px;
+            background-color: #FBAA48; 
         }
         
         .middle {
@@ -241,7 +242,7 @@ Also the width gets narrower shifting the image.
         .bottom {
             padding-top: 66px;
             padding-bottom: 1px;
-            background-color: #00FFBB;
+            background-color: #FBAA48;
         }
         
         .relative {

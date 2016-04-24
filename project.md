@@ -513,6 +513,7 @@ We also institute the h5 for js
     header \_"nav::nav"
     footer.outer 
         .inner \_"footer|md"
+    .sitemap \_"nav::sitemap"
 
 
 
@@ -578,7 +579,7 @@ borders while the inner provides the constraining width.
     }   
 
     footer {
-        position: fixed;
+        /*position: fixed;*/
         bottom:0;
     }
 
@@ -601,6 +602,7 @@ borders while the inner provides the constraining width.
     }
     
     aside {
+        
         flex: 1;
         border: none;
     }
@@ -640,6 +642,10 @@ And then some stuff for small screens
         iframe {
             width:90vw;
         }
+        
+        main {
+            margin-top:30px;
+        }
 
     }
 
@@ -651,19 +657,19 @@ And then some stuff for small screens
        src : url("bebas.ttf");
     }
     
-    header {
+    header, .sitemap {
         font-family: bebas, serif;
         font-size:15px;
-        background-color:white;
+        background-color:whitesmoke;
         word-spacing:3px;
     }
     
-    .info {
+    .info, .dropdown {
         background-color: #296087; /* rgb(76, 148, 33);*/
         color: whitesmoke;
     }
 
-    .info a {
+    .info a, .dropdown a {
         color: whitesmoke;
     }
 
@@ -677,7 +683,7 @@ And then some stuff for small screens
     }
 
     .dropdown {
-        background-color: rgb(78, 133, 173);
+       /* background-color: rgb(78, 133, 173);*/
     }
 
     
@@ -737,7 +743,7 @@ We want it to be on a single line, images small
     }
 
     footer {
-        position:fixed;
+        /*position:fixed;*/
         bottom:0;
         width:100%;
     }

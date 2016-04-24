@@ -1,26 +1,25 @@
-Testimonials
+Arts & Ideas Parent Testimonials
 ---
 
-Arts & Ideas Parent Testimonials
 
 * [My son] dove out of bed at 5:15 and was bummed to find he couldn't go to
   school for three hours. Then he told me, "I'll make my lunch so you don't
   have to," and considering how he usually acts like making his lunch is the
   burden of all burdens...
-* “My son dove out of bed at 5:15 and was bummed to find he couldn’t go to
+    * “My son dove out of bed at 5:15 and was bummed to find he couldn’t go to
   school for three hours”
 
 * [My daughter] is so very happy she woke up at 5:00 AM ASKING IF SHE COULD GO
   TO SCHOOL YET!  I am sure as parents you know how much that means to me;
   there is just no feeling like it.
-* “My daughter woke up at 5:00 AM asking if she could go to school yet! There
+    * “My daughter woke up at 5:00 AM asking if she could go to school yet! There
   is just no feeling like it.”
 
 * I'll be continuing to support you and spread the word about the school,
   especially now that I've seen it. Congratulations too, I'm so impressed with
   how wonderfully you've all made this space happen and how well you've
   articulated the differences and history of this model.
-* “I’m so impressed with how wonderfully you’ve all made this space happen.”
+    * “I’m so impressed with how wonderfully you’ve all made this space happen.”
 
 * We think about you every day since the open house. I am thinking of [my
   son’s] visitation week, and more importantly, [my son] is thinking of his
@@ -41,7 +40,7 @@ Arts & Ideas Parent Testimonials
   nourishing people, especially at this age. With that said, [my daughter] will be
   thrilled to start this September and we will see you/speak with you when we
   get back home. 
-* “I want my sprouting bean to be around creative, kind, and nourishing
+    * “I want my sprouting bean to be around creative, kind, and nourishing
   people.”
 
 * I just want to share that this year has been pivotal for [my son] and I feel
@@ -49,7 +48,7 @@ Arts & Ideas Parent Testimonials
   have one of the most balanced, self-motivated and un-cranky teenagers that
   could ever exist! I also want to share that our experience at A&I has
   directly affected my teaching strategy, with teenagers specifically. 
-* “I feel that A&I has pretty much saved [my son’s] experience with education.
+    * “I feel that A&I has pretty much saved [my son’s] experience with education.
   I think I have one of the most balanced, self-motivated, and un-cranky
   teenagers that could ever exist!”
 
@@ -64,7 +63,7 @@ Arts & Ideas Parent Testimonials
   to own the reality of their actions. To use an adult-shrink-speak term, the
   kids learn “agency” at Arts and Ideas Sudbury School, just ‘cause they can.
   With the tableau thus filled in, the village becomes complete. 
-* “The kids learn “agency” at Arts and Ideas Sudbury School, just ‘cause they
+    * “The kids learn “agency” at Arts and Ideas Sudbury School, just ‘cause they
   can.”
 
 * Our daughter's learning style is not a match for a traditional classroom.
@@ -73,7 +72,7 @@ Arts & Ideas Parent Testimonials
   Arts & Ideas and she's a much happier kid. Her eyes are bright, her
   curiosity is unstoppable and she loves learning a variety of subjects. -
   Debbie 
-* “This is [my daughter’s] 2nd year at Arts & Ideas and she’s a much happier
+    * “This is [my daughter’s] 2nd year at Arts & Ideas and she’s a much happier
   kid. Her eyes are bright, her curiosity is unstoppable, and she loves
   learning a variety of subjects.”
 
@@ -84,9 +83,9 @@ Arts & Ideas Parent Testimonials
   worried about whether their experiments will initially fail.  Those are the
   skills that Sudbury nurtures.  Our daughter will be much more prepared for
   "the real world" than most of her traditionally schooled peers. 
-* “Our daughter will be much more prepared for “the real world” than most of
+    * “Our daughter will be much more prepared for “the real world” than most of
   her traditionally schooled peers.”
-* “Successful people need to be continuous learners and skilled collaborators,
+    * “Successful people need to be continuous learners and skilled collaborators,
   eager to try new things and not too worried about whether their experiments
   will initially fail. Those are the skills that Sudbury nurtures.”
 
@@ -117,15 +116,15 @@ Arts & Ideas Parent Testimonials
   kingdom. Happy, happy birthday my beautiful princess.  May you continue to
   beat to your own drum, let your light shine, and make your own way in the
   world. 
-* “Our change in schools was the best decision we have ever made for [our
+    * “Our change in schools was the best decision we have ever made for [our
   daughter]. She truly is a different child!!”
 
 * Arts & Ideas saved my kids: I went from worrying about them every second of
   the day to not worrying at all. And once I was totally on board with the
   Sudbury philosophy, I not only didn't worry about their presents, I also
   stopped worrying about their futures.
-* “Arts & Ideas saved my kids.”
-* “I went from worry about [my kids] every second of the day to not worrying
+    * “Arts & Ideas saved my kids.”
+    * “I went from worry about [my kids] every second of the day to not worrying
   at all.”
 
 * Even the most innovative of public charter schools has assignments, tests,
@@ -162,13 +161,13 @@ Arts & Ideas Parent Testimonials
     course), learning about democracy and judiciary responsibility, filling
     her art portfolio, studying mythology, advocating feminism and social
     justice, making great friendships, and more. Now THAT’S an education!
-* “What we’ve found at Arts & Ideas is the space for [our daughter] to swim on
+    * “What we’ve found at Arts & Ideas is the space for [our daughter] to swim on
   her own terms, in her own way, at her own pace.”
-* “[A&I students] ebb and flow, but the confidence and autonomy [our daughter]
+    * “[A&I students] ebb and flow, but the confidence and autonomy [our daughter]
   could not find [at other schools] are really starting to bubble.”
-* “The elimination of deadlines has freed [my daughter’s] mind (and schedule)
+    * “The elimination of deadlines has freed [my daughter’s] mind (and schedule)
   to discover herself and bloom.”
-* “The independence, the time to focus on passions, a fantastic staff that
+    * “The independence, the time to focus on passions, a fantastic staff that
   always ready and willing to hear [my daughter] - these are what we need and
   what we’ll find in a Sudbury environment.”
 
@@ -212,13 +211,13 @@ Arts & Ideas Parent Testimonials
     as a teacher for a time; we wanted active thinkers, independence,the
     freedom to explore and a firm sense of self determination. Arts and Ideas
     has supported all of this and opened so many new pathways for our family.
-* “This has been the best choice we could have made for our family.”
-* “My sons have been challenged, inspired, frustrated and stymied by this
+    * “This has been the best choice we could have made for our family.”
+    * “My sons have been challenged, inspired, frustrated and stymied by this
   model.”
-* “He felt prepared to step into adulthood  as he had gained so many skills we
+    * “He felt prepared to step into adulthood  as he had gained so many skills we
   tend to think of as more "adult" through the processes of School Meeting and
   Judicial Committee.”
-* “We did not desire report cards or test scores, despite my husband working
+    * “We did not desire report cards or test scores, despite my husband working
   as a teacher for a time; we wanted active thinkers, independence,the freedom
   to explore and a firm sense of self determination. Arts and Ideas has
   supported all of this and opened so many new pathways for our family.”

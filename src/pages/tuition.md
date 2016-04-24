@@ -6,9 +6,7 @@ and the Parent Equity Program. Besides these costs, there are no other
 mandatory financial obligations to enrolling (no textbook or uniform fees, for
 example).
 
-## Tuition 
-
- Current tuition is $6,125 per year for the first child in a family, $4,595
+Current tuition is $6,125 per year for the first child in a family, $4,595
  for the second, and $3,450 for any additional children. Tuition is decided
  each year by majority vote of the Arts & Ideas Assembly, which consists of
  parents, staff, and students. As Arts & Ideas enrolls throughout the year,
@@ -22,8 +20,13 @@ facilities (as of November 2015). The School Assembly, which includes parents,
 staff, and students, came together and, in consultation with an independent
 schools specialist, developed this program. As specified by School Assembly,
 participation in the Parent Equity Program is mandatory for all enrolled
-families. Details of the PEP are discussed during the family interview
-step of the enrollment process.
+families. Arts & Ideas is partnered with a lender whose
+financing options, if needed, include an option that would be expected to
+raise the nominal tuition of $6,125 to something like an effective tuition of
+$7,900 (rates may vary).
+
+Details of the PEP are discussed during the family interview step of
+the enrollment process. 
 
 ## Payment Plans
 
