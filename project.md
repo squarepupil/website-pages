@@ -142,24 +142,16 @@ Add in the title both in the head and the article; easier to pop it in here.
         _":parse aside"
         
         $("aside").append( announcement + aside);
+        $("aside").remove();
 
         _":active page"
         
-        var footNext;
-        _":footer next"
-
-        $("footer li:last-child").replaceWith(footNext);
-
         return $.html();
 
     }
 
 [process](# "define: ")
 
-
-[footer next]()
-
-    footNext = '<li>NEXT&rarr;</li>';
 
 [active page]()
 
@@ -340,7 +332,7 @@ This uses the pre-compiled previous, next format.
             prv = '<div class="previous">PREVIOUS: ' + prv + '</div>';
         }
         if (nxt) {
-            nxt = '<div class="next">NEXT: ' + nxt + '</div>';
+            nxt = '<div class="next"><span> NEXT:</span> ' + nxt + '</div>';
         }
     } else {
     }
@@ -611,11 +603,20 @@ These are for the previous and next links. It should be at the foot of the
 article. 
 
     .previous {
-        float:left;
+        display:none;
     }
 
-    .next {
-        float:right;
+    .next a {
+        background-color: #296087;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+        font-family: bebas;
+        padding-left: 5px;
+        padding-right: 5px;
+        word-spacing: 2px;
+        text-decoration: none;
+        color: whitesmoke;
     }
 
     form textarea {
@@ -731,7 +732,6 @@ This sidebar is flexible. Ideally it should pull from other bits.
     * 410-426-0001
     * [![Facebook Logo](img/flogo.png)](https://www.facebook.com/Arts-Ideas-Sudbury-School-372859716072)
     * [![Blog](img/blog-logo.gif)](http://blog.aisudbury.com)
-    * NEXT
 
 
 [css]()
@@ -772,7 +772,7 @@ previous color of yellow burn: #9E9A6C
 
 The Next styling
 
-    footer li:last-child {
+    .next span {
         font-family:bebas, serif;
     }
 
