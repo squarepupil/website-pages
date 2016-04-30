@@ -244,8 +244,6 @@ Practicing real life prepares students
 to further succeed in resolving difficulties as the stakes rise with age, be
 their problems practical, interpersonal, or existential.
 
-NEXT: comparisons.html Contrasts with other models 
-
 ---
 F:
 IMG:img2434.jpg description

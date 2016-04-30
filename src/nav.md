@@ -85,6 +85,7 @@ Then inside each are the left and right bits that should also be flexed.
     header .inner {
         display:flex;
         justify-content:space-between;  
+        width:98%;
 
     }
 
@@ -106,21 +107,43 @@ We also need to specify the main widths of each of the blocks inside inner
     header .inner > :nth-child(2n+1) {
         width: 44%;
     }
+    
 
 For different levels, we have different design considerations. In the top
 level, we want flush.
 
     #actions ul {
-        justify-content:flex-end;
+        justify-content:space-between;
     }
 
     #details ul, #pathway ul {
         justify-content: space-between;
     }   
 
-    .dropdown ul {
-        justify-content: space-around;
+   .dropdown ul {
+        justify-content: flex-start;
     }
+
+
+    .dropdown ul li+li {
+        margin-left:2em;
+    } 
+
+    /*
+    .dropdown ul:first-child {
+        justify-content: flex-start;
+    }
+
+
+    .dropdown ul:first-child li+li {
+        margin-left:2em;
+    }
+    
+    .dropdown ul:nth-child(3) {
+        justify-content: flex-end;
+    }
+    */
+
 
 
 This is for small screens.
@@ -244,7 +267,7 @@ but probably efficient.
 We use the extract-links function below to extract already fully formed links.
 
     <ul>
-        <li><a href="/">Arts <span="amp">&amp;</span> Ideas Sudbury School <img alt="Light bulb and ampersand logo" src="img/lantern.png" /> </a></li>
+        <li><a href="/">Arts <span class="amp">&amp;</span> Ideas Sudbury School <img alt="Light bulb and ampersand logo" src="img/lantern.png" /> </a></li>
         <li id="menu">MENU</li>
     </ul>
     <ul class="off">
@@ -299,10 +322,10 @@ is a backup for non-js.
         
 
     .sitemap img {
-        width: 15px;
+        width: 16px;
         position: fixed;
-        top: 2px;
-        left: 39px;
+        top: 6px;
+        left: 40px;
     }
     .sitemap p {
         margin: 0px;
@@ -335,8 +358,12 @@ is a backup for non-js.
             color: black;
             border-radius:5px; 
             padding: 5px;
-            padding-bottom:2px;
+            padding-bottom:4px;
             padding-top:2px;
+       }
+
+       .sitemap > ul:first-child > li:first-child {
+        padding-top:3px; 
        }
 
        .sitemap.js {
@@ -365,6 +392,12 @@ is a backup for non-js.
         .sitemap .on {
             right:0px;
             transition: right 1.3s;
+            padding-bottom: 46px;
+        }
+
+        .sitemap .amp {
+           padding-left: 2px;
+           padding-right: 1.5px; 
         }
 
     }
@@ -409,7 +442,7 @@ These are the classes that handle the display.
     }
 
     .dropdown.active {
-        height:27px;
+        height:32px;
         /*padding:4px;
         transition: padding 0.4s;*/
         transition: height 0.4s;

@@ -345,18 +345,18 @@ This defines the cycle of pages for the previous and next buttons.
     index : Home
     model : The basics of our model
     indetail : Our model in-depth
-    comparisons: How our model compares to alternatives
-    questions: Some common questions about the model
+    comparisons: Comparison to alternatives
+    questions: Common questions
     resources: Further reading
     organization: How our school runs
     staff: Our staff
     space: Our space
     story: Our history
     name: What our name means
-    admissions: What our admissions process looks like
+    admissions: About our admissions
     tuition: Tuition
-    gallery:  Incredible photos of our school.
-    stories: Tales from inside and out 
+    gallery:  Incredible photos
+    stories: Testimonials
     faq: Common questions
     contact: How to contact us
     support: How to support us
@@ -562,7 +562,7 @@ borders while the inner provides the constraining width.
 
     main {
         margin-top:110px;
-        margin-bottom:50px;
+        margin-bottom:19px;
     }
 
     main .inner {
@@ -660,7 +660,7 @@ And then some stuff for small screens
     
     header, .sitemap {
         font-family: bebas, serif;
-        font-size:15px;
+        font-size:17px;
         background-color:whitesmoke;
         word-spacing:3px;
     }
@@ -680,7 +680,6 @@ And then some stuff for small screens
 
     #actions a {
         color: whitesmoke; /*white;*/
-        font-size: 0.8em;
     }
 
     .dropdown {

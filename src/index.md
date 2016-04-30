@@ -21,8 +21,6 @@ add in some css, hide the lightbulb by default, and throw in some js.
 
 This is the index body. It contains a brief description. 
     
-    
-
 
     _":democracy | blurb dem"
 
@@ -37,7 +35,9 @@ the extra div below is to get rid of the flex. bad hack.
 
 [lead]()
 
-    #### **Arts & Ideas Sudbury School** is a democractic school for ages 5-18. Our philosophy of education emphasizes trust, autonomy, justice, and learning.  
+    #### **Arts & Ideas Sudbury School** is a democractic school for ages 5-18. Our philosophy of education emphasizes trust, autonomy, justice, and learning. 
+
+    #### Come visit us and learn more at our [next open house](https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform)! 
 
 
 [age mixing]()
@@ -69,7 +69,7 @@ the extra div below is to get rid of the flex. bad hack.
 
     Authentic Democracy
     The power to be responsible
-    _"| imgsrc SAM_2643, Several students in a committee meeting "
+    _"| imgsrc governance-07, Several students in a committee meeting "
      
 
     Arts & Ideas operates on the assertion that children are equally deserving
@@ -120,8 +120,9 @@ the extra div below is to get rid of the flex. bad hack.
     Explore our website to discover what makes our school tick and why
     students and their families wouldn’t have it any other way.   
 
-    You can start with a brief [introduction to our model](model.html).
-    
+    <div class="next"><span>START:</span> <a href="model.html">Brief introduction to our model</a></div>
+   
+
 
 ### Blurb
 
@@ -187,7 +188,7 @@ This is the css of the styling
 
 
     .top {
-        height: 129px;
+        height: 109px;
         background-color: #FBAA48; 
     }
     
@@ -207,6 +208,10 @@ This is the css of the styling
         margin-bottom:0;
     }
 
+    h4+h4 {
+        padding-top:14px;
+    }
+
     .relative {
         position: relative;
         width: 622px;
@@ -224,7 +229,7 @@ This is the css of the styling
         border : #FFFFFF solid 5px;
     }
 
-Small version (the nav gets twice as large so we need to account for that.
+Small version the nav gets twice as large so we need to account for that.
 Also the width gets narrower shifting the image. 
 
     M W<640px {
@@ -243,6 +248,10 @@ Also the width gets narrower shifting the image.
             padding-top: 66px;
             padding-bottom: 1px;
             background-color: #FBAA48;
+        }
+
+        h4 + h4 {
+            padding-bottom: 11px;
         }
         
         .relative {
@@ -289,11 +298,7 @@ quote beneath. At top, is the title
     
     .tail {
         paddin-top:2rem;
-        padding-bottom:1rem;
-    }
-
-    .tail p {
-        margin-bottom: 0;
+        /*padding-bottom:1rem;*/
     }
 
     .blurb figure {
@@ -367,6 +372,11 @@ later.
         
         main.outer :nth-child(2) .nottext {
             order:0;
+        }
+        
+        main.outer :nth-child(n) .nottext {
+            margin-left:0;
+            margin-right:0;
         }
     }
 
