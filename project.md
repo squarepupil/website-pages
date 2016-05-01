@@ -163,6 +163,7 @@ This is about finding the active page.
     var drops = here.parents(".dropdown");
     if (drops.length > 0) {
         drops.addClass("active");
+        $("#logo").addClass("small");
         var inner = here.parents(".inner");
         var cl;
 
@@ -577,7 +578,6 @@ borders while the inner provides the constraining width.
 
     .outer {
         width: 100%;
-        padding: 5px;
     }
 
     .inner {
@@ -626,7 +626,7 @@ article.
 
 And then some stuff for small screens
 
-    M W<640px {
+    M W<670px {
         
         .inner {
             min-width:50px;
@@ -792,7 +792,7 @@ first item is for wide footer, the second is for short.
         }
     }
 
-    M W<640px {
+    M W<670px {
         footer .long {
             display:none;
         }

@@ -85,7 +85,6 @@ Then inside each are the left and right bits that should also be flexed.
     header .inner {
         display:flex;
         justify-content:space-between;  
-        width:98%;
 
     }
 
@@ -148,7 +147,7 @@ level, we want flush.
 
 This is for small screens.
 
-    M W<640px {
+    M W<670px {
 
         header { 
             display: none;
@@ -160,7 +159,7 @@ This is for small screens.
 ## Info
 
 This is the info bar at the top of the page. The bar goes the full width with
-an lightly-transparent background of green. 
+a lightly-transparent background of green. 
 
 
 
@@ -197,6 +196,9 @@ div to be the drop-down item (class down)
     ul
         li: a(href="organization.html") Organization
         li: a(href="staff.html") Staff
+        li: a(href="space.html") Space
+        li: a(href="story.html") Story
+        li: a(href="name.html") Name
     .spacer
     ul
         li: a(href="space.html") Space
@@ -209,6 +211,8 @@ div to be the drop-down item (class down)
         li: a(href="model.html") Intro
         li: a(href="indetail.html") Detailed
         li: a(href="comparisons.html") Comparisons
+        li: a(href="questions.html") Questions
+        li: a(href="resources.html") Resources
     .spacer
     ul
         li: a(href="questions.html") Questions
@@ -223,7 +227,6 @@ div to be the drop-down item (class down)
 
     #logo {
         position:relative;
-        width:50px;
     }
 
     #logo a {
@@ -233,11 +236,27 @@ div to be the drop-down item (class down)
         display:inline-block;
     }
 
-    #logo img {
+    #logo, #logo img {
         width: 50px;
+        transition: width 0.3s;
     }
 
-    M W<640px {
+We have a small class attached to the bulb when the dropdown is down. 
+
+    #logo, #logo.small img {
+        width: 40px;
+        transition: width 0.3s;
+    }
+
+    M W<900px {
+       .inner {
+            width: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+       }
+    }
+
+    M W<670px {
         #logo {
             position:fixed;
             right:-5px; 
@@ -249,6 +268,7 @@ div to be the drop-down item (class down)
             width:31px;
         }
     }
+
 
 
 ### Pathway
@@ -340,7 +360,7 @@ is a backup for non-js.
         padding-top: 4px;
     }
 
-    M W>641px {
+    M W>671px {
         .sitemap.js {
             display:none;
         }
@@ -351,7 +371,7 @@ is a backup for non-js.
 
     }
     
-    M W<640px {
+    M W<670px {
 
        #menu {
             background-color:whitesmoke;
@@ -436,6 +456,20 @@ These are the classes that handle the display.
         /*transition: padding 0.2s;*/
     }
     
+    .dropdown .inner > :nth-child(n+2) {
+        display:none;
+    }   
+
+    .dropdown .model {
+        position:relative;
+        left:79px;
+    }
+
+    .dropdown .school {
+        position:relative;
+        left:260px;
+    }
+
     .dropdown .inner {
         padding-top:7px;
         padding-bottom:7px;
@@ -465,7 +499,7 @@ These are the classes that handle the display.
     }
 
 
-    M W<640px {
+    M W<670px {
         .dropdown.active {
             height:40px;
         }
@@ -481,6 +515,7 @@ We proceed by selecting the arrow and down classes.
 
     var togglers = document.querySelectorAll(".arrow");
     var drops = document.querySelectorAll(".dropdown");
+    var bulb = document.querySelector("#logo").classList;
     var arrows = [];
     var makeTriangle = _":triangle";
     var toggler = _":toggler";
@@ -517,7 +552,7 @@ This toggles the drop-down menu. It takes in a number and produces a function
 that will toggle the menu.
 
 It removes the active class from anything it finds. If the index is the same
-as the active class, then we are done. Otherwise, we need to activate it which
+as the active class, then we are done (remove lightbulb small size). Otherwise, we need to activate it which
 is what we do after the loop.
 
     function (ind) {
@@ -532,12 +567,14 @@ is what we do after the loop.
                     cl.remove("active");
                     togglers[i].classList.remove("active");
                     if (ind === i) {
+                        bulb.remove("small");
                         return;
                     }
                 }
             }
             setTimeout(function() {
                dd.classList.add("active");
+                bulb.add("small");
                 togglers[ind].classList.add("active");
             }, 300);
         };

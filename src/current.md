@@ -103,4 +103,8 @@ We use the type of warning class for color
     }
 
 
+## Pictures on various pages
+
+    
+    ENERGY  sam_2314
 

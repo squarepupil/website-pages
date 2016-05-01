@@ -1,7 +1,5 @@
-In Detail
+Our Model in Detail
 ---
-
-## Sudbury Model
 
 Our model of education rests on three basic components: the individual,
 the community, and democratic justice.
@@ -226,7 +224,6 @@ of education.
 This is not to be underestimated. Our students enjoy coming to school. It is a
 place of safety, despite the unknowns. It is their second home.
 
-<div id="hard-work"></div>
 
 ### Hard Work
 
@@ -243,21 +240,4 @@ consequences of inaction.
 Practicing real life prepares students
 to further succeed in resolving difficulties as the stakes rise with age, be
 their problems practical, interpersonal, or existential.
-
----
-F:
-IMG:img2434.jpg description
-
-QUOTE: Some great quote from a parent.
-SIG: Parent
-E:
-
-SPACE: #hard-work
-
-F:
-IMG: img2435.jpg description as well
-
-QUOTE: Another quote farther down.
-SIG: Student
-E:
 
