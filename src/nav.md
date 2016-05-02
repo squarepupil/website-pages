@@ -380,7 +380,7 @@ is a backup for non-js.
         padding-bottom:23px;
     }
 
-    .sitemap ul ul li, .sitemap .on > li:nth-child(n+4) {
+    .sitemap ul ul li, .sitemap ul:nth-child(2) > li:nth-child(n+4) {
         padding-top: 6px;
     }
 
