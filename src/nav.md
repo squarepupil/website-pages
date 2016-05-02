@@ -199,6 +199,9 @@ div to be the drop-down item (class down)
         li: a(href="space.html") Space
         li: a(href="story.html") Story
         li: a(href="name.html") Name
+
+[junk]()
+
     .spacer
     ul
         li: a(href="space.html") Space
@@ -208,11 +211,14 @@ div to be the drop-down item (class down)
 [model]()
 
     ul
-        li: a(href="model.html") Intro
+        li: a(href="model.html") Introduction
         li: a(href="indetail.html") Detailed
         li: a(href="comparisons.html") Comparisons
         li: a(href="questions.html") Questions
         li: a(href="resources.html") Resources
+
+[junk]()
+
     .spacer
     ul
         li: a(href="questions.html") Questions
@@ -227,6 +233,8 @@ div to be the drop-down item (class down)
 
     #logo {
         position:relative;
+        right: 1px;
+        transition: right 0.3s;
     }
 
     #logo a {
@@ -234,16 +242,31 @@ div to be the drop-down item (class down)
         top:10px;
         z-index:20;
         display:inline-block;
+        transition: top 0.3s;
     }
 
-    #logo, #logo img {
+    #logo {
+        width:50px;
+    }
+
+    #logo img {
         width: 50px;
         transition: width 0.3s;
     }
 
 We have a small class attached to the bulb when the dropdown is down. 
 
-    #logo, #logo.small img {
+    #logo.small {
+        right:-4px;
+        transition: right 0.3s;
+    }
+
+    #logo.small a {
+        top: 4.5px;
+        transition: top 0.3s;
+    }
+
+    #logo.small img {
         width: 40px;
         transition: width 0.3s;
     }
@@ -291,12 +314,12 @@ We use the extract-links function below to extract already fully formed links.
         <li id="menu">MENU</li>
     </ul>
     <ul class="off">
-       <li> <p>The Model</p>
+       <li id="sitemap-model"> <p class="active arrow mobile">The Model</p>
             <ul> 
                 _"details:model| jade |extract-links"
             </ul>
        </li>
-       <li> <p>Our School</p>
+       <li id="sitemap-school"> <p class="active arrow mobile">Our School</p>
             <ul>
                 _"details:school | jade | extract-links"
             </ul>
@@ -353,12 +376,12 @@ is a backup for non-js.
         color: #CEB1B1;
     }
 
-    .sitemap ul ul {
-        margin-left: 25px;
+    #sitemap-model, #sitemap-school {
+        padding-bottom:23px;
     }
 
-    .sitemap li+li {
-        padding-top: 4px;
+    .sitemap ul ul li, .sitemap .on > li:nth-child(n+4) {
+        padding-top: 6px;
     }
 
     M W>671px {
@@ -489,6 +512,22 @@ These are the classes that handle the display.
         transform: rotate(90deg);
     }
 
+    .dropdown .inner ul {
+        width: 100%;
+        justify-content:space-between;
+    }
+
+    .dropdown li {
+        width:100px;
+    }
+
+    .dropdown li:nth-child(n+2) {
+        text-align:center;
+    }
+
+    .dropdown li:nth-last-child(1) {
+        text-align:right;
+    }
 
     M W<670px {
         .dropdown.active {
@@ -519,15 +558,22 @@ We proceed by selecting the arrow and down classes.
 
 [triangle]()
 
-Triangle created using canvas
+Triangle created using canvas. Did to color the triangle appropriately.  
 
     function (el) {
         var can = document.createElement("canvas");
         can.setAttribute("width", "100");
         can.setAttribute("height", "100");
 
+        var color;
+        if (el.classList.contains("mobile")) {
+            color = "#CEB1B1"; 
+        } else {
+            color = "black";
+        }
+
         var ctx = can.getContext("2d");
-        ctx.fillStyle="black";
+        ctx.fillStyle=color;
         ctx.beginPath();
         ctx.moveTo(0,0);
         ctx.lineTo(0,100);
