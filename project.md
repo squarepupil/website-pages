@@ -742,11 +742,14 @@ We want it to be on a single line, images small
     }
 
     footer {
-        /*position:fixed;*/
         bottom:0;
         width:100%;
     }
-    
+   
+    footer.fix {
+        position:fixed;
+    }
+
 the above color is kind of a yellow-brown that flows from the grass. 
 previous color of pale blue: #9797FF;
 previous color of yellow burn: #9E9A6C
@@ -805,6 +808,17 @@ first item is for wide footer, the second is for short.
         }
     }
 
+##### js
+
+The footer should be fixed if it is on the screen initially. We do a quick
+dirty hack for that. 
+
+    window.addEventListener("load", function () {
+        var footer = document.querySelector("footer");
+        if (footer.getBoundingClientRect().top < window.innerHeight) {
+            footer.classList.add("fix");
+        }
+    });
 
     
 ## sass sample

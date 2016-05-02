@@ -460,16 +460,6 @@ These are the classes that handle the display.
         display:none;
     }   
 
-    .dropdown .model {
-        position:relative;
-        left:79px;
-    }
-
-    .dropdown .school {
-        position:relative;
-        left:260px;
-    }
-
     .dropdown .inner {
         padding-top:7px;
         padding-bottom:7px;
