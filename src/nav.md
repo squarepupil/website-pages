@@ -500,9 +500,10 @@ These are the classes that handle the display.
         width:10px;
         height:10px;
         vertical-align:middle;
-        padding-left:2px;
+        margin-left:3px;
         transition: transform 0.3s ;
     }
+    
 
     #details .active a {
         text-decoration: underline;
