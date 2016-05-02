@@ -333,6 +333,7 @@ is a backup for non-js.
         color: whitesmoke;
         position: relative;
         padding:5px;
+        padding-left: 19px;
     }
 
     .sitemap a {
@@ -345,7 +346,7 @@ is a backup for non-js.
         width: 16px;
         position: fixed;
         top: 6px;
-        left: 40px;
+        left: 59px;
     }
     .sitemap p {
         margin: 0px;

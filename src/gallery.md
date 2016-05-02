@@ -13,7 +13,8 @@ THOUGHTS: Just three thumbnail pictures per album with a ... picture or somethin
 
     _"project.md::template | replace main, _"albums  "
         | cheerio head, append, _"pswp css"
-        | cheerio body, append, _"pswp js" "
+        | cheerio body, append, _"pswp js"
+        | current-link gallery.html "
 
 ## Albums
 

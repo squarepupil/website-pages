@@ -317,6 +317,21 @@ to have subcommands working.
 [noop](# "define:")
 
 
+#### Current
+
+This is a little command function that adds the current class to a link
+pointing to the passed in file. 
+
+    function (input, args) {
+        var $ = this.parent.local.cheerio.load(input);
+        var filename = args[0] || '';
+        var here = $("[href='" + filename + "']");
+        here.addClass("current"); 
+        return $.html();
+    }
+
+[current-link](# "define:")
+
 ### Previous Next
 
 This section handles creating previous and next directions.
