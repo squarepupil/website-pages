@@ -20,7 +20,7 @@ The three columns will float to the left.
         .inner
             #details
                 _"details"
-            #logo \_"logo"
+            #logo \_"logo desk"
             #pathway \_"pathway|md"
     .dropdown.outer          
         .inner.model
@@ -225,15 +225,21 @@ div to be the drop-down item (class down)
         li: a(href="resources.html") Resources
 
     
-### Logo
+### Logo desk
 
-    <a href="index.html"><img alt="Light bulb and ampersand logo" src="img/lantern.png" /></a>
+    <a href="index.html"><img alt="Light bulb and ampersand logo" src="img/_'logo'" /></a>
+
+#### Logo
+
+lantern.png
+
+    logo.svg
 
 ##### CSS
 
     #logo {
         position:relative;
-        right: 1px;
+        right: 0px;
         transition: right 0.3s;
     }
 
@@ -251,23 +257,25 @@ div to be the drop-down item (class down)
 
     #logo img {
         width: 50px;
+        height:100%;
         transition: width 0.3s;
     }
+
 
 We have a small class attached to the bulb when the dropdown is down. 
 
     #logo.small {
-        right:-4px;
+        right:-8px;
         transition: right 0.3s;
     }
 
     #logo.small a {
-        top: 4.5px;
+        top: 7.5px;
         transition: top 0.3s;
     }
 
     #logo.small img {
-        width: 40px;
+        width: 34px;
         transition: width 0.3s;
     }
 
@@ -310,17 +318,17 @@ but probably efficient.
 We use the extract-links function below to extract already fully formed links.
 
     <ul>
-        <li><a href="/">Arts <span class="amp">&amp;</span> Ideas Sudbury School <img alt="Light bulb and ampersand logo" src="img/lantern.png" /> </a></li>
+        <li><a href="/">Arts <span class="amp">&amp;</span> Ideas Sudbury School <img alt="Light bulb and ampersand logo" src="img/_'logo'" /> </a></li>
         <li id="menu">MENU</li>
     </ul>
     <ul class="off">
        <li id="sitemap-model"> <p class="active arrow mobile">The Model</p>
-            <ul> 
+            <ul class="site-drop active"> 
                 _"details:model| jade |extract-links"
             </ul>
        </li>
        <li id="sitemap-school"> <p class="active arrow mobile">Our School</p>
-            <ul>
+            <ul class="site-drop active">
                 _"details:school | jade | extract-links"
             </ul>
         </li>
@@ -444,6 +452,14 @@ is a backup for non-js.
            padding-right: 1.5px; 
         }
 
+        .site-drop {
+            display:none;
+        }
+
+        .site-drop.active {
+            display:block;
+        }
+
     }
 
 
@@ -545,7 +561,10 @@ activate them accordingly.
 We proceed by selecting the arrow and down classes.      
 
     var togglers = document.querySelectorAll(".arrow");
-    var drops = document.querySelectorAll(".dropdown");
+    var drops = [].concat(
+            Array.prototype.slice.apply(document.querySelectorAll(".dropdown")),
+            Array.prototype.slice.apply(document.querySelectorAll(".site-drop")));
+            console.log(drops);
     var bulb = document.querySelector("#logo").classList;
     var arrows = [];
     var makeTriangle = _":triangle";

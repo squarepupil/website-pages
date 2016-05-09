@@ -88,6 +88,7 @@ A generated string ought to look like `_"|echo name.md | readfile |
 
     readfile 
     | process \_"template", \_"announcement", gGet(fname)
+    | images 
 
 
 
@@ -102,8 +103,8 @@ The input is a file organized into three chunks:
 
 1) Title
 2) Body for article
-3) The aside material
-4) previous/next
+3) The aside material MAYBE
+4) previous/next NO -- clean up needed
 
 In addition, the arguments is the html template, the announcement and the
 file name. The file name is used for activating the relevant link. 
@@ -435,6 +436,8 @@ Some of the commands defined here.
 
 * imgsrc. This takes in a file name and outputs an image element with a
   srcset. 
+* images. This is for simple image placement in the main document. It is
+  parsed as  !FNAME caption!alt, classes
 * js-string  This makes a snippet into something that can be saved as a
   javascript string to be read in (converts newlines to escaped newlines and
   the surrounding quote type being escaped as well. 
@@ -453,8 +456,9 @@ following argument is a class list (space separated).
         input = input || args.shift();
         var alt = args.shift() || '';
         var cls = args.shift() || '';
-        return '<img src="gen/' + input + '-s.jpg" ' + 
-            'srcset="gen/' + input + '-m.jpg 500w, gen/' + 
+        return '<img src="gen/' + input + '.jpg" ' + 
+            'srcset= "gen/' + input +'-s.jpg 1w, ' + 
+                'gen/' + input + '-m.jpg 500w, gen/' + 
                 input + '-l.jpg 1000w", gen/' +
                 input + '.jpg 1500w" ' +
             (alt ? 'alt="' + alt +'" ' : '') + 
@@ -463,6 +467,19 @@ following argument is a class list (space separated).
     }
 
 [imgsrc](# "define:  ")
+
+## images
+
+This looks in the text for an image string -- a line starts with an
+exclamation mark followed immediately by caps. The rest of the line is parsed
+as well for captions, alt, and classes. 
+
+     function (input, args) {
+         return input;
+        
+     }
+
+[images](# "define: ")
 
 ### js-string
 

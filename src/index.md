@@ -176,11 +176,17 @@ This includes the wordmark and the lead text
         .top
         .inner
             .relative 
-                img#wmark(src="img/wordmark.png")
+                img#wmark(src="img/_'wordmark'")
         .middle
         .bottom
             .inner \_":lead | md" 
         
+#### wordmark
+
+    wordmark.png
+
+wordmark.svg
+
 
 ### CSS
 
@@ -188,7 +194,7 @@ This is the css of the styling
 
 
     .top {
-        height: 109px;
+        height: 118px;
         background-color: #FBAA48; 
     }
     
