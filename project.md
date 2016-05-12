@@ -143,7 +143,6 @@ Add in the title both in the head and the article; easier to pop it in here.
         _":parse aside"
         
         $("aside").append( announcement + aside);
-        $("aside").remove();
 
         _":active page"
         
