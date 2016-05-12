@@ -558,6 +558,9 @@ We also institute the h5 for js
 
     _"writ"
 
+    ol {
+        list-style-type: decimal;
+    }
     
     * {
         box-sizing: border-box; 
