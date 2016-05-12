@@ -25,6 +25,9 @@ Email, at aisudburyschool@gmail.com, is the preferred way to schedule an
 interview, but you are also welcome to schedule via phone at 410-426-0001.
 There is a $40 interview fee.
 
+!admissions-01.jpg
+
+
 Step 3: Visiting week
 
 Once the interview has been completed, the next step towards enrollment is

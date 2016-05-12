@@ -1,6 +1,8 @@
 Our Story
 ---
 
+!story-01.jpg 
+
 Arts & Ideas Sudbury School is a 21st-century school in Baltimore where
 students ages 5 through 18 learn, explore, and grow in a stimulating,
 supportive community.  The school is based on a philosophy of education first
@@ -31,6 +33,8 @@ understanding of and commitment to the Sudbury model deepened just as the
 up-and-coming vibe of their northeast neighborhood grew into a buzz. New
 restaurants, coffee shops and a bookstore opened, attracting families from all
 over Baltimore. It was a good time and place to open a school. 
+
+!story-02.jpg
 
 The school first opened with nine students in the upstairs hall of
 the Church of the Messiah in the Hamilton/Lauraville neighborhood in Northeast
@@ -68,4 +72,4 @@ new space. Arts & Ideas Sudbury School had triumphantly claimed its home.
 There's no other school quite like this in
 Baltimore!
 
-
+!story-03.jpg

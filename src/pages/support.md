@@ -5,7 +5,10 @@ There are a variety of ways you can support Arts & Ideas. Thank you to all our
 supporters, big and small - without the help of our generous community we
 would certainly not be the school we are today.
 
+
 ## Donate to A&I through PayPal
+
+!support-fort.jpg
 
 Arts & Ideas is a nonprofit organization and all donations are
 tax-deductible. Monetary donations are used to support our financial aid
@@ -22,7 +25,10 @@ note that you must choose "Arcadian Fellowship Church Inc" as your
 organization to support*. The Arcadian Fellowship is our overseeing legal
 body; to learn more click here.
 
+
 ## School Merchandise for Sale
+
+!support-tree.jpg
 
 We currently have A&I t-shirts for sale as well as notecard sets created by
 students and staff. To learn more about our currently available items for

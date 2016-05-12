@@ -87,8 +87,8 @@ A generated string ought to look like `_"|echo name.md | readfile |
 [src compiler]()
 
     readfile 
-    | process \_"template", \_"announcement", gGet(fname)
     | images 
+    | process \_"template", \_"announcement", gGet(fname)
 
 
 
@@ -437,7 +437,7 @@ Some of the commands defined here.
 * imgsrc. This takes in a file name and outputs an image element with a
   srcset. 
 * images. This is for simple image placement in the main document. It is
-  parsed as  !FNAME caption!alt, classes
+  parsed as  !fname, caption!alt, classes
 * js-string  This makes a snippet into something that can be saved as a
   javascript string to be read in (converts newlines to escaped newlines and
   the surrounding quote type being escaped as well. 
@@ -459,7 +459,7 @@ following argument is a class list (space separated).
         return '<img src="gen/' + input + '.jpg" ' + 
             'srcset= "gen/' + input +'-s.jpg 1w, ' + 
                 'gen/' + input + '-m.jpg 500w, gen/' + 
-                input + '-l.jpg 1000w", gen/' +
+                input + '-l.jpg 1000w, gen/' +
                 input + '.jpg 1500w" ' +
             (alt ? 'alt="' + alt +'" ' : '') + 
             (cls ? 'class="' + cls + '" ' : '') +
@@ -471,13 +471,41 @@ following argument is a class list (space separated).
 ## images
 
 This looks in the text for an image string -- a line starts with an
-exclamation mark followed immediately by caps. The rest of the line is parsed
-as well for captions, alt, and classes. 
+exclamation mark. The rest of the line is parsed as fname, cap!alt, classes
 
      function (input, args) {
-         return input;
+        var reg = /(?:^|\n)\!([^\n]+)(?:\n|$)/g;
+        var m, bits, space, fname, cap, alt, classes, str;
+        while ( (m = reg.exec(input)) ) {
+            bits = m[1].split(",");
+            bits = bits.map(function (el) {return el.trim();});
+            if (bits[0]) {
+                fname = bits[0].split(".")[0];
+                alt = (bits[1] || '').split("!");
+                cap = alt[0].trim();
+                alt = (alt[1] || '').trim() || cap;
+                classes = (bits[2] || '').trim(); 
+                str = '<figure' + (classes ? 'classes="' + classes + '"': '') + 
+                      '><img src="gen/' + fname  + '.jpg" ' +  
+                      'srcset="gen/' + fname +'-s.jpg 1w, ' + 
+                      'gen/' + fname + '-m.jpg 500w, gen/' + 
+                      fname + '-l.jpg 1000w, gen/' +
+                      fname + '.jpg 1500w" ' +
+                      (alt ? 'alt="' + alt + '"' : '') +
+                      '"/>' + 
+                      (cap ? '<figcaption>' + cap + '</figcaption>' : '') +
+                      '</figure>';
+
+Need to massage the newline capturing in the reg for the positions. 
+
+               input = input.slice(0,m.index+1) + 
+                       str + input.slice(reg.lastIndex-1);
+            }
+        }
+        return input;
         
      }
+
 
 [images](# "define: ")
 

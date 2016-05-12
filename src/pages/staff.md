@@ -1,6 +1,8 @@
 Our Staff
 ---
 
+!caroline-blue.jpg,, staff
+
 Caroline Chavasse (cofounder & staff) is the mother of two children and was a
 Professor of Video Art at the Maryland Institute College of Art for 7 years.
 She has presented master classes in Digital Video and Media Production at the
@@ -24,6 +26,8 @@ choreography and dance, video making and editing, reading stories aloud,
 camping and hiking, and working and playing with the exquisite young people at
 Arts & Ideas.
 
+
+!brooke-office.jpg,, staff
 
 Brooke Pazoles (staff) Brooke is a recent graduate from the University of
 Delaware, where she majored in elementary education. Even though she has a
@@ -51,6 +55,8 @@ spent much of her time at college volunteering for organizations like Habitat
 for Humanity, and spent her final spring break rebuilding homes that were
 destroyed by hurricane Katrina in New Orleans, where she met lots of inspiring
 people and little lizards (see picture).
+
+!caroline-chicken.jpg,, staff
 
 Phil Glaser (staff) was born and raised in Olney, MD, a suburb of Washington
 DC. His father, a public high school math teacher, and his mother, an IT
@@ -81,6 +87,7 @@ curiosity and imagination. As well, he hopes to one day establish an exchange
 program of some sort with other Sudbury schools, both American and
 international.
 
+!james-celery.jpg,, staff
 
 James Taylor (staff) is a proud father, credentialed mathematician, heretical
 physicist, and passionate (web) programmer. While he has had a life-long
@@ -106,4 +113,4 @@ she has for the world, never knowing what new delight awaits around the next
 corner. He is relieved to have found an educational model that will nurture
 that joy instead of squashing it.
 
-
+!james-trash.jpg,, left

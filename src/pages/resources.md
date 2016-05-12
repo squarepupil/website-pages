@@ -1,6 +1,8 @@
 Where Can I Learn More?
 ---
 
+!resources-01.jpg,, left
+
 Here is a list of a just a few of our favorite readings and links related to
 our school and the way we do things. An extensive library of online library of
 articles - where some of the following readings come from - and other

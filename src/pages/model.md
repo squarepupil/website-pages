@@ -24,7 +24,7 @@ the range of human emotions. They learn from their own experiences and help
 each other journey through moments of joy, sadness, compassion, anger, and
 other strong emotions that can take years to master.
 
-!ENERGY
+!model-01.jpg
 
 How do we know all this? Because we see this every day at our school. Our
 children are given the freedom to be children and, thus, they learn to be

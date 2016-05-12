@@ -1,6 +1,8 @@
 Tuition 
 ---
 
+!tuition-01.jpg,, right
+
 There are two main financial obligations to enrolling at Arts & Ideas, tuition
 and the Parent Equity Program. Besides these costs, there are no other
 mandatory financial obligations to enrolling (no textbook or uniform fees, for

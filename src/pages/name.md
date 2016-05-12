@@ -7,6 +7,8 @@ backgrounds in the performing arts but choose the “arts” in the school’s n
 to evoke a more meta meaning of the word. The arts have been fundamental to
 humankind. 
 
+!name-01.jpg
+
 Arts is applied to the large and small spaces of our daily lives.
 Beginning with the arts as being the child’s natural language, to the idea
 that when someone is completely fluent in, and exquisitely executing almost
@@ -29,6 +31,8 @@ Sir Ken Robinson wrote of the arts as addressing the aesthetic experience
 which he defined as “one in which your senses are operating at their peak;
 when you’re resonating with the excitement of this thing that you’re
 experiencing; when you are fully alive.”  
+
+!name-02.jpg
 
 When kids are given the time and space without judgment to pursue their
 passions, one sees a child fully alive. It’s thrilling to witness.

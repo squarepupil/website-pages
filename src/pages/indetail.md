@@ -32,6 +32,8 @@ result, but the process itself. It is through being heard and hearing others
 that we develop understanding and compassion for one another, which in turn
 allow us to continually address the dynamic between individual and community.
 
+!indetail-trio.jpg
+
 ### History
 
 We model our school on Sudbury Valley School, established in 1968. They have
@@ -55,6 +57,8 @@ It is a self-decided label. Thus, each school should be examined on its own
 merits.
 
 ### Age-Mixing
+
+!indetail-lib.jpg,, right
 
 Our establishment of a community of free individuals, naturally entails that
 children of different ages mix freely. The demands placed on students by the
@@ -115,7 +119,9 @@ works for them.
 
 ### Learning
 
-Because learning is the goal of teaching, our focus is not on teaching, but 
+!indetail-puddle.jpg,, left
+
+Because learning is the goal of education, our focus is not on teaching, but 
 on learning. Students explore whatever interests them and in a
 fashion that makes sense to them. Success or failure has no bearing on growth.
 Students learn regardless of outcome.
@@ -171,6 +177,8 @@ instances where an individual does deviate, our Judicial Committee intervenes.
 This prevents rules from continuing to be misunderstood, misapplied, or taking
 precedent over people in the event that they are simply not good rules.
 
+!indetail-vote.jpg
+
 ### Empowerment
 
 Our democratic justice system empowers our students to find their voice as
@@ -197,6 +205,8 @@ But in our school, every student is a pair of eyes. The students trust the
 adults and want the best for their school and their community. If any of our
 students starts to feel uncertain about safety, they have no hesitation about
 finding an adult.
+
+!indetail-tree-porch
 
 What our model does not do is bubble-wrap the students. They are free to
 explore their own comfort boundaries and define them, whether they push those

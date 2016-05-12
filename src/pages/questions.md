@@ -22,6 +22,7 @@ to read on their own. Of particular note is the point that late readers are
 not distinguishable from early readers within a couple of years of common
 reading ability.
 
+!questions-card.jpg
 
 ## ... math?
 
@@ -42,6 +43,8 @@ just as they can master any other skill that they may need or want.
 
 
 ## ... getting into college?
+
+!questions-armchair.jpg,, right
 
 The admissions processes of colleges vary and student experience will vary as
 well, but the experience to date is that students who wish to go to college do
@@ -97,6 +100,8 @@ modern society and that there are many proven, studied advantages to playing
 with them regularly. Furthermore, computers and gaming are very social
 activities at our school in which students engage with each other, learn from
 each other, and problem-solve together. 
+
+!questions-tree.jpg
 
 We also find that with everything going on at our school, it is nearly
 impossible for any one child to do only one thing, all day, every day,
@@ -175,6 +180,8 @@ order, creating organization out of disorder and creating chaos of order. It
 is a messy process, but that is how they acquire a full command of their
 environment as well as their place in it. 
 
+!questions-kitchen.jpg
+
 Our students have the ability to come to School Meeting to create structure
 for the whole school by deciding rules and procedures. These governing bodies
 and processes are detailed in [Our Structure](our-structure.html). At other schools, students must
@@ -198,6 +205,8 @@ Elected positions for staff have them managing finances, administering the
 admissions process, tracking attendance, communicating with parents, planning
 PR events, cleaning and maintaining the property, and everything that it takes
 to run a school. Students may also serve in many of these roles. 
+
+!questions-washing.jpg
 
 As students and staff have equal standing in an institutional sense,
 relationships between students and staff tend to be collegial. As in any
@@ -235,6 +244,8 @@ Bullying is uncommon at Sudbury schools, since students freely age-mix and
 choose their own activities. To address the rare occurrence of bullying,
 School Meeting has enacted multiple laws that may be called upon when
 needed.
+
+!questions-dining.jpg
 
 ## ... how do students know their choices?
 
