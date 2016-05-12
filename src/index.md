@@ -35,7 +35,7 @@ the extra div below is to get rid of the flex. bad hack.
 
 [lead]()
 
-    #### **Arts & Ideas Sudbury School** is a democractic school for ages 5-18. Our philosophy of education emphasizes trust, autonomy, justice, and learning. 
+    #### **Arts & Ideas Sudbury School** is a democractic school for ages 5-18. We emphasize trust, autonomy, justice, and learning. 
 
     #### Come visit us and learn more at our [next open house](https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform)! 
 
@@ -251,9 +251,13 @@ Also the width gets narrower shifting the image.
         }
         
         .bottom {
-            padding-top: 66px;
+            padding-top: 50px;
             padding-bottom: 1px;
             background-color: #FBAA48;
+        }
+
+        h4 {
+            font-size:16px;
         }
 
         h4 + h4 {
@@ -303,7 +307,7 @@ quote beneath. At top, is the title
     }
     
     .tail {
-        paddin-top:2rem;
+        padding-top:1rem;
         /*padding-bottom:1rem;*/
     }
 
