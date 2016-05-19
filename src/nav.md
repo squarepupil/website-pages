@@ -637,6 +637,48 @@ is what we do after the loop.
         };
     }
 
-    
 
+## Next and Previous
 
+This is the stuff that produces the styling for the next and previous 
+
+##### JS
+
+    var farrow = _":full arrow";
+
+    farrow(document.querySelector(".previous a"), 
+        document.querySelector(".previous a span"));
+    farrow(document.querySelector(".next a"));    
+
+[full arrow]()
+
+This produces a full arrow. We can transform it to get the other direction
+(left). 
+
+    function (el, prepend) {
+        var can = document.createElement("canvas");
+        can.setAttribute("width", "200");
+        can.setAttribute("height", "100");
+
+        var color;
+        color = "whitesmoke";
+
+        var ctx = can.getContext("2d");
+        ctx.fillStyle=color;
+        ctx.beginPath();
+        ctx.moveTo(0,25);
+        ctx.lineTo(0,75);
+        ctx.lineTo(100,75);
+        ctx.lineTo(100,100);
+        ctx.lineTo(200,50);
+        ctx.lineTo(100, 0);
+        ctx.lineTo(100, 25);
+        ctx.lineTo(0,25);
+        ctx.fill();
+        if (prepend) {
+            el.insertBefore(can, prepend);
+        } else {
+            el.appendChild(can);
+        }
+        return can;
+    }
