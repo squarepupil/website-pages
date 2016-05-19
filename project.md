@@ -10,6 +10,13 @@ with some css to make it all look nice.
 
 The announcement should be updated as need be. 
 
+    <div class="announce">
+       <p> Our next Open House is <a href="https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform">Wednesday, August 17th, 6PM</a></p>
+    </div>
+
+
+[junk]()
+
     _":md | md"
 
 [md]()
@@ -30,6 +37,8 @@ The announcement should be updated as need be.
   sufficiently different to merit its own litpro. [index](index.md "load:")
 * [gallery.html](#gallery::page "save:") This is a picture gallery. Again,
   sufficiently different.  [gallery](gallery.md "load:")
+* [stories.html](#stories::page "save:") This is the page of people's stories,
+  etc. [stories](stories.md "load:")
 
 And then we have the project oriented files.
 
@@ -70,7 +79,7 @@ A generated string ought to look like `_"|echo name.md | readfile |
 
         return '\_"|echo ' + args[0] + '/' + input + '|' +
             'noop gSet(kv(fname, ' + bits.name + args[1] + ')) | ' +
-            args[3] + '|'  +
+            args[3].replace("PAGE", bits.name) + '|'  +
             ' savefile gGet(fname) "';
     }
 
@@ -88,7 +97,7 @@ A generated string ought to look like `_"|echo name.md | readfile |
 
     readfile 
     | images 
-    | process \_"template", \_"announcement", gGet(fname)
+    | process \_"template", \_"announcement", gGet(fname), \_"stories::side PAGE"
 
 
 
@@ -104,7 +113,7 @@ The input is a file organized into three chunks:
 1) Title
 2) Body for article
 3) The aside material MAYBE
-4) previous/next NO -- clean up needed
+4) previous/next
 
 In addition, the arguments is the html template, the announcement and the
 file name. The file name is used for activating the relevant link. 
@@ -128,7 +137,7 @@ file name. The file name is used for activating the relevant link.
 Add in the title both in the head and the article; easier to pop it in here.
 
         if (title) {
-            article = "<h2>" + title + "</h2>\n" + article;
+            $("main > h2").text(title.toUpperCase());
             $("title").text("A&I "+ title);
         }
         
@@ -138,14 +147,14 @@ Add in the title both in the head and the article; easier to pop it in here.
 
         $("article").append(article);
 
-        var aside = bits[2] || '';
-
-        _":parse aside"
-        
-        $("aside").append( announcement + aside);
+        $("aside").append( announcement +
+            "<div class='side-story'>" + args[3] + "</div>"
+        );
 
         _":active page"
         
+        _":css"
+
         return $.html();
 
     }
@@ -177,13 +186,24 @@ This is about finding the active page.
     }
    
 
-[parse aside]()
+[css]()
+
+This adds some per-page styling if it is in the 3rd split. 
+
+    var css = (bits[2] || '').trim();
+    if (css) {
+        $("style").append(css);
+    }
+
+[old parse aside]()
 
 Here we look for caps, colon after a new line. We then make pieces out of
 these. 
 
 Then we try to match with a
 function and produce some html. 
+
+
 
         aside = {
             text : "\n" + aside.trim(),
@@ -317,6 +337,7 @@ to have subcommands working.
 [noop](# "define:")
 
 
+
 #### Current
 
 This is a little command function that adds the current class to a link
@@ -345,10 +366,10 @@ This uses the pre-compiled previous, next format.
         nxt = np[fname][1];
 
         if (prv) {
-            prv = '<div class="previous">PREVIOUS: ' + prv + '</div>';
+            prv = '<div class="previous far">' + prv + '</div>';
         }
         if (nxt) {
-            nxt = '<div class="next"><span> NEXT:</span> ' + nxt + '</div>';
+            nxt = '<div class="next far">' + nxt + '</div>';
         }
     } else {
     }
@@ -359,23 +380,23 @@ This uses the pre-compiled previous, next format.
 This defines the cycle of pages for the previous and next buttons. 
 
     index : Home
-    model : The basics of our model
-    indetail : Our model in-depth
-    comparisons: Comparison to alternatives
-    questions: Common questions
-    resources: Further reading
-    organization: How our school runs
-    staff: Our staff
-    space: Our space
-    story: Our history
-    name: What our name means
-    admissions: About our admissions
+    model : Introduction 
+    indetail : Detailed
+    comparisons: Comparisons
+    questions: Questions 
+    resources: Resources 
+    organization: Organization
+    staff: Staff 
+    space: Space
+    story: Story
+    name: Name
+    admissions: Admissions 
     tuition: Tuition
-    gallery:  Incredible photos
-    stories: Testimonials
-    faq: Common questions
-    contact: How to contact us
-    support: How to support us
+    gallery: Gallery 
+    stories: Stories
+    faq: FAQ
+    contact: Contact us
+    support: Support us
     calendar: Calendar
 
     index, model, indetail, comparisons, questions, resources,
@@ -408,7 +429,8 @@ to a two element array of `[prv, next]` links, possible empty strings.
            var pieces = el.split(":");
            links[pieces[0].trim()] = '<a href="'+
             pieces[0].trim() + '.html" >' +
-            pieces[1].trim() + '</a>';
+            '<span>' + 
+            pieces[1].trim() + '</span></a>';
         });
 
 
@@ -484,7 +506,7 @@ exclamation mark. The rest of the line is parsed as fname, cap!alt, classes
                 cap = alt[0].trim();
                 alt = (alt[1] || '').trim() || cap;
                 classes = (bits[2] || '').trim(); 
-                str = '<figure' + (classes ? 'classes="' + classes + '"': '') + 
+                str = '<figure' + (classes ? ' class="' + classes + '"': '') + 
                       '><img src="gen/' + fname  + '.jpg" ' +  
                       'srcset="gen/' + fname +'-s.jpg 1w, ' + 
                       'gen/' + fname + '-m.jpg 500w, gen/' + 
@@ -559,6 +581,7 @@ We also institute the h5 for js
 [body]()
 
     main.outer
+        h2
         .inner
             article
             aside 
@@ -585,6 +608,10 @@ We also institute the h5 for js
 
     _"writ"
 
+    img {
+        max-width:100%;
+    }
+
     ol {
         list-style-type: decimal;
     }
@@ -610,6 +637,12 @@ We also institute the h5 for js
     _"nav::css | .join \n  "
 
     _"footer:css"
+
+    _"css title"
+
+    _"css images"
+
+    _"sidebar:css"
 
 ### Layout
 
@@ -657,18 +690,15 @@ borders while the inner provides the constraining width.
     
     aside {
         
-        flex: 1;
+        flex: 2;
         border: none;
     }
 
 These are for the previous and next links. It should be at the foot of the
 article. 
 
-    .previous {
-        display:none;
-    }
 
-    .next a {
+    .previous, .next {
         background-color: #296087;
         border-radius: 5px;
         padding-top: 3px;
@@ -679,6 +709,30 @@ article.
         word-spacing: 2px;
         text-decoration: none;
         color: whitesmoke;
+    }
+
+    .previous a, .next a {
+       text-decoration: none;
+       color: whitesmoke;
+    }
+
+    .previous {
+        float:left;
+    }
+
+    .previous canvas {
+        transform: rotate(180deg);
+        width:35px;
+        padding-left:5px;
+    }
+
+    .next canvas {
+        width:35px;
+        padding-left: 5px;
+    }
+
+    .next {
+        float:right;
     }
 
     form textarea {
@@ -748,8 +802,13 @@ And then some stuff for small screens
        /* background-color: rgb(78, 133, 173);*/
     }
 
-    
+    article p:first-child:first-line {
+        font-size:20px;
+    }
         
+    article {
+        background-color: whitesmoke;
+    }
 
 ### Borders padding
 
@@ -770,18 +829,106 @@ Here we deal with some of the border and padding on the large scale.
         list-style-type : disc;
     }
     
+    article {
+        padding : 14px;
+    }
+    
+### CSS Title
 
+This is the css for the title. It should have centered text, white, bebas, and a background image based on class?
+
+    main > h2 {
+        font-family: bebas;
+        word-spacing:7px;
+        text-align: center;
+        color: whitesmoke;
+        background: gray;
+        margin-top: -47px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        background-image: url("img/banner1.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+    }
+
+    M W<670px {
+        main > h2 {
+            margin-top: -20px;
+        }
+    }
+
+### CSS Images
+
+This is styling information for figures and images. 
+
+    figure {
+        margin-bottom:1.5rem;
+    }
+
+    figure.left, figure.right {
+        width: 50%;
+        margin-right: 10px;
+        margin-bottom: 2px;
+    }
+
+    figure.staff {
+        width: 50%;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 2px;
+    }
+
+    figure.left {
+        float:left;
+    }
+
+    figure.right {
+        float:right;
+    }
+
+This should clear the pictures of section headings. 
+
+    article h2 {
+        clear:both;
+    }
 
 ### Sidebar
 
-This sidebar is flexible. Ideally it should pull from other bits. 
-    
-    * Open House ....
-    * [Gallery](gallery.html)
-    * [Testimonials](testimonials.html)
-    * [Blog](http://blog.aisudbury.com)
-    _"nav::actions" 
+The sidebar has an announcement part and a callout for quotes and pictures. 
 
+[css]()
+
+    aside .announce a {
+        color: #D2B777;
+    }
+
+    aside .side-story, aside .announce  {
+        border:14px solid white;
+        
+    }
+
+    aside .announce {
+        border-top:0px;
+    }
+    
+    aside .side-story .call, aside .announce {
+       font-size: 20px;
+       background-color: #296087;
+       padding: 15px;
+       color:whitesmoke;
+       line-height: 1.1;
+       text-align: center;
+    }
+
+    aside figure {
+        margin-bottom: 0;
+    }
+
+    aside .side-story > p {
+        display: none;
+    }
 
 
 
