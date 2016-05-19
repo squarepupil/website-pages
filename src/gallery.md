@@ -184,8 +184,11 @@ links to css files
         margin-top: 90px;
     }
 
-    h2 {
+    main > h2 {
+        margin-top:0;
         text-align:center;
+        background:white;
+        color:black
     }
 
     .my-gallery {

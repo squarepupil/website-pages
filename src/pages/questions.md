@@ -1,8 +1,6 @@
-I get it, but what about ...
+Ok, what about ...
 ---
 
-Also see http://sudburyschoolofatlanta.org/ssa-education/questions/ which also
-inspired some of the below text. 
 
 ## ... reading?
 
@@ -263,3 +261,7 @@ up the world of information to them. The issue in the information age is not
 how to get information, but how to use it well. Decades of Sudbury graduates
 provide real evidence that this approach works.  
 
+- - - -
+
+Also see http://sudburyschoolofatlanta.org/ssa-education/questions/ which also
+inspired some of the below text. 

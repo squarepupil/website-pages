@@ -1,9 +1,9 @@
 Our Staff
 ---
 
-!caroline-blue.jpg,, staff
+!caroline-blue.jpg,, staff tall
 
-Caroline Chavasse (cofounder & staff) is the mother of two children and was a
+**Caroline Chavasse**  is the mother of two children and was a
 Professor of Video Art at the Maryland Institute College of Art for 7 years.
 She has presented master classes in Digital Video and Media Production at the
 Gilman School and has taught theatre workshops at University of Michigan,
@@ -29,7 +29,7 @@ Arts & Ideas.
 
 !brooke-office.jpg,, staff
 
-Brooke Pazoles (staff) Brooke is a recent graduate from the University of
+**Brooke Pazoles**  Brooke is a recent graduate from the University of
 Delaware, where she majored in elementary education. Even though she has a
 teacher’s certificate on paper, her experience at UD was not like any other up
 and coming teacher’s. After spending time in real classrooms during her early
@@ -56,9 +56,9 @@ for Humanity, and spent her final spring break rebuilding homes that were
 destroyed by hurricane Katrina in New Orleans, where she met lots of inspiring
 people and little lizards (see picture).
 
-!caroline-chicken.jpg,, staff
+!phil-sm.jpg,, staff boxy 
 
-Phil Glaser (staff) was born and raised in Olney, MD, a suburb of Washington
+**Phil Glaser**  was born and raised in Olney, MD, a suburb of Washington
 DC. His father, a public high school math teacher, and his mother, an IT
 administrator at a major corporation, fostered his gravitation towards things
 technical early on. His childhood fascination with technology and subsequent
@@ -87,9 +87,9 @@ curiosity and imagination. As well, he hopes to one day establish an exchange
 program of some sort with other Sudbury schools, both American and
 international.
 
-!james-celery.jpg,, staff
+!james-celery.jpg,, staff boxy
 
-James Taylor (staff) is a proud father, credentialed mathematician, heretical
+**James Taylor**  is a proud father, credentialed mathematician, heretical
 physicist, and passionate (web) programmer. While he has had a life-long
 dislike of traditional schooling, it was not until Arts & Ideas moved into his
 backyard that he first heard about the Sudbury way. He became an immediate
@@ -113,4 +113,15 @@ she has for the world, never knowing what new delight awaits around the next
 corner. He is relieved to have found an educational model that will nurture
 that joy instead of squashing it.
 
-!james-trash.jpg,, left
+---
+article p {
+    margin-bottom: 3rem;
+}
+
+figure.staff.boxy {
+    width:40%;
+}
+
+figure.staff.tall {
+    width:23%;
+}
