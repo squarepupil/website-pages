@@ -197,16 +197,9 @@ div to be the drop-down item (class down)
         li: a(href="organization.html") Organization
         li: a(href="staff.html") Staff
         li: a(href="space.html") Space
-        li: a(href="story.html") Story
+        li: a(href="history.html") History
         li: a(href="name.html") Name
 
-[junk]()
-
-    .spacer
-    ul
-        li: a(href="space.html") Space
-        li: a(href="story.html") Story
-        li: a(href="name.html") Name
 
 [model]()
 
@@ -216,14 +209,6 @@ div to be the drop-down item (class down)
         li: a(href="comparisons.html") Comparisons
         li: a(href="questions.html") Questions
         li: a(href="resources.html") Resources
-
-[junk]()
-
-    .spacer
-    ul
-        li: a(href="questions.html") Questions
-        li: a(href="resources.html") Resources
-
     
 ### Logo desk
 

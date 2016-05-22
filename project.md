@@ -388,7 +388,7 @@ This defines the cycle of pages for the previous and next buttons.
     organization: Organization
     staff: Staff 
     space: Space
-    story: Story
+    history: History
     name: Name
     admissions: Admissions 
     tuition: Tuition
@@ -400,8 +400,8 @@ This defines the cycle of pages for the previous and next buttons.
     calendar: Calendar
 
     index, model, indetail, comparisons, questions, resources,
-    organization, staff, space, story, name, admissions, tuition,
-    gallery, stories, faq, contact, support, calendar
+    organization, staff, space, history, name, admissions, tuition,
+    gallery, stories, faq, contact, support, calendar, index
 
 [pn-making]()
 

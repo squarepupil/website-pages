@@ -328,7 +328,7 @@ design.
     5. FAQ
     6. Name
     7. Space, Support
-    8. Story
+    8. History
     9. Contact, Tuition
     10. Admissions, Questions
     11. Resources, Organization
