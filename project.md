@@ -805,9 +805,6 @@ And then some stuff for small screens
        /* background-color: rgb(78, 133, 173);*/
     }
 
-    article p:first-child:first-line {
-        font-size:20px;
-    }
         
     article {
         background-color: whitesmoke;

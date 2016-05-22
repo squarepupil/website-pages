@@ -641,6 +641,9 @@ This produces a full arrow. We can transform it to get the other direction
 (left). 
 
     function (el, prepend) {
+        if (!el) {
+            return;
+        }
         var can = document.createElement("canvas");
         can.setAttribute("width", "200");
         can.setAttribute("height", "100");
