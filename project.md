@@ -791,7 +791,10 @@ And then some stuff for small screens
     }
 
     footer {
-        background-color: #e0dfd6;
+        background-color: whitesmoke;
+        padding-top:6px;
+        padding-bottom:6px;
+        margin-top:6px;
     }
 
     #actions a {
@@ -970,15 +973,6 @@ previous color of yellow burn: #9E9A6C
         margin-right:auto;
         padding-top:3px;
         justify-content:space-between;
-    }
-
-    footer li:nth-last-child(1n+2) {
-       /* margin-right:10px;*/
-    }
-
-    footer li:nth-child(1n+3) {
-        /*list-style-type:disc;*/
-        /*margin-left: 20px;*/
     }
 
 The Next styling
