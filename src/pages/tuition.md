@@ -1,4 +1,4 @@
-Tuition 
+Financial Obligations 
 ---
 
 !tuition-01.jpg,, right

@@ -21,7 +21,7 @@ staff that serve together on the committee for one week at a time. Serving on
 JC is a requirement of all SMM’s, from the 5 year olds to the staff. JC meets
 every day to handle cases, or “write ups.” A write up happens when any SMM
 (child or adult) believes that another SMM (child or adult) has broken a rule
-from the law book. When this happens, the plaintiff retrieves a write up form
+from the law book. When this happens, the plaintiff retrieves a grievance form
 and records the details of the incident. The case is usually heard the next
 day in JC, which is run much like a small court - all testimony from both
 sides is heard, evidence is presented, and JC makes two decisions by vote: was

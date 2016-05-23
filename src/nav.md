@@ -175,8 +175,8 @@ Our home page link
 A few quick links.
 
     * [Calendar](calendar.html)
-    * [Support Us](support.html)
-    * [Contact Us](contact.html)
+    * [Support Us](support-us.html)
+    * [Contact Us](contact-us.html)
 
 ### Details
 
@@ -204,8 +204,8 @@ div to be the drop-down item (class down)
 [model]()
 
     ul
-        li: a(href="model.html") Introduction
-        li: a(href="indetail.html") Detailed
+        li: a(href="introduction.html") Introduction
+        li: a(href="detailed.html") Detailed
         li: a(href="comparisons.html") Comparisons
         li: a(href="questions.html") Questions
         li: a(href="resources.html") Resources

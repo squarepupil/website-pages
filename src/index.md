@@ -120,7 +120,7 @@ the extra div below is to get rid of the flex. bad hack.
     Explore our website to discover what makes our school tick and why
     students and their families wouldn’t have it any other way.   
 
-    <div class="next far"><a href="model.html">Introduction</a></div>
+    <div class="next far"><a href="introduction.html">Introduction</a></div>
    
 
 

@@ -29,32 +29,34 @@ Arts & Ideas.
 
 !brooke-office.jpg,, staff
 
-**Brooke Pazoles**  Brooke is a recent graduate from the University of
-Delaware, where she majored in elementary education. Even though she has a
-teacher’s certificate on paper, her experience at UD was not like any other up
-and coming teacher’s. After spending time in real classrooms during her early
-college career, Brooke soon became aware of the atrocities taking place in
-public school systems today. She almost dropped her major to pursue a totally
-different career, but was steered to research Sudbury education by a professor
-turned mentor. Brooke was hooked immediately, and spent the rest of her time
-at college pushing the University to support her in her quest to complete her
-student teaching placement – and eventually become a full-time staff member –
-at a Sudbury school. After much deliberation, UD finally allowed Brooke to
-serve her student teaching placement at The Philadelphia Free School, a new
-Sudbury school in South Philly. While at PFS, Brooke’s passion for Sudbury
-education blossomed and grew. Her time as an intern there solidified her dream
-to pursue staffing at a Sudbury school as her career.  Brooke is originally
-from Bainbridge Island, a tiny island off of Seattle. She spent most of her
-childhood outside, building tree forts, picking blackberries, and getting
-intro trouble with her cohort of neighborhood friends.  Brooke enjoys playing
-the flute (she’s been playing since age 4), building DIY projects for her
-home, learning and practicing web design and coding, discovering new
-restaurants, and snuggling with her three cats. She also cares deeply about
-community service and giving her time and resources to those in need. She
-spent much of her time at college volunteering for organizations like Habitat
-for Humanity, and spent her final spring break rebuilding homes that were
-destroyed by hurricane Katrina in New Orleans, where she met lots of inspiring
-people and little lizards (see picture).
+**Brooke Pazoles** Brooke Pazoles Brooke is a recent graduate from the
+University of Delaware, where she studied elementary and middle school
+education. Even though she has a teacher’s certificate on paper, her
+experience at UD was not like any other up and coming teacher’s. After
+spending time in real classrooms during her early college career, Brooke soon
+became aware of the atrocities taking place in public school systems today.
+She almost dropped her major to pursue a totally different career, but was
+steered to research Sudbury education by a professor who specialized in
+alternative education models. Brooke was hooked immediately, and spent the
+rest of her time at college pushing the University to support her in her quest
+to complete her student teaching placement – and eventually become a full-time
+staff member – at a Sudbury school. Brooke was able to fulfill her student
+teaching requirement at The Philadelphia Free School, a Sudbury school in
+South Philly. While at PFS, Brooke’s passion for Sudbury education blossomed
+and grew. Her time as an intern there solidified her dream to pursue staffing
+at a Sudbury school as her career. Brooke is originally from Bainbridge
+Island, a tiny island off of Seattle. She spent most of her childhood outside,
+building tree forts, picking blackberries, and getting intro trouble with her
+cohort of neighborhood friends. Brooke enjoys biking and walking through
+Baltimore's neighborhoods with her husband, writing, practicing yoga, and
+snuggling with her three cats. She also cares deeply about community service
+and giving her time and resources to those in need. She spent much of her time
+at college volunteering for organizations like Habitat for Humanity, and spent
+her final spring break rebuilding homes that were destroyed by hurricane
+Katrina in New Orleans. Brooke is a type 1 diabetic and is a active member and
+advocate within the worldwide diabetes community, spending much of her free
+time mentoring others with the disease, scouring research papers, and
+attending and speaking at diabetes conferences. 
 
 !phil-sm.jpg,, staff boxy 
 

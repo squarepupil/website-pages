@@ -1,4 +1,4 @@
-Where Can I Learn More?
+Resources on Our Model
 ---
 
 !resources-01.jpg,, left

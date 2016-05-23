@@ -1,4 +1,4 @@
-Support Us
+Donations Big & Small
 ---
 
 There are a variety of ways you can support Arts & Ideas. Thank you to all our
@@ -8,12 +8,19 @@ would certainly not be the school we are today.
 
 ## Donate to A&I through PayPal
 
-!support-fort.jpg
+!support-fort.jpg,, right
 
 Arts & Ideas is a nonprofit organization and all donations are
 tax-deductible. Monetary donations are used to support our financial aid
 program and for day to day school operations (like refreshing art supplies
 or buying seeds for the garden).
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" value="_s-xclick" type="hidden">
+<input name="hosted_button_id" value="8CJJHMPN5T448" type="hidden">
+<input src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" border="0" type="image">
+<img style="display: none ! important;" alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" height="1" border="0" width="1">
+</form>
 
 ## Shop on Amazon
 
@@ -28,7 +35,6 @@ body; to learn more click here.
 
 ## School Merchandise for Sale
 
-!support-tree.jpg
 
 We currently have A&I t-shirts for sale as well as notecard sets created by
 students and staff. To learn more about our currently available items for
@@ -40,6 +46,8 @@ software. Please e-mail us to coordinate a drop-off time if you wish to make a
 tax-deductible donation to the school.
 
 ## Wish List
+
+!support-tree.jpg,, right
 
 The following items are always in high demand at school. We also consider
 other donations not listed as well; please email aisudburyschool@gmail.com if

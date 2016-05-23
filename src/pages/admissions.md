@@ -1,4 +1,4 @@
-Admissions
+The Admissions Process
 ---
 
 We encourage families considering enrollment at Arts & Ideas to attend an open

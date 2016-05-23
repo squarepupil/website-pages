@@ -1,4 +1,4 @@
-Our Space
+Buildings and Grounds
 ---
 
 !space-building.jpg
@@ -45,9 +45,10 @@ residential streets that are perfect for casual strolls on warmer days.  We
 are also less than half a mile from local businesses such as Zeke’s Coffee and
 Red Canoe Cafe on Harford Road.
 
+!space-view.jpg
+
 We would love to show you our
 beautiful campus - come check it out at our next open house! [link to open
 house schedule](https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform)
 
-!space-stairs.jpg
 

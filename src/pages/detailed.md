@@ -39,8 +39,8 @@ allow us to continually address the dynamic between individual and community.
 We model our school on Sudbury Valley School, established in 1968. They have
 had nearly 50 years to explore and understand this model. Their literature is
 extensive and highly recommended for learning more about the model. They have
-well-established theoretical underpinnings, as well as many anecdotes and
-studies of graduates that support the theory in practice.
+well-established theoretical underpinnings, as well as books full of anecdotal
+evidence and studies of graduates that support the theory in practice.
 
 Throughout it all, the results have been impressive. With no formal education
 process, generations of students have successfully been prepared for adult
@@ -105,12 +105,11 @@ a growing individual coupled with the environment of the community will
 naturally lead each student down their own satisfying path. Each path will
 look very different and that is a good thing.
 
-We have no curriculum and we neither praise nor criticize students’
-personal choices. We do embrace authentic emotions -- joy at
-something delightful, frustration at annoyances. Notions of what is worthy of
-a student’s time come from students themselves, both as individuals and as
-reflexive members of a community, as well as the world of resources around
-them. 
+We have no curriculum and we neither praise nor criticize students’ personal
+choices. We do embrace authentic emotions -- joy at something delightful,
+frustration at annoyances — but notions of what is worthy of a student’s time
+come from students themselves, both as individuals and as reflexive members of
+a community, as well as the world of resources around them.
 
 Students start from a place of accepting who they are now and decide, more or
 less, from that foundation as to what they want to become. This allows our
@@ -159,7 +158,7 @@ achieving their own, possibly modified, goals. This is how adult life is as
 well and is an important contributing factor to how Sudbury graduates are able
 to navigate a variety of different paths in life with ease.
 
-## Environment
+### Environment
 
 Humans in general learn a lot from their environment. We all watch and learn
 from others, taking cues from those around us on how to behave and what to do.
@@ -167,13 +166,12 @@ It is what people do, rather than just simply what they say, which has the
 most impact.
 
 Thus we see that waves of excitement over this or that come over our
-community. An individual brings interests to our community and then the
-community takes those interests and rebroadcasts it to the individuals.
+community.An individual brings interests to our community and then the
+community takes those interests and rebroadcasts them to the individuals.
 
 Likewise, our system of rules is not studied or enforced by anyone particular.
 Rather, rule following is modeled by the majority of the community and,
-therefore, each individual is strongly led to follow those same rules. In
-instances where an individual does deviate, our Judicial Committee intervenes.
+therefore, each individual is strongly led to follow those same rules. In instances where an individual does deviate and matters can’t be worked out among the individuals involved, our Judicial Committee intervenes.
 This prevents rules from continuing to be misunderstood, misapplied, or taking
 precedent over people in the event that they are simply not good rules.
 
@@ -190,7 +188,8 @@ one another and for our system as a whole.
 Empowerment is at the heart of what students learn at our school. Regardless
 of how it is expressed by the individual, all students learn to respect their
 inner urge for justice, responding to the call of the question, “If I am not
-for myself, then who is?”
+for myself, then who will be?” This then leads to a further expansion into
+supporting justice for the school and even the wider community. 
 
 ### Safety
 
@@ -203,7 +202,7 @@ adults are present to end the threat. This is as it should be in any school.
 
 But in our school, every student is a pair of eyes. The students trust the
 adults and want the best for their school and their community. If any of our
-students starts to feel uncertain about safety, they have no hesitation about
+students start to feel uncertain about safety, they have no hesitation about
 finding an adult.
 
 !indetail-tree-porch
@@ -216,9 +215,9 @@ choose their actions, students err on the side of caution.
 
 Bumped elbows, scraped knees, and other such minor incidents give students
 plenty of incentive to be more careful. In the rare instances when a child
-might truly be approaching areas out of their depth, there are plenty of eyes
-in the community that can recognize the risk and voices to urge caution. In
-the extreme, an adult is consulted.
+might truly be approaching areas out of their depth, the community has plenty
+of eyes to recognize the risk and plenty of voices to urge caution. In the
+extreme, an adult is consulted.
 
 Though physical safety, due to its apparent nature, is chief on the minds of
 all parties involved, emotional safety is, arguably, more important on a

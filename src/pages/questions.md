@@ -4,7 +4,7 @@ Ok, what about ...
 
 ## ... reading?
 
-Children learn to read in a variety of ways at their own timing. Some learn at
+Children learn to read in a variety of ways at their own pace. Some learn at
 age 4 and others learn when they are 9. When they learn, they learn quickly.
 By letting them find their own way, their joy of reading is undiminished. 
 
@@ -85,7 +85,7 @@ choosing.
 As for A&I, of our two graduates thus far, one is studying photography at the
 college of his choice - which he was accepted to without a diploma or SAT
 scores - and the other is a professional pastry chef at a high end restaurant
-- his dream job that he apprenticed for while attending A&I.
+\- his dream job that he apprenticed for while attending A&I.
 
 
 ## ... screen time?

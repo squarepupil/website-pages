@@ -322,14 +322,14 @@ design.
 ## Pages for the sidebar 
 
     1. Comparisons, Calendar
-    2. Model
-    3. Indetail
+    2. Introduction
+    3. Detailed
     4. Staff
     5. FAQ
     6. Name
-    7. Space, Support
+    7. Space, Support-us
     8. History
-    9. Contact, Tuition
+    9. Contact-us, Tuition
     10. Admissions, Questions
     11. Resources, Organization
 

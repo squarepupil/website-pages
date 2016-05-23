@@ -1,4 +1,4 @@
-Calendar 2015-2016
+School Calendar
 ---
 
 * March 25-30 Spring Break 

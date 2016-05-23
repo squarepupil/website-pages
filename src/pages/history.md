@@ -1,8 +1,6 @@
 Our Story
 ---
 
-!story-01.jpg 
-
 Arts & Ideas Sudbury School is a 21st-century school in Baltimore where
 students ages 5 through 18 learn, explore, and grow in a stimulating,
 supportive community.  The school is based on a philosophy of education first
@@ -17,6 +15,8 @@ five that was inspired by the principles of Sudbury schooling. Children, free
 to follow their interests with minimal adult interference, were able to create
 their own games and activities as they saw fit while navigating a rich social
 scene, i.e, they got to play! 
+
+!story-fence.jpg
 
 To learn more about the Sudbury model of education, Danny was
 hired part-time for a year at the Fairhaven school, another Sudbury school in

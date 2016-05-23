@@ -118,6 +118,8 @@ The input is a file organized into three chunks:
 In addition, the arguments is the html template, the announcement and the
 file name. The file name is used for activating the relevant link. 
 
+
+
     function (input, args) {
         var doc = this;
         var md = doc.parent.local.md;
@@ -129,7 +131,9 @@ file name. The file name is used for activating the relevant link.
         var fname = filename.split(".")[0];
 
         var bits = input.split("\n---\n");
-        var title = bits[0] || '';
+        var article_title = bits[0] || '';
+        var title = fname;
+        title = title[0].toUpperCase() + title.slice(1);
 
         var article = bits[1] || '';
         article = md.render(article);
@@ -141,11 +145,14 @@ Add in the title both in the head and the article; easier to pop it in here.
             $("title").text("A&I "+ title);
         }
         
+        $("article > h1").text(article_title);
+        
         _"previous next"
 
         article += "\n" +  prv + nxt;
 
         $("article").append(article);
+
 
         $("aside").append( announcement +
             "<div class='side-story'>" + args[3] + "</div>"
@@ -380,8 +387,8 @@ This uses the pre-compiled previous, next format.
 This defines the cycle of pages for the previous and next buttons. 
 
     index : Home
-    model : Introduction 
-    indetail : Detailed
+    introduction : Introduction 
+    detailed : Detailed
     comparisons: Comparisons
     questions: Questions 
     resources: Resources 
@@ -395,13 +402,13 @@ This defines the cycle of pages for the previous and next buttons.
     gallery: Gallery 
     stories: Stories
     faq: FAQ
-    contact: Contact us
-    support: Support us
+    contact-us: Contact us
+    support-us: Support us
     calendar: Calendar
 
-    index, model, indetail, comparisons, questions, resources,
+    index, introduction, detailed, comparisons, questions, resources,
     organization, staff, space, history, name, admissions, tuition,
-    gallery, stories, faq, contact, support, calendar, index
+    gallery, stories, faq, contact-us, support-us, calendar, index
 
 [pn-making]()
 
@@ -584,6 +591,7 @@ We also institute the h5 for js
         h2
         .inner
             article
+                h1
             aside 
     header \_"nav::nav"
     footer.outer 
@@ -869,8 +877,9 @@ This is styling information for figures and images.
 
     figure.left, figure.right {
         width: 50%;
-        margin-right: 10px;
-        margin-bottom: 2px;
+        margin-right: 14px;
+        margin-bottom: 14px;
+        margin-left:14px;
     }
 
     figure.staff {
@@ -926,7 +935,7 @@ The sidebar has an announcement part and a callout for quotes and pictures.
         margin-bottom: 0;
     }
 
-    aside .side-story > p {
+    aside .text {
         display: none;
     }
 
