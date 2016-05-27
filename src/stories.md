@@ -18,7 +18,7 @@ There will be no sidebar on the stories page.
         _" | assemble _"full stories| md", 
         _"callouts|md", 
         _"pages for the sidebar|md" " | 
-        replace title, A &amp; I Stories | 
+        replace title, A&amp;I Stories | 
         replace main h2, Stories |
         replace style, _"stories css" "  
     
