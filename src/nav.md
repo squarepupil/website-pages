@@ -308,12 +308,12 @@ We use the extract-links function below to extract already fully formed links.
     </ul>
     <ul class="off">
        <li id="sitemap-model"> <p class="active arrow mobile">The Model</p>
-            <ul class="site-drop active"> 
+            <ul class="site-drop active mobile"> 
                 _"details:model| jade |extract-links"
             </ul>
        </li>
        <li id="sitemap-school"> <p class="active arrow mobile">Our School</p>
-            <ul class="site-drop active">
+            <ul class="site-drop active mobile">
                 _"details:school | jade | extract-links"
             </ul>
         </li>
@@ -411,7 +411,7 @@ is a backup for non-js.
 
        .sitemap .off { 
             right:-180px;
-            transition: right 1s;
+            transition: right 0.8s;
        }
        
        .sitemap > ul:first-child {
@@ -428,7 +428,7 @@ is a backup for non-js.
 
         .sitemap .on {
             right:0px;
-            transition: right 1.3s;
+            transition: right 0.8s;
             padding-bottom: 46px;
         }
 
@@ -438,11 +438,21 @@ is a backup for non-js.
         }
 
         .site-drop {
-            display:none;
+            max-height:0;
+            overflow:hidden;
+            transition: max-height 1s;
         }
 
         .site-drop.active {
-            display:block;
+            max-height:8em;
+            transition: max-height 1s;
+        }
+
+This delays the animation so that it takes place off screen. 
+
+        .sitemap .off .site-drop {
+            transition-delay:  0.7s;
+            tansition: max-height 0.1s;
         }
 
     }
@@ -453,14 +463,31 @@ is a backup for non-js.
 We need to have the menu be clickable to add the show class. We also want some
 js to hide the sitemap since we want it hidden unless javascript is disabled.
 
+We also want to put a listener on the body for closing the menu when the body
+is clicked. We need to also prevent the clicking inside the menu from closing 
+
     var sitemap = document.querySelector(".sitemap");
     sitemap.classList.add("js");
     var menulist = document.querySelector(".sitemap ul:nth-child(2)");
+    var sactive = document.querySelectorAll(".sitemap .active");
     document.querySelector("#menu").addEventListener("click",
-        function () {
+        function (ev) {
+            var i, n=sactive.length;
             menulist.classList.toggle("off");
             menulist.classList.toggle("on");
+            for (i = 0; i < n; i += 1) {
+                sactive[i].classList.add("active");
+            }
+            ev.stopPropagation();
         });
+    sitemap.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+    });
+    document.querySelector("body").addEventListener("click", function () {
+        menulist.classList.add("off");
+        menulist.classList.remove("on");
+    });
+
 
 ## Drop downs
 
@@ -597,27 +624,42 @@ It removes the active class from anything it finds. If the index is the same
 as the active class, then we are done (remove lightbulb small size). Otherwise, we need to activate it which
 is what we do after the loop.
 
+Doing a hack here. The mobile menu should be handled differently, but don't
+really want to think about it. So simply going to ignore the removal if mobile
+and index is not i. 
+
     function (ind) {
         var dd =  drops[ind];
         return function (e) {
+            var flag = false;
             e.preventDefault();
             var i = 0, n = drops.length;
             var cl;
             for (i = 0; i < n; i += 1) {
                 cl = drops[i].classList;
                 if (cl.contains("active") ) {
-                    cl.remove("active");
-                    togglers[i].classList.remove("active");
-                    if (ind === i) {
-                        bulb.remove("small");
-                        return;
+                    if (cl.contains("mobile") ) {
+                        if (ind === i) {
+                            cl.remove("active");
+                            togglers[i].classList.remove("active");
+                            flag = true; // toggling behavior;
+                        }
+                    } else {
+                        cl.remove("active");
+                        togglers[i].classList.remove("active");
+                        if (ind === i) {
+                            bulb.remove("small");
+                            return;
+                        }
                     }
                 }
             }
             setTimeout(function() {
-               dd.classList.add("active");
-                bulb.add("small");
-                togglers[ind].classList.add("active");
+                if (!flag) {
+                   dd.classList.add("active");
+                    bulb.add("small");
+                    togglers[ind].classList.add("active");
+                }
             }, 300);
         };
     }
@@ -670,3 +712,6 @@ This produces a full arrow. We can transform it to get the other direction
         }
         return can;
     }
+
+
+
