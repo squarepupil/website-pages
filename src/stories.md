@@ -48,14 +48,16 @@ changes. These are required by the pages in their compilation.
         var sideput = _":store in sidebar";
         var div, parr;
         var inserter = _":inserter";  
+        var wrap = _":wrap in div";
 
         for (i = 0; i < n; i += 1) {
             el = stories.get(i);
-            _":wrap in div" 
+            wrap(el, "text");
             $(el).prepend(img(i+1));
             $(el).prepend("<div class='call'>"+$(call.get(i)).text()+"</div>");
             place_s = $(places.get(i)).text().split(",");
             place_s.forEach(sideput);
+            wrap(el, "inner");
         }
 
         $.root().prepend("<h2></h2>");
@@ -69,10 +71,12 @@ changes. These are required by the pages in their compilation.
 
 This wraps the children of the list item in a div. 
 
-    div = $("<div class='text'></div>");
-    parr = $(el).children();
-    $(el).prepend(div);
-    parr.each(inserter);
+    function (el, cls) {
+        div = $("<div class='"+cls+"'></div>");
+        children = $(el).children();
+        $(el).prepend(div);
+        children.each(inserter);
+    }
 
 [inserter]()
 
@@ -131,26 +135,43 @@ design.
        display: flex; 
     }
 
+    li .inner {
+        padding:5px;
+    }
+
     .text {
         flex:1;
         padding:10px;
-        text-align: center;
+        text-align: justify;
         margin-top:auto;
         margin-bottom:auto;
     }
 
     .test-img {
         flex:1;
+        order:1;
+        margin-bottom:auto;
+        margin-top:auto;
+        border : #FFFFFF solid 5px;  
     }
 
     main ol > :nth-child(2n+0) {
         background-color:#eee;
+        box-shadow: inset 0px 0px 10px #888;
     }
 
     main ol > :nth-child(2n+0) .text {
-        color:red;
         order:1;
     }
+    
+    hr {
+        border-bottom: black 1px solid;
+        height: 2px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding:none;
+    }
+}
 
 ## Full Stories
 
@@ -166,14 +187,27 @@ design.
       village to raise a child? A bunch of adults, all available to cast a
       benevolently watchful eye upon whoever’s child happens  to be underfoot as
       they set a virtuous and practical example by going about their business. All
-      good. What is missing from this virtual tableau? The sound of small feet
+      good. What is missing from this virtual tableau? 
+      
+       The sound of small feet
       hurrying, the annoyed sighs of teens deploying their dirt-palmed clean-up
       crew, a chicken coop being raised on academic real estate, music, laughter,
       and all kids raising each other in their real world, in real time, learning
       to own the reality of their actions. To use an adult-shrink-speak term, the
       kids learn “agency” at Arts and Ideas Sudbury School, just ‘cause they can.
       With the tableau thus filled in, the village becomes complete. 
-    1. Thank you for taking the time to speak with me. You are the main reason why
+    1.  I had a flooding rush of joy and gratitude yesterday (I felt down
+        right verklempt) when I dropped R off for school just for the simple
+        fact that W--who is a fair bit older than R (in kid years)--waited
+        while holding the door for R as he scaled a wall to go into school. W
+        had such a kind and patient demeanor and while I'm sure there are
+        times the bigs and littles ignore and annoy one another, they also get
+        this natural opportunity to care for and about one another. This
+        familial type bond is one of the many reasons we chose Sudbury.
+     
+         <hr />
+     
+         Thank you for taking the time to speak with me. You are the main reason why
       I chose Arts & Ideas, just wanted to let you know that. I totally felt at
       ease when we met and sensed an amazing amount of empathy/kindness and
       compassion in you. I want my sprouting bean to be around creative, kind and
@@ -241,7 +275,8 @@ design.
         What we’ve found at Arts & Ideas is the space to swim on her own terms, in
         her own way, at her own pace. There’s room to breathe, play, stretch, and
         imagine. In just the few months that we’ve been at A&I, I have already
-        seen a big change in Dolly’s sense of self. They ebb and flow but the
+        seen a big change in [my daughter's] sense of self. 
+        They ebb and flow but the
         confidence and autonomy she could not find are really starting to bubble.
         The chance to look inward as well as outward has provided her with her own
         huge canvas to fill – a scenario she never found herself in while tackling
@@ -262,20 +297,7 @@ design.
         course), learning about democracy and judiciary responsibility, filling
         her art portfolio, studying mythology, advocating feminism and social
         justice, making great friendships, and more. Now THAT’S an education!
-    1. Many well meaning friends and family members have questioned what seems like
-      an unorthodox educational approach or journey for our family. We began as
-      homeschoolers, turned into unschoolers and ended up at Arts and Ideas in 2008.
-      This has been the best choice we could have made for our family. My
-      eldest son was deeply involved in the local homeschooling community and
-      loved the direction his education was taking him, and then we attended an
-      open house for Arts and Ideas. At what was to be the interview for our 6
-      year old, our twelve year old begged for an interview and tour and basically
-      pleaded with the founders to have the school allow him an age exception
-      since the school was not going to take 12 year olds. Both boys began, with
-      me working as staff, in the Fall of 2008, and I can honestly say we have
-      never made a better decision as a family.
-
-        My sons have been challenged, inspired, frustrated and stymied by this
+    1.  My sons have been challenged, inspired, frustrated and stymied by this
         model. Our eldest son graduated from A&I after a senior year where he
         struggled with his thesis( the model's requirement for graduation) and
         balanced an internship with a local bakery. During his time at A&I he
