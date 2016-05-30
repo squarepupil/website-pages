@@ -20,7 +20,9 @@ There will be no sidebar on the stories page.
         _"pages for the sidebar|md" " | 
         replace title, A&amp;I Stories | 
         replace main h2, Stories |
-        replace style, _"stories css" "  
+        replace style, _"stories css | caps" |
+        cheerio main, append, _"next prev" "
+
     
 
 
@@ -171,6 +173,38 @@ design.
         margin-bottom: 20px;
         padding:none;
     }
+
+    M W<670px {
+        .test-img {
+            order:initial;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        li .inner {
+            padding:none;
+            padding-top:10px;
+            padding-bottom:10px;
+            margin-left:0px;
+            margin-right:0px;
+        }
+
+        .text {
+            text-align:left;
+        }
+
+        .test-img {
+            width: 300px;
+        }
+
+This is because flex column prevents the floating but row is fine. It really
+shouldn't even be flexy, but whatever. 
+
+        .last {
+            flex-direction: row;
+        }
+
+    }
 }
 
 ## Full Stories
@@ -316,12 +350,12 @@ design.
         missed a School Meeting or a chance to volunteer for Judicial Committee,
         our youngest is content to follow his own goals. His independence and
         autonomy are his focus and as he was 'raised" in the model we have
-        spirited discussions about politics and current events.His separation from
+        spirited discussions about politics and current events. His separation from
         his brother's approach and years at A&I have also been of great value as
         he stands apart from his brother's choices and expectations. 
 
         We did not desire report cards or test scores, despite my husband working
-        as a teacher for a time; we wanted active thinkers, independence,the
+        as a teacher for a time; we wanted active thinkers, independence, the
         freedom to explore and a firm sense of self determination. Arts and Ideas
         has supported all of this and opened so many new pathways for our family.
 
@@ -355,4 +389,9 @@ design.
     10. Admissions, Questions
     11. Resources, Organization
 
+## Next Prev
 
+    <div class="inner last">
+    <div class="previous far"><a href="gallery.html"><span>Gallery</span></a></div>
+    <div class="next far"><a href="faq.html"><span>FAQ</span></a></div>
+    </div>
