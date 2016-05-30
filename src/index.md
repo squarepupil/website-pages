@@ -235,50 +235,6 @@ This is the css of the styling
         border : #FFFFFF solid 5px;
     }
 
-Small version the nav gets twice as large so we need to account for that.
-Also the width gets narrower shifting the image. 
-
-    M W<640px {
-
-        .top {
-            height: 67px;
-            background-color: #FBAA48; 
-        }
-        
-        .middle {
-            height: 43.35px;
-            background-color:white;
-        }
-        
-        .bottom {
-            padding-top: 50px;
-            padding-bottom: 1px;
-            background-color: #FBAA48;
-        }
-
-        h4 {
-            font-size:16px;
-        }
-
-        h4 + h4 {
-            padding-bottom: 11px;
-        }
-        
-        .relative {
-            position: relative;
-            width: 300px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #wmark  {
-            position: absolute;
-            top: -19px;
-            left: 0;
-            width:100%; 
-        }
-    }
-
 
 Here we style the blurbs. The idea is to have the image on the left with a
 quote beneath. At top, is the title  
@@ -400,6 +356,54 @@ centered feeling
 
         #aut .text {
             padding-top: 1.5rem;
+        }
+    }
+
+Small version the nav gets twice as large so we need to account for that.
+Also the width gets narrower shifting the image. 
+
+    M W<640px {
+
+        .top {
+            height: 67px;
+            background-color: #FBAA48; 
+        }
+        
+        .middle {
+            height: 43.35px;
+            background-color:white;
+        }
+        
+        .bottom {
+            padding-top: 50px;
+            padding-bottom: 1px;
+            background-color: #FBAA48;
+        }
+
+        h4 {
+            font-size:16px;
+        }
+
+        h4 + h4 {
+            padding-bottom: 11px;
+        }
+        
+        .relative {
+            position: relative;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #wmark  {
+            position: absolute;
+            top: -19px;
+            left: 0;
+            width:100%; 
+        }
+
+        .blurb .text {
+            text-align: left;
         }
     }
 
