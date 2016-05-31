@@ -45,7 +45,7 @@ learning is how to learn.  This core learning explains how generations of
 Sudbury students, many of whom have never taken a formal class, thrive both at
 college and in the working world.  They have learned how to focus, how to
 explore, how to ask questions, how to master something that interests them,
-and how to take failure as well as success in stride as steps towards
+and how to take failure, as well as success, in stride as steps towards
 achieving their own goals.
 
 The children and staff are all members of the school community and learn from
