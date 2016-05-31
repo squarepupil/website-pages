@@ -12,9 +12,89 @@ THOUGHTS: Just three thumbnail pictures per album with a ... picture or somethin
 ## Page
 
     _"project.md::template | replace main, _"albums  "
+        | replace style, _"page css | caps" 
         | cheerio head, append, _"pswp css"
         | cheerio body, append, _"pswp js"
-        | current-link gallery.html "
+        | current-link gallery.html 
+        | cheerio main, prepend, <h2>Gallery</h2>
+        | cheerio main, append, _"next prev" "
+
+## page css
+
+This is the css for the page that organizes the blocks and footer, etc, 
+
+    main .outer {
+        display : flex;
+    }
+
+    main .outer .inner {
+        padding:5px;
+
+    }
+
+    main .outer .inner p {
+        flex:1;
+        padding:10px;
+        text-align: center;
+        margin-top:auto;
+        margin-bottom:auto;
+        width: 150px;
+        display: inline-block;
+        white-space:normal;
+    }
+
+    main {
+        margin-top: 90px;
+    }
+
+    .my-gallery {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .my-gallery img {
+      width: 100%;
+      height: 100px;
+    }
+    .my-gallery figure {
+      display: inline-block;
+      margin: 0 5px 5px 0;
+      width: 150px;
+    }
+    .my-gallery figcaption {
+      display: none;
+    }
+    
+    
+    .my-gallery :nth-child(1n+5) {
+        display: none;
+    }
+
+    .my-gallery {
+
+    }
+
+      main > :nth-child(2n+0) {
+        background-color:#eee;
+        box-shadow: inset 0px 0px 10px #888;
+    }
+
+    .blurb {
+        width:300px;
+        box-shadow: inset 0px 0px 10px #888;
+        margin-top:10px;
+        margin-bottom:10px;
+        padding: 15px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+## next prev
+
+    <div class="inner last">
+    <div class="previous far"><a href="tuition.html"><span>Tuition</span></a></div>
+    <div class="next far"><a href="stories.html"><span>Stories</span></a></div>
+    </div>
 
 ## Albums
 
@@ -37,7 +117,7 @@ photoswipe list will be used.
 
     _"anything | pswp Endless possibilities at A&amp;I"
 
-    _":more pictures|md"
+    <div class="blurb">_":more pictures|md"</div>
 
     _"pswp html"
 
@@ -176,45 +256,8 @@ links to css files
          - .png and .svg icons sprite, 
          - preloader.gif (for browsers that do not support CSS animations) -->
     <link rel="stylesheet" href="pswp/default-skin/default-skin.css"> 
-    <style> _":inline"</style>
 
-[inline]()
- 
-    main {
-        margin-top: 90px;
-    }
-
-    main > h2 {
-        margin-top:0;
-        text-align:center;
-        background:white;
-        color:black
-    }
-
-    .my-gallery {
-       display:flex; 
-       justify-content:center;
-    }
-
-    .my-gallery img {
-      width: 100%;
-      height: 100px;
-    }
-    .my-gallery figure {
-      display: block;
-      float: left;
-      margin: 0 5px 5px 0;
-      width: 150px;
-    }
-    .my-gallery figcaption {
-      display: none;
-    }
-    
-    
-    .my-gallery :nth-child(1n+5) {
-        display: none;
-    }
-
+   
 ### pswp html
 
 This is the basic html for the gallery irrespective of content. 
@@ -341,7 +384,8 @@ Each item comes in the form `[ filename, alt, caption, size]` though the middle 
                 replace("CAP", el[2] || '').
                 replace("SIZE", el[3]);
         }).join("\n"));
-        cb(null, "<h2>" + galleryname + "</h2>" + text);
+        cb(null, "<div class='outer'><div class='inner'><p>" + 
+            galleryname + "</p>" + text + "</div></div>");
     }
 
 [item start]() 
