@@ -133,6 +133,7 @@ file name. The file name is used for activating the relevant link.
         var bits = input.split("\n---\n");
         var article_title = bits[0] || '';
         var title = fname;
+        title = title.replace("-", " ");
         title = title[0].toUpperCase() + title.slice(1);
 
         var article = bits[1] || '';
