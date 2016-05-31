@@ -129,6 +129,10 @@ design.
         display:none;
     }
 
+    main h2 {
+        margin-bottom:0px;
+    }
+
     main ol {
         list-style-type: none;
     }
@@ -139,6 +143,8 @@ design.
 
     li .inner {
         padding:5px;
+        padding-top:40px;
+        padding-bottom:40px;
     }
 
     .text {
@@ -155,9 +161,11 @@ design.
         margin-bottom:auto;
         margin-top:auto;
         border : #FFFFFF solid 5px;  
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
-    main ol > :nth-child(2n+0) {
+    main ol > :nth-child(2n+1) {
         background-color:#eee;
         box-shadow: inset 0px 0px 10px #888;
     }
@@ -166,12 +174,20 @@ design.
         order:1;
     }
     
+    .test-img img {
+        display:block;
+    }
+    
     hr {
         border-bottom: black 1px solid;
         height: 2px;
         margin-top: 0px;
         margin-bottom: 20px;
         padding:none;
+    }
+
+    .last {
+        padding-top:20px;
     }
 
     M W<670px {
