@@ -128,27 +128,14 @@ about colleges and careers for Sudbury graduates.
 
 ### How does graduation work?
 
-Arts & Ideas, like most Sudbury Schools, offers an optional diploma process involving a
-written thesis and defense for those students aged 16+ who choose to undertake it. 
+Arts & Ideas, like most Sudbury Schools, offers an optional diploma process for students 
+aged 16+: a thesis is written to address the question ‘How have I prepared to enter the 
+world beyond school?’ and defended in front of a panel of staff members from neighboring
+Sudbury schools.
 
-By November of their graduation year, students intending to graduate must declare 
-their intent and begin to prepare their thesis to answer the question, ‘How have 
-I prepared to enter the world beyond school?’ Throughout the year and with the 
-help of an advisory committee, the student works to prepare a written piece 
-explaining their answer, as well as any other supplemental materials (be they 
-written, performed, or otherwise documented)to help support their case. 
-
-In the springtime, a panel of staff members from neighboring Sudbury schools 
-convenes to hear the student’s thesis and defense. The panel then votes to grant 
-or deny a diploma. Whether or not the diploma is granted, the student may choose to 
-graduate and move on to the next stage in their life. In the event that they are denied 
-the diploma and are still 18 or younger, they may continue to attend A&I and attempt the 
-diploma process again in the following year. 
-
-The diploma process is not mandatory and, as long as a student is of age to leave 
-school, they need not necessarily undertake it to graduate. It is an optional process 
-that many, but not all, teenagers who are leaving the school wish to undertake, often 
-as a capstone of their experience at the school.
+Students who are of age to leave A&I may graduate without the diploma. Many, but not all, 
+teenagers choose to undertake the optional diploma process, often as a capstone of their 
+school experience.
 
 ### What is the school’s legal structure?
 
