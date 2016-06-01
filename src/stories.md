@@ -380,7 +380,7 @@ shouldn't even be flexy, but whatever.
 
     1.  “My daughter woke up at 5:00 AM asking if she could go to school yet! There is just no feeling like it.”
     2.  “I feel that A&I has pretty much saved [my son’s] experience with education. I think I have one of the most balanced, self-motivated, and un-cranky teenagers that could ever exist!”
-    3.  “The kids learn “agency” at Arts and Ideas Sudbury School, just ‘cause they can.”
+    3.  “The kids learn agency at Arts and Ideas Sudbury School, just 'cause they can.”
     4.  “I want my sprouting bean to be around creative, kind, and nourishing people.”
     5.  “This is [my daughter’s] 2nd year at Arts & Ideas and she’s a much happier kid. Her eyes are bright, her curiosity is unstoppable, and she loves learning a variety of subjects.”
     6.  “Successful people need to be continuous learners and skilled collaborators, eager to try new things and not too worried about whether their experiments will initially fail. Those are the skills that Sudbury nurtures.”

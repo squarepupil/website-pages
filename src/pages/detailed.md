@@ -30,11 +30,11 @@ understanding by listening to one another. Everyone is given equal voice and
 an equal hearing. In many ways, the crucial aspect of both bodies is not the
 result, but the process itself. It is through being heard and hearing others
 that we develop understanding and compassion for one another, which in turn
-allow us to continually address the dynamic between individual and community.
+allows us to continually address the dynamic between individual and community.
 
 !indetail-trio.jpg
 
-### History
+## History
 
 We model our school on Sudbury Valley School, established in 1968. They have
 had nearly 50 years to explore and understand this model. Their literature is
@@ -56,7 +56,7 @@ There is no formal body that decides if a school is a Sudbury school or not.
 It is a self-decided label. Thus, each school should be examined on its own
 merits.
 
-### Age-Mixing
+## Age-Mixing
 
 !indetail-lib.jpg,, right
 
@@ -96,7 +96,7 @@ creates an environment in which younger students and older students serve to
 temper the behavior of the other, thereby providing a complementary means to
 ease into adulthood.
 
-### Acceptance
+## Acceptance
 
 A key component of this model is the acceptance of the individual. There is no
 notion that a student needs to be doing such-and-such a thing in order to be a
@@ -116,7 +116,7 @@ less, from that foundation as to what they want to become. This allows our
 students to naturally grow into a future of their own making at a pace that
 works for them.
 
-### Learning
+## Learning
 
 !indetail-puddle.jpg,, left
 
@@ -143,7 +143,7 @@ The journey of learning is what we prize here. We know that the skills of
 learning are transferable to whatever endeavor our students ultimately pursue.
 Learning how to learn is what our school is all about. 
 
-### Constraints
+## Constraints
 
 Creative people know that constraints are what drive good designs. Humans can
 be overwhelmed by choice, but when there are constraints to overcome and work
@@ -166,7 +166,7 @@ It is what people do, rather than just simply what they say, which has the
 most impact.
 
 Thus we see that waves of excitement over this or that come over our
-community.An individual brings interests to our community and then the
+community. An individual brings interests to our community and then the
 community takes those interests and rebroadcasts them to the individuals.
 
 Likewise, our system of rules is not studied or enforced by anyone particular.
@@ -177,7 +177,7 @@ precedent over people in the event that they are simply not good rules.
 
 !indetail-vote.jpg
 
-### Empowerment
+## Empowerment
 
 Our democratic justice system empowers our students to find their voice as
 individuals and as part of the community. They quickly change roles from
@@ -191,7 +191,7 @@ inner urge for justice, responding to the call of the question, “If I am not
 for myself, then who will be?” This then leads to a further expansion into
 supporting justice for the school and even the wider community. 
 
-### Safety
+## Safety
 
 A fundamental attribute for any school is for it to be safe. Our school
 provides a safe environment in multiple ways.
@@ -234,7 +234,7 @@ This is not to be underestimated. Our students enjoy coming to school. It is a
 place of safety, despite the unknowns. It is their second home.
 
 
-### Hard Work
+## Hard Work
 
 Our school offers a very demanding education. That which happens within our
 walls is authentic. This includes things perceived as kind, agreeable, and

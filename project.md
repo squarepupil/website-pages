@@ -845,6 +845,10 @@ And then some stuff for small screens
         background-color: whitesmoke;
     }
 
+    article h2 {
+            font-size: 1.728em;
+    }
+
 ### Borders padding
 
 Here we deal with some of the border and padding on the large scale. 
