@@ -27,8 +27,8 @@ Or by postal mail at
 
 We have a public [Facebook
 page](https://www.facebook.com/Arts-Ideas-Sudbury-School-372859716072)  as
-well as a [blog](http://blog.aisudbury.com). Both give an ongoing view of the
-inside.
+well as a [blog](http://blog.aisudbury.com). Both give an ongoing, inside look
+at the school.
 
 ---
 form > p > span {
