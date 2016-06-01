@@ -1,12 +1,19 @@
 Resources on Our Model
 ---
 
+> "Sudbury Valley School in Framingham, Massachusetts--a school that I helped found in 1968--was the first fully democratic school in the US. Others have now been founded all over this country and in many other parts of the world. The schools share a deep commitment to the idea that children deserve nothing less than the full set of rights and freedoms that adults receive in our society, and that in such a setting children have the best opportunity to learn, to develop their sense of responsibility, to define their value systems, and to grow into productive, self-motivated adults." 
+>
+> [Respect by Daniel Greenberg](http://www.educationfutures.org/Respect.htm)
+
+
+
+
 !resources-01.jpg,, left
 
 Here is a list of a just a few of our favorite readings and links related to
-our school and the way we do things. An extensive library of online library of
-articles - where some of the following readings come from - and other
-resources can be found [here](http://www.sudval.com/05_articles.html).
+our school and the way we do things. Sudbury Valley School maintains an
+extensive library of online articles which can be found
+[here](http://www.sudval.com/05_articles.html)
 
 [A Thousand Rivers](http://schoolingtheworld.org/a-thousand-rivers/): What the
 modern world has forgotten about children and learning
@@ -87,13 +94,26 @@ general flavor of the model. We are all quite independent with unique and
 interesting differences, but these are schools that we feel share a similar
 vision for running a school. 
 
-* [Fairhaven]() Near Washington D.C. They provided the legal model for our
-  school.
-* [Philly Free School]() In Philadelphia, this is another urban school similar
-  to ours.
-* [The Circle School]()  Around since 1984 and in Harrisburg, PA, they are  working to fund a new building. 
 * [Sudbury Valley School]() The school that inspired it all since the late
   1960s. 
+* [The Circle School]()  Around since 1984 and in Harrisburg, PA, they are  working to fund a new building. 
+* [Fairhaven]() Near Washington D.C. They provided the legal model for our
+  school.
 * [Hudson Valley School]() This has some great videos explaining their school. 
+* [Philly Free School]() In Philadelphia, this is another urban school similar
+  to ours.
 
 ... and many more.
+
+---
+
+    blockquote {
+      background: #296087;
+      color: whitesmoke;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+    }
+
+    blockquote a {
+       color : #D2B777;
+    }
