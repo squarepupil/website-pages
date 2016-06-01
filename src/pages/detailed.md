@@ -105,11 +105,12 @@ a growing individual coupled with the environment of the community will
 naturally lead each student down their own satisfying path. Each path will
 look very different and that is a good thing.
 
-We have no curriculum and we neither praise nor criticize students’ personal
-choices. We do embrace authentic emotions -- joy at something delightful,
-frustration at annoyances — but notions of what is worthy of a student’s time
-come from students themselves, both as individuals and as reflexive members of
-a community, as well as the world of resources around them.
+We use life itself as our curriculum and we neither praise nor criticize
+students’ personal choices. We do embrace authentic emotions -- joy at
+something delightful, frustration at annoyances — but notions of what is
+worthy of a student’s time come from students themselves, both as individuals
+and as reflexive members of a community, as well as the world of resources
+around them.
 
 Students start from a place of accepting who they are now and decide, more or
 less, from that foundation as to what they want to become. This allows our
@@ -169,10 +170,12 @@ Thus we see that waves of excitement over this or that come over our
 community. An individual brings interests to our community and then the
 community takes those interests and rebroadcasts them to the individuals.
 
-Likewise, our system of rules is not studied or enforced by anyone particular.
+Likewise, our system of rules is not studied or enforced by anyone in particular.
 Rather, rule following is modeled by the majority of the community and,
-therefore, each individual is strongly led to follow those same rules. In instances where an individual does deviate and matters can’t be worked out among the individuals involved, our Judicial Committee intervenes.
-This prevents rules from continuing to be misunderstood, misapplied, or taking
+therefore, each individual is strongly led to follow those same rules. In
+instances where an individual does deviate and matters can not be worked out
+among the individuals involved, our Judicial Committee intervenes.  This
+prevents rules from continuing to be misunderstood, misapplied, or taking
 precedent over people in the event that they are simply not good rules.
 
 !indetail-vote.jpg
@@ -181,8 +184,8 @@ precedent over people in the event that they are simply not good rules.
 
 Our democratic justice system empowers our students to find their voice as
 individuals and as part of the community. They quickly change roles from
-defendant to plaintiff to juror. In a matter of minutes, they go from rule
-breakers to rule makers (and possibly back again!). They learn to look out for
+defendant to plaintiff to juror. In a matter of minutes, they can go from rule
+breakers to rule enforcers to rule makers. They learn to look out for
 one another and for our system as a whole.
 
 Empowerment is at the heart of what students learn at our school. Regardless
@@ -242,11 +245,9 @@ easy, but it also necessarily includes those things that are difficult,
 disagreeable, and perhaps that conflict with one’s sense of self. Students are
 ultimately responsible for negotiating these challenges. 
 
-If students’
-interests clash, adults are not expected to establish a regime that is “fair”.
-Those students must work out a solution for themselves or face the
-consequences of inaction. 
-Practicing real life prepares students
-to further succeed in resolving difficulties as the stakes rise with age, be
+If students’ interests clash, adults are not expected to establish a regime
+that is “fair”.  Those students must work out a solution for themselves or
+face the consequences of inaction.  Practicing real life prepares students to
+further succeed in resolving difficulties as the stakes rise with age, be
 their problems practical, interpersonal, or existential.
 
