@@ -15,11 +15,10 @@ Arts & Ideas is governed by bodies of students and staff empowered by the
 school’s bylaws to manage the school’s operation. See more in [Our
 Structure](our-structure.html).
 
-### Is the school similar to any other schools that I may have heard about?
+### Is the school similar to any other educational models?
 
 Please see our [Okay, so you’re sort of like…](comparisons.html) page for a
-discussion of the similarities and differences between A&I and other schools
-that you may have heard about.
+brief comparison of school philosphies.
 
 ### How much does it cost?
 
@@ -38,10 +37,9 @@ and includes winter break, spring break, and summer vacation. See our
 
 ### What are the attendance requirements?
 
-Arts & Ideas is open from 8:15 AM - 5:45 PM. To receive credit for a full day of
-attendance, students are required to be present for a total of at least 5
-hours, and those 5 hours must include the core hours of 11:00 AM - 3:00 PM.
-The school offers extended drop-off and pick-up hours from 8:00 AM - 6:00 PM
+Arts & Ideas is open from 8:15 AM - 5:45 PM. A full day's attendance is a total 
+of at least 5 hours, which must include the core hours of 11:00 AM - 3:00 PM.
+A&I also offers extended drop-off and pick-up hours from 8:00 AM - 6:00 PM
 for an additional fee for those families who consistently require it.
 
 ### When can we enroll?
@@ -78,19 +76,17 @@ socializing (laughing/talking/listening/sharing).
 
 ### Do you accept students with disabilities?
 
-Yes, Arts & Ideas enrolls students with disabilities on a case-by-case basis.
-A&I does not provide any specific accommodations for students with disabilities; 
-however, students who have required services or medications in previous educational 
-settings have enrolled at A&I. Students who have been diagnosed with Autism, Dyslexia, 
-ADD, ADHD, Emotional or other Mood disorders, among others, have achieved great success
-at A&I.
+Yes, Arts & Ideas enrolls students with disabilities on a case-by-case basis; however,
+A&I does not provide any specific accommodations for students with disabilities.
+Regardless of any disability, all students must be able to keep themselves safe 
+without constant adult supervision and take care of their own needs (such as eating 
+and using the restroom). 
 
-Regardless of any disability, all students must be able to keep themselves
-safe without constant adult supervision and take care of their own needs 
-(such as eating and using the restroom). In many ways, every student at A&I 
-is on their own IEP (Individualized Education Plan), in that they have the 
-space, time, and freedom to be themselves and learn in whatever way makes sense 
-for them. 
+In many ways, every student at A&I is on their own IEP (Individualized Education Plan), 
+in that they have the space, time, and freedom to be themselves and learn in whatever 
+way makes sense for them. Students who have been diagnosed with Autism, Dyslexia, ADD, 
+ADHD, Emotional or other Mood disorders, among others, have achieved great success at
+A&I.
 
 ### What resources are available at school?
 
@@ -121,15 +117,14 @@ beach in Delaware, and engaging in all kinds of outdoor fun at Camp Puh’Tok.
 Yes, but in a more subtle way than most expect.  Please see the [Our
 Story](our-story.html) page for a more in-depth explanation of our name.
 
-### Do students receive a high school diploma upon graduation?
+### Do students receive a diploma?
 
-No, Arts & Ideas does not issue a high school equivalence diploma. 
+Yes, Arts & Ideas grants its own diploma for students who write and defend a thesis.
+A&I diploma is not a high school equivalence diploma; however, it is a document that 
+students can and do use for college and job applications. 
 
-Yes, Arts & Ideas grants its own diploma for students who write and
-defend a thesis. A&I diploma is a document that students can and do
-use for college and job applications. Please see our [I get it, but what
-about…?](confusions.html) page for more information on college and career for
-Sudbury graduates.
+Please see our [I get it, but what about…?](confusions.html) page for more information 
+about colleges and careers for Sudbury graduates.
 
 ### How does graduation work?
 
