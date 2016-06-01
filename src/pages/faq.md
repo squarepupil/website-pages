@@ -15,12 +15,11 @@ Arts & Ideas is governed by bodies of students and staff empowered by the
 school’s bylaws to manage the school’s operation. See more in [Our
 Structure](our-structure.html).
 
-
-### Is the school similar to other alternative schools I have heard about?
+### Is the school similar to any other schools that I may have heard about?
 
 Please see our [Okay, so you’re sort of like…](comparisons.html) page for a
-discussion of the similarities and differences between A&I and some
-others you may have heard about.
+discussion of the similarities and differences between A&I and other schools
+that you may have heard about.
 
 ### How much does it cost?
 
