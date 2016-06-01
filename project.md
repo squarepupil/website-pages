@@ -163,6 +163,8 @@ Add in the title both in the head and the article; easier to pop it in here.
         
         _":css"
 
+        _":js"
+
         return $.html();
 
     }
@@ -201,6 +203,16 @@ This adds some per-page styling if it is in the 3rd split.
     var css = (bits[2] || '').trim();
     if (css) {
         $("style").append(css);
+    }
+
+
+[js]()
+
+This adds some per-page javascript if it is in the 4th split. 
+
+    var js = (bits[3] || '').trim();
+    if (js) {
+        $("script").append(js);
     }
 
 [old parse aside]()
