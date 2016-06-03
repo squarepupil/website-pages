@@ -4,13 +4,14 @@ Ok, what about ...
 
 ## ... reading?
 
-Children learn to read on their own. As with any new skill, when children are
-interested and motivated, learning happens...and that journey will be unique for
-each child. Some children learn to read early and others learn much later. Once
-reading starts, it may progress slowly or surprisingly quickly.
+Children can and do learn to read on their own. As with any new skill, when 
+children are interested and motivated, learning happens...and that journey 
+will be unique for each child. Some children learn to read early and others 
+learn much later. Once reading starts, it may progress slowly or surprisingly 
+quickly.
 
 We live in a literate society, in which reading and writing are necessary skills.
-Demanding that these skills are achieved on "schedule" creates unnecessary pressure.
+Demanding that these skills are attained on "schedule" creates unnecessary pressure.
 Allowing children to aquire these skills at their own pace fosters positive 
 attitudes about learning.
 
@@ -24,20 +25,19 @@ late, has no bearing on future reading intests or abilities.
 
 ## ... math?
 
-Much like reading, basic arithmetic is a useful skill that children learn
-as they need it. They use numbers in daily life, such as when dealing
-with money, dividing things up, deciding how long a turn should be, etc., and
-they get a natural feeling for their use.
+As with reading, children learn basic arithmetic, because it is a useful skill.
+Whether dealing with food, toys, games, or money, counting or sharing is involved.
+Children assimilate math concepts from using numbers in these very natural contexts.
 
-The more advanced mathematics are not picked up naturally, but they are easily
-learned when there is need. There is ample evidence of this in the history of
-Sudbury schools. For example, college entrance tests require some mathematical
-knowledge which Sudbury students pick up with a few weeks of dedicated
-effort.
+Children also study advanced mathematics as needed to achieve specific goals. To 
+prepare for college entrance exams, they seek resources for self-study and often find
+that they can grasp all the material relatively quickly in a few months. They learn to
+view math as a tool that they can master, rather than as a subject to be feared or 
+dreaded for years.
 
-Our model also has the additional feature that none of our students learn to
-fear or hate mathematics. Instead, they see it as a tool that they can master
-just as they can master any other skill that they may need or want.
+["Kids Learn Math Easily When They Control Their Own Learning"]
+(https://www.psychologytoday.com/blog/freedom-learn/201004/kids-learn-math-easily-when-they-control-their-own-learning) shares the ways that children encounter, explore, and learn math concepts
+on their own.
 
 ## ... getting into college?
 
