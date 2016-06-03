@@ -4,19 +4,33 @@ Ok, what about ...
 
 ## ... reading?
 
-Children learn to read in a variety of ways at their own pace. Some learn at
-age 4 and others learn when they are 9. When they learn, they learn quickly.
-By letting them find their own way, their joy of reading is undiminished. 
+Children learn to read on their own. As with any new skill, when children are
+interested and motivated, learning happens...and that journey will be unique for
+each child. Some children learn to read early and others will learn later. Once
+reading starts, it may progress slowly or surprisingly quickly.
 
-We live in a literate society, in which reading and writing are necessary
-skills. Children are highly motivated to acquire these skills as they are
-fundamental to simply getting around, let alone to serving any specialized
-needs.
+We live in a literate society, in which reading and writing are necessary skills.
+Demanding that these skills are achieved on "schedule" creates unnecessary pressure.
+Allowing children to aquire these skills at their own pace fosters positive 
+attitudes about learning.
 
 [Peter Gray’s “Children Teach Themselves to
 Read”](https://www.psychologytoday.com/blog/freedom-learn/201002/children-teach-themselves-read)
+explores approaches to teaching reading and the ways that children teach 
+
+compares the ways of systematic reading instruction and children learning to read on
+their own.
+
+
+compares systematic reading instruction and children learning to read on their own.
+briefly examines systematic reading instruction and shares
+
+
 is an excellent article for gaining a proper perspective on children learning
-to read on their own. Of particular note is the point that late readers are
+to read on their own. 
+
+
+Of particular note is the point that late readers are
 not distinguishable from early readers within a couple of years of common
 reading ability.
 
@@ -264,4 +278,4 @@ provide real evidence that this approach works.
 - - - -
 
 Also see http://sudburyschoolofatlanta.org/ssa-education/questions/ which also
-inspired some of the below text. 
+inspired some of the below text.
