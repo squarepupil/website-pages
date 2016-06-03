@@ -133,9 +133,9 @@ aged 16+: a thesis is written to address the question ‘How have I prepared to 
 world beyond school?’ and defended in front of a panel of staff members from neighboring
 Sudbury schools.
 
-Students who are of age to leave A&I may graduate without the diploma. Many, but not all, 
-teenagers choose to undertake the optional diploma process, often as a capstone of their 
-school experience.
+Students who are of age may leave A&I without the diploma. Many, but not all, teenagers 
+choose to undertake the optional diploma process, often as a capstone of their school 
+experience.
 
 ### What is the school’s legal structure?
 
