@@ -6,7 +6,7 @@ Ok, what about ...
 
 Children learn to read on their own. As with any new skill, when children are
 interested and motivated, learning happens...and that journey will be unique for
-each child. Some children learn to read early and others will learn later. Once
+each child. Some children learn to read early and others learn much later. Once
 reading starts, it may progress slowly or surprisingly quickly.
 
 We live in a literate society, in which reading and writing are necessary skills.
@@ -16,16 +16,16 @@ attitudes about learning.
 
 [Peter Gray’s “Children Teach Themselves to
 Read”](https://www.psychologytoday.com/blog/freedom-learn/201002/children-teach-themselves-read)
-offers excellent perspective on children learning to read on their own. One interesting 
-observation is that the starting age of reading, whether early or late, has no bearing
-on future reading intests or abilities.
+offers excellent perspective on children learning to read on their own. One 
+interesting observation is that the starting age of reading, whether early or 
+late, has no bearing on future reading intests or abilities.
 
 !questions-card.jpg
 
 ## ... math?
 
-Much like reading, basic arithmetic is a useful skill that children pick up
-easily as they need it. They use numbers in daily life, such as when dealing
+Much like reading, basic arithmetic is a useful skill that children learn
+as they need it. They use numbers in daily life, such as when dealing
 with money, dividing things up, deciding how long a turn should be, etc., and
 they get a natural feeling for their use.
 
@@ -38,7 +38,6 @@ effort.
 Our model also has the additional feature that none of our students learn to
 fear or hate mathematics. Instead, they see it as a tool that they can master
 just as they can master any other skill that they may need or want.
-
 
 ## ... getting into college?
 
