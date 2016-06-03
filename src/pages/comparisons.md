@@ -159,8 +159,7 @@ achieve.
 
 **OK, So You're Sort of Like...** is a publication of Fairhaven School
 Incorporated, a non-profit organization dedicated to supporting the Sudbury
-model of education in Maryland. For more information on the school call
-301-249-8060, e-mail them at staff@fairhavenschool.com, or check out their
-website at fairhavenschool.com. Fairhaven School welcomes racial, ethnic, and
-religious diversity and families of every composition.
-
+model of education in Maryland. For more information about the school, call
+301-249-8060, e-mail staff@fairhavenschool.com, or check fairhavenschool.com. 
+Fairhaven School welcomes racial, ethnic, and religious diversity and families 
+of every composition.
