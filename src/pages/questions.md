@@ -4,7 +4,7 @@ Ok, what about ...
 
 ## ... reading?
 
-Children can and do learn to read on their own. As with any new skill, when 
+Children learn to read on their own. As with any new skill, when 
 children are interested and motivated, learning happens...and that journey 
 will be unique for each child. Some children learn to read early and others 
 learn much later. Once reading starts, it may progress slowly or surprisingly 
@@ -43,35 +43,17 @@ on their own.
 
 !questions-armchair.jpg,, right
 
-The admissions processes of colleges vary and student experience will vary as
-well, but the experience to date is that students who wish to go to college do
-not have problems. If there are tests that need taking, they prepare for them.
-If there are prerequisites that they can fill, they do so. If not, they
-negotiate their way around them quite skillfully and with a high success
-rate.
+As with any goals that they have set for themselves, students with college 
+aspirations find ways to be successful. They prepare for necessary tests. 
+They complete the prerequisites when possible, or negotiate their way around 
+them skillfully. They impress admissions boards with their level of maturity 
+and ability to express themselves cogently. 
 
-As with most roles in society, being accepted is more a matter of personality
-and clarity of thought rather than a simple list of skills. Our students can
-easily talk with adults. They are able to express themselves with focus and
-coherence derived from years of negotiating complex and ever-changing needs
-and pressures within their schools. This is an impressive marker of maturity
-to those who serve on admissions boards.
-
-Once admitted, they also do not have any particular problems with their chosen
-courses of study. While they may have never taken a formal class before, they
-are well-equipped to learn what they need to learn in order to succeed at
-college. They have spent their educations up to this point creating and
-achieving goals using the resources around them. It is just the same in
-college. They work hard, as they have chosen to be there, and they are
-unafraid to use professors and other resources to master the material. 
-The initiative and savvy of Sudbury students make them ideal college students.
-
-They are also not overly distracted by the social scene at college. They have
-have had many years of socializing freely and the move to a college dorm is
-not the overwhelming novelty for them that it can be for students who have
-been sheltered from choice and risk. For Sudbury students, college is a place
-to learn academic material and receive credentials that they believe will be
-of use to them in their chosen path in life. Thus, they work hard.
+Once admitted, students continue to work hard and do well in their courses. They 
+may have never taken a formal class before, but they apply all that they know about
+learning. They know how to immerse themselves in interests, explore available
+resources, and set and achieve their own goals. Nor are they overly distracted by
+the social scene or overwhelmed by newfound freedom. 
 
 The experience recounted here is mostly derived from the stories of the nearly
 50 year old Sudbury Valley School. They have reported, after conducting
