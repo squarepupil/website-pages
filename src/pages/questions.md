@@ -16,9 +16,9 @@ attitudes about learning.
 
 [Peter Gray’s “Children Teach Themselves to
 Read”](https://www.psychologytoday.com/blog/freedom-learn/201002/children-teach-themselves-read)
-offers perspectives on teaching reading and self-taught reading. One important 
-observation is that the starting age of reading, whether early or late, does not
-affect enduring reading interest or abilities.
+offers excellent perspective on children learning to read on their own. One interesting 
+observation is that the starting age of reading, whether early or late, has no bearing
+on future reading intests or abilities.
 
 !questions-card.jpg
 
