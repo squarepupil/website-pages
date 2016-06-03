@@ -16,23 +16,9 @@ attitudes about learning.
 
 [Peter Gray’s “Children Teach Themselves to
 Read”](https://www.psychologytoday.com/blog/freedom-learn/201002/children-teach-themselves-read)
-explores approaches to teaching reading and the ways that children teach 
-
-compares the ways of systematic reading instruction and children learning to read on
-their own.
-
-
-compares systematic reading instruction and children learning to read on their own.
-briefly examines systematic reading instruction and shares
-
-
-is an excellent article for gaining a proper perspective on children learning
-to read on their own. 
-
-
-Of particular note is the point that late readers are
-not distinguishable from early readers within a couple of years of common
-reading ability.
+offers perspectives on teaching reading and self-taught reading. One important 
+observation is that the starting age of reading, whether early or late, does not
+affect enduring reading interest or abilities.
 
 !questions-card.jpg
 
