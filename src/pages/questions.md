@@ -91,23 +91,6 @@ climbing a tree or playing a game of soccer. When kids feel comfortable in
 their safe space - whether that be near a screen or not - they gain the
 confidence in themselves and bravery to try something new. 
 
-
-## ... exposure? How do students know what they don’t know?
-
-We live in the information age, where knowledge is available at your
-fingertips. In this context, and especially at a Sudbury school, where
-conversation flows freely and without time limits, it would be an enormously
-difficult task not to be exposed to all kinds of topics and information.
-Because students are free to explore and interact with other students and
-adults of all ages with all different backgrounds, they are naturally exposed
-to a wide variety of topics.  Students follow their curiosity and interest,
-which is not limited to a set curriculum. Have you ever met a young child that
-does not like asking questions? At A&I, this curiosity is not squashed when the
-child enrolls at school. Instead it is encouraged and allowed to blossom into
-all kinds of information exploring and gathering. It is unsurprising then that
-when we do hear from parents on the matter of exposure, the question is almost
-always “How did my son/daughter know that?”
-
 ## ... supplementary instruction?  
 
 At Arts & Ideas, students have the freedom (and the responsibility) ...
