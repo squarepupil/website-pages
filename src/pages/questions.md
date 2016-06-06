@@ -124,41 +124,6 @@ needs and concerns. Students ... As students discover and pursue their passions,
 they achieve deeper levels of knowlege and mastery of skills.
 
 
-Some people immediately see the social value of our school and think they can
-fill the perceived academic void by having their child follow an online
-curriculum at home, by visiting a weekly tutor, or by engaging in nightly
-homeschool-esque lessons with the parent. These kinds of activities are fine,
-if and only if it is truly your child’s choice to engage in them. 
-
-However, any
-type of academics or extracurricular activity that is forced upon your child
-is contrary to our school’s philosophy and will undermine their experience at
-school.  Insistence on supplementary activities sends a mixed-message to your
-child that school is for playing/socializing and the “real” learning takes
-place at home. 
-
-Instead of learning confidence and independence, they learn that they need
-others to teach them. Even worse, they learn that they are not capable of
-deciding what they need to be taught. 
-
-And they also have to reconcile what the parents say (“We trust
-you”), with the lack of trust inherent in dictating what the child ought to be
-interested in. This is an extremely difficult place for a child to be put in
-and ultimately ends up severely damaging their trust in themselves and renders
-their Sudbury school experience an unfulfilled promise.  
-
-This confusion of
-educational purpose not only adversely affects the individual child but the
-entire school community. The one child who perceives his/her learning
-experience at school as either an impossible task at best, or a lie at worst,
-will naturally influence peers with that attitude. 
-
-It is the job of the parent
-to support their child at a Sudbury school by consistently delivering the
-message that what the child chooses to engage in at school is important,
-valuable, real learning, and enough. Perhaps even more importantly, the job of
-a parent is to just enjoy their time with their child and let them know that their
-future is theirs to make. 
 
 
 
