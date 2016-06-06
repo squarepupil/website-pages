@@ -50,10 +50,10 @@ and ability to express themselves cogently.
 
 In several ways, experiences at Arts & Ideas can faciliate the transition to college.
 Our students know how to discuss and debate, so they are ready to participate.
-They have explored interests and pursued independent learning for years, so 
-they are ready to focus on their chosen areas of study. Since they have freely
-interacted with fellow students of all ages and backgrounds, they are not easily
-distracted by the college social scene nor overwhelmed by any newfound freedom.
+They have explored interests and studied independently for years, so they are ready 
+to focus on their chosen areas of study. Since they have freely interacted with fellow 
+students of all ages and backgrounds, they are not easily distracted by the college 
+social scene nor overwhelmed by any newfound freedom.
 
 Sudbury Valley School, founded almost 50 years ago, reports that their graduates
 typically seek higher education and succeeed at institutes of higher learning.
@@ -64,9 +64,9 @@ professional pastry chef (his dream job!).
 
 ## ... supplementary instruction?  
 
-At Arts & Ideas, students have the freedom (and the responsibility) for their own learning...
-As they follow their curiosity and interests, they learn related facts and practice useful skills.
-Thus, supplemental instruction is not needed.
+At Arts & Ideas, students have the freedom (and the responsibility) to ... [pursue their
+own learning?] As they follow their curiosity and interests, they learn related facts 
+and practice useful skills. Thus, supplemental instruction is not needed.
 
 To address specific needs or goals (such as preparing for college entrance
 exams), supplemental instuction may sometimes be utilized at home. In keeping
@@ -140,4 +140,3 @@ be comfortable with.
 
 
 !questions-dining.jpg
-
