@@ -42,8 +42,8 @@ on their own.
 
 !questions-armchair.jpg,, right
 
-As with any goals that they have set for themselves, students with college 
-aspirations find ways to be successful. They prepare for necessary tests. 
+As with any other personal goals that they have set for themselves, students with 
+college aspirations find ways to be successful. They prepare for necessary tests. 
 They complete the prerequisites when possible, or negotiate their way around 
 them skillfully. They impress admissions boards with their level of maturity 
 and ability to express themselves cogently. 
@@ -53,24 +53,25 @@ Our students know how to discuss and debate, so they are ready to participate.
 They have explored interests and pursued independent learning for years, so 
 they are ready to focus on their chosen areas of study. Since they have freely
 interacted with fellow students of all ages and backgrounds, they are not easily
-distracted by the college social scene or overwhelmed by any newfound freedom.
+distracted by the college social scene nor overwhelmed by any newfound freedom.
 
 Sudbury Valley School, founded almost 50 years ago, reports that their graduates
-typically ... and At A&I, our two graduates have found fulfilling pursuits: 
-one is studying photography at the college of his choice (and he was accepted 
-without a transcript and SAT scores) and the other, who apprenticed while attending
-A&I, is a professional pastry chef (his dream job!).
+typically seek higher education and succeeed at institutes of higher learning.
+At A&I, our two graduates have found fulfilling pursuits: one is studying 
+photography at the college of his choice (and he was accepted without a transcript 
+and SAT scores) and the other, who apprenticed while attending A&I, is a 
+professional pastry chef (his dream job!).
 
 ## ... supplementary instruction?  
 
-At Arts & Ideas, students have the freedom (and the responsibility) ...
-They follow their curiosity and interests, they learn related facts and practice useful skills.
+At Arts & Ideas, students have the freedom (and the responsibility) for their own learning...
+As they follow their curiosity and interests, they learn related facts and practice useful skills.
 Thus, supplemental instruction is not needed.
 
 To address specific needs or goals (such as preparing for college entrance
 exams), supplemental instuction may sometimes be utilized at home. In keeping
-with our school philosophy, it is important that the impetus for any classes, 
-homework, and other instructional activities is the student.
+with our school philosophy, it is important that the impetus for classes, homework, 
+and other instructional activities is the student.
 
 Learning at A&I is student-driven, individualized, and addresses authentic 
 needs and concerns. Students ... As students discover and pursue their passions,
