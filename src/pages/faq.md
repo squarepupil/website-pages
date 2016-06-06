@@ -92,12 +92,12 @@ A&I.
 
 The resources at Arts & Ideas include: 
 
-Music Room (with many instruments, recording equipment, amplifiers)
-Art Room (different kinds of art supplies for painting and crafting)
-Video Room (for recording stop animation shorts or live action videos)
-Kitchen (commercial kitchen stocked with pizza ovens and a deep fryer)
-Library (lots of books, including Sudbury-related books for parents)
-Gymnastics Area (kip bar, practice balance beam, yoga and gymnastics mats).
+- Music Room (with many instruments, recording equipment, amplifiers)
+- Art Room (different kinds of art supplies for painting and crafting)
+- Video Room (for recording stop animation shorts or live action videos)
+- Kitchen (commercial kitchen stocked with pizza ovens and a deep fryer)
+- Library (lots of books, including Sudbury-related books for parents)
+- Gymnastics Equipment (kip bar, practice balance beam, yoga and gymnastics mats).
 
 Some of the resources available at A&I ebb and flow, based on current
 student interests. Please see [Our Space](our-space.html) for pictures and 
