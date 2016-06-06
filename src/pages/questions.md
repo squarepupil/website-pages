@@ -110,6 +110,20 @@ always “How did my son/daughter know that?”
 
 ## ... supplementary instruction?  
 
+At Arts & Ideas, students have the freedom (and the responsibility) ...
+They follow their curiosity and interests...
+Thus, supplemental instruction is not needed.
+
+To address specific needs or goals (such as preparing for college entrance
+exams), supplemental instuction may sometimes be utilized at home. In keeping
+with our school philosophy, it is important that the impetus for any classes, 
+homework, and other instructional activities is the student.
+
+Learning at A&I is student-driven, individualized, and addresses authentic 
+needs and concerns. Students ... As students discover and pursue their passions,
+they achieve deeper levels of knowlege and mastery of skills.
+
+
 Some people immediately see the social value of our school and think they can
 fill the perceived academic void by having their child follow an online
 curriculum at home, by visiting a weekly tutor, or by engaging in nightly
