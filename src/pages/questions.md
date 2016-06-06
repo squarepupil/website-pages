@@ -146,27 +146,10 @@ valuable, real learning, and enough. Perhaps even more importantly, the job of
 a parent is to just enjoy their time with their child and let them know that their
 future is theirs to make. 
 
-## ... structure? My kid needs structure.
 
-Structure is important, and Sudbury Schools provide the time and space for
-students to develop their own structure, beginning with how they will
-structure their day to how they will structure their lives. What do kids do
-when they get together without adults? They create structure! They make up
-games with complicated rules and create structure for themselves.
-
-They also break up those structures. They are engines of chaos as well as
-order, creating organization out of disorder and creating chaos of order. It
-is a messy process, but that is how they acquire a full command of their
-environment as well as their place in it. 
 
 !questions-kitchen.jpg
 
-Our students have the ability to come to School Meeting to create structure
-for the whole school by deciding rules and procedures. These governing bodies
-and processes are detailed in [Our Structure](our-structure.html). At other schools, students must
-follow structure that may or may not have meaning for them, and often have
-little or any chance to change that structure, whereas at A&I the rules and
-the structures are created by students for students.
 
 
 ## ... teachers? What do the teachers do?
