@@ -68,6 +68,22 @@ college of his choice - which he was accepted to without a diploma or SAT
 scores - and the other is a professional pastry chef at a high end restaurant
 \- his dream job that he apprenticed for while attending A&I.
 
+## ... supplementary instruction?  
+
+At Arts & Ideas, students have the freedom (and the responsibility) ...
+They follow their curiosity and interests, they learn related facts and practice useful skills.
+Thus, supplemental instruction is not needed.
+
+To address specific needs or goals (such as preparing for college entrance
+exams), supplemental instuction may sometimes be utilized at home. In keeping
+with our school philosophy, it is important that the impetus for any classes, 
+homework, and other instructional activities is the student.
+
+Learning at A&I is student-driven, individualized, and addresses authentic 
+needs and concerns. Students ... As students discover and pursue their passions,
+they achieve deeper levels of knowlege and mastery of skills.
+
+!questions-kitchen.jpg
 
 ## ... screen time?
 
@@ -90,24 +106,6 @@ video), take breaks to challenge themselves to go out of their comfort zone by
 climbing a tree or playing a game of soccer. When kids feel comfortable in
 their safe space - whether that be near a screen or not - they gain the
 confidence in themselves and bravery to try something new. 
-
-## ... supplementary instruction?  
-
-At Arts & Ideas, students have the freedom (and the responsibility) ...
-They follow their curiosity and interests, they learn related facts and practice useful skills.
-Thus, supplemental instruction is not needed.
-
-To address specific needs or goals (such as preparing for college entrance
-exams), supplemental instuction may sometimes be utilized at home. In keeping
-with our school philosophy, it is important that the impetus for any classes, 
-homework, and other instructional activities is the student.
-
-Learning at A&I is student-driven, individualized, and addresses authentic 
-needs and concerns. Students ... As students discover and pursue their passions,
-they achieve deeper levels of knowlege and mastery of skills.
-
-!questions-kitchen.jpg
-
 
 ## ... teachers? What do the teachers do?
 
