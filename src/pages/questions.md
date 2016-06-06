@@ -205,24 +205,7 @@ due cause. It is this, above all else, that a staff at a Sudbury school must
 be comfortable with. 
 
 
-## ...  student evaluations?
 
-Students are not evaluated at Arts & Ideas through standardized testing,
-report cards or assessments. By not imposing a system for evaluating students,
-we preserve natural curiosity, intrinsic motivation and confidence in ideas.
-If a child is always looking outside for approval or recognition, development
-of self-assessment habits and introspective skills are lost.  We aim to
-preserve student privacy and value our school as a place to build authentic
-staff/student relationships. We view school as a place for students to
-practice autonomy and independence away from home in preparation for
-adulthood.
-
-## ... bullying?
-
-Bullying is uncommon at Sudbury schools, since students freely age-mix and
-choose their own activities. To address the rare occurrence of bullying,
-School Meeting has enacted multiple laws that may be called upon when
-needed.
 
 !questions-dining.jpg
 
