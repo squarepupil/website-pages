@@ -1,7 +1,6 @@
 Ok, what about ...
 ---
 
-
 ## ... reading?
 
 Children learn to read on their own. As with any new skill, when 
@@ -49,25 +48,18 @@ They complete the prerequisites when possible, or negotiate their way around
 them skillfully. They impress admissions boards with their level of maturity 
 and ability to express themselves cogently. 
 
-In several ways, experiences at Arts & Ideas faciliate the transition to college.
+In several ways, experiences at Arts & Ideas can faciliate the transition to college.
 Our students know how to discuss and debate, so they are ready to participate.
 They have explored interests and pursued independent learning for years, so 
 they are ready to focus on their chosen areas of study. Since they have freely
 interacted with fellow students of all ages and backgrounds, they are not easily
 distracted by the college social scene or overwhelmed by any newfound freedom.
 
-The experience recounted here is mostly derived from the stories of the nearly
-50 year old Sudbury Valley School. They have reported, after conducting
-extensive alumni studies, that of the over 80% of their graduates who choose
-to pursue higher education, almost all get into their first choice of schools.
-For those who do not pursue a college education, the choice is a
-self-interested one that allows them to go directly into the field of their
-choosing. 
-
-As for A&I, of our two graduates thus far, one is studying photography at the
-college of his choice - which he was accepted to without a diploma or SAT
-scores - and the other is a professional pastry chef at a high end restaurant
-\- his dream job that he apprenticed for while attending A&I.
+Sudbury Valley School, founded almost 50 years ago, reports that their graduates
+typically ... and At A&I, our two graduates have found fulfilling pursuits: 
+one is studying photography at the college of his choice (and he was accepted 
+without a transcript and SAT scores) and the other, who apprenticed while attending
+A&I, is a professional pastry chef (his dream job!).
 
 ## ... supplementary instruction?  
 
