@@ -226,23 +226,3 @@ needed.
 
 !questions-dining.jpg
 
-## ... how do students know their choices?
-
-All students and staff are considered resources in our school. Every day we
-each bring with us our diverse backgrounds, passions, great finds, stories,
-and more, which infuses and influences the school culture. Beyond staff and
-students, we have books, computers, and community resources available.
-Children pick things up as adults do: through conversation, interactions and
-following what is interesting. The idea that we have to expose children to all
-of human learning before they are 18 is misguided and impossible.  Aristotle
-said, “All men by nature desire knowledge.” You can’t stop the drive of
-children to acquire knowledge and achieve mastery in subjects they are
-passionate about, unless they equate learning with drudgery. This drive opens
-up the world of information to them. The issue in the information age is not
-how to get information, but how to use it well. Decades of Sudbury graduates
-provide real evidence that this approach works.  
-
-- - - -
-
-Also see http://sudburyschoolofatlanta.org/ssa-education/questions/ which also
-inspired some of the below text.
