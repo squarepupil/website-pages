@@ -111,7 +111,7 @@ always “How did my son/daughter know that?”
 ## ... supplementary instruction?  
 
 At Arts & Ideas, students have the freedom (and the responsibility) ...
-They follow their curiosity and interests...
+They follow their curiosity and interests, they learn related facts and practice useful skills.
 Thus, supplemental instruction is not needed.
 
 To address specific needs or goals (such as preparing for college entrance
@@ -123,12 +123,7 @@ Learning at A&I is student-driven, individualized, and addresses authentic
 needs and concerns. Students ... As students discover and pursue their passions,
 they achieve deeper levels of knowlege and mastery of skills.
 
-
-
-
-
 !questions-kitchen.jpg
-
 
 
 ## ... teachers? What do the teachers do?
