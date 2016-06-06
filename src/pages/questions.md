@@ -49,11 +49,12 @@ They complete the prerequisites when possible, or negotiate their way around
 them skillfully. They impress admissions boards with their level of maturity 
 and ability to express themselves cogently. 
 
-Once admitted, students continue to work hard and do well in their courses. They 
-may have never taken a formal class before, but they apply all that they know about
-learning. They know how to immerse themselves in interests, explore available
-resources, and set and achieve their own goals. Nor are they overly distracted by
-the social scene or overwhelmed by newfound freedom. 
+In several ways, experiences at Arts & Ideas faciliate the transition to college.
+Our students know how to discuss and debate, so they are ready to participate.
+They have explored interests and pursued independent learning for years, so 
+they are ready to focus on their chosen areas of study. Since they have freely
+interacted with fellow students of all ages and backgrounds, they are not easily
+distracted by the college social scene or overwhelmed by any newfound freedom.
 
 The experience recounted here is mostly derived from the stories of the nearly
 50 year old Sudbury Valley School. They have reported, after conducting
