@@ -67,12 +67,12 @@ on Tuesdays at 1:00), the students have no set schedules other than what they mi
 decide to make for themselves. Thus, daily personal activities at A&I vary 
 widely from student to student, day to day, and can include:
 
-outdoor play (climbing trees in the yard/running/cartwheels/playing games), 
-using computers (playing Minecraft/coding/editing videos/research), 
-creating (music/stories/books/art/dollhouses), 
-organizing (a bake sale/play audition/holiday parties),
-spending time on one's own (reading/thinking/making art/just observing),
-socializing (laughing/talking/listening/sharing).
+- outdoor play (climbing trees in the yard/running/cartwheels/playing games), 
+- using computers (playing Minecraft/coding/editing videos/research), 
+- creating (music/stories/books/art/dollhouses), 
+- organizing (a bake sale/play audition/holiday parties),
+- spending time on one's own (reading/thinking/making art/just observing),
+- socializing (laughing/talking/listening/sharing).
 
 ### Do you accept students with disabilities?
 
