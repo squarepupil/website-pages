@@ -74,8 +74,8 @@ with our school philosophy, it is important that the impetus for classes, homewo
 and other instructional activities is the student.
 
 Learning at A&I is student-driven, individualized, and addresses authentic 
-needs and concerns. Students ... As students discover and pursue their passions,
-they achieve deeper levels of knowlege and mastery of skills.
+needs and interests. As students discover and pursue their passions,
+they achieve higher levels of knowlege and mastery of skills.
 
 !questions-kitchen.jpg
 
