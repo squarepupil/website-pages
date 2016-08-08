@@ -9,19 +9,18 @@ of all schools. Our model starts with a fundamental respect and acceptance for
 the individual as they are. We have no plans to change an individual;
 individuals change themselves for their own purposes and on these matters of
 personal choice, we do not judge, we do not praise, we do not expect, and we
-do not condemn. What we offer is reasonable support for the interests of each
-individual and a safe space in which to explore them.
+do not condemn. What we offer is a supportive and safe environment for the individual to explore their own interests.
 
 The individual alone, however, cannot hope to grow to their fullest potential
 in a vacuum. The community is the fertile ground in which individuals can
-learn. In addition to simply providing further input into the system, the
+learn. In addition to simply providing further input, the
 community presents natural constraints on the individual’s activities.
 Constraints are powerful motivators for creating and achieving.
 
 Balancing the needs of the community and the individual is where democratic
 justice comes into play. This is the functional form of our school. Our School
 Meeting is equally open to both students and staff. This is where the rules of
-our community are democratically decided. We also have Judicial Committee
+our community are democratically decided. We also have our Judicial Committee
 where students and staff gather in a jury-type system to adjudicate
 allegations of rule breaking.
 
@@ -36,11 +35,13 @@ allows us to continually address the dynamic between individual and community.
 
 ## History
 
+++Our model has been around for 50 years, starting with Sudbury Valley School. The model has a long record of successful outcomes for their students.++
+
 We model our school on Sudbury Valley School, established in 1968. They have
 had nearly 50 years to explore and understand this model. Their literature is
 extensive and highly recommended for learning more about the model. They have
 well-established theoretical underpinnings, as well as books full of anecdotal
-evidence and studies of graduates that support the theory in practice.
+evidence and research studies of graduates that support the theory in practice.
 
 Throughout it all, the results have been impressive. With no formal education
 process, generations of students have successfully been prepared for adult
@@ -58,9 +59,12 @@ merits.
 
 ## Age-Mixing
 
+++Children learn the most from those that are near to them in age. Older ones inspire and challenge, younger ones lead to compassionate teaching.++
+
+
 !indetail-lib.jpg,, right
 
-Our establishment of a community of free individuals, naturally entails that
+Our establishment of a community of free individuals naturally entails that
 children of different ages mix freely. The demands placed on students by the
 presence of both their juniors and seniors help develop a number of skills and
 understandings. First, it normalizes the fact that life outside of school is
@@ -250,4 +254,3 @@ that is “fair”.  Those students must work out a solution for themselves or
 face the consequences of inaction.  Practicing real life prepares students to
 further succeed in resolving difficulties as the stakes rise with age, be
 their problems practical, interpersonal, or existential.
-
