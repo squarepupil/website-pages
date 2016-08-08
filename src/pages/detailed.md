@@ -59,8 +59,7 @@ merits.
 
 ## Age-Mixing
 
-++Children learn the most from those that are near to them in age. Older ones inspire and challenge, younger ones lead to compassionate teaching.++
-
+++Children learn the most from those that are near to them in age. Older ones inspire and challenge the younger ones while the younger ones lead to compassionate leadership in the older ones.++
 
 !indetail-lib.jpg,, right
 
@@ -101,6 +100,8 @@ temper the behavior of the other, thereby providing a complementary means to
 ease into adulthood.
 
 ## Acceptance
+
+++Students accept one another as part of the community. There is no pecking order except for our actual chickens.++
 
 A key component of this model is the acceptance of the individual. There is no
 notion that a student needs to be doing such-and-such a thing in order to be a
