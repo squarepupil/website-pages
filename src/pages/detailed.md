@@ -124,6 +124,8 @@ works for them.
 
 ## Learning
 
+++Learning is natural and is what matters most in any educational model. Learning how to learn is what all of our students learn.++
+
 !indetail-puddle.jpg,, left
 
 Because learning is the goal of education, our focus is not on teaching, but 
