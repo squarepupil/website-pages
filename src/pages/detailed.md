@@ -170,6 +170,8 @@ to navigate a variety of different paths in life with ease.
 
 ### Environment
 
+++The environment spreads enthusiasm and ideas.++
+
 Humans in general learn a lot from their environment. We all watch and learn
 from others, taking cues from those around us on how to behave and what to do.
 It is what people do, rather than just simply what they say, which has the
@@ -191,6 +193,8 @@ precedent over people in the event that they are simply not good rules.
 
 ## Empowerment
 
+++Democratic justice empowers our students to advocate for themselves and others.++
+
 Our democratic justice system empowers our students to find their voice as
 individuals and as part of the community. They quickly change roles from
 defendant to plaintiff to juror. In a matter of minutes, they can go from rule
@@ -204,6 +208,8 @@ for myself, then who will be?” This then leads to a further expansion into
 supporting justice for the school and even the wider community. 
 
 ## Safety
+
+++Students take responsibility for their own safety and for the community's safety.++
 
 A fundamental attribute for any school is for it to be safe. Our school
 provides a safe environment in multiple ways.
