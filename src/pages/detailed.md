@@ -153,6 +153,8 @@ Learning how to learn is what our school is all about.
 
 ## Constraints
 
+++Our community acts as a constraint which naturally leads to inspiration.++
+
 Creative people know that constraints are what drive good designs. Humans can
 be overwhelmed by choice, but when there are constraints to overcome and work
 with, humans shine. This holds for all ages. We see it quite often with
