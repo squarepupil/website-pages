@@ -254,6 +254,8 @@ place of safety, despite the unknowns. It is their second home.
 
 ## Hard Work
 
+++This is a hard school. Our students are creating who they are and that is a very hard task.++
+
 Our school offers a very demanding education. That which happens within our
 walls is authentic. This includes things perceived as kind, agreeable, and
 easy, but it also necessarily includes those things that are difficult,
