@@ -3,6 +3,8 @@ Ok, what about ...
 
 ## ... reading?
 
+++Children learn to read on their own on their own schedule.++
+
 Children learn to read on their own. As with any new skill, when 
 children are interested and motivated, learning happens...and that journey 
 will be unique for each child. Some children learn to read early and others 
@@ -24,6 +26,8 @@ late, has no bearing on future reading intests or abilities.
 
 ## ... math?
 
+++Arithmetic is important in daily life so that children learn that. They develop the skills needed to appreciate abstract mathematics if it ever comes up.++
+
 As with reading, children learn basic arithmetic, because it is a useful skill.
 Whether dealing with food, toys, games, or money, counting or sharing is involved.
 Children assimilate math concepts from using numbers in these very natural contexts.
@@ -39,6 +43,8 @@ dreaded for years.
 on their own.
 
 ## ... getting into college?
+
+++If a student wishes to go to college, they are well-equipped to make the case and perform well when they do go.++
 
 !questions-armchair.jpg,, right
 
@@ -62,7 +68,9 @@ photography at the college of his choice (and he was accepted without a transcri
 and SAT scores) and the other, who apprenticed while attending A&I, is a 
 professional pastry chef (his dream job!).
 
-## ... supplementary instruction?  
+## ... supplementary instruction? 
+
+++If students want instruction, then that can work out at their direction.++
 
 At Arts & Ideas, students have the freedom (and the responsibility) to ... [pursue their
 own learning?] As they follow their curiosity and interests, they learn related facts 
@@ -80,6 +88,8 @@ they achieve higher levels of knowlege and mastery of skills.
 !questions-kitchen.jpg
 
 ## ... screen time?
+
+++Unlimited screen time is allowed at our school++
 
 It is quite possible that your child will spend all day on the computer at
 times - and that’s okay! With all of the negative media attention surrounding
@@ -102,6 +112,8 @@ their safe space - whether that be near a screen or not - they gain the
 confidence in themselves and bravery to try something new. 
 
 ## ... teachers? What do the teachers do?
+
+++Adults are just staff. They make sure the school functions and continues to thrive.++
 
 “What I have learned, very slowly and painfully over the years, is that
 children make vital decisions for themselves in ways that no adults could have
