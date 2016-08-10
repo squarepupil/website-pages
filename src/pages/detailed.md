@@ -35,7 +35,11 @@ allows us to continually address the dynamic between individual and community.
 
 ## History
 
-++Our model has been around for 50 years, starting with Sudbury Valley School. The model has a long record of successful outcomes for their students.++
+ABS
+
+Our model has been around for 50 years, starting with Sudbury Valley School. The model has a long record of successful outcomes for their students.
+
+BODY
 
 We model our school on Sudbury Valley School, established in 1968. They have
 had nearly 50 years to explore and understand this model. Their literature is
@@ -57,9 +61,15 @@ There is no formal body that decides if a school is a Sudbury school or not.
 It is a self-decided label. Thus, each school should be examined on its own
 merits.
 
+END
+
 ## Age-Mixing
 
-++Children learn the most from those that are near to them in age. Older ones inspire and challenge the younger ones while the younger ones lead to compassionate leadership in the older ones.++
+ABS
+
+Children learn the most from those that are near to them in age. Older ones inspire and challenge the younger ones while the younger ones lead to compassionate leadership in the older ones.
+
+BODY
 
 !indetail-lib.jpg,, right
 
@@ -99,9 +109,15 @@ creates an environment in which younger students and older students serve to
 temper the behavior of the other, thereby providing a complementary means to
 ease into adulthood.
 
+END
+
 ## Acceptance
 
-++Students accept one another as part of the community. There is no pecking order except for our actual chickens.++
+ABS
+
+Students accept one another as part of the community. There is no pecking order except for our actual chickens.
+
+BODY
 
 A key component of this model is the acceptance of the individual. There is no
 notion that a student needs to be doing such-and-such a thing in order to be a
@@ -122,9 +138,15 @@ less, from that foundation as to what they want to become. This allows our
 students to naturally grow into a future of their own making at a pace that
 works for them.
 
+END
+
 ## Learning
 
-++Learning is natural and is what matters most in any educational model. Learning how to learn is what all of our students learn.++
+ABS
+
+Learning is natural and is what matters most in any educational model. Learning how to learn is what all of our students learn.
+
+BODY
 
 !indetail-puddle.jpg,, left
 
@@ -151,9 +173,15 @@ The journey of learning is what we prize here. We know that the skills of
 learning are transferable to whatever endeavor our students ultimately pursue.
 Learning how to learn is what our school is all about. 
 
+END
+
 ## Constraints
 
-++Our community acts as a constraint which naturally leads to inspiration.++
+ABS
+
+Our community acts as a constraint which naturally leads to inspiration.
+
+BODY
 
 Creative people know that constraints are what drive good designs. Humans can
 be overwhelmed by choice, but when there are constraints to overcome and work
@@ -168,9 +196,15 @@ achieving their own, possibly modified, goals. This is how adult life is as
 well and is an important contributing factor to how Sudbury graduates are able
 to navigate a variety of different paths in life with ease.
 
-### Environment
+END
 
-++The environment spreads enthusiasm and ideas.++
+## Environment
+
+ABS
+
+The environment spreads enthusiasm and ideas.
+
+BODY
 
 Humans in general learn a lot from their environment. We all watch and learn
 from others, taking cues from those around us on how to behave and what to do.
@@ -191,9 +225,15 @@ precedent over people in the event that they are simply not good rules.
 
 !indetail-vote.jpg
 
+END
+
 ## Empowerment
 
-++Democratic justice empowers our students to advocate for themselves and others.++
+ABS
+
+Democratic justice empowers our students to advocate for themselves and others.
+
+BODY
 
 Our democratic justice system empowers our students to find their voice as
 individuals and as part of the community. They quickly change roles from
@@ -207,9 +247,15 @@ inner urge for justice, responding to the call of the question, “If I am not
 for myself, then who will be?” This then leads to a further expansion into
 supporting justice for the school and even the wider community. 
 
+END
+
 ## Safety
 
-++Students take responsibility for their own safety and for the community's safety.++
+ABS
+
+Students take responsibility for their own safety and for the community's safety.
+
+BODY
 
 A fundamental attribute for any school is for it to be safe. Our school
 provides a safe environment in multiple ways.
@@ -251,10 +297,15 @@ of education.
 This is not to be underestimated. Our students enjoy coming to school. It is a
 place of safety, despite the unknowns. It is their second home.
 
+END
 
 ## Hard Work
 
-++This is a hard school. Our students are creating who they are and that is a very hard task.++
+ABS
+
+This is a hard school. Our students are creating who they are and that is a very hard task.
+
+BODY
 
 Our school offers a very demanding education. That which happens within our
 walls is authentic. This includes things perceived as kind, agreeable, and
@@ -267,3 +318,5 @@ that is “fair”.  Those students must work out a solution for themselves or
 face the consequences of inaction.  Practicing real life prepares students to
 further succeed in resolving difficulties as the stakes rise with age, be
 their problems practical, interpersonal, or existential.
+
+END
