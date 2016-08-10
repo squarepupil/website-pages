@@ -540,10 +540,10 @@ toggle the hide. The original state without JS is to have the full text shown.
 If JS runs, then it will hide the full text and reveal the abstracts. 
     
 
-    document.
-        querySelectorAll(".brief").
+    Array.prototype.slice.call(document.querySelectorAll(".brief")).
         forEach(function (el) {
-            var children = el.querySelectorAll("div");
+            var children = Array.prototype.slice.call(
+                el.querySelectorAll("div"));
             el.addEventListener("click", function () {
                 children.forEach(function (child) {
                     child.classList.toggle("hide");
