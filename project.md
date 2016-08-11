@@ -887,6 +887,11 @@ And then some stuff for small screens
             margin-right:10px;
         }
 
+        /*undo*/
+        article {
+            margin-right:initial;
+        }
+
         form textarea {
             width:90vw;
         }
@@ -1047,6 +1052,12 @@ The sidebar has an announcement part and a callout for quotes and pictures.
     aside .side-story, aside .announce  {
         border:14px solid white;
         
+    }
+
+    M W<670px {
+        aside .side-story, aside .announce  {
+            border: initial; 
+        }
     }
 
     aside .announce {
