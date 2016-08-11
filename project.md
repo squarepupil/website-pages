@@ -483,8 +483,9 @@ We look for !ABS, !BODY, and !END and replace them with dividers that create a
 whole section and then a subsection for abstract and main.
 
     article = article.
-            replace(/<p>ABS<\/p>/g, '<div class="brief"><div class="abstract hide">').
-            replace(/<p>BODY<\/p>/g, '</div><div class="substance">').
+            replace(/<p>ABS<\/p>/g, '<div class="brief"><div class="abstract ">').
+            replace(/<p>BODY<\/p>/g, '<button name="more">Less...</button>' +
+                '</div><div class="substance">').
             replace(/<p>END<\/p>/g, '</div></div>');
     
 
@@ -493,22 +494,22 @@ whole section and then a subsection for abstract and main.
 
 Here we write the css.
 
-    .brief {
-        position:relative; /* need for absolute button of more */
-    }
-
     .brief .abstract {
         background-color: #c1e0ea;
         padding: 5px;
-        padding-bottom: 22px;
         border-radius: 5px;
         margin-bottom:16px;
     }
     
-    .brief .abstract p:last-child::after{
-        content: " More...";
+    .brief div {
+        position:relative;
+        padding-bottom: 22px;
+    }
+
+    .brief div button{
         background-color: whitesmoke;
-        border-radius: 4px;
+        border-radius: 6px;
+        border-style:none;
         padding: 4px;
         margin: 3px;
         font-size: 17px;
@@ -518,39 +519,35 @@ Here we write the css.
         bottom: 2px;
     }
    
-   .brief > div {
-        max-height:500px;
-        transition: max-height 0.5s;
-    }
-
-    .brief > .hide {
-        max-height:0;
-        overflow:hidden;
-        transition: max-height 0.5s;
-    }
-
-
-
 
 
 ##### JS 
 
 This is the JS that will select the brief elements, make them clickable to
 toggle the hide. The original state without JS is to have the full text shown.
-If JS runs, then it will hide the full text and reveal the abstracts. 
+If JS runs, then it will hide the full text.
+
+The abstract is always on display, but the more disappears when body is shown.  
+
+Clicking the more button needs to hide the more button and show the substance
+Clicking the less button hides the substance and shows the more. 
     
 
     Array.prototype.slice.call(document.querySelectorAll(".brief")).
         forEach(function (el) {
-            var children = Array.prototype.slice.call(
-                el.querySelectorAll("div"));
-            el.addEventListener("click", function () {
-                children.forEach(function (child) {
-                    child.classList.toggle("hide");
-                });
-            });
-                
-            el.click();
+            var button = el.querySelector("button");
+            var subst = el.querySelector(".substance");
+            button.addEventListener("click", function () {
+                if (subst.classList.contains("hide")) {
+                    subst.classList.remove("hide");
+                    button.innerHTML = "...Less"; 
+                } else {
+                    subst.classList.add("hide");
+                    button.innerHTML= "More...";
+                }
+            });  
+            subst.classList.add("hide");
+            button.innerHTML= "More...";
         });
 
 
