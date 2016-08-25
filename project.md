@@ -1169,56 +1169,7 @@ dirty hack for that.
     });
 
     
-## sass sample
 
-    $color-main:#333;
-    $file: "img/awesome.jpg";
-
-    @mixin widths ($base: 5px) {
-        width: $base;
-        height: 2*$base;
-    }
-
-    header {
-        width: 5px;
-        font : {
-            size:54px;
-            family: Jubilat, Georgia;
-        } 
-        @include widths(50px);
-        
-        &:hover {
-            color:$color-main;
-            @include widths;
-        }
-
-        body.store & {
-            background {
-                color: lighten($color-main, 40%);
-                img: url($file);
-            }
-        }
-
-        .alert {
-            width:5px;
-            color:red;
-        }
-
-        .alert-positive {
-            @extend .alert;
-            color:green;
-        }
-
-        #logo {
-            float:left;
-        }
-    }
-    
-    .alert {
-        height:10px;
-    }
-
-[sass](# "transform: | sass ")
 
 
 ## Watch
@@ -1330,7 +1281,6 @@ Probably can remove it.
 
     _":postcss"
 
-    _":sass"
 
 
 [jade]()    
@@ -1469,25 +1419,7 @@ be loaded here; right now it is just autoprefixer. Then it can be used as
     };
 
 
-[sass]()
 
-This takes in some text and compiles it into css using sass. Probably want to
-figure out how to throw in libraries or something. 
-
-    var sass = require('node-sass');
-
-    Folder.commands.sass = function (input, args, name) {
-        var doc = this;
-        sass.render({data: input,
-            outputStyle: "compact"
-        }, function (err, result) {
-            if (err) {
-                doc.log("Error in SASS: " + err.message);
-            } else {
-                doc.gcd.emit("text ready:" + name, result.css.toString("utf8"));
-            }
-        });
-    }
   
 
 ## pbcopy
@@ -1686,11 +1618,7 @@ by [James Taylor](https://github.com/jostylr "npminfo: jostylr@gmail.com ;
     dev: litpro 0.12.1, cheerio 0.19.0, markdown-it 4.4.0, 
         markdown-it-anchor 2.3.0, litpro-jshint 0.2.1,  
         jade 1.11.0, postcss 5.0.4, autoprefixer 6.0.0,
-        gm 1.18.1, pdf-image 1.0.1, node-sass 3.4.2 ")
-
-
-Need to add in https://www.npmjs.com/package/css-mqpacker for packing media
-queries, node-sass for doing sass queries,  css-nano for minimfications. 
+        gm 1.18.1, pdf-image 1.0.1")
 
 
 
