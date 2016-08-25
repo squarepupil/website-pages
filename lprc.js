@@ -3,7 +3,7 @@ module.exports = function (Folder, args) {
     if (args.file.length === 0) {
         args.file = ["project.md"];
     }
-    args.build = ["output"];
+    //args.build = ["output"];
     //args.src = ".";
     if (!Folder.prototype.local) {
         Folder.prototype.local = {};
@@ -13,16 +13,16 @@ module.exports = function (Folder, args) {
     
     Folder.prototype.local.gm = require('gm');
 
-    var jade = require('jade');
+    var pug = require('pug');
     
-    Folder.sync("jade" , function (code, args) {
+    Folder.sync("pug" , function (code, args) {
         options = args.join(",").trim();
         if (options) {
             options = JSON.parse(options);
         } else {
             options = {'pretty':true};
         }
-        return jade.render(code, options); 
+        return pug.render(code, options); 
     });
     
     var md = require('markdown-it')({
@@ -108,20 +108,5 @@ module.exports = function (Folder, args) {
     Folder.plugins.postcss = {
          autoprefixer : require('autoprefixer')
     };
-    
-    var sass = require('node-sass');
-    
-    Folder.commands.sass = function (input, args, name) {
-        var doc = this;
-        sass.render({data: input,
-            outputStyle: "compact"
-        }, function (err, result) {
-            if (err) {
-                doc.log("Error in SASS: " + err.message);
-            } else {
-                doc.gcd.emit("text ready:" + name, result.css.toString("utf8"));
-            }
-        });
-    }
 
 };    

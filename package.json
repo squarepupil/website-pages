@@ -28,12 +28,11 @@
     "markdown-it" : "^4.4.0",
     "markdown-it-anchor" : "^2.3.0",
     "litpro-jshint" : "^0.2.1",
-    "jade" : "^1.11.0",
+    "pug" : "^2.0.0-beta-5",
     "postcss" : "^5.0.4",
     "autoprefixer" : "^6.0.0",
     "gm" : "^1.18.1",
-    "pdf-image" : "^1.0.1",
-    "node-sass" : "^3.4.2"
+    "pdf-image" : "^1.0.1"
   },
   "scripts" : { 
     "test" : "node ./test.js"
