@@ -1,2 +1,0 @@
-img/ailogo.png   http://res.cloudinary.com/dduwal6i7/image/upload/v1451035260/ailogo_ahuetz.png
-favicon.ico      http://res.cloudinary.com/dduwal6i7/image/upload/v1451035466/favicon_mvichz.ico
