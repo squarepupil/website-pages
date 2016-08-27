@@ -304,7 +304,7 @@ may regret this.
 
 by [James Taylor](https://github.com/jostylr "npminfo: jostylr@gmail.com ; 
     deps: ;
-    dev: litpro 0.12.1, cheerio 0.19.0, markdown-it 4.4.0, 
+    dev: litpro 0.12.1, cheerio 0.22.0, markdown-it 7.0.1, 
         markdown-it-anchor 2.3.0, litpro-jshint 0.2.1,  
         pug 2.0.0-beta-5, postcss 5.0.4, autoprefixer 6.0.0,
         gm 1.18.1, pdf-image 1.0.1")
