@@ -475,13 +475,11 @@ Here we write the css.
         padding: 5px;
         border-radius: 5px;
         margin-bottom:16px;
+        display:flex;
+        align-items: flex-end;
+        justify-content: space-between;
     }
     
-    .brief div {
-        position:relative;
-        padding-bottom: 22px;
-    }
-
     .brief div button{
         background-color: whitesmoke;
         border-radius: 6px;
@@ -490,9 +488,6 @@ Here we write the css.
         margin: 3px;
         font-size: 17px;
         font-family: bebas;
-        position: absolute;
-        right: 3px;
-        bottom: 2px;
     }
    
 
