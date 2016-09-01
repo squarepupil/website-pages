@@ -36,7 +36,7 @@ The three columns will float to the left.
 
 [js](#js "h5: ")
 
-[|nav](# "transform: | jade |compile pointless ")
+[|nav](# "transform: | pug |compile pointless ")
 
 
 ##### js
@@ -309,15 +309,15 @@ We use the extract-links function below to extract already fully formed links.
     <ul class="off">
        <li id="sitemap-model"> <p class="active arrow mobile">The Model</p>
             <ul class="site-drop active mobile"> 
-                _"details:model| jade |extract-links"
+                _"details:model| pug |extract-links"
             </ul>
        </li>
        <li id="sitemap-school"> <p class="active arrow mobile">Our School</p>
             <ul class="site-drop active mobile">
-                _"details:school | jade | extract-links"
+                _"details:school | pug | extract-links"
             </ul>
         </li>
-        _"details | jade | extract-links e(':nth-child(3)')"
+        _"details | pug | extract-links e(':nth-child(3)')"
         _"pathway | md | extract-links"
         _"actions | md | extract-links"
     </ul>

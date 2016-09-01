@@ -2,7 +2,7 @@ var gm = require('gm');
 var fs = require('fs');
 
 var indir = "originals/";
-var outdir = "output/gen/";
+var outdir = "build/gen/";
 
 var arr = fs.readdirSync(indir);
 var done = fs.readdirSync(outdir);

@@ -643,7 +643,7 @@ HTML elements for replacing.
         _":shim"
       </head>
       <body>
-        _":body |jade | compile bogus"
+        _":body |pug | compile bogus"
         <script>
             _"js | .join \n | jshint "
             _"nav::js | .join \n | jshint "

@@ -357,7 +357,7 @@ This takes in a block of file names and should output an html gallery.
         items.forEach(function (el, ind) {
             flags[ind] = false;
             var name = itemstart(el, ind); //also parses item into items
-            gm(process.cwd() + "/originals/" + name).size(itemdone(ind));
+            gm(process.cwd() + "/assets/originals/" + name).size(itemdone(ind));
         });
     }
 
@@ -406,6 +406,7 @@ flag to true, store the size, and then decide whether to call done.
 
     function (ind) {
         return function (err, size) {
+           if(err) { console.error(err); return;}
             items[ind][3] = size.width + "x" + size.height;
             flags[ind] = true;
             if ( flags.indexOf(false) === -1 )  { // all true

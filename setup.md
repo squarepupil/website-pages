@@ -8,7 +8,7 @@ This is the setup for processing the website redesign.
 * [.gitignore](#gitignore "save:") gitignore file. 
 * [README.md](#readme "save:") This is the readme file. Not that useful. 
 * [img.js](#img-reduce "save:") This converts the images in originals and
-  puts them in img in three different sizes.
+  puts them in build/gen in three different sizes.
  
 ## Readme
 
@@ -24,13 +24,6 @@ This is the setup for processing the website redesign.
             args.file = ["project.md"];
         }
 
-out is to be checked in, output is not. put images and such in output. that is to be put on the server. Out is for seeing differences in the actual html files. 
-
-        //args.build = ["output"];
-        //args.src = ".";
-
-The local property was in the code, but not sure how it is being used.
-Probably can remove it. 
 
         if (!Folder.prototype.local) {
             Folder.prototype.local = {};
@@ -241,8 +234,8 @@ to 450px.
     var gm = require('gm');
     var fs = require('fs');
 
-    var indir = "originals/";
-    var outdir = "output/gen/";
+    var indir = "assets/originals/";
+    var outdir = "build/gen/";
     
     var arr = fs.readdirSync(indir);
     var done = fs.readdirSync(outdir);
