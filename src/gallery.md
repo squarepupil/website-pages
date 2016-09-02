@@ -136,17 +136,14 @@ photoswipe list will be used.
     anything-08.jpg
     anything-01.jpg | students in mermaid tales | Students converting themselves into mermaids 
     anything-02.jpg
-    anything-03.jpg
     anything-06.jpg
     anything-10.jpg
-    anything-11.jpg
     anything-12.jpg
     anything-13.jpg
     anything-14.jpg
 
 ### Governance
 
-    governance-03.jpg
     governance-06.jpg
     governance-01.jpg
     governance-04.jpg
@@ -160,7 +157,6 @@ photoswipe list will be used.
     kitchen-01.jpg
     kitchen-05.jpg
     kitchen-03.jpg
-    kitchen-06.jpg
     kitchen-07.jpg
 
 ### Outside
@@ -171,8 +167,6 @@ photoswipe list will be used.
     outside-11.jpg
     outside-03.jpg
     outside-04.jpg
-    outside-06.jpg
-    outside-07.jpg
     outside-08.jpg
     outside-09.jpg
     outside-10.jpg
@@ -180,10 +174,7 @@ photoswipe list will be used.
 ### Party
 
     party-04.jpg
-    party-05.jpg
-    party-03.jpg
     party-02.jpg
-    party-01.jpg
     party-06.jpg
     party-07.jpg
     party-08.jpg
@@ -194,19 +185,12 @@ photoswipe list will be used.
     people-03.jpg
     people-07.jpg
     people-06.jpg
-    people-01.jpg
     people-04.jpg
     people-05.jpg
-    people-08.jpg
-    people-09.jpg
-    people-10.jpg
-    people-11.jpg
 
 
 ### Space
 
-    space-08.jpg
-    space-06.jpg
     space-01.jpg
     space-05.jpg
     space-02.jpg
@@ -214,10 +198,6 @@ photoswipe list will be used.
     space-04.jpg
     space-07.jpg
     space-09.jpg
-    space-10.jpg
-    space-11.jpg
-    space-12.jpg
-    space-13.jpg
 
 
 
