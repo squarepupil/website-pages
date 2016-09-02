@@ -27,6 +27,8 @@ The announcement should be updated as need be.
   sufficiently different.  [gallery](gallery.md "load:")
 * [stories.html](#stories::page "save:") This is the page of people's stories,
   etc. [stories](stories.md "load:")
+* [calendar.html](#cal::page "save:") This is the calendar page. [cal](cal.md
+  "load:")
 
 
 ### Pages

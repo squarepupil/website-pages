@@ -23,16 +23,43 @@ We cut up that data and make it into a table that we then style with CSS?
     F|6/5|          C|First Day of Summer Break
 
 
+## Data Transform
+
+This takes in the data and makes it into an html list
+
+Each item is of the form of a colored date and the title
+
+    function (input, args) {
+       var lines = input.split("\n");
+       var year = "<h3>Calendar for Arts &amp; Ideas School Year " + 
+           lines.shift().trim() + "</h3>\n";
+       var list = "";
+       lines.forEach(function (line) {
+            var bits = line.split("|").
+                map(function (bit) {return bit.trim();});
+
+             list += '<li>' +
+                    '<span class="' + bits[2] + '">'+
+                    bits[1] + 
+                    '</span> ' + 
+                    bits[3] +
+                    '</li>\n'
+       });
+       return year + "<ul>\n" + list + "</ul>\n";
+
+    }
+
+[dates](# "define:")
+
 ## Page
 
-    _"project.md::template | replace article, 
-        _" | assemble _"full stories| md", 
-        _"callouts|md", 
-        _"pages for the sidebar|md" " | 
+    _"project.md::template | 
+        replace article, _" data | dates" |
         replace title, A&amp;I Calendar | 
-        replace main h2, School Calendar |
+        replace main > h2, School Calendar |
         replace style, _"calendar css | caps" |
-        cheerio article, append, _"next prev" "
+        cheerio article, append, _"next prev" |
+        cheerio aside, remove "
 
 
 
@@ -42,4 +69,38 @@ We cut up that data and make it into a table that we then style with CSS?
     <div class="previous far"><a href="/support-us.html"><span>Support US</span></a></div>
     <div class="next far"><a href="/index.html"><span>Home</span></a></div>
     </div>
+
+## Calendar CSS
+
+The classes color the dates. 
+
+
+    article h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    article ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 20em;
+    }
+    
+
+    article ul {
+        list-style-type : none;
+    }
+
+
+    .O {
+        color:green;
+        width: 6em;
+        display: inline-block;
+    }
+
+    .C {
+        color:red;
+        width: 6em;
+        display: inline-block;
+    }
 
