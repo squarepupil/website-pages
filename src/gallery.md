@@ -11,13 +11,14 @@ THOUGHTS: Just three thumbnail pictures per album with a ... picture or somethin
 
 ## Page
 
-    _"project.md::template | replace main, _"albums  "
+    _'project.md::template | replace main, _"albums  "
         | replace style, _"page css | caps" 
         | cheerio head, append, _"pswp css"
+        | cheerio body, append, _"pswp html"
         | cheerio body, append, _"pswp js"
         | current-link gallery.html 
         | cheerio main, prepend, <h2>Gallery</h2>
-        | cheerio main, append, _"next prev" "
+        | cheerio main, append, _"next prev" '
 
 ## page css
 
@@ -31,16 +32,19 @@ This is the css for the page that organizes the blocks and footer, etc,
         padding:5px;
 
     }
+    
+    main .inner {
+        align-items: baseline; 
+        width:100%;
+        max-width:initial;
+        min-width:initial;
+    }
+   
+This should probably be examined. It was done to get the next from going off
+the screen. 
 
-    main .outer .inner p {
-        flex:1;
-        padding:10px;
-        text-align: center;
-        margin-top:auto;
-        margin-bottom:auto;
-        width: 150px;
-        display: inline-block;
-        white-space:normal;
+    main .inner.last {
+        width:93%;
     }
 
     main {
@@ -48,39 +52,25 @@ This is the css for the page that organizes the blocks and footer, etc,
     }
 
     .my-gallery {
-        overflow: hidden;
-        white-space: nowrap;
+        display:flex;
+        flex-wrap: wrap;
+        
     }
 
     .my-gallery img {
       width: 100%;
-      height: 100px;
     }
+
     .my-gallery figure {
       display: inline-block;
       margin: 0 5px 5px 0;
-      width: 150px;
+      width: 24%;
     }
     .my-gallery figcaption {
       display: none;
     }
     
-    
-    .my-gallery :nth-child(1n+5) {
-        display: none;
-    }
-
-    .my-gallery {
-
-    }
-
-      main > :nth-child(2n+0) {
-        background-color:#eee;
-        box-shadow: inset 0px 0px 10px #888;
-    }
-
     .blurb {
-        width:300px;
         box-shadow: inset 0px 0px 10px #888;
         margin-top:10px;
         margin-bottom:10px;
@@ -93,6 +83,7 @@ This is the css for the page that organizes the blocks and footer, etc,
 
     <div class="inner last">
     <div class="previous far"><a href="tuition.html"><span>Tuition</span></a></div>
+    <div class="blurb"><a href="https://lightroom.adobe.com/shares/045797a007124252b1060e651abfc2fe">Even More Pictures</a></div>
     <div class="next far"><a href="stories.html"><span>Stories</span></a></div>
     </div>
 
@@ -103,101 +94,40 @@ photoswipe list will be used.
 
 
         
-    _"people | pswp Greet the people of Arts&amp;Ideas"
-
-    _"space | pswp A glimpse at the spaces of A&amp;I"
-
-    _"kitchen |pswp Great food courtesy of Kitchen Corporation"
-
-    _"outside | pswp Students need no urging to enjoy the great outdoors"
-        
-    _"party | pswp Party Corporation rocks"
-
-    _"governance | pswp Snapshots of A&amp;I democratic governance "
-
-    _"anything | pswp Endless possibilities at A&amp;I"
-
-    <div class="blurb">_":more pictures|md"</div>
-
-    _"pswp html"
-
-[more pictures]()
+    _"pictures |pswp"
 
 
-    For even more pictures, you can check our much larger [gallery of
-    growing images](https://lightroom.adobe.com/shares/045797a007124252b1060e651abfc2fe) and our [Facebook page](https://www.facebook.com/Arts-Ideas-Sudbury-School-372859716072)
 
+## Pictures
 
-### Anything
-
-    anything-04.jpg
-    anything-05.jpg
-    anything-07.jpg
-    anything-08.jpg
-    anything-01.jpg | students in mermaid tales | Students converting themselves into mermaids 
-    anything-02.jpg
-    anything-06.jpg
-    anything-10.jpg
-    anything-12.jpg
-    anything-13.jpg
-    anything-14.jpg
-
-### Governance
-
-    governance-06.jpg
-    governance-01.jpg
-    governance-04.jpg
-    governance-02.jpg
-    governance-05.jpg
-
-### Kitchen
-
-    kitchen-02.jpg
-    kitchen-04.jpg
-    kitchen-01.jpg
-    kitchen-05.jpg
-    kitchen-03.jpg
-    kitchen-07.jpg
-
-### Outside
-
-    outside-05.jpg
-    outside-01.jpg
-    outside-02.jpg
-    outside-11.jpg
-    outside-03.jpg
-    outside-04.jpg
-    outside-08.jpg
-    outside-09.jpg
-    outside-10.jpg
-
-### Party
-
-    party-04.jpg
-    party-02.jpg
-    party-06.jpg
-    party-07.jpg
-    party-08.jpg
-
-### People
-
-    people-02.jpg
-    people-03.jpg
-    people-07.jpg
-    people-06.jpg
-    people-04.jpg
-    people-05.jpg
-
-
-### Space
-
-    space-01.jpg
-    space-05.jpg
-    space-02.jpg
-    space-03.jpg
-    space-04.jpg
-    space-07.jpg
-    space-09.jpg
+    anything-04.jpg Magic is in the Card
+    anything-05.jpg Grass and Sticks
+    anything-07.jpg Horsing Around 
+    anything-08.jpg Beware of Vader 
+    anything-01.jpg Mermaid Exchange Students
+    anything-06.jpg Cold Water, Hot Feet  
+    anything-12.jpg Selling Rocks and Stuff 
+    anything-14.jpg Leaf That Pile Alone
+    governance-06.jpg Off-Campus Corporation Meeting
+    governance-01.jpg Library Corporation Meeting
+    governance-04.jpg Voting in a Chore Checker
+    kitchen-02.jpg Breakfast for Lunch
+    kitchen-04.jpg Quality Assurance 
+    kitchen-01.jpg Student Cashier for Hot Luch Friday
+    kitchen-05.jpg Homemade Pizza
+    outside-05.jpg Age-mixed Ball Game
+    outside-01.jpg Spider Studies 
+    outside-02.jpg Porch Talk 
+    outside-11.jpg Wall Sitting 
+    outside-10.jpg Snow 
+    party-04.jpg Costumes All Around
+    people-02.jpg Hanging Out on the Stairs 
+    people-03.jpg Gathering of the Broom Knights
+    people-07.jpg Dining Room Gatherings 
+    people-06.jpg Gymnast Spread 
+    space-01.jpg Games in the JC Room
+    space-04.jpg Social Computer Gaming 
+    space-05.jpg Art Room
 
 
 
@@ -236,6 +166,16 @@ links to css files
          - .png and .svg icons sprite, 
          - preloader.gif (for browsers that do not support CSS animations) -->
     <link rel="stylesheet" href="pswp/default-skin/default-skin.css"> 
+
+Here we modify the caption to be at the top and to have larger font-size.
+Probably need to work on this for narrow views. 
+
+    <style>
+ 
+        .pswp__caption__center {
+            font-size: 24px;
+        }
+    </style>
 
    
 ### pswp html
@@ -361,20 +301,24 @@ Each item comes in the form `[ filename, alt, caption, size]` though the middle 
                 replace("BIG", "gen/" + el[0]).
                 replace("MED", "gen/" + el[0].replace(".jpg", "-s.jpg")).
                 replace("ALT", el[1] || '').
-                replace("CAP", el[2] || '').
+                replace("CAP", el[1] || el[0]).
                 replace("SIZE", el[3]);
         }).join("\n"));
-        cb(null, "<div class='outer'><div class='inner'><p>" + 
-            galleryname + "</p>" + text + "</div></div>");
+        cb(null, "<div class='outer'><div class='inner'>" + 
+           text + "</div></div>");
     }
 
 [item start]() 
 
 This parses the item and returns a name and modifies the item entry. 
 
+The name is defined as everything up to the first space. The caption is what
+follows after that. 
+
     function (el, ind) {
-        var item = el.split("|").map(function (el) {
-            return el.trim(); });
+        el = el.trim();
+        var space = el.indexOf(" ");
+        var item = [el.slice(0, space), el.slice(space+1)];
         items[ind] = item;
         return item[0];
     }
