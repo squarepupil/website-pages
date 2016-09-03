@@ -7,13 +7,13 @@ There are no sidebars on the home page, stories, gallery, or calendar page.
 
 ## Create Sidebars
 
-        _" | echo cool | log | assembletemp  _"callouts|md", 
+        _" | assemble _"callouts|md", 
             _"sidebar media|md", _"jpg", _"vimeo" "
 
 [](# "transform:")
 
 
-## Assemble Temp
+## Assemble 
 
     function (input, args) {
         var doc = this;
@@ -30,7 +30,6 @@ There are no sidebars on the home page, stories, gallery, or calendar page.
                 $(call.get(i)).html() +
                 '</div>';
             _":assemble media"    
-            console.log(name, media, callout);
             doc.store(name, callout + media);
 
         });
@@ -38,7 +37,7 @@ There are no sidebars on the home page, stories, gallery, or calendar page.
     }
 
 
-[assembletemp](# "define:")
+[assemble](# "define:")
 
 
 [assemble media]()
@@ -58,84 +57,6 @@ jpg, we use the full name, for the vimeo, we use just the number part.
         console.error("unrecognized media: ", media);
         media = '';
     }
-
-
-## Assembling
-
-This is where we assemble it all. The incoming sections should be converted to
-markdown and we then use cheerio on it to extract the sections. This will be
-called by the stories page html which will have the fully assembled version
-inserted into it. The stories argument will be the eventual output. 
-
-We also will store the content into `sidebar::page name` where page name
-changes. These are required by the pages in their compilation.  
-
-    function (input, args) {
-        var doc = this;
-        var cheerio = doc.parent.local.cheerio;
-        var $ = cheerio.load(args[0]);
-        var call = cheerio.load(args[1])("li");
-        
-        var places =cheerio.load(args[2])("li");
-        var stories = $("li");    
-
-        var i, n = stories.get().length, el, place;
-
-        var img = _":img";
-        var sideput = _":store in sidebar";
-        var div, parr;
-        var inserter = _":inserter";  
-        var wrap = _":wrap in div";
-
-        for (i = 0; i < n; i += 1) {
-            el = stories.get(i);
-            wrap(el, "text");
-            $(el).prepend(img(i+1));
-            $(el).prepend("<div class='call'>"+$(call.get(i)).text()+"</div>");
-            place_s = $(places.get(i)).text().split(",");
-            place_s.forEach(sideput);
-            wrap(el, "inner");
-        }
-
-        $.root().prepend("<h2></h2>");
-        
-        return $.html();
-    }
-
-[assemble](# "define: | jshint ")
-
-[wrap in div]()
-
-This wraps the children of the list item in a div. 
-
-    function (el, cls) {
-        div = $("<div class='"+cls+"'></div>");
-        children = $(el).children();
-        $(el).prepend(div);
-        children.each(inserter);
-    }
-
-[inserter]()
-
-This just inserts the element into the div.
-
-    function (i, el) {
-        div.append(el);
-    }
-
-
-[store in sidebar]()
-
-For each place in the array, we store the html of the element in the sidebar.
-we replace the `<li>` with a `<div>`. We use the el from the surrounding loop.
-
-
-    function (place) {
-        var html = $(el).html();
-        //console.log(html);//
-        doc.store(place.trim().toLowerCase(), html);
-    }
-
 
 
 
