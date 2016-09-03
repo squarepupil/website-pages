@@ -43,8 +43,11 @@ This is the css for the page that organizes the blocks and footer, etc,
 This should probably be examined. It was done to get the next from going off
 the screen. 
 
+the inner last was being flexed and causing trouble. so eliminating that.
+
     main .inner.last {
         width:93%;
+        flex-direction: initial;
     }
 
     main {
@@ -83,7 +86,7 @@ the screen.
 
     <div class="inner last">
     <div class="previous far"><a href="tuition.html"><span>Tuition</span></a></div>
-    <div class="blurb"><a href="https://lightroom.adobe.com/shares/045797a007124252b1060e651abfc2fe">Even More Pictures</a></div>
+    <div class="blurb"><a href="https://lightroom.adobe.com/shares/045797a007124252b1060e651abfc2fe" target=_blank>More Pictures</a></div>
     <div class="next far"><a href="stories.html"><span>Stories</span></a></div>
     </div>
 
