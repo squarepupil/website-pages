@@ -17,6 +17,36 @@ style.
 
 ## Stories CSS
 
+This is the CSS for the stories page. The idea is that we have list items. We
+want to style it it as if they are note cards. There should also be left and
+right arrows but we could use javascript perhaps to handle all that. 
+
+    main {
+
+    }
+
+
+
+    blockquote {    
+        font-size: 17px;
+        padding: 8px;
+        color: whitesmoke;
+        background-color: #296087;
+        background-position: top left;
+        background-repeat: no-repeat;
+        text-indent: 23px;
+        margin: 66px;
+    }
+
+    blockquote p {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        padding: 12px;
+  	}
+
+## Stories CSS OLD
+
 This is the stuff for just this page. It is similar to that of the front page
 design.
 
@@ -120,28 +150,41 @@ shouldn't even be flexy, but whatever.
 
 ## Full Stories
 
-    1. [My daughter] is so very happy she woke up at 5:00 AM ASKING IF SHE COULD GO
+    > Sometimes people ask how we think [my daughter] will do in "the real world"
+      after a Sudbury education.  In the "real world", the pace of technological
+      and social change means that successful people need to be continuous
+      learners and skilled collaborators, eager to try new things and not too
+      worried about whether their experiments will initially fail.  Those are the
+      skills that Sudbury nurtures.  Our daughter will be much more prepared for
+      "the real world" than most of her traditionally schooled peers. 
+
+    > [My daughter] is so very happy she woke up at 5:00 AM ASKING IF SHE COULD GO
       TO SCHOOL YET!  I am sure as parents you know how much that means to me;
       there is just no feeling like it.
-    1. I just want to share that this year has been pivotal for [my son] and I feel
+
+    > I just want to share that this year has been pivotal for [my son] and I feel
       that A&I has pretty much saved his experience with education.  I think I
       have one of the most balanced, self-motivated and un-cranky teenagers that
       could ever exist! I also want to share that our experience at A&I has
-      directly affected my teaching strategy, with teenagers specifically. 
-    1. What image pops into mental view when one hears, yet again, that it takes a
+      directly affected my teaching strategy, with teenagers specifically.
+
+
+    > What image pops into mental view when one hears, yet again, that it takes a
       village to raise a child? A bunch of adults, all available to cast a
       benevolently watchful eye upon whoever’s child happens  to be underfoot as
       they set a virtuous and practical example by going about their business. All
       good. What is missing from this virtual tableau? 
-      
-       The sound of small feet
+    > 
+    >  The sound of small feet
       hurrying, the annoyed sighs of teens deploying their dirt-palmed clean-up
       crew, a chicken coop being raised on academic real estate, music, laughter,
       and all kids raising each other in their real world, in real time, learning
       to own the reality of their actions. To use an adult-shrink-speak term, the
       kids learn “agency” at Arts and Ideas Sudbury School, just ‘cause they can.
       With the tableau thus filled in, the village becomes complete. 
-    1.  I had a flooding rush of joy and gratitude yesterday (I felt down
+
+
+    >  I had a flooding rush of joy and gratitude yesterday (I felt down
         right verklempt) when I dropped R off for school just for the simple
         fact that W--who is a fair bit older than R (in kid years)--waited
         while holding the door for R as he scaled a wall to go into school. W
@@ -149,38 +192,35 @@ shouldn't even be flexy, but whatever.
         times the bigs and littles ignore and annoy one another, they also get
         this natural opportunity to care for and about one another. This
         familial type bond is one of the many reasons we chose Sudbury.
-     
-         <hr />
-     
-         Thank you for taking the time to speak with me. You are the main reason why
+
+
+    >   Thank you for taking the time to speak with me. You are the main reason why
       I chose Arts & Ideas, just wanted to let you know that. I totally felt at
       ease when we met and sensed an amazing amount of empathy/kindness and
       compassion in you. I want my sprouting bean to be around creative, kind and
       nourishing people, especially at this age. With that said, [my daughter] will be
       thrilled to start this September and we will see you/speak with you when we
       get back home. 
-    1. Our daughter's learning style is not a match for a traditional classroom.
+
+
+    > Our daughter's learning style is not a match for a traditional classroom.
       We needed to decide whether we would continue cramming her into a box where
       she didn't fit or give her the space to be herself.  This is her 2nd year at
       Arts & Ideas and she's a much happier kid. Her eyes are bright, her
-      curiosity is unstoppable and she loves learning a variety of subjects. -
-      Debbie 
-    1. Sometimes people ask how we think [my daughter] will do in "the real world"
-      after a Sudbury education.  In the "real world", the pace of technological
-      and social change means that successful people need to be continuous
-      learners and skilled collaborators, eager to try new things and not too
-      worried about whether their experiments will initially fail.  Those are the
-      skills that Sudbury nurtures.  Our daughter will be much more prepared for
-      "the real world" than most of her traditionally schooled peers. 
-    1. I'll be continuing to support you and spread the word about the school,
+      curiosity is unstoppable and she loves learning a variety of subjects.   
+
+
+    > I'll be continuing to support you and spread the word about the school,
       especially now that I've seen it. Congratulations too, I'm so impressed with
       how wonderfully you've all made this space happen and how well you've
       articulated the differences and history of this model.
-    1.  Our change in
+
+
+    >  Our change in
       schools was the best decision we have ever made for [my daughter].  She truly is a
       different child!! Thanks for being part of it!! 
-      
-        Once upon a time, not so
+    
+    >    Once upon a time, not so
       very long ago, a princess was born to the Kingdom
       of Avondale.  It did not take long for the king and queen to realize that
       this was no ordinary princess.  This princess did not like princess clothes.
@@ -203,11 +243,15 @@ shouldn't even be flexy, but whatever.
       kingdom. Happy, happy birthday my beautiful princess.  May you continue to
       beat to your own drum, let your light shine, and make your own way in the
       world. 
-    1. Arts & Ideas saved my kids: I went from worrying about them every second of
+
+
+    > Arts & Ideas saved my kids: I went from worrying about them every second of
       the day to not worrying at all. And once I was totally on board with the
       Sudbury philosophy, I not only didn't worry about their presents, I also
       stopped worrying about their futures.
-    1. Even the most innovative of public charter schools has assignments, tests,
+
+
+    > Even the most innovative of public charter schools has assignments, tests,
       strained teachers, and deadlines. For [my daughter], the stress, anxiety, and
       resentment that came from struggling within those constraints got in the way
       of actual learning. Rather than blossoming, this incredibly bright kid was
@@ -216,8 +260,8 @@ shouldn't even be flexy, but whatever.
       her self-esteem plummeted. She was getting sick at school and struggled
       socially. I’m sorry, but a test score does not equal aptitude! We knew the
       system wasn’t working for her and decided to jump ship.
-
-        What we’ve found at Arts & Ideas is the space to swim on her own terms, in
+    >
+    >    What we’ve found at Arts & Ideas is the space to swim on her own terms, in
         her own way, at her own pace. There’s room to breathe, play, stretch, and
         imagine. In just the few months that we’ve been at A&I, I have already
         seen a big change in [my daughter's] sense of self. 
@@ -228,8 +272,8 @@ shouldn't even be flexy, but whatever.
         public school. The elimination of deadlines has freed her mind (and
         schedule) to discover herself and bloom, which is exactly what one should
         hope to find in any schooling.
-
-        I’m not going to lie – there are bumps in the suddenly open road to a
+    >
+    >    I’m not going to lie – there are bumps in the suddenly open road to a
         teen’s self-sufficiency and the non-accrediting thing scared us a bit
         going in. BUT we had (and continue to have) faith that the pieces missing
         in her public school experience –the independence, the time to focus on
@@ -242,7 +286,9 @@ shouldn't even be flexy, but whatever.
         course), learning about democracy and judiciary responsibility, filling
         her art portfolio, studying mythology, advocating feminism and social
         justice, making great friendships, and more. Now THAT’S an education!
-    1.  My sons have been challenged, inspired, frustrated and stymied by this
+
+
+    >  My sons have been challenged, inspired, frustrated and stymied by this
         model. Our eldest son graduated from A&I after a senior year where he
         struggled with his thesis( the model's requirement for graduation) and
         balanced an internship with a local bakery. During his time at A&I he
@@ -256,16 +302,16 @@ shouldn't even be flexy, but whatever.
         at 12. He felt prepared to step into adulthood  as he had gained so many
         skills we tend to think of as more "adult" through the processes of School
         Meeting and Judicial Committee.
-
-        Our youngest son has chosen a different path, unlike our eldest who never
+    >
+    >    Our youngest son has chosen a different path, unlike our eldest who never
         missed a School Meeting or a chance to volunteer for Judicial Committee,
         our youngest is content to follow his own goals. His independence and
         autonomy are his focus and as he was 'raised" in the model we have
         spirited discussions about politics and current events. His separation from
         his brother's approach and years at A&I have also been of great value as
         he stands apart from his brother's choices and expectations. 
-
-        We did not desire report cards or test scores, despite my husband working
+    >
+    >    We did not desire report cards or test scores, despite my husband working
         as a teacher for a time; we wanted active thinkers, independence, the
         freedom to explore and a firm sense of self determination. Arts and Ideas
         has supported all of this and opened so many new pathways for our family.
