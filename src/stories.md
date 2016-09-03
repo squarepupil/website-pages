@@ -10,7 +10,7 @@ style.
         replace main, _"full stories| md" | 
         replace title, A&amp;I Stories | 
         replace main h2, Stories |
-        replace style, _"stories css | caps" |
+        replace style, _"stories css | log | caps | log " |
         cheerio main, append, _"next prev" " 
 
 
@@ -36,6 +36,14 @@ right arrows but we could use javascript perhaps to handle all that.
         background-repeat: no-repeat;
         text-indent: 23px;
         margin: 66px;
+    }
+    
+    M W>670px {
+        blockquote {
+            width: 670px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     blockquote p {
