@@ -1,122 +1,17 @@
 # Stories
 
-The idea here is that we want to use these in both the stories page as well as
-the sidebar. 
-
-The three sections with content tell us the story, the pull out, and the pages
-to be used. The pictures are numbered by the listing order as well. 
-
-It will be the same html for both pages, but the styling will be different.
-The sidebar styling will be in the main css while the stories page will be on
-its own page. 
-
-There will be no sidebar on the stories page. 
+This creates the stories page. We have the text in a list which comes in as
+is, but we style and js it on the page so that each note becomes a note card
+style. 
 
 ## Page
 
-    _"project.md::template | replace main, 
-        _" | assemble _"full stories| md", 
-        _"callouts|md", 
-        _"pages for the sidebar|md" " | 
+    _"project.md::template | 
+        replace main, _"full stories| md" | 
         replace title, A&amp;I Stories | 
         replace main h2, Stories |
         replace style, _"stories css | caps" |
-        cheerio main, append, _"next prev" "
-
-    
-
-
-## Assembling
-
-This is where we assemble it all. The incoming sections should be converted to
-markdown and we then use cheerio on it to extract the sections. This will be
-called by the stories page html which will have the fully assembled version
-inserted into it. The stories argument will be the eventual output. 
-
-We also will store the content into `sidebar::page name` where page name
-changes. These are required by the pages in their compilation.  
-
-    function (input, args) {
-        var doc = this;
-        var cheerio = doc.parent.local.cheerio;
-        var $ = cheerio.load(args[0]);
-        var call = cheerio.load(args[1])("li");
-        var places =cheerio.load(args[2])("li");
-        var stories = $("li");    
-
-        var i, n = stories.get().length, el, place;
-
-        var img = _":img";
-        var sideput = _":store in sidebar";
-        var div, parr;
-        var inserter = _":inserter";  
-        var wrap = _":wrap in div";
-
-        for (i = 0; i < n; i += 1) {
-            el = stories.get(i);
-            wrap(el, "text");
-            $(el).prepend(img(i+1));
-            $(el).prepend("<div class='call'>"+$(call.get(i)).text()+"</div>");
-            place_s = $(places.get(i)).text().split(",");
-            place_s.forEach(sideput);
-            wrap(el, "inner");
-        }
-
-        $.root().prepend("<h2></h2>");
-        
-        return $.html();
-    }
-
-[assemble](# "define: | jshint ")
-
-[wrap in div]()
-
-This wraps the children of the list item in a div. 
-
-    function (el, cls) {
-        div = $("<div class='"+cls+"'></div>");
-        children = $(el).children();
-        $(el).prepend(div);
-        children.each(inserter);
-    }
-
-[inserter]()
-
-This just inserts the element into the div.
-
-    function (i, el) {
-        div.append(el);
-    }
-
-[img]()
-
-This deals with the testimonials' image html. 
-
-    function (fname) {
-        var str = '<figure' + ' class="test-img"' + 
-                      '><img src="gen/' + fname  + '.jpg" ' +  
-                      'srcset="gen/' + fname +'-s.jpg 1w, ' + 
-                      'gen/' + fname + '-m.jpg 500w, gen/' + 
-                      fname + '-l.jpg 1000w, gen/' +
-                      fname + '.jpg 1500w" ' +
-                      '/>' + 
-                      '</figure>';
-       return str;
-    }
-
-
-[store in sidebar]()
-
-For each place in the array, we store the html of the element in the sidebar.
-we replace the `<li>` with a `<div>`. We use the el from the surrounding loop.
-
-
-    function (place) {
-        var html = $(el).html();
-        //console.log(html);//
-        doc.store("side " + place.trim().toLowerCase(), html);
-    }
-
+        cheerio main, append, _"next prev" " 
 
 
 
@@ -376,38 +271,11 @@ shouldn't even be flexy, but whatever.
         has supported all of this and opened so many new pathways for our family.
 
 
-## Callouts
-
-    1.  “My daughter woke up at 5:00 AM asking if she could go to school yet! There is just no feeling like it.”
-    2.  “I feel that A&I has pretty much saved [my son’s] experience with education. I think I have one of the most balanced, self-motivated, and un-cranky teenagers that could ever exist!”
-    3.  “The kids learn agency at Arts and Ideas Sudbury School, just 'cause they can.”
-    4.  “I want my sprouting bean to be around creative, kind, and nourishing people.”
-    5.  “This is [my daughter’s] 2nd year at Arts & Ideas and she’s a much happier kid. Her eyes are bright, her curiosity is unstoppable, and she loves learning a variety of subjects.”
-    6.  “Successful people need to be continuous learners and skilled collaborators, eager to try new things and not too worried about whether their experiments will initially fail. Those are the skills that Sudbury nurtures.”
-    7.  “I’m so impressed with how wonderfully you’ve all made this space happen.”
-    8.  “Our change in schools was the best decision we have ever made for [our daughter]. She truly is a different child!!”
-    9.  “I went from worrying about [my kids] every second of the day to not worrying at all.”
-    10.  “What we’ve found at Arts & Ideas is the space for [our daughter] to swim on her own terms, in her own way, at her own pace.”
-    11.  “This has been the best choice we could have made for our family.”
-
-
-## Pages for the sidebar 
-
-    1. Comparisons, Calendar
-    2. Introduction
-    3. Detailed
-    4. Staff
-    5. FAQ
-    6. Name
-    7. Space, Support-us
-    8. History
-    9. Contact-us, Tuition
-    10. Admissions, Questions
-    11. Resources, Organization
-
 ## Next Prev
 
     <div class="inner last">
     <div class="previous far"><a href="gallery.html"><span>Gallery</span></a></div>
     <div class="next far"><a href="faq.html"><span>FAQ</span></a></div>
     </div>
+
+

@@ -353,6 +353,9 @@ The sidebar has an announcement part and a callout for quotes and pictures.
     aside .text {
         display: none;
     }
+    
+    _"sidebar::vimeo:css"
+
 
 ## Footer
 

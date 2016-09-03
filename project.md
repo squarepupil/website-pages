@@ -29,7 +29,7 @@ The announcement should be updated as need be.
   etc. [stories](stories.md "load:")
 * [calendar.html](#cal::page "save:") This is the calendar page. [cal](cal.md
   "load:")
-
+* We also need to load the sidebars: [sidebar](sidebar.md "load:")
 
 ### Pages
 
@@ -75,7 +75,7 @@ A generated string ought to look like `_"|echo name.md | readfile |
 
     readfile 
     | images 
-    | process \_"template", \_"announcement", gGet(fname), \_"stories::side PAGE"
+    | process \_"template", \_"announcement", gGet(fname), \_"sidebar::PAGE"
 
 
 
