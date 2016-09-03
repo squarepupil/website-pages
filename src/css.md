@@ -54,6 +54,8 @@ basic styling is taken from writ.css
 
     _"sidebar"
 
+    _"print"
+
 ### Layout
 
 We put header on top with fixed placement, footer on the bottom, and we put a
@@ -423,7 +425,29 @@ first item is for wide footer, the second is for short.
         }
     }
 
+## Print
 
+These are the styles associated with printing pages in some attempt to help
+those who like to print off websites. 
+
+    @media print {
+
+        header, footer, .sitemap {
+            display:none;
+        }
+
+       img {
+            width:200px;
+            margin-left:auto;
+            margin-right:auto;
+       }
+
+       main > h2 {
+        display:none;
+       }
+
+
+    }
 
 ## CSS Reset
 
