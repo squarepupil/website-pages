@@ -11,7 +11,7 @@ We will load up the template and then replace the article, put in the banner,
 add in some css, hide the lightbulb by default, and throw in some js. 
 
     _"project.md::template | replace main, _"index body"  
-        | cheerio body, prepend, _"banner | pug | log | compile index body " 
+        | cheerio body, prepend, _"banner | pug |  compile index body " 
         | cheerio style, append, _"css | caps" 
         | cheerio #logo, addClass, hide  
         | cheerio body, append, _"scrolling" "
