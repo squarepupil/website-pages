@@ -82,6 +82,14 @@ the inner last was being flexed and causing trouble. so eliminating that.
         margin-right:auto;
     }
 
+This is to ensure 4 pictures per row at smaller widths (down to about 300)
+
+    M W<550px {
+        .my-gallery figure {
+            width:23%;
+        }
+    }
+
 ## next prev
 
     <div class="inner last">
