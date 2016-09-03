@@ -7,11 +7,10 @@ style.
 ## Page
 
     _"project.md::template | 
-        replace main, _"full stories| md" | 
+        replace main, _"full stories| md " | 
         replace title, A&amp;I Stories | 
-        replace main h2, Stories |
-        replace style, _"stories css | log | caps | log " |
-        cheerio main, append, _"next prev" " 
+        replace style, _"stories css | caps " |
+        cheerio main, append, _"next prev" "
 
 
 
@@ -21,11 +20,30 @@ This is the CSS for the stories page. The idea is that we have list items. We
 want to style it it as if they are note cards. There should also be left and
 right arrows but we could use javascript perhaps to handle all that. 
 
-    main {
-
+    .bottom {
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        width: 100vw;
+        max-width:initial;
+        right: 0;
+        margin: 0;
+        padding-top: 9px;
+        padding-bottom:2px;
+        flex-direction: initial;
     }
 
+    .center {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left:34px;
+        padding-right:20px;
+    }
 
+    footer {
+        display:none;
+    }
 
     blockquote {    
         font-size: 17px;
@@ -35,7 +53,8 @@ right arrows but we could use javascript perhaps to handle all that.
         background-position: top left;
         background-repeat: no-repeat;
         text-indent: 23px;
-        margin: 66px;
+        margin-top:40px;
+        margin-bottom:40px;
     }
     
     M W>670px {
@@ -53,115 +72,12 @@ right arrows but we could use javascript perhaps to handle all that.
         padding: 12px;
   	}
     
-    main .inner.last {
-        width:93%;
-        flex-direction: initial;
-    }
-    
-## Stories CSS OLD
 
-This is the stuff for just this page. It is similar to that of the front page
-design.
-
-    aside, .call {
-        display:none;
-    }
-
-    main h2 {
-        margin-bottom:0px;
-    }
-
-    main ol {
-        list-style-type: none;
-    }
-
-    main ol li {
-       display: flex; 
-    }
-
-    li .inner {
-        padding:5px;
-        padding-top:40px;
-        padding-bottom:40px;
-    }
-
-    .text {
-        flex:1;
-        padding:10px;
-        text-align: justify;
-        margin-top:auto;
-        margin-bottom:auto;
-    }
-
-    .test-img {
-        flex:1;
-        order:1;
-        margin-bottom:auto;
-        margin-top:auto;
-        border : #FFFFFF solid 5px;  
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    main ol > :nth-child(2n+1) {
-        background-color:#eee;
-        box-shadow: inset 0px 0px 10px #888;
-    }
-
-    main ol > :nth-child(2n+0) .text {
-        order:1;
-    }
-    
-    .test-img img {
-        display:block;
-    }
-    
-    hr {
-        border-bottom: black 1px solid;
-        height: 2px;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        padding:none;
-    }
-
-    .last {
-        padding-top:20px;
-    }
-
-    M W<670px {
-        .test-img {
-            order:initial;
-            margin-left:auto;
-            margin-right:auto;
-        }
-
-        li .inner {
-            padding:none;
-            padding-top:10px;
-            padding-bottom:10px;
-            margin-left:0px;
-            margin-right:0px;
-        }
-
-        .text {
-            text-align:left;
-        }
-
-        .test-img {
-            width: 300px;
-        }
-
-This is because flex column prevents the floating but row is fine. It really
-shouldn't even be flexy, but whatever. 
-
-        .last {
-            flex-direction: row;
-        }
-
-    }
-}
-
+ 
 ## Full Stories
+
+    ## Stories From Our Families
+
 
     > Sometimes people ask how we think [my daughter] will do in "the real world"
       after a Sudbury education.  In the "real world", the pace of technological
@@ -332,9 +248,11 @@ shouldn't even be flexy, but whatever.
 
 ## Next Prev
 
-    <div class="inner last">
+    <div class="bottom">
+    <div class="center">
     <div class="previous far"><a href="gallery.html"><span>Gallery</span></a></div>
     <div class="next far"><a href="faq.html"><span>FAQ</span></a></div>
+    </div>
     </div>
 
 
