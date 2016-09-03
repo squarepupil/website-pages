@@ -103,4 +103,8 @@ The classes color the dates.
         width: 6em;
         display: inline-block;
     }
-
+    
+    main .inner.last {
+        width:93%;
+        flex-direction: initial;
+    }

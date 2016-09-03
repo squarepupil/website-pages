@@ -52,7 +52,12 @@ right arrows but we could use javascript perhaps to handle all that.
         background-position: bottom right;
         padding: 12px;
   	}
-
+    
+    main .inner.last {
+        width:93%;
+        flex-direction: initial;
+    }
+    
 ## Stories CSS OLD
 
 This is the stuff for just this page. It is similar to that of the front page
