@@ -38,11 +38,16 @@ Each item is of the form of a colored date and the title
             var bits = line.split("|").
                 map(function (bit) {return bit.trim();});
 
+            var status = ( (bits[2] === 'O') ? 'Open' : 'Closed');
+            var day = ( (bits[0] === 'M') ? 'Monday' :
+                ( (bits[0] === 'W') ? 'Wednesday' : 'Friday') );
+
              list += '<li>' +
                     '<span class="' + bits[2] + '">'+
                     bits[1] + 
                     '</span> ' + 
                     bits[3] +
+                    ' (' + status + ' ' + day  + ')' +
                     '</li>\n'
        });
        return year + "<ul>\n" + list + "</ul>\n";
@@ -83,7 +88,7 @@ The classes color the dates.
     article ul {
         margin-left: auto;
         margin-right: auto;
-        width: 20em;
+        width: 28em;
     }
     
 
@@ -91,17 +96,23 @@ The classes color the dates.
         list-style-type : none;
     }
 
-
-    .O {
-        color:green;
+    .O, .C {
         width: 6em;
         display: inline-block;
     }
 
+    M W<484px {
+        .O, .C {
+            display:block;
+        }
+    }
+
+    .O {
+        color:green;
+    }
+
     .C {
         color:red;
-        width: 6em;
-        display: inline-block;
     }
     
     main .inner.last {
