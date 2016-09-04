@@ -1,4 +1,4 @@
-What’s in a Name?
+What’s in a name?
 ---
 
 The term "arts" is applied to the large and small spaces of our daily lives.
