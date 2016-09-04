@@ -1,21 +1,15 @@
-What’s in a name?
+What’s in a Name?
 ---
 
-
-The founders (and namers of the school), have deep
-backgrounds in the performing arts but chose the "arts" in the school’s name
-to evoke a more meta meaning of the word. The arts have been fundamental to
-humankind. 
-
-!name-01.jpg
-
-Arts is applied to the large and small spaces of our daily lives.
+The term "arts" is applied to the large and small spaces of our daily lives.
 Beginning with the arts as being the child’s natural language, to the idea
 that when someone is completely fluent in, and exquisitely executing almost
 anything, we say they are practicing its art. A deep mastery of something is
 engaging in its art form. "She was skilled in the art of negotiation." People
 who love unraveling numeric mysteries and finding order and structure in all
 things are said to be practicing the art of mathematics.
+
+!name-01.jpg
 
 Art is something one makes, creates, or re-purposes, and is, ideally, a unique
 and original expression of its maker. The approach an artist has to life and
