@@ -33,7 +33,7 @@ offset tuition.
 
 Arts & Ideas operates with a schedule that is similar to neighboring public schools 
 and includes winter break, spring break, and summer vacation. See our
-[calendar](calendar.html) for more information.
+[Calendar](calendar.html) for more information.
 
 ### What are the attendance requirements?
 
@@ -51,7 +51,8 @@ Arts & Ideas enrolls throughout the year. Please see our
 
 No, Arts & Ideas does not serve meals. Most students bring lunches from home.
 Our off-campus policy facilitates students buying lunch from nearby
-restaurants and shops.
+restaurants and shops which also deliver. Our incredible student-run Kitchen
+Corporation often serves a hot lunch on Fridays. 
 
 ### Is transportation provided?
 
@@ -117,8 +118,8 @@ Camp Puh’Tok.
 
 ### Is A&I an arts school?
 
-Yes, but in a more subtle way than most expect.  Please read about [our
-name](Name.html) for an in-depth explanation of our name.
+Yes, but in a more subtle way than most expect.  Please read about [Our
+Name](Name.html) for an in-depth explanation of our name.
 
 ### Do students receive a diploma?
 
