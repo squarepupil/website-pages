@@ -145,7 +145,8 @@ Add in the title both in the head and the article; easier to pop it in here.
 
         _":js"
 
-        return $.html();
+        return $.html().
+            replace(/href\=\"http/g, 'target=_blank href="http');
 
     }
 
@@ -380,20 +381,20 @@ This uses the pre-compiled previous, next format.
 This defines the cycle of pages for the previous and next buttons. 
 
     index : Home
-    introduction : Introduction 
-    detailed : Detailed
-    comparisons: Comparisons
-    questions: Questions 
-    resources: Resources 
-    organization: Organization
-    staff: Staff 
-    space: Space
-    history: History
-    name: Name
+    introduction : Model&gt;Introduction 
+    detailed : Model&gt;Detailed
+    comparisons: Model&gt;Comparisons
+    questions: Model&gt;Questions 
+    resources: Model&gt;Resources 
+    organization: Our School&gt;Organization
+    staff: Our School&gt;Staff 
+    space: Our School&gt;Space
+    history: Our School&gt;History
+    name: Our School&gt;Name
     admissions: Admissions 
     tuition: Tuition
     gallery: Gallery 
-    stories: Stories
+    testimonials: Testimonials
     faq: FAQ
     contact-us: Contact us
     support-us: Support us

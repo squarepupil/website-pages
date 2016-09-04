@@ -124,7 +124,7 @@ the extra div below is to get rid of the flex. bad hack.
     Explore our website to discover what makes our school thrive and why
     our students and their families love an Arts &amp; Ideas education.
 
-    <div class="next far"><a href="introduction.html">Introduction</a></div>
+    <div class="next far"><a href="introduction.html">Model&gt;Introduction</a></div>
    
 
 
