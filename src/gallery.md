@@ -95,7 +95,7 @@ This is to ensure 4 pictures per row at smaller widths (down to about 300)
     <div class="inner last">
     <div class="previous far"><a href="tuition.html"><span>Tuition</span></a></div>
     <div class="blurb"><a href="https://lightroom.adobe.com/shares/045797a007124252b1060e651abfc2fe" target=_blank>More Pictures</a></div>
-    <div class="next far"><a href="stories.html"><span>Stories</span></a></div>
+    <div class="next far"><a href="testimonials.html"><span>Testimonials</span></a></div>
     </div>
 
 ## Albums

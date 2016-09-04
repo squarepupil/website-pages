@@ -291,7 +291,7 @@ We have a small class attached to the bulb when the dropdown is down.
 
     * [Tuition](tuition.html)
     * [Gallery](gallery.html)
-    * [Stories](stories.html)
+    * [Testimonials](testimonials.html)
     * [FAQ](faq.html)
 
 ## Sitemap
