@@ -11,7 +11,7 @@ with some css to make it all look nice.
 The announcement should be updated as need be. 
 
     <div class="announce">
-       <p> Our next Open House is <a href="https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform">Wednesday, August 17th, 6PM</a></p>
+       <p> Our next Open House is <a href="https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform">Saturday, October 22nd, 10AM</a></p>
     </div>
 
 

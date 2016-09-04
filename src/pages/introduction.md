@@ -2,12 +2,12 @@ Introduction to Our Model
 ---
 
 Arts & Ideas Sudbury School is modeled after Sudbury Valley School, the first
-school of its kind founded in 1968. At A&I, students and staff run the school
+school of its kind, founded in 1968. At A&I, students and staff run the school
 together through a democratic structure in which every staff and student has
-one vote in every decision we make. With no curriculum, no required academics,
+one vote in every decision made. With no curriculum, no required academics,
 no testing and a daily schedule left up to each student to decide for
 themselves, students at A&I are free to learn, explore, and reflect at their own
-pace and in ways that work best for them.
+pace in a manner that work best for them.
 
 Our viewpoint is that children are already amazing people. They are driven to
 explore life and all of its many complexities. Our humble goal is to do no 
@@ -48,11 +48,11 @@ explore, how to ask questions, how to master something that interests them,
 and how to take failure, as well as success, in stride as steps towards
 achieving their own goals.
 
-The children and staff are all members of the school community and learn from
+The students and staff are all members of the school community. They learn from
 one another. The staff ensure that the school environment is safe,
 appropriately supportive, and run in a democratic fashion.  All school members
 have equal rights, which means having equal voice in both making the rules and
-adjudicating them. We have found that children of all ages treat this process
+adjudicating them. Students of all ages treat this process
 seriously, and their ensuing discussions balance the needs of the community
 with compassion for their peers, leading to respectful outcomes for all
 involved.

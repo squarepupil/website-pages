@@ -68,7 +68,7 @@ Schoolhouse"](http://www.youtube.com/watch?v=B3boxHhrjj8&feature=bf_next&list=SP
 is a documentary about the Fairhaven School (another Sudbury School) in Upper
 Marlboro, Maryland. There are different chapters of "New American Schoolhouse"
 that cover different aspects of Sudbury schooling that can be individually
-accessed on Youtube.
+accessed on YouTube.
 
 [This](http://www.psychologytoday.com/blog/freedom-learn) blog by acclaimed
 author and research professor, Dr. Peter Gray of Boston College, is a

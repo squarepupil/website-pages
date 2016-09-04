@@ -25,8 +25,8 @@ Bowie, Maryland. During that time, he shot the documentary,
 about the students at Fairhaven, while Caroline ran the
 playgroup. 
 
-After countless conversations with parents who said, “I don’t want
-to homeschool...but there is not a school I know of that I like,”  the idea of
+After countless conversations with parents who said, "I don’t want
+to homeschool...but there is not a school I know of that I like,"  the idea of
 opening a school evolved into a concrete goal. Through visiting other Sudbury
 schools, continuing their research, and gaining hands-on experience, their
 understanding of and commitment to the Sudbury model deepened just as the

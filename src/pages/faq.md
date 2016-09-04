@@ -18,7 +18,7 @@ Structure](our-structure.html).
 ### Is the school similar to any other educational models?
 
 Please see our [Okay, so you’re sort of like…](comparisons.html) page for a
-brief comparison of school philosphies.
+brief comparison of school philosophies.
 
 ### How much does it cost?
 
@@ -44,8 +44,8 @@ for an additional fee for those families who consistently require it.
 
 ### When can we enroll?
 
-Arts & Ideas enrolls throughout the year. Please see our [Admissions](admissions.html)
-page for more information.
+Arts & Ideas enrolls throughout the year. Please see our
+[Admissions](admissions.html) page for more information.
 
 ### Does the school serve meals?
 
@@ -55,17 +55,17 @@ restaurants and shops.
 
 ### Is transportation provided?
 
-No, Arts & Ideas does not provide transportation to and from school each day. Since 
-our families live all over the Baltimore area, some families utilize 
+No, Arts & Ideas does not provide transportation to and from school each day.
+Since our families live all over the Baltimore area, some families utilize
 carpooling arrangements for daily school commuting. 
 
 ### Is there a daily schedule?
 
-Aside from a few established activities that run on schedule (Judicial 
-Committee every day at 11:30, chore time every day at 2:30, and School Meeting 
-on Tuesdays at 1:00), the students have no set schedules other than what they might 
-decide to make for themselves. Thus, daily personal activities at A&I vary 
-widely from student to student, day to day, and can include:
+Aside from a few established activities that run on schedule (Judicial
+Committee every day at 11:30, chore time every day at 2:30, and School Meeting
+on Tuesdays at 1:00), the students have no set schedules other than what they
+might decide to make for themselves. Thus, daily personal activities at A&I
+vary widely from student to student, day to day, and can include:
 
 - outdoor play (climbing trees in the yard/running/cartwheels/playing games), 
 - using computers (playing Minecraft/coding/editing videos/research), 
@@ -76,17 +76,19 @@ widely from student to student, day to day, and can include:
 
 ### Do you accept students with disabilities?
 
-Yes, Arts & Ideas enrolls students with disabilities on a case-by-case basis; however,
-A&I does not provide any specific accommodations for students with disabilities.
-Regardless of any disability, all students must be able to keep themselves safe 
-without constant adult supervision and take care of their own needs (such as eating 
-and using the restroom). 
+Yes, Arts & Ideas enrolls students with disabilities on a case-by-case basis;
+however, A&I does not provide any specific accommodations for students with
+disabilities.  Regardless of any disability, all students must be able to keep
+themselves safe without constant adult supervision and take care of their own
+needs (such as eating and using the restroom). 
 
-In many ways, every student at A&I is on their own IEP (Individualized Education Plan), 
-in that they have the space, time, and freedom to be themselves and learn in whatever 
-way makes sense for them. Students who have been diagnosed with Autism, Dyslexia, ADD, 
-ADHD, Emotional or other Mood disorders, among others, have achieved great success at
-A&I.
+In many ways, every student at A&I is on their own IEP (Individualized
+Education Plan), in that they have the space, time, and freedom to be
+themselves and learn in whatever way makes sense for them. Students who have
+been diagnosed with Autism, Dyslexia, ADD, ADHD, Emotional or other Mood
+disorders, among others, have achieved great success at A&I.
+
+A&amp;I is not, however, a therapeutic school. 
 
 ### What resources are available at school?
 
@@ -105,37 +107,38 @@ more information about our facilities.
 
 ### Are there field trips?
 
-Yes, Arts & Ideas offers field trips. Some trips are primarily planned
-and executed by staff, while others are largely coordinated by students. Some
-of our past field trips include: taking the light rail to the Baltimore Aquarium, 
-listening to all kinds of concerts at Peabody, seeing plays at The Baltimore Theatre 
-Project, exploring for treasures at nearby Herring Run Park, overnight camping at a 
-beach in Delaware, and engaging in all kinds of outdoor fun at Camp Puh’Tok. 
+Yes, Arts & Ideas offers field trips. Some trips are primarily planned and
+executed by staff, while others are largely coordinated by students. Some of
+our past field trips include: taking the light rail to the Baltimore Aquarium,
+listening to all kinds of concerts at Peabody, seeing plays at The Baltimore
+Theatre Project, exploring for treasures at nearby Herring Run Park, overnight
+camping at a beach in Delaware, and engaging in all kinds of outdoor fun at
+Camp Puh’Tok. 
 
 ### Is A&I an arts school?
 
-Yes, but in a more subtle way than most expect.  Please see the [Our
-Story](our-story.html) page for a more in-depth explanation of our name.
+Yes, but in a more subtle way than most expect.  Please read about [our
+name](Name.html) for an in-depth explanation of our name.
 
 ### Do students receive a diploma?
 
-Yes, Arts & Ideas grants its own diploma for students who write and defend a thesis.
-A&I diploma is not a high school equivalence diploma; however, it is a document that 
-students can and do use for college and job applications. 
+Yes, Arts & Ideas grants its own diploma for students who write and defend a
+thesis.  An A&I diploma is not a high school equivalence diploma; however, it is
+a document that students can and do use for college and job applications. 
 
-Please see our [I get it, but what about…?](confusions.html) page for more information 
-about colleges and careers for Sudbury graduates.
+Please see our [I get it, but what about…?](confusions.html) page for more
+information about colleges and careers for Sudbury graduates.
 
 ### How does graduation work?
 
-Arts & Ideas, like most Sudbury Schools, offers an optional diploma process for students 
-aged 16+: a thesis is written to address the question ‘How have I prepared to enter the 
-world beyond school?’ and defended in front of a panel of staff members from neighboring
-Sudbury schools.
+Arts & Ideas, like most Sudbury schools, offers an optional diploma process
+for students aged 16+: a thesis is written to address the question "How have I
+prepared to enter the world beyond school?" and defended in front of a panel
+of staff members from neighboring Sudbury schools.
 
-Students who are of age may leave A&I without the diploma. Many, but not all, teenagers 
-choose to undertake the optional diploma process, often as a capstone of their school 
-experience.
+Students who are of age may leave A&I without the diploma. Many, but not all,
+teenagers choose to undertake the optional diploma process, often as a
+capstone of their school experience.
 
 ### What is the school’s legal structure?
 

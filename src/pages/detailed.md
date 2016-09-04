@@ -115,7 +115,8 @@ END
 
 ABS
 
-Students accept one another as part of the community. There is no pecking order except for our actual chickens.
+Students accept one another as part of the community. There is no pecking
+order except, perhaps, among our actual chickens.
 
 BODY
 
@@ -127,16 +128,15 @@ naturally lead each student down their own satisfying path. Each path will
 look very different and that is a good thing.
 
 We use life itself as our curriculum and we neither praise nor criticize
-students’ personal choices. We do embrace authentic emotions -- joy at
-something delightful, frustration at annoyances — but notions of what is
+students’ personal choices. We do embrace authentic emotions&mdash;joy at
+something delightful, frustration at annoyances&mdash;but notions of what is
 worthy of a student’s time come from students themselves, both as individuals
 and as reflexive members of a community, as well as the world of resources
 around them.
 
-Students start from a place of accepting who they are now and decide, more or
-less, from that foundation as to what they want to become. This allows our
-students to naturally grow into a future of their own making at a pace that
-works for them.
+Students start from a place of accepting who they are now and then decide
+where to proceed from there. This allows our students to naturally grow into a
+future of their own making at a pace that works for them.
 
 END
 
@@ -158,18 +158,18 @@ Students learn regardless of outcome.
 Much of what students learn in their activities is how to learn. They learn
 that you first kind of make a mess as you explore an idea. Then, if you pursue
 it, it takes dedicated repetitive practice to get good at it. Along the way,
-they learn how to learn from others: how to seek out someone more knowledgable
+they learn how to learn from others: how to seek out someone more knowledgeable
 and how to listen to them as they explain something difficult.
 
-We often witness students, who are learning a particular subject, seek out not
+We often witness students, who are learning some particular subject, seek out not
 the most knowledgeable person on the subject around, but rather someone who is
 just somewhat ahead in knowledge or ability level. Age-mixing also lends
-itself well to this consequence and, in fact, the mentor has a good
+itself well to this consequence though the mentor has a good
 chance of being the younger student. For most pursuits of learning, there is
 mutual enhancement when the ability levels of mentor and mentee are not that
 different. 
 
-The journey of learning is what we prize here. We know that the skills of
+The journey of learning is what we prize here. The skills of
 learning are transferable to whatever endeavor our students ultimately pursue.
 Learning how to learn is what our school is all about. 
 
@@ -184,17 +184,18 @@ Our community acts as a constraint which naturally leads to inspiration.
 BODY
 
 Creative people know that constraints are what drive good designs. Humans can
-be overwhelmed by choice, but when there are constraints to overcome and work
-with, humans shine. This holds for all ages. We see it quite often with
+be overwhelmed by choice, but when there are constraints to overcome 
+humans shine. This holds for all ages. We see it quite often with
 children who at first will rail against not being able to get what they want,
 but who, once they accept the limitation, happily work with it to make
 something delightful.
 
 Constraints in our school come largely from being a part of a community. This
 is a good thing. Our students learn how to respect others while still
-achieving their own, possibly modified, goals. This is how adult life is as
-well and is an important contributing factor to how Sudbury graduates are able
-to navigate a variety of different paths in life with ease.
+achieving their own, possibly modified, goals. Adult life is full of such
+constraints. Being able to deal with them is an important contributing factor
+as to why Sudbury graduates are able to navigate a variety of different paths in
+life with ease.
 
 END
 
@@ -220,7 +221,7 @@ Rather, rule following is modeled by the majority of the community and,
 therefore, each individual is strongly led to follow those same rules. In
 instances where an individual does deviate and matters can not be worked out
 among the individuals involved, our Judicial Committee intervenes.  This
-prevents rules from continuing to be misunderstood, misapplied, or taking
+prevents rules from continuing to be misunderstood, misapplied, or from taking
 precedent over people in the event that they are simply not good rules.
 
 !indetail-vote.jpg
@@ -264,18 +265,19 @@ To start with, staff provide the adult presence to ward off and deal with any
 external threats. Should any situation ever approach the threshold of danger,
 adults are present to end the threat. This is as it should be in any school.
 
-But in our school, every student is a pair of eyes. The students trust the
-adults and want the best for their school and their community. If any of our
-students start to feel uncertain about safety, they have no hesitation about
-finding an adult.
+But our school has an advantage in that every student is a pair of eyes. The
+students trust the adults and want the best for their school and their
+community. If any of our students start to feel uncertain about safety, they
+have no hesitation about finding an adult.
 
 !indetail-tree-porch
 
 What our model does not do is bubble-wrap the students. They are free to
 explore their own comfort boundaries and define them, whether they push those
 boundaries and redefine a larger comfort zone or are more comfortable settling
-in more familiar territory. We find that when children are left freely to
-choose their actions, students err on the side of caution. 
+in more familiar territory. Our students are left freely to choose their own
+actions and we see them balance caution with their natural drive to expand
+their own capabilities.  
 
 Bumped elbows, scraped knees, and other such minor incidents give students
 plenty of incentive to be more careful. In the rare instances when a child
@@ -290,9 +292,9 @@ and cares for its members. They may not all be friends, but there is a common
 bond that makes each member of the community feel welcomed and cared about.
 
 We do not judge, we do not label, and we do not rank. There is no social
-hierarchy that leads to stress and rejections. Adults do not stigmatize any of
+hierarchy that leads to stress and rejections. Staff do not stigmatize any of
 the students. There is no emotional violence visited upon students in the name
-of education.
+of education. 
 
 This is not to be underestimated. Our students enjoy coming to school. It is a
 place of safety, despite the unknowns. It is their second home.

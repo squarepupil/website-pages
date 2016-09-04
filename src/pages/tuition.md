@@ -8,22 +8,23 @@ and the Parent Equity Program. Besides these costs, there are no other
 mandatory financial obligations to enrolling (for example, no textbooks, uniforms,
 or other fees).
 
-Current tuition is $6,125 per year for the first child in a family, $4,595 
-for the second child, and $3,450 for any additional children. Tuition is decided
-each year by majority vote of the School Assembly, which consists of parents, staff, 
-and students. As Arts & Ideas enrolls throughout the year, tuition is prorated.
+Current tuition is $6,125 per year for the first child in a family, $4,595 for
+the second child, and $3,450 for any additional children. Tuition is decided
+each year by majority vote of the School Assembly, which consists of parents,
+staff, and students. As Arts & Ideas enrolls throughout the year, tuition is
+prorated.
 
 ## Parent Equity Program
 
-The Parent Equity Program is a capital raising program that made possible the school's 
-move from its former rented location to its current owned facilities in November 2015.
-Participation in the Parent Equity Program is mandatory for all enrolled families. 
-Arts & Ideas is partnered with a lender whose financing, if needed, includes 
-an option that would be expected to raise the nominal tuition of $6,125 
-to an effective tuition of $7,900 (rates may vary).
+The Parent Equity Program is a capital raising program that made possible the
+school's move from its former rented location to its current owned facilities
+in November 2015.  Participation in the Parent Equity Program is mandatory for
+all enrolled families.
 
-Details of the PEP are discussed during the family interview step of
-the enrollment process. 
+Details of the PEP are discussed during the family interview step of the
+enrollment process. The school community designed the PEP requirement 
+to ensure that it works financially for all families that
+wish to enroll. 
 
 ## Payment Plans
 
@@ -37,5 +38,6 @@ family individually to figure out the best solution for each case.
 
 ## Financial Aid
 
-Arts & Ideas has a financial aid program available to enrolled and eligible families. 
-Financial aid is handled on a private, case by case basis by our Financial Aid Committee.
+Arts & Ideas has a financial aid program available to enrolled and eligible
+families.  Financial aid is handled on a private, case by case basis by our
+Financial Aid Committee.

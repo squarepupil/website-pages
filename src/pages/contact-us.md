@@ -14,11 +14,12 @@ To schedule an interview, for more information, or for general inquiries you can
 
 Or you can contact us by email:
 
-aisudburyschool@gmail.com
+office@aisudbury.org
 
 Or call us between 8am and 6pm, Monday through Friday:
 
 (410)426-0001
+
 Or by postal mail at
 
 4915 Holder Avenue, Baltimore, MD 21214

@@ -29,7 +29,7 @@ Arts & Ideas.
 
 !brooke-office.jpg,, staff
 
-**Brooke Pazoles** Brooke Pazoles Brooke is a recent graduate from the
+**Brooke Pazoles** is a recent graduate from the
 University of Delaware, where she studied elementary and middle school
 education. Even though she has a teacher’s certificate on paper, her
 experience at UD was not like any other up and coming teacher’s. After
@@ -39,8 +39,8 @@ She almost dropped her major to pursue a totally different career, but was
 steered to research Sudbury education by a professor who specialized in
 alternative education models. Brooke was hooked immediately, and spent the
 rest of her time at college pushing the University to support her in her quest
-to complete her student teaching placement – and eventually become a full-time
-staff member – at a Sudbury school. Brooke was able to fulfill her student
+to complete her student teaching placement&mdash;and eventually become a full-time
+staff member&mdash;at a Sudbury school. Brooke was able to fulfill her student
 teaching requirement at The Philadelphia Free School, a Sudbury school in
 South Philly. While at PFS, Brooke’s passion for Sudbury education blossomed
 and grew. Her time as an intern there solidified her dream to pursue staffing
@@ -53,7 +53,7 @@ snuggling with her three cats. She also cares deeply about community service
 and giving her time and resources to those in need. She spent much of her time
 at college volunteering for organizations like Habitat for Humanity, and spent
 her final spring break rebuilding homes that were destroyed by hurricane
-Katrina in New Orleans. Brooke is a type 1 diabetic and is a active member and
+Katrina in New Orleans. Brooke is a type 1 diabetic and is an active member and
 advocate within the worldwide diabetes community, spending much of her free
 time mentoring others with the disease, scouring research papers, and
 attending and speaking at diabetes conferences. 
@@ -82,10 +82,10 @@ with the realities of public schools, he discovered the Sudbury model and Arts
 & Ideas in particular with the help of a couple of free-thinking professors.
 Though he does not wish to teach in public schools, he is grateful to have
 been in the Master's program, if only for the fact that he discovered
-alternative models through it.  As staff at Arts & Ideas, Phil hopes to bring
+alternative models through it.  As staff at Arts & Ideas, Phil uses
 his continued interest in computers and technology to help provide the tech
 facilities required to keep up with the school community's ever-expanding
-curiosity and imagination. As well, he hopes to one day establish an exchange
+curiosity and imagination. He hopes to one day establish an exchange
 program of some sort with other Sudbury schools, both American and
 international.
 
@@ -94,26 +94,22 @@ international.
 **James Taylor**  is a proud father, credentialed mathematician, heretical
 physicist, and passionate (web) programmer. While he has had a life-long
 dislike of traditional schooling, it was not until Arts & Ideas moved into his
-backyard that he first heard about the Sudbury way. He became an immediate
+backyard, sadly just for a year, that he first heard about the Sudbury model. 
+He became an immediate
 advocate for the school in the neighborhood and proceeded to learn more about
 it. Having finally seen the solution as to how to let children live their life
 with respect, he just had to join up.  James has a PhD in mathematics from
 Rutgers University. His specialty is in the mathematics of quantum mechanics
 on curved space. With over a decade of teaching mathematics, he has met many
 students whose traditional mathematical education left them ignorant and
-fearful of mathematics. For the past few years, James has had the very
+fearful of mathematics. For several years, James has had the very
 rewarding experience, while teaching online for Johns Hopkins University, of
-converting math phobics into math geeks. He has done this by encouraging his
+converting math phobic adults into math geeks. He has done this by encouraging his
 students to explore their life using mathematics, asking and answering their
-own relevant questions.  James has learned quite a lot from his daughter. She
-taught him that even at a very early age, children are quite capable of
-handling their own learning needs. He has watched with amazement how she
-continually tries to do as much as she can on her own while she happily
-acknowledges that some stuff will have to wait until she is "a big girl". He
-loves spending time with his daughter, marveling at the sheer wonder and joy
-she has for the world, never knowing what new delight awaits around the next
-corner. He is relieved to have found an educational model that will nurture
-that joy instead of squashing it.
+own relevant questions.  In his time at A&amp;I, his experiences have confirmed
+that children are amazing human beings and are a much under-appreciated gift
+to the human race. He is honored to be a part of this community and learns a
+great deal about the possibilities of life every day. 
 
 ---
 article p {

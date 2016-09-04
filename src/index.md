@@ -54,18 +54,20 @@ the extra div below is to get rid of the flex. bad hack.
     Younger students engage in, sometimes by simply observing, more complex
     activities. By being around older students, younger students are motivated
     to take on big challenges, often with the compassionate help of those
-    olders student. The younger students gain exposure to more advanced
-    skills and knowledge and learn from a variety
-    of role models. Students that are only a few years older represent role
-    models that the younger students can more readily relate to. 
+    older students. The younger students gain exposure to more advanced
+    skills and knowledge while learning from a diverse set
+    of role models. Students that are only a few years older represent ways of
+    being that the younger students can readily play at being. 
 
     Older students also benefit deeply from being around younger students.
     They not only develop leadership, nurturance, and a sense of
     responsibility for others, but are also able to enjoy a lengthened
     childhood themselves by playing and engaging with younger kids without
     fear of judgement. Teenagers at Arts & Ideas are free to move back and
-    forth between benefitting from the joy of being a kid and growing and
-    learning as they ease their way into becoming an adult. 
+    forth between the joy childhood and the responsibility of adulthood. By
+    naturally teachers, they solidify their own foundations even as they
+    challenge themselves to learn the intricacies of adult skills.
+    
 
 [democracy]()
 
@@ -74,8 +76,9 @@ the extra div below is to get rid of the flex. bad hack.
     _"| imgsrc governance-07, Several students in a committee meeting "
      
 
-    Arts & Ideas operates on the assertion that children are equally deserving
-    of the respect and trust that we grant adults. When the inalienable rights
+    Arts & Ideas believes that children are equally deserving
+    of the respect and trust that adults experience in this country. 
+    When the inalienable rights
     to life, liberty, and the pursuit of happiness are extended to children,
     responsible choices arise from the sense of duty that that power naturally
     entails. 
@@ -118,8 +121,8 @@ the extra div below is to get rid of the flex. bad hack.
 [feeder]()
 
 
-    Explore our website to discover what makes our school tick and why
-    students and their families wouldn’t have it any other way.   
+    Explore our website to discover what makes our school thrive and why
+    our students and their families love an Arts &amp; Ideas education.
 
     <div class="next far"><a href="introduction.html">Introduction</a></div>
    
@@ -266,6 +269,8 @@ quote beneath. At top, is the title
     .tail {
         padding-top:1rem;
         /*padding-bottom:1rem;*/
+        max-width: 600px;
+        text-align: center;
     }
 
     .blurb figure {

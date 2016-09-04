@@ -2,7 +2,7 @@ Donations Big & Small
 ---
 
 There are a variety of ways you can support Arts & Ideas. Thank you to all our
-supporters, big and small - without the help of our generous community we
+supporters, big and small. Without the help of our generous community we
 would certainly not be the school we are today.
 
 
@@ -30,7 +30,7 @@ you shop without paying any extra money! Check out[
 http://smile.amazon.com/](http://smile.amazon.com/) for more info; *please
 note that you must choose "Arcadian Fellowship Church Inc" as your
 organization to support*. The Arcadian Fellowship is our overseeing legal
-body; to learn more click here.
+body.
 
 
 ## School Merchandise for Sale
@@ -38,20 +38,15 @@ body; to learn more click here.
 
 We currently have A&I t-shirts for sale as well as notecard sets created by
 students and staff. To learn more about our currently available items for
-sale, please email aisudburyschool@gmail.com.
-
-Below is an ongoing list of items that are in high demand at our school. We
-are also open to other items, such as electronic equipment and computer
-software. Please e-mail us to coordinate a drop-off time if you wish to make a
-tax-deductible donation to the school.
+sale, please [contact us](contact-us.html)
 
 ## Wish List
 
 !support-tree.jpg,, right
 
 The following items are always in high demand at school. We also consider
-other donations not listed as well; please email aisudburyschool@gmail.com if
-you would like to make a donation.
+other donations not listed as well; please [contact us](contact-us.html)
+if you would like to make a donation.
 
 * Art Supplies: Markers, paint, paintbrushes, colored pencils, hot glue gun sticks
 * Office Supplies: Pens, standard envelopes, stamps, sharpies

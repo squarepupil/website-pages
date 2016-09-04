@@ -20,10 +20,10 @@ our lockers.
 Upstairs, you will find students playing games like Minecraft or practicing
 coding skills in our computer lab, rehearsing advanced gymnastics techniques
 in our gym room, and flexing their creativity by making extraordinary projects
-in the art room, or recording stop animation movies and youtube videos in the
+in the art room, or recording stop animation movies and YouTube videos in the
 video recording studio. There is also plenty of versatile hang out spaces that
 are perfect for impromptu board games, science experiments, or simply spending
-time with friends. The second floor also is where you will find our Judicial
+time with friends. The second floor is where you will find our Judicial
 Committee and School Meeting when they are in session. 
 
 !space-gym.jpg
@@ -38,7 +38,7 @@ be the future site of our woodworking area.
 !space-carriage.jpg
 
 Our property also has the wonderful and rare combination of both ample green
-space and access to urban resources. The field is like a blank canvas - a full
+space and access to urban resources. The field is a full
 acre of flat, green grass just waiting to be transformed into a natural
 playscape right in Baltimore City. The surrounding neighborhood provides safe,
 residential streets that are perfect for casual strolls on warmer days.  We
@@ -48,7 +48,6 @@ Red Canoe Cafe on Harford Road.
 !space-view.jpg
 
 We would love to show you our
-beautiful campus - come check it out at our next open house! [link to open
-house schedule](https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform)
+beautiful campus!  Come check it out at our [next open house](https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform).
 
 

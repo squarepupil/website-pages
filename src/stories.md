@@ -235,7 +235,7 @@ right arrows but we could use javascript perhaps to handle all that.
     >    Our youngest son has chosen a different path, unlike our eldest who never
         missed a School Meeting or a chance to volunteer for Judicial Committee,
         our youngest is content to follow his own goals. His independence and
-        autonomy are his focus and as he was 'raised" in the model we have
+        autonomy are his focus and as he was "raised" in the model we have
         spirited discussions about politics and current events. His separation from
         his brother's approach and years at A&I have also been of great value as
         he stands apart from his brother's choices and expectations. 
