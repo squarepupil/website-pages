@@ -13,9 +13,8 @@ community play group in Hamilton that ran for 5 years.  Before moving to
 Baltimore in 2000, Caroline worked with LeVar Burton at his film company at
 Paramount Studios in Los Angeles, helping to develop family-friendly
 entertainment for television and film and also on his Emmy award-winning PBS
-educational series, Reading Rainbow. Caroline has an extensive background in
-theatre and television performing in New York City for ten years Off-Off
-Broadway and regionally in Chicago, Milwaukee, Los Angeles, Richmond, North
+educational series, "Reading Rainbow." Caroline has an extensive background in
+theatre and television performing in New York City for ten years Off Off-Broadway and regionally in Chicago, Milwaukee, Los Angeles, Richmond, North
 Carolina and Vermont. She's enjoyed working with such luminaries as Phillip
 Seymour Hoffman and Mary-Louise Parker. Her one-woman show, a blend of
 monologue, comedy and dance, received critical acclaim and was developed into
