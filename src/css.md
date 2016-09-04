@@ -28,6 +28,15 @@ basic styling is taken from writ.css
         box-sizing: border-box; 
     }
 
+    h3 {
+       line-height: 2rem;
+       margin-bottom: 0.5rem; 
+    }
+
+    p~h3 {
+        margin-top: 2rem;
+    }
+
     .hide {
         display: none;
     }
@@ -543,7 +552,7 @@ This is part of writ.css, and modified.
     h6 { font-size: 1em; }
     small { font-size: 0.833em; }
 
-    h1, h2, h3 { line-height: 3rem; }
+    h1, h2  { line-height: 3rem; }
 
     /*
     p, ul, ol, dl, table, blockquote, pre, h1, h2, h3, h4, h5, h6 {
