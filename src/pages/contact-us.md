@@ -20,7 +20,7 @@ Or call us between 8am and 6pm, Monday through Friday:
 
 (410)426-0001
 
-Or by postal mail at
+Or by postal mail:
 
 4915 Holder Avenue, Baltimore, MD 21214
 

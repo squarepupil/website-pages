@@ -35,7 +35,7 @@ the extra div below is to get rid of the flex. bad hack.
 
 [lead]()
 
-    #### **Arts & Ideas Sudbury School** is a democractic school for ages 5-18. We emphasize trust, autonomy, justice, and learning. 
+    #### **Arts & Ideas Sudbury School** is a democractic school for ages 5-18. Our core principles are trust, autonomy, justice, and learning through play. 
 
     #### Come visit us and learn more at our [next open house](https://docs.google.com/forms/d/1rbowCIad1VC8l_GOoP-0gcIBhH8DXWnw1RzbobY6q4w/viewform)! 
 

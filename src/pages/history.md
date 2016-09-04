@@ -7,8 +7,7 @@ supportive community.  The school is based on a philosophy of education first
 pioneered by the Sudbury Valley School in 1968 and now operating in more than
 30 schools worldwide. 
 
-A&I was founded in 2008 by two parents, [Danny Mydlack](https://www.towson.edu/cofac/departments/mediafilm/facultystaff/dmydlack.html)
-and Caroline Chavasse, also professors, professional artists, and residents of
+A&I was founded in 2008 by two parents, [Caroline Chavasse](staff.html) and [Danny Mydlack](https://www.towson.edu/cofac/departments/mediafilm/facultystaff/dmydlack.html), also professors, professional artists, and residents of
 the Northeast neighborhood where Arts & Ideas began.  Before starting Arts &
 Ideas, the founders formed a popular community playgroup for kids under age
 five that was inspired by the principles of Sudbury schooling. Children, free
